@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Barlow_Condensed } from 'next/font/google'
 import './globals.css'
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
   title: 'International Submarine Academy',
   description:
     'Serie vertical educativa sobre submarinos-museo, con episodios, progreso y recorridos de aprendizaje.',
-  generator: 'v0.app',
   applicationName: 'International Submarine Academy',
   icons: {
     icon: [
@@ -23,6 +21,10 @@ export const metadata: Metadata = {
       { url: '/icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/apple-icon.png',
+  },
+  robots: {
+    index: false,
+    follow: false,
   },
 }
 
@@ -40,7 +42,6 @@ export default function RootLayout({
     <html lang="es" className={`${inter.variable} ${barlow.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
