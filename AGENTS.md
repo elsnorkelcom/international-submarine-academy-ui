@@ -6,7 +6,7 @@ Si detectás diferencias entre este documento, el código o una nueva instrucci�
 
 ## Estado actual comprobado
 
-Referencia histórica verificada el 28/10/2026. Estos resultados no garantizan el estado de cambios posteriores: repetir las comprobaciones que correspondan a cada tarea.
+Referencia histórica verificada el 28/10/2026 y ampliada el 03/11/2026 con el estado del commit `e3148f0`. Estos resultados no garantizan el estado de cambios posteriores: repetir las comprobaciones que correspondan a cada tarea.
 
 - Next.js 16.4.3, fijado de forma exacta en `package.json`.
 - React y React DOM 19.2.4 (declarados como `^19`).
@@ -16,6 +16,9 @@ Referencia histórica verificada el 28/10/2026. Estos resultados no garantizan e
 - Verificación de esta etapa: `/` responde HTTP 200 y `/v1` redirige con HTTP 308 a `/`. El usuario confirmó previamente que el aviso "Security Insight" ya no aparece.
 - `components/academy/mission-badge.tsx` y `components/academy/hero-backdrop.tsx` permanecen en `components/academy` porque los usa la Home; el resto de los componentes académicos fue eliminado con `/v1`.
 - `lib/missions.ts`, `lib/seasons.ts` y `lib/progress.ts` siguen siendo la fuente de datos de la Home; no se migraron en esta etapa.
+- Base de internacionalización integrada en `lib/i18n/` (`config.ts`, `index.ts` con `getMessages` y `formatMessage`, mensajes `en.ts` y `es.ts` en `lib/i18n/messages/`); la usan la Home (`app/page.tsx`) y todos los componentes de `components/series/`.
+- `TEMPORARY_VISIBLE_HOME_LOCALE = 'es'` mantiene la Home en español de forma provisoria. El inglés (`en`, `TRANSLATION_BASE_LOCALE`) es el idioma base de los diccionarios y de la forma (`Messages = DeepString<typeof en>`), pero no debe mostrarse en la interfaz ni habilitarse un selector de idioma en esta etapa.
+- En el MVP de esta UI no existen rutas por idioma ni selector de idioma: la Home se pinta con el idioma fijado en `lib/i18n/config.ts`; los diccionarios se tienen sincronizados (`en.ts` y `es.ts` con 81 hojas cada uno, ninguna clave faltante, extra o vacía, y marcadores `{}` coincidentes, comprobado el 03/11/2026).
 - La demo Acero/Cobre vive en `lib/demo/*` y `components/series/demo-*`; su contenido sigue pendiente y no depende del catálogo.
 - `components/series/progress-band.tsx` reporta únicamente el progreso del catálogo; las insignias del demo no se suman a 8/31.
 - No se detectaron Server Actions, directivas `use cache` ni `next/og`/`ImageResponse`.
@@ -50,6 +53,7 @@ Referencia histórica verificada el 28/10/2026. Estos resultados no garantizan e
 - **Apps Script + Google Sheets:** si se implementa, dónde vive el código, quién lo administra, permisos, límites y manejo de credenciales.
 - **Datos de demostración:** mecanismo concreto (fixtures, flags o seeds), ubicación y forma de excluirlos de producción.
 - **Autenticación y datos personales:** requisitos, roles, retención, base legal y revisión de seguridad.
+- **i18n:** si y cuándo se mostrará `en` en la interfaz, si se agregará selector de idioma o rutas por idioma, y qué se quita de la etapa provisoria (`TEMPORARY_VISIBLE_HOME_LOCALE`).
 - **Calidad:** incorporar lint, tests y CI; decidir si se mantiene `typescript.ignoreBuildErrors: true`; abordar el LCP del logo.
 - **Dependencias:** política de actualizaciones de seguridad y uso de versiones exactas frente a rangos.
 - **Entornos:** versión de Node soportada, proveedor de despliegue, ramas, previews y rollback.
