@@ -7,14 +7,14 @@ export const DEMO_EPISODES: Record<DemoEpisodeId, DemoEpisode> = {
     id: 'acero',
     level: 0,
     unlockAfter: null,
-    title: 'Acero',
-    summary: null,
+    title: 'Acero 04 · Comando del Submarino',
+    summary: 'Objetivo: reconocimiento · Personaje: Pez Luna',
     setting: {
-      vesselName: null,
+      vesselName: 'U-995',
     },
     equipment: {
-      name: null,
-      purpose: null,
+      name: 'Periscopio',
+      purpose: 'Reconocimiento',
       principle: null,
     },
     civilScenario: null,
@@ -22,8 +22,8 @@ export const DEMO_EPISODES: Record<DemoEpisodeId, DemoEpisode> = {
     question: null,
     badge: {
       code: 'demo-acero',
-      name: null,
-      description: null,
+      name: 'Expedición Submarina',
+      description: 'Credencial simulada',
     },
     materials: {
       presentation: 'pending',
@@ -36,13 +36,13 @@ export const DEMO_EPISODES: Record<DemoEpisodeId, DemoEpisode> = {
     level: 1,
     unlockAfter: 'acero',
     title: 'Cobre',
-    summary: null,
+    summary: 'Periscopio y observación astronómica · Aplicación TIMSS Knowing: pendiente',
     setting: {
       vesselName: null,
     },
     equipment: {
-      name: null,
-      purpose: null,
+      name: 'Periscopio',
+      purpose: 'Observación astronómica',
       principle: null,
     },
     civilScenario: null,
@@ -50,8 +50,8 @@ export const DEMO_EPISODES: Record<DemoEpisodeId, DemoEpisode> = {
     question: null,
     badge: {
       code: 'demo-cobre',
-      name: null,
-      description: null,
+      name: 'Coin Cobre',
+      description: 'Rutas de cierre pendientes',
     },
     materials: {
       presentation: 'pending',

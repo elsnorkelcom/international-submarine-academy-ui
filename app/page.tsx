@@ -4,13 +4,14 @@ import { SeriesProvider } from '@/components/series/series-context'
 import { SeasonRails } from '@/components/series/season-rails'
 import { AccreditationPath } from '@/components/series/accreditation-path'
 import { DemoEpisodeProvider } from '@/components/series/demo-episode-context'
+import { AccessGate } from '@/components/series/access-gate'
 import { TEMPORARY_VISIBLE_HOME_LOCALE } from '@/lib/i18n/config'
 
 export default function HomePage() {
   const locale = TEMPORARY_VISIBLE_HOME_LOCALE
 
   return (
-    <>
+    <AccessGate>
       <SeriesHeader locale={locale} />
       <main className="pb-20">
         <DemoEpisodeProvider locale={locale}>
@@ -26,6 +27,6 @@ export default function HomePage() {
           International Submarine Academy · Versión 2 · Serie vertical
         </p>
       </footer>
-    </>
+    </AccessGate>
   )
 }
