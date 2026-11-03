@@ -2,16 +2,36 @@
 
 import Image from 'next/image'
 import { Check, Lock } from 'lucide-react'
+import { MissionBadge } from '@/components/academy/mission-badge'
+import { formatMessage, getMessages } from '@/lib/i18n'
+import type { Locale } from '@/lib/i18n/config'
 import { getSeason, type Episode } from '@/lib/seasons'
 import { useSeries } from './series-context'
 
-export function EpisodeCard({ episode, showSeason = false }: { episode: Episode; showSeason?: boolean }) {
+export function EpisodeCard({
+  episode,
+  locale,
+  showSeason = false,
+}: {
+  episode: Episode
+  locale: Locale
+  showSeason?: boolean
+}) {
+  const messages = getMessages(locale)
+  const episodeMessages = messages.series.episode
   const { episode: selected, selectEpisode } = useSeries()
   const season = getSeason(episode.seasonId)
   const isSelected = selected.id === episode.id
   const locked = episode.status === 'locked'
   const completed = episode.status === 'completed'
   const tag = `T${season.number}:E${episode.number}`
+  const statusLabel = episodeMessages.viewStatus[episode.status]
+  const seasonLabel = formatMessage(episodeMessages.aria.season, { number: season.number, title: season.title })
+  const badgeEarnedLabel = completed ? `, ${episodeMessages.badge.earned}` : ''
+  const progressLabel = episode.progress
+    ? `, ${formatMessage(episodeMessages.aria.progress, { percent: episode.progress })}`
+    : ''
+  const ariaLabel = `${tag}, ${seasonLabel}, ${episode.specialty ?? episode.title}, ${episode.node}, ${statusLabel}${badgeEarnedLabel}${progressLabel}`
 
   return (
     <li className="w-[40vw] max-w-[210px] shrink-0 snap-start sm:w-44 md:w-48">
@@ -19,7 +39,7 @@ export function EpisodeCard({ episode, showSeason = false }: { episode: Episode;
         type="button"
         onClick={() => selectEpisode(episode)}
         aria-pressed={isSelected}
-        aria-label={`${tag}, ${episode.specialty ?? episode.node}, ${locked ? 'bloqueado' : completed ? 'visto' : 'disponible'}`}
+        aria-label={ariaLabel}
         className="group block w-full text-left focus-visible:outline-none"
       >
         <div
@@ -44,12 +64,18 @@ export function EpisodeCard({ episode, showSeason = false }: { episode: Episode;
             </span>
           </div>
 
-          {(locked || completed) && (
+          {completed && (
+            <span className="absolute right-2 top-2">
+              <MissionBadge code={episode.code} className="size-7" />
+            </span>
+          )}
+
+          {locked && (
             <span
-              className={`absolute right-2 top-3 flex size-6 items-center justify-center rounded-full ${completed ? 'bg-primary text-primary-foreground' : 'bg-black/60 text-muted-foreground'}`}
+              className="absolute right-2 top-3 flex size-6 items-center justify-center rounded-full bg-black/60 text-muted-foreground"
               aria-hidden="true"
             >
-              {completed ? <Check className="size-3.5" /> : <Lock className="size-3" />}
+              <Lock className="size-3" />
             </span>
           )}
 
@@ -65,6 +91,27 @@ export function EpisodeCard({ episode, showSeason = false }: { episode: Episode;
               {episode.specialty ?? episode.title}
             </p>
             <p className="mt-0.5 truncate font-mono text-[10px] uppercase tracking-widest text-metal">{episode.node}</p>
+
+            <div className="mt-1.5 flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
+              <span
+                className={`inline-flex items-center gap-1 rounded-sm px-1.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wider ${
+                  completed
+                    ? 'bg-primary/15 text-primary'
+                    : locked
+                      ? 'bg-white/5 text-muted-foreground'
+                      : 'border border-primary/40 text-primary'
+                }`}
+              >
+                {completed && <Check className="size-3" aria-hidden="true" />}
+                {locked && <Lock className="size-3" aria-hidden="true" />}
+                {!completed && !locked && <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />}
+                {statusLabel}
+              </span>
+              {episode.progress ? (
+                <span className="font-mono text-[10px] uppercase tracking-wider text-metal">{episode.progress}%</span>
+              ) : null}
+            </div>
+
             {episode.progress ? (
               <div className="mt-2 h-0.5 overflow-hidden rounded-full bg-white/20">
                 <div className="h-full bg-primary" style={{ width: `${episode.progress}%` }} />

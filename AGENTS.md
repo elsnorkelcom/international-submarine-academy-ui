@@ -6,14 +6,18 @@ Si detectás diferencias entre este documento, el código o una nueva instrucci�
 
 ## Estado actual comprobado
 
-Referencia histórica verificada el 25/10/2026. Estos resultados no garantizan el estado de cambios posteriores: repetir las comprobaciones que correspondan a cada tarea.
+Referencia histórica verificada el 28/10/2026. Estos resultados no garantizan el estado de cambios posteriores: repetir las comprobaciones que correspondan a cada tarea.
 
 - Next.js 16.4.3, fijado de forma exacta en `package.json`.
 - React y React DOM 19.2.4 (declarados como `^19`).
 - pnpm 12.3.4; `pnpm-lock.yaml` versionado. `sharp` 0.35.5 como dependencia opcional de Next.
-- Rutas `/` (serie/streaming) y `/v1` (académica por fases). El build las genera como estáticas, junto con `/manifest.webmanifest` y `/_not-found`.
+- Ruta `/` (serie vertical educativa). `/v1` fue desestimada y redirige de forma permanente a `/` mediante `next.config.mjs`. El build genera `/`, `/manifest.webmanifest` y `/_not-found`.
 - `pnpm exec tsc --noEmit` y `pnpm build` finalizan sin errores.
-- Prueba manual realizada por el usuario: `/` y `/v1` responden HTTP 200 y su funcionamiento visual es correcto. El usuario también confirmó que el aviso "Security Insight" ya no aparece.
+- Verificación de esta etapa: `/` responde HTTP 200 y `/v1` redirige con HTTP 308 a `/`. El usuario confirmó previamente que el aviso "Security Insight" ya no aparece.
+- `components/academy/mission-badge.tsx` y `components/academy/hero-backdrop.tsx` permanecen en `components/academy` porque los usa la Home; el resto de los componentes académicos fue eliminado con `/v1`.
+- `lib/missions.ts`, `lib/seasons.ts` y `lib/progress.ts` siguen siendo la fuente de datos de la Home; no se migraron en esta etapa.
+- La demo Acero/Cobre vive en `lib/demo/*` y `components/series/demo-*`; su contenido sigue pendiente y no depende del catálogo.
+- `components/series/progress-band.tsx` reporta únicamente el progreso del catálogo; las insignias del demo no se suman a 8/31.
 - No se detectaron Server Actions, directivas `use cache` ni `next/og`/`ImageResponse`.
 - `next.config.mjs`: `images.unoptimized: true` y `typescript.ignoreBuildErrors: true`. Por eso el typecheck debe ejecutarse aparte con `tsc --noEmit`.
 - No hay scripts de `lint` ni de `test`.
@@ -26,9 +30,9 @@ Referencia histórica verificada el 25/10/2026. Estos resultados no garantizan e
 
 1. **Idioma:** comunicarse siempre en español.
 2. **Etapas:** trabajar en tareas pequeñas y verificables. Al terminar cada etapa, informar y esperar autorización explícita antes de continuar.
-3. **Variantes:** preservar `/` (serie/streaming) y `/v1` (académica por fases) como variantes diferenciadas.
-4. **Cambios de producto:** no rediseñar, fusionar ni eliminar una variante sin autorización.
-5. **Dependencias:** usar pnpm, respetar el lockfile y no editarlo a mano. Cualquier cambio de dependencias debe justificarse y autorizarse.
+3. **Variante única:** `/` es la serie vertical educativa. `/v1` fue desestimada y redirige permanentemente a `/`.
+4. **Cambios de producto y rutas:** no rediseñar, fusionar ni eliminar una variante, ni agregar rutas nuevas, sin autorización.
+5. **Dependencias:** no agregar dependencias nuevas sin justificación y autorización; usar pnpm, respetar el lockfile y no editarlo a mano.
 6. **Datos de demostración:** mantenerlos separados de las funcionalidades reales e identificarlos claramente. No presentarlos como datos o contenidos reales.
 7. **Contenido:** no inventar contenidos educativos, resultados de investigación, equivalencias curriculares ni requisitos de la tesina. Si falta información, indicar qué falta y pedir fuentes.
 8. **Responsabilidad académica:** el agente puede implementar requisitos aprobados y documentar decisiones técnicas y pruebas. No debe definir por su cuenta objetivos, metodología, criterios pedagógicos ni conclusiones de la tesina. Las propuestas académicas deben identificarse como tales y quedar pendientes de revisión del usuario.
@@ -46,7 +50,6 @@ Referencia histórica verificada el 25/10/2026. Estos resultados no garantizan e
 - **Apps Script + Google Sheets:** si se implementa, dónde vive el código, quién lo administra, permisos, límites y manejo de credenciales.
 - **Datos de demostración:** mecanismo concreto (fixtures, flags o seeds), ubicación y forma de excluirlos de producción.
 - **Autenticación y datos personales:** requisitos, roles, retención, base legal y revisión de seguridad.
-- **Relación entre `/` y `/v1`:** contenido compartido o independiente, navegación, redirecciones y fuente de datos común.
 - **Calidad:** incorporar lint, tests y CI; decidir si se mantiene `typescript.ignoreBuildErrors: true`; abordar el LCP del logo.
 - **Dependencias:** política de actualizaciones de seguridad y uso de versiones exactas frente a rangos.
 - **Entornos:** versión de Node soportada, proveedor de despliegue, ramas, previews y rollback.

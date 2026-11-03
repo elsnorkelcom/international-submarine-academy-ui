@@ -13,7 +13,7 @@ const barlow = Barlow_Condensed({
 export const metadata: Metadata = {
   title: 'International Submarine Academy',
   description:
-    'Plataforma educativa de misiones navales y técnicas. Fase Acero y Fase Cobre: aprendé a bordo de submarinos-museo.',
+    'Serie vertical educativa sobre submarinos-museo, con episodios, progreso y recorridos de aprendizaje.',
   generator: 'v0.app',
   applicationName: 'International Submarine Academy',
   icons: {

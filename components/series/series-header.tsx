@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bell, Search, User } from 'lucide-react'
+import { Award, Bell, Search, User } from 'lucide-react'
+import { getMessages } from '@/lib/i18n'
+import type { Locale } from '@/lib/i18n/config'
 
 const NAV = [
   { label: 'Inicio', href: '#', active: true },
@@ -8,7 +10,9 @@ const NAV = [
   { label: 'Seguir viendo', href: '#seguir-viendo', active: false },
 ]
 
-export function SeriesHeader() {
+export function SeriesHeader({ locale }: { locale: Locale }) {
+  const progress = getMessages(locale).series.progress
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-background/95 via-background/60 to-transparent">
       <div className="mx-auto flex h-16 max-w-[1600px] items-center gap-6 px-4 md:px-10">
@@ -20,13 +24,13 @@ export function SeriesHeader() {
         </Link>
 
         <nav aria-label="Principal" className="hidden md:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-5">
             {NAV.map((item) => (
               <li key={item.label}>
                 <Link
                   href={item.href}
                   aria-current={item.active ? 'page' : undefined}
-                  className={`text-sm font-medium transition-colors hover:text-foreground ${
+                  className={`inline-flex items-center whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground ${
                     item.active ? 'text-foreground' : 'text-muted-foreground'
                   }`}
                 >
@@ -34,15 +38,28 @@ export function SeriesHeader() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="#mi-progreso"
+                aria-label={progress.navLabel}
+                title={progress.navLabel}
+                className="inline-flex items-center whitespace-nowrap text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                <Award className="size-3.5 lg:hidden" aria-hidden="true" />
+                <span className="hidden lg:inline">{progress.navLabel}</span>
+              </Link>
+            </li>
           </ul>
         </nav>
 
         <div className="ml-auto flex items-center gap-1 md:gap-3">
           <Link
-            href="/v1"
-            className="rounded-sm border border-white/15 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground transition-colors hover:border-white/30 hover:text-foreground"
+            href="#mi-progreso"
+            aria-label={progress.navLabel}
+            title={progress.navLabel}
+            className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground md:hidden"
           >
-            Versión 1
+            <Award className="size-5" aria-hidden="true" />
           </Link>
           <button
             type="button"
