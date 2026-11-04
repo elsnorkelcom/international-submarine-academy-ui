@@ -52,6 +52,7 @@ export function DemoEpisodeModal({
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const firstOptionRef = useRef<HTMLInputElement>(null)
   const badgeHeadingRef = useRef<HTMLHeadingElement>(null)
+  const pendingHeadingRef = useRef<HTMLParagraphElement>(null)
   const lastFocusedRef = useRef<HTMLElement | null>(null)
   const episode = getDemoEpisode(activeEpisodeId)
   const episodeProgress = progress[activeEpisodeId]
@@ -83,7 +84,11 @@ export function DemoEpisodeModal({
     if (step === 'badge') {
       badgeHeadingRef.current?.focus()
     }
-  }, [isOpen, step, question, answerState])
+
+    if ((step === 'video' && !episode.video) || (step === 'question' && !question)) {
+      pendingHeadingRef.current?.focus()
+    }
+  }, [isOpen, step, question, answerState, episode.video])
 
   const close = () => {
     onClose()
@@ -232,7 +237,7 @@ export function DemoEpisodeModal({
 
         {step === 'video' && (
           <div className="mt-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-metal">{messages.episode.videoPending}</p>
+            <p ref={pendingHeadingRef} tabIndex={-1} aria-live="polite" className="font-mono text-[10px] uppercase tracking-[0.25em] text-metal focus-visible:outline-none">{messages.episode.videoPending}</p>
             <div className="mt-3 flex aspect-video w-full items-center justify-center overflow-hidden rounded-md border border-white/10 bg-gradient-to-br from-white/[0.06] to-transparent">
               {episode.video ? (
                 <video
@@ -271,13 +276,20 @@ export function DemoEpisodeModal({
               >
                 {messages.episode.back}
               </button>
+              <button
+                type="button"
+                onClick={close}
+                className="inline-flex items-center justify-center rounded-md border border-white/15 px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground transition-colors hover:border-white/30 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                {messages.episode.close}
+              </button>
             </div>
           </div>
         )}
 
         {step === 'question' && (
           <div className="mt-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-metal">{messages.episode.activityPending}</p>
+            <p ref={pendingHeadingRef} tabIndex={-1} aria-live="polite" className="font-mono text-[10px] uppercase tracking-[0.25em] text-metal focus-visible:outline-none">{messages.episode.activityPending}</p>
             {question ? (
               <form
                 className="mt-3 space-y-4"
@@ -357,21 +369,19 @@ export function DemoEpisodeModal({
                   La actividad todavía depende de contenido aprobado.
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-3">
-                  {isDevelopment && (
-                    <button
-                      type="button"
-                      onClick={onSkipVideo}
-                      className="inline-flex items-center justify-center rounded-md border border-primary/50 bg-primary/10 px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-widest text-primary transition-colors hover:bg-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                    >
-                      {messages.episode.skipVideo}
-                    </button>
-                  )}
                   <button
                     type="button"
                     onClick={onBackToSelector}
                     className="inline-flex items-center justify-center rounded-md border border-white/15 px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground transition-colors hover:border-white/30 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                   >
                     {messages.episode.back}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={close}
+                    className="inline-flex items-center justify-center rounded-md border border-white/15 px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground transition-colors hover:border-white/30 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  >
+                    {messages.episode.close}
                   </button>
                 </div>
               </div>

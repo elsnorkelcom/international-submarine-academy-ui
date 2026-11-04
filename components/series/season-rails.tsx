@@ -2,7 +2,6 @@ import type { Locale } from '@/lib/i18n/config'
 import { continueWatching, seasons } from '@/lib/seasons'
 import { EpisodeCard } from './episode-card'
 import { EpisodeRail } from './episode-rail'
-import { DemoLauncher } from './demo-launcher'
 import { ProgressBand } from './progress-band'
 
 export function SeasonRails({ locale }: { locale: Locale }) {
@@ -15,8 +14,6 @@ export function SeasonRails({ locale }: { locale: Locale }) {
       </EpisodeRail>
 
       <ProgressBand locale={locale} />
-
-      <DemoLauncher locale={locale} />
 
       <div id="temporadas" className="scroll-mt-20 space-y-12">
         {seasons.map((season) => {
@@ -31,7 +28,12 @@ export function SeasonRails({ locale }: { locale: Locale }) {
               meta={`${done} / ${season.episodes.length} vistos`}
             >
               {season.episodes.map((episode) => (
-                <EpisodeCard key={episode.id} episode={episode} locale={locale} />
+                <EpisodeCard
+                  key={episode.id}
+                  episode={episode}
+                  locale={locale}
+                  showCobreBadge={season.id !== 't1'}
+                />
               ))}
             </EpisodeRail>
           )

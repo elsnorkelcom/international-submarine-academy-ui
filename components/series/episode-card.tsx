@@ -5,6 +5,7 @@ import { Check, Lock } from 'lucide-react'
 import { MissionBadge } from '@/components/academy/mission-badge'
 import { formatMessage, getMessages } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n/config'
+import { DISCIPLINE_META } from '@/lib/missions'
 import { getSeason, type Episode } from '@/lib/seasons'
 import { useSeries } from './series-context'
 
@@ -12,10 +13,12 @@ export function EpisodeCard({
   episode,
   locale,
   showSeason = false,
+  showCobreBadge = false,
 }: {
   episode: Episode
   locale: Locale
   showSeason?: boolean
+  showCobreBadge?: boolean
 }) {
   const messages = getMessages(locale)
   const episodeMessages = messages.series.episode
@@ -24,14 +27,21 @@ export function EpisodeCard({
   const isSelected = selected.id === episode.id
   const locked = episode.status === 'locked'
   const completed = episode.status === 'completed'
+  const isCobreMission = Boolean(episode.discipline)
+  const badgeColor = episode.discipline ? DISCIPLINE_META[episode.discipline].color : season.color
+  const showBadge = completed || (showCobreBadge && isCobreMission)
   const tag = `T${season.number}:E${episode.number}`
   const statusLabel = episodeMessages.viewStatus[episode.status]
   const seasonLabel = formatMessage(episodeMessages.aria.season, { number: season.number, title: season.title })
-  const badgeEarnedLabel = completed ? `, ${episodeMessages.badge.earned}` : ''
+  const badgeLabel = isCobreMission
+    ? `, insignia ${episode.code} ${completed ? 'obtenida' : 'pendiente'}`
+    : completed
+      ? `, ${episodeMessages.badge.earned}`
+      : ''
   const progressLabel = episode.progress
     ? `, ${formatMessage(episodeMessages.aria.progress, { percent: episode.progress })}`
     : ''
-  const ariaLabel = `${tag}, ${seasonLabel}, ${episode.specialty ?? episode.title}, ${episode.node}, ${statusLabel}${badgeEarnedLabel}${progressLabel}`
+  const ariaLabel = `${tag}, ${seasonLabel}, ${episode.specialty ?? episode.title}, ${episode.node}, ${statusLabel}${badgeLabel}${progressLabel}`
 
   return (
     <li className="w-[40vw] max-w-[210px] shrink-0 snap-start sm:w-44 md:w-48">
@@ -64,13 +74,13 @@ export function EpisodeCard({
             </span>
           </div>
 
-          {completed && (
+          {showBadge && (
             <span className="absolute right-2 top-2">
-              <MissionBadge code={episode.code} className="size-7" />
+              <MissionBadge code={episode.code} color={isCobreMission ? badgeColor : undefined} earned={completed} className="size-7" />
             </span>
           )}
 
-          {locked && (
+          {locked && !isCobreMission && (
             <span
               className="absolute right-2 top-3 flex size-6 items-center justify-center rounded-full bg-black/60 text-muted-foreground"
               aria-hidden="true"

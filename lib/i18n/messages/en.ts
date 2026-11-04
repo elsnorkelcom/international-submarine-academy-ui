@@ -13,6 +13,28 @@ export const en = {
       badgeSample: 'Sample of earned badges',
       noBadges: 'No badges in the demo yet.',
     },
+    badges: {
+      navLabel: 'Badges',
+      eyebrow: 'ISA / mission registry',
+      title: 'Copper badges',
+      intro: 'Local 5×5 matrix for Copper missions. Generic names and fields that require Sheet remain pending.',
+      matrixEyebrow: 'Copper / 5×5 matrix',
+      matrixTitle: 'Mission badges',
+      matrixLabel: 'Copper mission badge matrix',
+      pendingNotice: 'Generic fields remain pending Sheet definition.',
+      roleLabel: 'Role',
+      disciplineLabel: 'Discipline',
+      statusLabel: 'Status',
+      badgeLabel: 'Badge',
+      cssBadge: 'CSS badge',
+      sheetLabel: 'Sheet fields',
+      pendingSheet: 'Pending Sheet definition',
+      status: {
+        completed: 'Completed',
+        available: 'Available',
+        locked: 'Locked',
+      },
+    },
     episode: {
       viewStatus: {
         completed: 'Watched',

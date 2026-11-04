@@ -1,17 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Award, Bell, Search, User } from 'lucide-react'
+import { Award, BadgeCheck, Bell, Search, User } from 'lucide-react'
 import { getMessages } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n/config'
 
 const NAV = [
-  { label: 'Inicio', href: '#', active: true },
-  { label: 'Temporadas', href: '#temporadas', active: false },
-  { label: 'Seguir viendo', href: '#seguir-viendo', active: false },
+  { label: 'Inicio', href: '/' },
+  { label: 'Temporadas', href: '#temporadas' },
+  { label: 'Seguir viendo', href: '#seguir-viendo' },
 ]
 
-export function SeriesHeader({ locale }: { locale: Locale }) {
-  const progress = getMessages(locale).series.progress
+export function SeriesHeader({ locale, activeHref = '/' }: { locale: Locale; activeHref?: string }) {
+  const messages = getMessages(locale)
+  const progress = messages.series.progress
+  const badges = messages.series.badges
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-background/95 via-background/60 to-transparent">
@@ -29,15 +31,29 @@ export function SeriesHeader({ locale }: { locale: Locale }) {
               <li key={item.label}>
                 <Link
                   href={item.href}
-                  aria-current={item.active ? 'page' : undefined}
+                  aria-current={item.href === activeHref ? 'page' : undefined}
                   className={`inline-flex items-center whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground ${
-                    item.active ? 'text-foreground' : 'text-muted-foreground'
+                    item.href === activeHref ? 'text-foreground' : 'text-muted-foreground'
                   }`}
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/insignias"
+                aria-current={activeHref === '/insignias' ? 'page' : undefined}
+                aria-label={badges.navLabel}
+                title={badges.navLabel}
+                className={`inline-flex items-center whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground ${
+                  activeHref === '/insignias' ? 'text-foreground' : 'text-muted-foreground'
+                }`}
+              >
+                <BadgeCheck className="size-3.5 lg:hidden" aria-hidden="true" />
+                <span className="hidden lg:inline">{badges.navLabel}</span>
+              </Link>
+            </li>
             <li>
               <Link
                 href="#mi-progreso"
@@ -53,6 +69,16 @@ export function SeriesHeader({ locale }: { locale: Locale }) {
         </nav>
 
         <div className="ml-auto flex items-center gap-1 md:gap-3">
+          <Link
+            href="/insignias"
+            aria-label={badges.navLabel}
+            title={badges.navLabel}
+            className={`flex size-9 items-center justify-center rounded-full transition-colors hover:text-foreground md:hidden ${
+              activeHref === '/insignias' ? 'text-foreground' : 'text-muted-foreground'
+            }`}
+          >
+            <BadgeCheck className="size-5" aria-hidden="true" />
+          </Link>
           <Link
             href="#mi-progreso"
             aria-label={progress.navLabel}

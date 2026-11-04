@@ -15,6 +15,28 @@ export const es = {
       badgeSample: 'Muestra de insignias obtenidas',
       noBadges: 'Todavía no hay insignias en la demostración.',
     },
+    badges: {
+      navLabel: 'Insignias',
+      eyebrow: 'ISA / registro de misiones',
+      title: 'Insignias Cobre',
+      intro: 'Matriz local 5×5 para las misiones Cobre. Los nombres genéricos y campos que requieren Sheet quedan pendientes.',
+      matrixEyebrow: 'Cobre / matriz 5×5',
+      matrixTitle: 'Insignias de misión',
+      matrixLabel: 'Matriz de insignias de misiones Cobre',
+      pendingNotice: 'Los campos genéricos quedan pendientes de definición en Sheet.',
+      roleLabel: 'Rol',
+      disciplineLabel: 'Disciplina',
+      statusLabel: 'Estado',
+      badgeLabel: 'Insignia',
+      cssBadge: 'Insignia CSS',
+      sheetLabel: 'Campos de Sheet',
+      pendingSheet: 'Pendiente de definición en Sheet',
+      status: {
+        completed: 'Completada',
+        available: 'Disponible',
+        locked: 'Bloqueada',
+      },
+    },
     episode: {
       viewStatus: {
         completed: 'Visto',

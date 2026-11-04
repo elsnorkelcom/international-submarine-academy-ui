@@ -116,19 +116,18 @@ export function DemoEpisodeProvider({ children, locale }: { children: ReactNode;
   }, [activeEpisodeId, selectedOptionId])
 
   const awardBadge = useCallback(() => {
-    setProgress((current) => {
-      const episodeProgress = current[activeEpisodeId]
-      if (!episodeProgress.answerCorrect || episodeProgress.badgeEarned) return current
+    const episodeProgress = progress[activeEpisodeId]
+    if (!episodeProgress.answerCorrect || episodeProgress.badgeEarned) return
 
-      return {
-        ...current,
-        [activeEpisodeId]: {
-          ...episodeProgress,
-          badgeEarned: true,
-        },
-      }
-    })
-  }, [activeEpisodeId])
+    setProgress((current) => ({
+      ...current,
+      [activeEpisodeId]: {
+        ...current[activeEpisodeId],
+        badgeEarned: true,
+      },
+    }))
+    setStep('badge')
+  }, [activeEpisodeId, progress])
 
   const value = useMemo(
     () => ({
