@@ -181,6 +181,11 @@ function AdminHeader({ onLock }: { onLock: () => void }) {
             />
           ))}
           <span className="mx-2 hidden h-4 w-px bg-white/10 md:block" />
+          <AdminNav
+            href="/admin/accreditation"
+            label="Accreditation"
+            active={pathname === '/admin/accreditation'}
+          />
           <AdminNav href="/admin/import" label="Import" active={pathname === '/admin/import'} />
           <AdminNav href="/admin/settings" label="Settings" active={pathname === '/admin/settings'} />
         </nav>

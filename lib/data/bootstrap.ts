@@ -6,6 +6,7 @@
  */
 
 import { seedCollections, SEED_SETTINGS, SEED_VERSION } from './seed';
+import { applyAwardsConfig } from './config';
 import type { LocalDatabase } from './repository';
 
 export interface BootstrapResult {
@@ -34,6 +35,13 @@ export async function ensureSeed(
 
   if (!settings) {
     await database.settings().save(SEED_SETTINGS);
+  }
+
+  // Accreditation rules come from the configuration table, not from the seed.
+  try {
+    await applyAwardsConfig(database);
+  } catch {
+    // Configuration is optional on first run.
   }
 
   storage?.setItem(SEED_MARKER_KEY, String(SEED_VERSION));

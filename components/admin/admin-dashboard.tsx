@@ -81,6 +81,12 @@ export function AdminDashboard() {
 
         <div className="flex gap-2">
           <Link
+            href="/admin/accreditation"
+            className="border border-white/15 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
+          >
+            Accreditation
+          </Link>
+          <Link
             href="/admin/import"
             className="border border-primary/40 bg-primary/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
           >

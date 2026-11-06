@@ -5,3 +5,4 @@ export * from './repository';
 export * from './sheets-repository';
 export * from './seed';
 export * from './bootstrap';
+export * from './config';
