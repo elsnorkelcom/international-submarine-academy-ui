@@ -1,0 +1,51 @@
+name: Sync ISA configuration
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-config
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate configuration from the tables
+        env:
+          SEASONS_URL: ${{ vars.ISA_CONFIG_SEASONS_URL }}
+          MISSIONS_URL: ${{ vars.ISA_CONFIG_MISSIONS_URL }}
+          AWARDS_URL: ${{ vars.ISA_CONFIG_AWARDS_URL }}
+          SETTINGS_URL: ${{ vars.ISA_CONFIG_SETTINGS_URL }}
+        run: |
+          args=""
+          if [ -n "$SEASONS_URL" ]; then args="$args --seasons $SEASONS_URL"; fi
+          if [ -n "$MISSIONS_URL" ]; then args="$args --missions $MISSIONS_URL"; fi
+          if [ -n "$AWARDS_URL" ]; then args="$args --awards $AWARDS_URL"; fi
+          if [ -n "$SETTINGS_URL" ]; then args="$args --settings $SETTINGS_URL"; fi
+
+          if [ -z "$args" ]; then
+            echo "No configuration URLs configured (ISA_CONFIG_*_URL repository variables)."
+            exit 0
+          fi
+
+          python3 scripts/sync_config.py $args
+
+      - name: Commit changes
+        run: |
+          git config user.name "ISA Sync"
+          git config user.email "sync@elsnorkel.com"
+          git add lib/data/datasets/isa-config.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: sync ISA configuration tables"
+            git push
+          fi

@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { credentialBundle, listCredentials, revokeCredential } from '@/lib/badges/registry';
-import { applyAwardsConfig, awardsConfig } from '@/lib/data/config';
+import { applyConfig, awardsConfig, missionsConfig, seasonsConfig } from '@/lib/data/config';
 import { localize, type Badge, type CredentialRecord, type Mission, type Season } from '@/lib/domain/types';
 
 export function AccreditationPanel() {
@@ -18,6 +18,8 @@ export function AccreditationPanel() {
   const [loading, setLoading] = useState(true);
 
   const config = useMemo(() => awardsConfig(), []);
+  const seasonsCfg = useMemo(() => seasonsConfig(), []);
+  const missionsCfg = useMemo(() => missionsConfig(), []);
 
   const refresh = useCallback(async () => {
     if (!database) {
@@ -64,9 +66,9 @@ export function AccreditationPanel() {
     }
 
     try {
-      const result = await applyAwardsConfig(database);
+      const result = await applyConfig(database);
       setMessage(
-        `Configuration applied: ${result.created} created, ${result.updated} updated (${result.total} rules).`,
+        `Config applied — settings: ${result.settings.updated}; seasons: ${result.seasons.created}+/${result.seasons.updated}~; missions: ${result.missions.created}+/${result.missions.updated}~; awards: ${result.awards.created}+/${result.awards.updated}~.`,
       );
       await refresh();
     } catch {
@@ -106,8 +108,8 @@ export function AccreditationPanel() {
             Accreditation rules
           </h1>
           <p className="mt-2 max-w-2xl text-xs text-muted-foreground">
-            Rules, thresholds and the credential registry. The rules table comes from the configuration
-            sheet ({config.length} rows in the current build).
+            Rules, thresholds and the credential registry. The configuration tables come from the sheet:
+            {' '}{seasonsCfg.length} seasons, {missionsCfg.length} missions, {config.length} awards.
           </p>
         </div>
 
@@ -117,7 +119,7 @@ export function AccreditationPanel() {
             onClick={() => void handleApplyConfig()}
             className="border border-primary/40 bg-primary/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
           >
-            Apply config ({config.length})
+            Apply config
           </button>
           <button
             type="button"

@@ -6,7 +6,7 @@
  */
 
 import { seedCollections, SEED_SETTINGS, SEED_VERSION } from './seed';
-import { applyAwardsConfig } from './config';
+import { applyConfig } from './config';
 import type { LocalDatabase } from './repository';
 
 export interface BootstrapResult {
@@ -39,7 +39,7 @@ export async function ensureSeed(
 
   // Accreditation rules come from the configuration table, not from the seed.
   try {
-    await applyAwardsConfig(database);
+    await applyConfig(database);
   } catch {
     // Configuration is optional on first run.
   }

@@ -1,11 +1,25 @@
-# ISA · Accreditation configuration sheet
+# ISA · Configuration sheet
 
 The accreditation rules live in a table outside the app (Google Sheet, optionally edited with AppSheet).
 `scripts/sync_config.py` turns that table into `lib/data/datasets/isa-config.json`, and the app applies it to the local database.
 
 ---
 
-## 1. Table columns
+## 0. Sections
+
+Four optional tables feed one versioned file, `lib/data/datasets/isa-config.json`:
+
+| Section | Flag | What it controls |
+|---|---|---|
+| Settings | `--settings` | App name, default language, attempts, timer, welcome / access / fiction texts |
+| Seasons | `--seasons` | Season titles, order, colours, TIMSS domain, GSA emphasis |
+| Missions | `--missions` | Mission titles, objective, season, museum, compartment, equipment, status |
+| Awards | `--awards` | Badge rules and thresholds |
+
+Sections are merged: sending only `--awards` keeps the existing seasons and missions.
+The first visit applies every section; **Apply config** re-applies them to an existing browser.
+
+## 1. Awards table columns
 
 | Column | Required | Example | Notes |
 |---|---|---|---|
@@ -24,13 +38,50 @@ The accreditation rules live in a table outside the app (Google Sheet, optionall
 
 Header names are matched without case or accents, so `Badge ID`, `badge_id` and `BadgeId` all work.
 
+## 1.1 Seasons table
+
+`id`, `name` (`steel`, `copper`, `bronze`, `silver`, `gold`), `title_en`, `title_es`,
+`description_en`, `description_es`, `order`, `color_theme`, `timss_domain`,
+`gsa_en`, `gsa_es`, `status`.
+
+`color_theme` is the colour used on the Home accreditation path.
+
+## 1.2 Missions table
+
+`id`, `title_en`, `title_es`, `episode_id`, `season_id`, `museum_id`, `compartment_id`,
+`equipment_id`, `description_en`, `description_es`, `objective_en`, `objective_es`,
+`timss_domain`, `gsa_competency`, `civil_en`, `civil_es`, `order`, `status`.
+
+## 1.3 Settings table
+
+Key/value rows: `key`, `value`, `value_es`.
+
+| Key | Effect |
+|---|---|
+| `app_name` | Application name |
+| `default_language` | `en` or `es` |
+| `max_attempts` | Attempts per question |
+| `timer_seconds` | Timer duration |
+| `welcome_en` / `welcome_es` | Home welcome message |
+| `access_en` / `access_es` | Access screen text |
+| `fiction_en` / `fiction_es` | Fiction disclaimer |
+
+Unknown keys are ignored, so the table can grow without breaking the sync.
+
 ## 2. Command
 
 ```bash
-python3 scripts/sync_config.py --awards awards.csv --check   # validate only
-python3 scripts/sync_config.py --awards awards.csv           # write the dataset
+python3 scripts/sync_config.py --awards awards.csv --check
+python3 scripts/sync_config.py --seasons seasons.csv --missions missions.csv --awards awards.csv
 python3 scripts/sync_config.py --awards "https://docs.google.com/.../pub?gid=...&output=csv"
 ```
+
+## 2.1 Automatic sync
+
+`.github/workflows/sync-config.yml` runs weekly and on dispatch, reading the sheet URLs from
+repository variables: `ISA_CONFIG_SEASONS_URL`, `ISA_CONFIG_MISSIONS_URL`,
+`ISA_CONFIG_AWARDS_URL`, `ISA_CONFIG_SETTINGS_URL`. If any is set, it regenerates
+`isa-config.json` and commits the change; the commit deploys the site.
 
 Validation rejects unknown `rule_type`, unknown `type`, non-numeric `rule_count` and reports the line number.
 The script never deletes anything: removing a row from the table leaves the badge untouched.
@@ -68,7 +119,16 @@ Errores:
   - L4: rule_type 'weekly' no es válido (mission, season-count).
 ```
 
-The committed dataset stays empty (`{"version": 1, "awards": []}`) so no test badges reach production.
+Multi-section run:
+
+```text
+[seasons] 2 fila(s)
+[missions] 1 fila(s)
+[awards] 1 fila(s)
+Secciones: seasons, missions, awards
+```
+
+The committed dataset stays empty (`version: 2` with empty sections) so no test badges or missions reach production.
 
 ## 6. Limits
 
