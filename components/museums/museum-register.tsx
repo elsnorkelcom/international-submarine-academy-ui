@@ -16,6 +16,7 @@ export function MuseumRegister() {
   const [search, setSearch] = useState('');
   const [country, setCountry] = useState('all');
   const [propulsion, setPropulsion] = useState('all');
+  const [situation, setSituation] = useState('all');
   const [sort, setSort] = useState<SortKey>('name');
 
   const load = useCallback(async () => {
@@ -49,12 +50,18 @@ export function MuseumRegister() {
     [museums],
   );
 
+  const situations = useMemo(
+    () => Array.from(new Set(museums.map((museum) => museum.situation).filter(Boolean))).sort(),
+    [museums],
+  );
+
   const visible = useMemo(() => {
     const needle = search.trim().toLowerCase();
 
     const filtered = museums.filter((museum) => {
       if (country !== 'all' && museum.country !== country) return false;
       if (propulsion !== 'all' && museum.propulsion !== propulsion) return false;
+      if (situation !== 'all' && museum.situation !== situation) return false;
       if (!needle) return true;
 
       return [museum.name.en, museum.museumName.en, museum.city, museum.country, museum.vesselType]
@@ -69,7 +76,7 @@ export function MuseumRegister() {
       if (sort === 'country') return left.country.localeCompare(right.country);
       return left.name.en.localeCompare(right.name.en);
     });
-  }, [museums, search, country, propulsion, sort]);
+  }, [museums, search, country, propulsion, situation, sort]);
 
   return (
     <div>
@@ -83,7 +90,7 @@ export function MuseumRegister() {
 
       <section
         aria-label={t.register.search}
-        className="mt-8 grid gap-3 border-y border-white/10 py-4 sm:grid-cols-2 lg:grid-cols-4"
+        className="mt-8 grid gap-3 border-y border-white/10 py-4 sm:grid-cols-2 lg:grid-cols-5"
       >
         <label className="flex flex-col gap-1.5">
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-metal">
@@ -112,6 +119,17 @@ export function MuseumRegister() {
           onChange={setPropulsion}
           options={propulsions.map((value) => ({ value, label: value }))}
           allLabel={t.register.allPropulsion}
+        />
+
+        <SelectField
+          label={t.register.situation}
+          value={situation}
+          onChange={setSituation}
+          options={situations.map((value) => ({
+            value,
+            label: t.situation[value as keyof typeof t.situation] ?? value,
+          }))}
+          allLabel={t.register.allSituations}
         />
 
         <SelectField
@@ -161,7 +179,7 @@ export function MuseumRegister() {
                 className="group grid grid-cols-[auto_1fr] items-center gap-x-4 gap-y-1 px-1 py-3 transition hover:bg-white/[0.03] sm:grid-cols-[auto_minmax(0,1.4fr)_minmax(0,1fr)_auto]"
               >
                 <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">
-                  {museum.id.replace('MUS-', '')}
+                  {museum.dossier || museum.id.replace('MUS-', '')}
                 </span>
 
                 <span className="min-w-0">

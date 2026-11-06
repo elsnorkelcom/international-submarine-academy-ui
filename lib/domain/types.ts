@@ -133,6 +133,11 @@ export interface Museum extends EntityBase {
   address: string;
   mediaUrl: string;
   validation: ValidationStatus;
+  /** Archive code from the reference dataset, e.g. SNK-012. */
+  dossier: string;
+  /** Museum situation key: flote, agua, tierra, cerrado, monumento. */
+  situation: string;
+  featured: boolean;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -95,7 +95,7 @@ export function MuseumFile({ id }: { id: string }) {
 
       <header className="mt-5 max-w-3xl">
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">
-          {t.file.eyebrow} · {museum.id}
+          {t.file.eyebrow} · {museum.dossier || museum.id}
         </p>
         <h1 className="mt-3 font-display text-4xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-5xl">
           {localize(museum.name, language)}
@@ -119,6 +119,10 @@ export function MuseumFile({ id }: { id: string }) {
         <Meta label={t.file.location} value={[museum.city, museum.country].filter(Boolean).join(', ')} />
         <Meta label={t.file.vessel} value={museum.vesselType} />
         <Meta label={t.file.propulsion} value={museum.propulsion} />
+        <Meta
+          label={t.file.situation}
+          value={museum.situation ? (t.situation[museum.situation as keyof typeof t.situation] ?? museum.situation) : ''}
+        />
         <Meta label={t.file.origin} value={museum.origin} />
         <Meta label={t.file.launched} value={museum.launchYear ? String(museum.launchYear) : ''} />
         <Meta label={t.file.source} value={museum.source} />

@@ -241,6 +241,9 @@ interface MuseumDatasetRecord {
   source: string;
   notes: string;
   description: { en: string; es: string };
+  dossier?: string;
+  situation?: string;
+  featured?: boolean;
 }
 
 const MUSEUM_DATASET = museumsDataset as MuseumDatasetRecord[];
@@ -268,6 +271,9 @@ export const SEED_MUSEUMS: Museum[] = MUSEUM_DATASET.map((record) => ({
   address: record.address,
   mediaUrl: record.mediaUrl,
   validation: record.validation,
+  dossier: record.dossier ?? '',
+  situation: record.situation ?? '',
+  featured: record.featured ?? false,
 }));
 
 export const SEED_COMPARTMENTS: Compartment[] = [

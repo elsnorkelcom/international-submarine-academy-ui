@@ -15,8 +15,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-001",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Bundeswehr Military History Museum. Vessel type: Military submarine. Origin: German Confederation. Launched: 1850. Address: Olbrichtpl. 2, 01099 Dresden, Germany.",
    "es": "Museo: Bundeswehr Military History Museum. Tipo de buque: Military submarine. Origen: German Confederation. Botado: 1850. Dirección: Olbrichtpl. 2, 01099 Dresden, Germany."
@@ -38,8 +41,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-002",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Erlebnsiwelt U-Boot. Vessel type: Oberon class. Origin: United Kingdom. Launched: 1961. Address: Hafenstraße 18, 18546 Sassnitz, Germany.",
    "es": "Museo: Erlebnsiwelt U-Boot. Tipo de buque: Oberon class. Origen: United Kingdom. Botado: 1961. Dirección: Hafenstraße 18, 18546 Sassnitz, Germany."
@@ -61,8 +67,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-003",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: U-Boot Museum Hamburg. Vessel type: Tango class. Origin: Rusia. Launched: 1970. Address: St. Pauli Fischmarkt 10, 20359 Hamburg, Alemania.",
    "es": "Museo: U-Boot Museum Hamburg. Tipo de buque: Tango class. Origen: Rusia. Botado: 1970. Dirección: St. Pauli Fischmarkt 10, 20359 Hamburg, Alemania."
@@ -84,8 +93,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-004",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Deutsches Museum. Vessel type: U-boat. Origin: German Empire. Launched: 1906. Address: Museumsinsel 1, 80538 München, Germany.",
    "es": "Museo: Deutsches Museum. Tipo de buque: U-boat. Origen: German Empire. Botado: 1906. Dirección: Museumsinsel 1, 80538 München, Germany."
@@ -107,8 +119,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=j92l0-nPt9g",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-005",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Deutsches Marinemuseum. Vessel type: Type 205. Origin: Alemania. Launched: 1967. Address: Südstrand 125, 26382 Wilhelmshaven, Germany.",
    "es": "Museo: Deutsches Marinemuseum. Tipo de buque: Type 205. Origen: Alemania. Botado: 1967. Dirección: Südstrand 125, 26382 Wilhelmshaven, Germany."
@@ -130,8 +145,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=CDFZA5aSPSU",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-006",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: U-Boot Museum. Vessel type: Type 205. Origin: Alemania. Launched: 1968. Address: St. Pauli Fischmarkt 10, 20359 Hamburg, Germany.",
    "es": "Museo: U-Boot Museum. Tipo de buque: Type 205. Origen: Alemania. Botado: 1968. Dirección: St. Pauli Fischmarkt 10, 20359 Hamburg, Germany."
@@ -153,8 +171,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-007",
+  "situation": "",
+  "featured": true,
   "description": {
    "en": "Museum: Deutsches Schiffahrtsmuseum. Vessel type: Type XXI. Origin: Alemania. Launched: 1945. Address: Hans-Scharoun-Platz 1, 27568 Bremerhaven, Germany.",
    "es": "Museo: Deutsches Schiffahrtsmuseum. Tipo de buque: Type XXI. Origen: Alemania. Botado: 1945. Dirección: Hans-Scharoun-Platz 1, 27568 Bremerhaven, Germany."
@@ -176,8 +197,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=epEaui9HQkI",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-008",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: U-Bootmuseum Hamburg. Vessel type: Tango class. Origin: Soviet Union. Launched: 1976. Address: St. Pauli Fischmarkt 10, 20359 Hamburg, Germany.",
    "es": "Museo: U-Bootmuseum Hamburg. Tipo de buque: Tango class. Origen: Soviet Union. Botado: 1976. Dirección: St. Pauli Fischmarkt 10, 20359 Hamburg, Germany."
@@ -199,8 +223,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=QAefC7OEBEk",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-009",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museum Peenemünde. Vessel type: Juliett class. Origin: Soviet Union. Launched: 1962. Address: Peenemünde, Germany.",
    "es": "Museo: Museum Peenemünde. Tipo de buque: Juliett class. Origen: Soviet Union. Botado: 1962. Dirección: Peenemünde, Germany."
@@ -222,8 +249,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-010",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Technik Museum Speyer. Vessel type: Type 205. Origin: Alemania. Launched: 1966. Address: Am Technik Museum 1, 67346 Speyer, Germany.",
    "es": "Museo: Technik Museum Speyer. Tipo de buque: Type 205. Origen: Alemania. Botado: 1966. Dirección: Am Technik Museum 1, 67346 Speyer, Germany."
@@ -245,8 +275,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=rGMWF3EZlPw",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-011",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Laboe Naval Memorial. Vessel type: Type VIIC/41. Origin: Alemania. Launched: 1943. Address: Strandstraße 92, 24235 Laboe, Germany.",
    "es": "Museo: Laboe Naval Memorial. Tipo de buque: Type VIIC/41. Origen: Alemania. Botado: 1943. Dirección: Strandstraße 92, 24235 Laboe, Germany."
@@ -268,8 +301,11 @@
   "website": "https://www.elsnorkel.com/2020/12/submarino-museo-tipo-oberon-hmas-onslow.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-012",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: Australian National Maritime Museum. Vessel type: Oberon class. Origin: Australia. Launched: 1968. Address: 2 Murray St, Sydney NSW 2000, Australia.",
    "es": "Museo: Australian National Maritime Museum. Tipo de buque: Oberon class. Origen: Australia. Botado: 1968. Dirección: 2 Murray St, Sydney NSW 2000, Australia."
@@ -291,8 +327,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=m_1hvL6HcZA",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-013",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Holbrook Submarine Museum. Vessel type: Oberon class. Origin: Australia. Launched: 1966. Address: 15 Wallace St, Holbrook NSW 2644, Australia.",
    "es": "Museo: Holbrook Submarine Museum. Tipo de buque: Oberon class. Origen: Australia. Botado: 1966. Dirección: 15 Wallace St, Holbrook NSW 2644, Australia."
@@ -314,8 +353,11 @@
   "website": "https://www.elsnorkel.com/2015/03/museo-submarino-hmas-ovens-australia.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-014",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Western Australian Maritime Museum. Vessel type: Oberon class. Origin: Australia. Launched: 1967. Address: Victoria Quay Road, Fremantle WA 6160, Austrália.",
    "es": "Museo: Western Australian Maritime Museum. Tipo de buque: Oberon class. Origen: Australia. Botado: 1967. Dirección: Victoria Quay Road, Fremantle WA 6160, Austrália."
@@ -337,8 +379,11 @@
   "website": "https://www.elsnorkel.com/2003/12/submarino-museo-riachuelo_06.html",
   "mediaUrl": "https://www.youtube.com/watch?v=MW3wG2AheRY",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-015",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: Espaço Cultural da Marinha. Vessel type: Oberon class. Origin: United Kingdom. Address: Av. Alfred Agache, S/N - Centro, Rio de Janeiro - RJ, 20021-000, Brazil.",
    "es": "Museo: Espaço Cultural da Marinha. Tipo de buque: Oberon class. Origen: United Kingdom. Dirección: Av. Alfred Agache, S/N - Centro, Rio de Janeiro - RJ, 20021-000, Brazil."
@@ -360,8 +405,11 @@
   "website": "https://www.elsnorkel.com/2019/12/la-desaparecida-fuerza-de-submarinos-tendra-su-Submarino-Museo..html",
   "mediaUrl": "https://www.youtube.com/watch?v=eZlotC-LWJg",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-016",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Museum of Glass. Vessel type: Clase OTAN - \"Romeo\". Origin: Rusia. Launched: 1959. Address: 9004 32, 9178 Beloslav, Bulgaria.",
    "es": "Museo: Museum of Glass. Tipo de buque: Clase OTAN - \"Romeo\". Origen: Rusia. Botado: 1959. Dirección: 9004 32, 9178 Beloslav, Bulgaria."
@@ -383,8 +431,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-017",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Vancouver Maritime Museum. Vessel type: Research submersible. Origin: British Columbia. Address: 1905 Ogden Ave, Vancouver, BC V6J 1A3, Canada.",
    "es": "Museo: Vancouver Maritime Museum. Tipo de buque: Research submersible. Origen: British Columbia. Dirección: 1905 Ogden Ave, Vancouver, BC V6J 1A3, Canada."
@@ -406,8 +457,11 @@
   "website": "http://www.hmcsojibwa.ca/ http://www.hmcsojibwamuseum.ca/",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-018",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Elgin Military Museum. Vessel type: Oberon class. Origin: Ontario. Launched: 1962. Address: 3 Pitt Street, Port Burwell, ON - 3 Pitt Street, Port Burwell, ON, Canada.",
    "es": "Museo: Elgin Military Museum. Tipo de buque: Oberon class. Origen: Ontario. Botado: 1962. Dirección: 3 Pitt Street, Port Burwell, ON - 3 Pitt Street, Port Burwell, ON, Canada."
@@ -429,8 +483,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=GL_DefSZawE",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-019",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Site historique maritime de la Pointe-au-Père. Vessel type: Oberon class. Origin: Quebec. Address: 1000 Rue du Phare, Rimouski, QC G5M 1L8, Canada.",
    "es": "Museo: Site historique maritime de la Pointe-au-Père. Tipo de buque: Oberon class. Origen: Quebec. Dirección: 1000 Rue du Phare, Rimouski, QC G5M 1L8, Canada."
@@ -452,8 +509,11 @@
   "website": "https://www.ccm-valdivia.cl/webccm/index.php/quienes-somos/museo-submarino-obrien",
   "mediaUrl": "https://www.youtube.com/watch?v=TOia_QNwQWg",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-020",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Submarino O’Brien. Vessel type: Oberon class. Origin: United Kingdom. Launched: 1972. Address: Av. Arturo Prat 2-20, Valdivia, Los Ríos, Chile.",
    "es": "Museo: Museo Submarino O’Brien. Tipo de buque: Oberon class. Origen: United Kingdom. Botado: 1972. Dirección: Av. Arturo Prat 2-20, Valdivia, Los Ríos, Chile."
@@ -475,8 +535,11 @@
   "website": "http://www.qtmuseum.com/about/cgqt033xd86.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-021",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Lvshun Submarine Museum. Vessel type: Type 033. Origin: China. Launched: 1982. Address: China, Liaoning, Dalian, Lüshunkou District, 966, Huangjin St, 966号旅顺黄金山海滨浴场 邮政编码: 116041.",
    "es": "Museo: Lvshun Submarine Museum. Tipo de buque: Type 033. Origen: China. Botado: 1982. Dirección: China, Liaoning, Dalian, Lüshunkou District, 966, Huangjin St, 966号旅顺黄金山海滨浴场 邮政编码: 116041."
@@ -498,8 +561,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-022",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Nikola Tesla Technical Museum. Vessel type: CB class. Origin: Italy. Address: 18 Savska Street, Zagreb, Croatia.",
    "es": "Museo: Nikola Tesla Technical Museum. Tipo de buque: CB class. Origen: Italy. Dirección: 18 Savska Street, Zagreb, Croatia."
@@ -521,8 +587,11 @@
   "website": "https://www.youtube.com/watch?v=v8NpreGO0lo",
   "mediaUrl": "https://www.youtube.com/watch?v=v8NpreGO0lo",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-023",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Danish Naval Museum. Vessel type: Kobben class 207.1. Origin: Denmark. Launched: 1965. Address: Søkvæsthuset, Søkvæsthuset, Overgaden Oven Vandet 58, 1407 København, Denmark.",
    "es": "Museo: Royal Danish Naval Museum. Tipo de buque: Kobben class 207.1. Origen: Denmark. Botado: 1965. Dirección: Søkvæsthuset, Søkvæsthuset, Overgaden Oven Vandet 58, 1407 København, Denmark."
@@ -544,8 +613,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-024",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Langelandsfort. Vessel type: Kobben class. Origin: Denmark. Launched: 1964. Address: Vognsbjergvej 4B, 5935 Bagenkop, Denmark.",
    "es": "Museo: Langelandsfort. Tipo de buque: Kobben class. Origen: Denmark. Botado: 1964. Dirección: Vognsbjergvej 4B, 5935 Bagenkop, Denmark."
@@ -567,8 +639,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-025",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Aalborg Maritime Museum. Vessel type: Delfinen class. Origin: Denmark. Launched: 1963. Address: Aalborg, Denmark.",
    "es": "Museo: Aalborg Maritime Museum. Tipo de buque: Delfinen class. Origen: Denmark. Botado: 1963. Dirección: Aalborg, Denmark."
@@ -590,8 +665,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-026",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Sea War Museum Jutland. Vessel type: E class. Origin: United Kingdom. Launched: 1916. Address: Kystcentervej 11, 7680 Thyborøn, Denmark.",
    "es": "Museo: Sea War Museum Jutland. Tipo de buque: E class. Origen: United Kingdom. Botado: 1916. Dirección: Kystcentervej 11, 7680 Thyborøn, Denmark."
@@ -613,8 +691,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-027",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo del Mar y de la Sal. Vessel type: Daphné class. Origin: Spain. Launched: 1972. Address: C. Patricio Perez, 10, 03181 Torrevieja, Alicante, Spain.",
    "es": "Museo: Museo del Mar y de la Sal. Tipo de buque: Daphné class. Origen: Spain. Botado: 1972. Dirección: C. Patricio Perez, 10, 03181 Torrevieja, Alicante, Spain."
@@ -636,8 +717,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-028",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Cartagena Naval Museum. Vessel type: Peral class. Origin: Spain. Launched: 1889. Address: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain.",
    "es": "Museo: Cartagena Naval Museum. Tipo de buque: Peral class. Origen: Spain. Botado: 1889. Dirección: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain."
@@ -659,8 +743,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-029",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Mahon Naval Station. Vessel type: Romeo class. Origin: Bulgaria. Launched: 1960. Address: Mahón, Balearic Islands, Spain.",
    "es": "Museo: Mahon Naval Station. Tipo de buque: Romeo class. Origen: Bulgaria. Botado: 1960. Dirección: Mahón, Balearic Islands, Spain."
@@ -682,8 +769,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-030",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Cartagena. Vessel type: Foca class. Origin: Spain. Launched: 1963. Address: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain.",
    "es": "Museo: Museo Naval de Cartagena. Tipo de buque: Foca class. Origen: Spain. Botado: 1963. Dirección: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain."
@@ -705,8 +795,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-031",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: CosmoCaixa. Vessel type: Foca class. Origin: Spain. Launched: 1963. Address: C/ d'Isaac Newton, 26, Sarrià-Sant Gervasi, 08022 Barcelona, Spain.",
    "es": "Museo: CosmoCaixa. Tipo de buque: Foca class. Origen: Spain. Botado: 1963. Dirección: C/ d'Isaac Newton, 26, Sarrià-Sant Gervasi, 08022 Barcelona, Spain."
@@ -728,8 +821,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-032",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Cartagena. Vessel type: Tiburón class. Origin: Spain. Launched: 1966. Address: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain.",
    "es": "Museo: Museo Naval de Cartagena. Tipo de buque: Tiburón class. Origen: Spain. Botado: 1966. Dirección: P.º Alfonso XII, s/n, 30201 Cartagena, Murcia, Spain."
@@ -751,8 +847,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=sAK5Dyf23g8",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-033",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Estonian Maritime Museum. Vessel type: Kalev class. Origin: Estonia. Launched: 1936. Address: Vesilennuki 1, 10415 Tallinn, Estonia.",
    "es": "Museo: Estonian Maritime Museum. Tipo de buque: Kalev class. Origen: Estonia. Botado: 1936. Dirección: Vesilennuki 1, 10415 Tallinn, Estonia."
@@ -774,8 +873,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-034",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Technical museum. Vessel type: Coastal submarine. Origin: Finland. Launched: 1933. Address: Museo Militar de Finlandia.",
    "es": "Museo: Technical museum. Tipo de buque: Coastal submarine. Origen: Finland. Botado: 1933. Dirección: Museo Militar de Finlandia."
@@ -797,8 +899,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-035",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: COMEX à Marseille. Vessel type: Naïade class. Origin: France. Launched: 1904. Address: 36 Bd de l'Océan, 13009 Marseille, Francia.",
    "es": "Museo: COMEX à Marseille. Tipo de buque: Naïade class. Origen: France. Botado: 1904. Dirección: 36 Bd de l'Océan, 13009 Marseille, Francia."
@@ -820,8 +925,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-036",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Cité des Sciences et de l'Industrie. Vessel type: Aréthuse class. Origin: France. Launched: 1958. Address: 30 Av. Corentin Cariou, 75019 Paris, France.",
    "es": "Museo: Cité des Sciences et de l'Industrie. Tipo de buque: Aréthuse class. Origen: France. Botado: 1958. Dirección: 30 Av. Corentin Cariou, 75019 Paris, France."
@@ -843,8 +951,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-037",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Saint-Nazaire submarine base. Vessel type: Narval class. Origin: France. Launched: 1960. Address: 9 Bd de la Légion d'Honneur, 44600 Saint-Nazaire, France.",
    "es": "Museo: Saint-Nazaire submarine base. Tipo de buque: Narval class. Origen: France. Botado: 1960. Dirección: 9 Bd de la Légion d'Honneur, 44600 Saint-Nazaire, France."
@@ -866,8 +977,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-038",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Submarine Museum of Lorient. Vessel type: Daphné class. Origin: France. Launched: 1964. Address: Tour Davis - Base de Sous Marins de Keroman, 56100 Lorient, France.",
    "es": "Museo: Submarine Museum of Lorient. Tipo de buque: Daphné class. Origen: France. Botado: 1964. Dirección: Tour Davis - Base de Sous Marins de Keroman, 56100 Lorient, France."
@@ -889,8 +1003,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-039",
+  "situation": "",
+  "featured": true,
   "description": {
    "en": "Museum: Cité de la Mer. Vessel type: Redoutable class. Origin: France. Launched: 1967. Address: All. du Président Menut, 50100 Cherbourg-en-Cotentin, France.",
    "es": "Museo: Cité de la Mer. Tipo de buque: Redoutable class. Origen: France. Botado: 1967. Dirección: All. du Président Menut, 50100 Cherbourg-en-Cotentin, France."
@@ -912,8 +1029,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-040",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: RK Beach. Vessel type: Kalvari class. Origin: India. Launched: 1969. Address: Ramakrishna Beach, Visakhapatnam, Andhra Pradesh, India.",
    "es": "Museo: RK Beach. Tipo de buque: Kalvari class. Origen: India. Botado: 1969. Dirección: Ramakrishna Beach, Visakhapatnam, Andhra Pradesh, India."
@@ -935,8 +1055,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-041",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Indonesian Navy Submarine Monument. Vessel type: Whiskey class. Origin: Indonesia. Launched: 1955. Address: Indonesia.",
    "es": "Museo: Indonesian Navy Submarine Monument. Tipo de buque: Whiskey class. Origen: Indonesia. Botado: 1955. Dirección: Indonesia."
@@ -958,8 +1081,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-042",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Clandestine Immigration and Naval Museum. Vessel type: T class. Origin: Israel. Launched: 1943. Address: Derech Allenby 204, Haifa, Israel.",
    "es": "Museo: Clandestine Immigration and Naval Museum. Tipo de buque: T class. Origen: Israel. Botado: 1943. Dirección: Derech Allenby 204, Haifa, Israel."
@@ -981,8 +1107,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-043",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Clandestine Immigration and Naval Museum. Vessel type: Gal class. Origin: Israel. Launched: 1975. Address: Derech Allenby 204, Haifa, Israel.",
    "es": "Museo: Clandestine Immigration and Naval Museum. Tipo de buque: Gal class. Origen: Israel. Botado: 1975. Dirección: Derech Allenby 204, Haifa, Israel."
@@ -1004,8 +1133,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-044",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Parco del Valentino. Vessel type: Barbarigo class. Origin: Kingdom of Italy. Launched: 1918. Address: Parco del Valentino, Corso Massimo d'Azeglio, 10126 Torino TO, Italy.",
    "es": "Museo: Parco del Valentino. Tipo de buque: Barbarigo class. Origen: Kingdom of Italy. Botado: 1918. Dirección: Parco del Valentino, Corso Massimo d'Azeglio, 10126 Torino TO, Italy."
@@ -1027,8 +1159,11 @@
   "website": "https://www.elsnorkel.com/2010/04/museo-submarino-enrico-toti-italia.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-045",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Nazionale della Scienza e della Tecnologia. Vessel type: Toti class. Origin: Italy. Launched: 1967. Address: Via San Vittore, 21, 20123 Milano MI, Italy.",
    "es": "Museo: Museo Nazionale della Scienza e della Tecnologia. Tipo de buque: Toti class. Origen: Italy. Botado: 1967. Dirección: Via San Vittore, 21, 20123 Milano MI, Italy."
@@ -1050,8 +1185,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-046",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Galata - Museo del mare. Vessel type: Sauro class. Origin: Italy. Launched: 1976. Address: Calata Ansaldo De Mari, 1, 16126 Genova GE, Italy.",
    "es": "Museo: Galata - Museo del mare. Tipo de buque: Sauro class. Origen: Italy. Botado: 1976. Dirección: Calata Ansaldo De Mari, 1, 16126 Genova GE, Italy."
@@ -1073,8 +1211,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-047",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Japan Maritime Self-Defense Force (JMSDF) Kure Museum. Vessel type: Type A Kō-hyōteki class. Origin: Empire of Japan. Launched: 1938. Address: Japón, 〒737-0029 Hiroshima, Kure, Takaramachi, 5−32 海上自衛隊呉史料館.",
    "es": "Museo: Japan Maritime Self-Defense Force (JMSDF) Kure Museum. Tipo de buque: Type A Kō-hyōteki class. Origen: Empire of Japan. Botado: 1938. Dirección: Japón, 〒737-0029 Hiroshima, Kure, Takaramachi, 5−32 海上自衛隊呉史料館."
@@ -1096,8 +1237,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-048",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Kure Maritime Museum. Vessel type: Yushio class. Origin: Japan. Launched: 1985. Address: 5-20 Takaramachi, Kure, Hiroshima 737-0029, Japan.",
    "es": "Museo: Kure Maritime Museum. Tipo de buque: Yushio class. Origen: Japan. Botado: 1985. Dirección: 5-20 Takaramachi, Kure, Hiroshima 737-0029, Japan."
@@ -1119,8 +1263,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-049",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Malacca Submarine Museum. Vessel type: Agosta class. Origin: Malaysia. Launched: 1976. Address: Jalan Klebang Besar/Klebang Kecil, 75200 Melaka, Malasia.",
    "es": "Museo: Malacca Submarine Museum. Tipo de buque: Agosta class. Origen: Malaysia. Botado: 1976. Dirección: Jalan Klebang Besar/Klebang Kecil, 75200 Melaka, Malasia."
@@ -1142,8 +1289,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-050",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Tongil (Unification) Park near Gangneung. Vessel type: Tiburón class. Origin: Spain. Launched: 1966. Address: Gangneung Unification Park, 1715-38 Yulgok-ro, Gangdong-myeon, Gangneung, Gangwon-do, South Korea.",
    "es": "Museo: Tongil (Unification) Park near Gangneung. Tipo de buque: Tiburón class. Origen: Spain. Botado: 1966. Dirección: Gangneung Unification Park, 1715-38 Yulgok-ro, Gangdong-myeon, Gangneung, Gangwon-do, South Korea."
@@ -1165,8 +1315,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-051",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Norwegian Navy Museum. Vessel type: Kobben class. Origin: Norway. Launched: 1965. Address: Kommandørkaptein Klincks vei 9, 3183 Horten, Norway.",
    "es": "Museo: Royal Norwegian Navy Museum. Tipo de buque: Kobben class. Origen: Norway. Botado: 1965. Dirección: Kommandørkaptein Klincks vei 9, 3183 Horten, Norway."
@@ -1188,8 +1341,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=7_PLkoRtCgA",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-052",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Dutch Navy Museum. Vessel type: Dolfijn class. Origin: Netherlands. Launched: 1965. Address: Hoofdgracht 3, 1781 AA Den Helder, Netherlands.",
    "es": "Museo: Dutch Navy Museum. Tipo de buque: Dolfijn class. Origen: Netherlands. Botado: 1965. Dirección: Hoofdgracht 3, 1781 AA Den Helder, Netherlands."
@@ -1211,8 +1367,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-053",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Pakistan Maritime Museum. Vessel type: Daphné class. Origin: Pakistan. Launched: 1968. Address: V3PQ+7X5 Habib Ibrahim, Rehmatullah Road, Karsaz Faisal Cantonment, Karachi, Karachi City, Sindh, Pakistan.",
    "es": "Museo: Pakistan Maritime Museum. Tipo de buque: Daphné class. Origen: Pakistan. Botado: 1968. Dirección: V3PQ+7X5 Habib Ibrahim, Rehmatullah Road, Karsaz Faisal Cantonment, Karachi, Karachi City, Sindh, Pakistan."
@@ -1234,8 +1393,11 @@
   "website": "https://www.elsnorkel.com/2017/01/Submarino-Museo-BAP-Abtao-SS-42-Callao-Peru.html",
   "mediaUrl": "https://www.youtube.com/watch?v=D4-JeWuErfw",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-054",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Abtao del Callao. Vessel type: Abtao class. Origin: Peru. Launched: 1953. Address: Jorge Chavez 120-A, Callao 07021, Perú.",
    "es": "Museo: Museo Abtao del Callao. Tipo de buque: Abtao class. Origen: Peru. Botado: 1953. Dirección: Jorge Chavez 120-A, Callao 07021, Perú."
@@ -1257,8 +1419,11 @@
   "website": "https://www.elsnorkel.com/2024/05/inauguracion-del-submarino-museo-pnr-barracuda-s164.html",
   "mediaUrl": "https://www.youtube.com/watch?v=XCyVW_nlvMA",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-055",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Museu de Marinha. Vessel type: Daphné class. Origin: France. Launched: 1968. Address: Av. Aliança Povo M.F.A 15, 2800-270 Almada, Portugal.",
    "es": "Museo: Museu de Marinha. Tipo de buque: Daphné class. Origen: France. Botado: 1968. Dirección: Av. Aliança Povo M.F.A 15, 2800-270 Almada, Portugal."
@@ -1280,8 +1445,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-056",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: Biber. Origin: Alemania. Launched: 1945. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: Biber. Origen: Alemania. Botado: 1945. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1303,8 +1471,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-057",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Imperial War Museum. Vessel type: Biber. Origin: Alemania. Launched: 1944. Address: Lambeth Rd, London SE1 6HZ, Reino Unido.",
    "es": "Museo: Imperial War Museum. Tipo de buque: Biber. Origen: Alemania. Botado: 1944. Dirección: Lambeth Rd, London SE1 6HZ, Reino Unido."
@@ -1326,8 +1497,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-058",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: Amphion class. Origin: United Kingdom. Launched: 1945. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: Amphion class. Origen: United Kingdom. Botado: 1945. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1349,8 +1523,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-059",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Devonport Naval Heritage Centre. Vessel type: Churchill class. Origin: United Kingdom. Launched: 1970. Address: Vivid Approach, Off Granby Wy., Devonport, Plymouth PL1 4RW, UK.",
    "es": "Museo: Devonport Naval Heritage Centre. Tipo de buque: Churchill class. Origen: United Kingdom. Botado: 1970. Dirección: Vivid Approach, Off Granby Wy., Devonport, Plymouth PL1 4RW, UK."
@@ -1372,8 +1549,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-060",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: E class. Origin: United Kingdom. Launched: 1915. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: E class. Origen: United Kingdom. Botado: 1915. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1395,8 +1575,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-061",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: Holland class. Origin: United Kingdom. Launched: 1901. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: Holland class. Origen: United Kingdom. Botado: 1901. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1418,8 +1601,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-062",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Chatham Historic Dockyard. Vessel type: Oberon class. Origin: United Kingdom. Launched: 1962. Address: The Historic Dockyard, Chatham, UK.",
    "es": "Museo: Chatham Historic Dockyard. Tipo de buque: Oberon class. Origen: United Kingdom. Botado: 1962. Dirección: The Historic Dockyard, Chatham, UK."
@@ -1441,8 +1627,11 @@
   "website": "https://www.elsnorkel.com/2024/06/operacion-gambit-el-submarino-x-25.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-063",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: X class. Origin: United Kingdom. Launched: 1943. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: X class. Origen: United Kingdom. Botado: 1943. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1464,8 +1653,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-064",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Scottish Submarine Center. Vessel type: Stickleback class. Origin: United Kingdom. Launched: 1954. Address: Scotland, UK.",
    "es": "Museo: Scottish Submarine Center. Tipo de buque: Stickleback class. Origen: United Kingdom. Botado: 1954. Dirección: Scotland, UK."
@@ -1487,8 +1679,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-065",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: The Historic Dockyard Chatham. Vessel type: XE class. Origin: United Kingdom. Launched: 1944. Address: The Historic Dockyard, Chatham, UK.",
    "es": "Museo: The Historic Dockyard Chatham. Tipo de buque: XE class. Origen: United Kingdom. Botado: 1944. Dirección: The Historic Dockyard, Chatham, UK."
@@ -1510,8 +1705,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-066",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Royal Navy Submarine Museum. Vessel type: DSRV. Origin: United Kingdom. Launched: 1990. Address: Haslar, Jetty Road, Gosport PO12 2AS, UK.",
    "es": "Museo: Royal Navy Submarine Museum. Tipo de buque: DSRV. Origen: United Kingdom. Botado: 1990. Dirección: Haslar, Jetty Road, Gosport PO12 2AS, UK."
@@ -1533,8 +1731,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-067",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: River Medway. Vessel type: Foxtrot class. Origin: Soviet Union. Launched: 1966. Address: River Medway, United Kingdom.",
    "es": "Museo: River Medway. Tipo de buque: Foxtrot class. Origen: Soviet Union. Botado: 1966. Dirección: River Medway, United Kingdom."
@@ -1556,8 +1757,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-068",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: U-boat Story. Vessel type: Type IXC/40. Origin: Alemania. Launched: 1941. Address: Woodside Ferry Terminal, Birkenhead CH41 6DU, UK.",
    "es": "Museo: U-boat Story. Tipo de buque: Type IXC/40. Origen: Alemania. Botado: 1941. Dirección: Woodside Ferry Terminal, Birkenhead CH41 6DU, UK."
@@ -1579,8 +1783,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-069",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museum of Russian Submarine Forces. Vessel type: Northwestern. Origin: Rusia. Launched: 1964. Address: Kondrat'yevskiy Prospekt, 83, Sankt-Peterburg, Russia, 195271.",
    "es": "Museo: Museum of Russian Submarine Forces. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1964. Dirección: Kondrat'yevskiy Prospekt, 83, Sankt-Peterburg, Russia, 195271."
@@ -1602,8 +1809,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-070",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: History of Equipment Park Complex. Vessel type: Volga. Origin: Rusia. Launched: 1980. Address: Yuzhnoye Shosse, 137, Tolyatti, Samara Oblast, Rusia, 445032.",
    "es": "Museo: History of Equipment Park Complex. Tipo de buque: Volga. Origen: Rusia. Botado: 1980. Dirección: Yuzhnoye Shosse, 137, Tolyatti, Samara Oblast, Rusia, 445032."
@@ -1625,8 +1835,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-071",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Muzey Istorii Voyenno-Morskogo Flota Rossii. Vessel type: Central. Origin: Rusia. Launched: 1980. Address: Ulitsa Svobody, 56, Moscow, Rusia, 125364.",
    "es": "Museo: Muzey Istorii Voyenno-Morskogo Flota Rossii. Tipo de buque: Central. Origen: Rusia. Botado: 1980. Dirección: Ulitsa Svobody, 56, Moscow, Rusia, 125364."
@@ -1648,8 +1861,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=erq5ljceZPk",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-072",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museum of the World Oceans. Vessel type: Northwestern. Origin: Rusia. Launched: 1968. Address: Naberezhnaya Petra Velikogo, 1, Kaliningrad, Kaliningrad Oblast, Rusia, 236006.",
    "es": "Museo: Museum of the World Oceans. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1968. Dirección: Naberezhnaya Petra Velikogo, 1, Kaliningrad, Kaliningrad Oblast, Rusia, 236006."
@@ -1671,8 +1887,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-073",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: B-440 Submarine Museum. Vessel type: Northwestern. Origin: Rusia. Launched: 1970. Address: Komsomolskaya St., 15, Vytegra 162900 Russia.",
    "es": "Museo: B-440 Submarine Museum. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1970. Dirección: Komsomolskaya St., 15, Vytegra 162900 Russia."
@@ -1694,8 +1913,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-074",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Central Naval Museum. Vessel type: Northwestern. Origin: Rusia. Launched: 1929. Address: Bol'shaya Morskaya Ulitsa, 69А, Sankt-Peterburg, Russia, 190000.",
    "es": "Museo: Central Naval Museum. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1929. Dirección: Bol'shaya Morskaya Ulitsa, 69А, Sankt-Peterburg, Russia, 190000."
@@ -1717,8 +1939,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-075",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Central Naval Museum. Vessel type: Northwestern. Origin: Rusia. Launched: 1881. Address: Bol'shaya Morskaya Ulitsa, 69А, Sankt-Peterburg, Russia, 190000.",
    "es": "Museo: Central Naval Museum. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1881. Dirección: Bol'shaya Morskaya Ulitsa, 69А, Sankt-Peterburg, Russia, 190000."
@@ -1740,8 +1965,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-076",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Northern Fleet Naval Museum. Vessel type: Northwestern. Origin: Rusia. Launched: 1939. Address: Ploshchad' Muzhestva, 3, Severomorsk, Murmansk Oblast, Rusia, 184604.",
    "es": "Museo: Northern Fleet Naval Museum. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1939. Dirección: Ploshchad' Muzhestva, 3, Severomorsk, Murmansk Oblast, Rusia, 184604."
@@ -1763,8 +1991,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=QxythmbckqA",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-077",
+  "situation": "",
+  "featured": true,
   "description": {
    "en": "Museum: Museum of Naval Glory. Vessel type: Northwestern. Origin: Rusia. Launched: 1957. Address: -.",
    "es": "Museo: Museum of Naval Glory. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1957. Dirección: -."
@@ -1786,8 +2017,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-078",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Victory Park. Vessel type: Volga. Origin: Rusia. Launched: 1968. Address: Victory Park, Dallas, TX, USA.",
    "es": "Museo: Victory Park. Tipo de buque: Volga. Origen: Rusia. Botado: 1968. Dirección: Victory Park, Dallas, TX, USA."
@@ -1809,8 +2043,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-079",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Victory Park. Vessel type: Volga. Origin: Rusia. Launched: 1970. Address: Victory Park, Dallas, TX, USA.",
    "es": "Museo: Victory Park. Tipo de buque: Volga. Origen: Rusia. Botado: 1970. Dirección: Victory Park, Dallas, TX, USA."
@@ -1832,8 +2069,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-080",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Exploits of the Nuclear Fleet Memorial. Vessel type: Far Eastern. Origin: Rusia. Launched: 1978. Address: DalRAO complex in Fokino, Primorsky Krai, Russia.",
    "es": "Museo: Exploits of the Nuclear Fleet Memorial. Tipo de buque: Far Eastern. Origen: Rusia. Botado: 1978. Dirección: DalRAO complex in Fokino, Primorsky Krai, Russia."
@@ -1855,8 +2095,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-081",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Victory Park. Vessel type: Central. Origin: Rusia. Launched: 1931. Address: Victory Park, Dallas, TX, USA.",
    "es": "Museo: Victory Park. Tipo de buque: Central. Origen: Rusia. Botado: 1931. Dirección: Victory Park, Dallas, TX, USA."
@@ -1878,8 +2121,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-082",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Weapons of Victory Museum. Vessel type: Project A615 / Quebec. Origin: Rusia. Launched: 1955. Address: Ulitsa Beregovaya, 146, Krasnodar, Krasnodar Krai, Rusia, 350007.",
    "es": "Museo: Weapons of Victory Museum. Tipo de buque: Project A615 / Quebec. Origen: Rusia. Botado: 1955. Dirección: Ulitsa Beregovaya, 146, Krasnodar, Krasnodar Krai, Rusia, 350007."
@@ -1901,8 +2147,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-083",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Baltic Submariners Memorial. Vessel type: Oberon class. Origin: Brazil. Launched: 1975. Address: Flotskaya Ulitsa, St Petersburg, Rusia, 197760.",
    "es": "Museo: Baltic Submariners Memorial. Tipo de buque: Oberon class. Origen: Brazil. Botado: 1975. Dirección: Flotskaya Ulitsa, St Petersburg, Rusia, 197760."
@@ -1924,8 +2173,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-084",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: S-189 Submarine Museum. Vessel type: Northwestern. Origin: Rusia. Launched: 1953. Address: Leytenanta Shmidta embankment, 36, Sankt-Peterburg, Russia, 199034.",
    "es": "Museo: S-189 Submarine Museum. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1953. Dirección: Leytenanta Shmidta embankment, 36, Sankt-Peterburg, Russia, 199034."
@@ -1947,8 +2199,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-085",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Gremikha Naval base. Vessel type: Northwestern. Origin: Rusia. Launched: 1954. Address: Solov'ya Ulitsa, Murmanskaya oblast', Russia, 184640.",
    "es": "Museo: Gremikha Naval base. Tipo de buque: Northwestern. Origen: Rusia. Botado: 1954. Dirección: Solov'ya Ulitsa, Murmanskaya oblast', Russia, 184640."
@@ -1970,8 +2225,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-086",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: The Museum of Pacific Fleet. Vessel type: Clase S. Origin: Rusia. Launched: 1940. Address: Korabel'naya Naberezhnaya, Vladivostok, Primorsky Krai, Rusia, 690091.",
    "es": "Museo: The Museum of Pacific Fleet. Tipo de buque: Clase S. Origen: Rusia. Botado: 1940. Dirección: Korabel'naya Naberezhnaya, Vladivostok, Primorsky Krai, Rusia, 690091."
@@ -1993,8 +2251,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-087",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Memorial of Victory at Poklonnaya. Vessel type: Shchuka-class. Address: Moscow, Russia, 121096.",
    "es": "Museo: Memorial of Victory at Poklonnaya. Tipo de buque: Shchuka-class. Dirección: Moscow, Russia, 121096."
@@ -2016,8 +2277,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-088",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Pivka Park of Military History. Vessel type: Una class. Origin: Yugoslavia. Launched: 1987. Address: Kolodvorska cesta 51, 6257 Pivka, Slovenia.",
    "es": "Museo: Pivka Park of Military History. Tipo de buque: Una class. Origen: Yugoslavia. Botado: 1987. Dirección: Kolodvorska cesta 51, 6257 Pivka, Slovenia."
@@ -2039,8 +2303,11 @@
   "website": "https://www.elsnorkel.com/2024/04/avanzan-obras-submarino-museo-SAS-Assegaai-Sudafrica.html",
   "mediaUrl": "https://www.youtube.com/watch?v=MRvLjp7MJgM",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-089",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: South African Naval Museum. Vessel type: Daphné class. Origin: South Africa. Launched: 1970. Address: St George's St, Simon's Town, Cape Town, 7995, South Africa.",
    "es": "Museo: South African Naval Museum. Tipo de buque: Daphné class. Origen: South Africa. Botado: 1970. Dirección: St George's St, Simon's Town, Cape Town, 7995, South Africa."
@@ -2062,8 +2329,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-090",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Marinmuseum. Vessel type: Holland class. Origin: Sweden. Launched: 1904. Address: Stumholmen, 371 32 Karlskrona, Sweden.",
    "es": "Museo: Marinmuseum. Tipo de buque: Holland class. Origen: Sweden. Botado: 1904. Dirección: Stumholmen, 371 32 Karlskrona, Sweden."
@@ -2085,8 +2355,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-091",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Marinmuseum. Vessel type: Nacken class. Origin: Sweden. Launched: 1979. Address: Stumholmen, 371 32 Karlskrona, Sweden.",
    "es": "Museo: Marinmuseum. Tipo de buque: Nacken class. Origen: Sweden. Botado: 1979. Dirección: Stumholmen, 371 32 Karlskrona, Sweden."
@@ -2108,8 +2381,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-092",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Göteborgs Maritima Centrum. Vessel type: Draken class. Origin: Sweden. Launched: 1961. Address: Packhusplatsen 12, 411 13 Göteborg, Sweden.",
    "es": "Museo: Göteborgs Maritima Centrum. Tipo de buque: Draken class. Origen: Sweden. Botado: 1961. Dirección: Packhusplatsen 12, 411 13 Göteborg, Sweden."
@@ -2131,8 +2407,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-093",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Teknikens och sjöfartens hus. Vessel type: Kustubat. Origin: Sweden. Launched: 1942. Address: Malmöhusvägen 7A, 211 18 Malmö, Sweden.",
    "es": "Museo: Teknikens och sjöfartens hus. Tipo de buque: Kustubat. Origen: Sweden. Botado: 1942. Dirección: Malmöhusvägen 7A, 211 18 Malmö, Sweden."
@@ -2154,8 +2433,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-094",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Korea National Maritime Museum.. Vessel type: Type UB II. Origin: German Empire. Launched: 1916. Address: 45 Haeyang-ro 301beon-gil, Yeongdo-gu, Busan, South Korea.",
    "es": "Museo: Korea National Maritime Museum.. Tipo de buque: Type UB II. Origen: German Empire. Botado: 1916. Dirección: 45 Haeyang-ro 301beon-gil, Yeongdo-gu, Busan, South Korea."
@@ -2177,8 +2459,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-095",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Dardanelles Naval Museum. Vessel type: Human torpedo. Origin: USA. Address: Dardanelles Strait, Türkiye.",
    "es": "Museo: Dardanelles Naval Museum. Tipo de buque: Human torpedo. Origen: USA. Dirección: Dardanelles Strait, Türkiye."
@@ -2200,8 +2485,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-096",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Gayret Gemi Museum. Vessel type: Tang class. Origin: Turkey. Launched: 1952. Address: No:56, Kozluk, Oramiral Salim Dervişoğlu Cd., 41200 İzmit/Kocaeli, Türkiye.",
    "es": "Museo: Gayret Gemi Museum. Tipo de buque: Tang class. Origen: Turkey. Botado: 1952. Dirección: No:56, Kozluk, Oramiral Salim Dervişoğlu Cd., 41200 İzmit/Kocaeli, Türkiye."
@@ -2223,8 +2511,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-097",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: İnciraltı Sea Museum. Vessel type: Tang class. Origin: Turkey. Launched: 1951. Address: İnciraltı, Başak Sk., 35330 Balçova/İzmir, Türkiye.",
    "es": "Museo: İnciraltı Sea Museum. Tipo de buque: Tang class. Origen: Turkey. Botado: 1951. Dirección: İnciraltı, Başak Sk., 35330 Balçova/İzmir, Türkiye."
@@ -2246,8 +2537,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-098",
+  "situation": "",
+  "featured": true,
   "description": {
    "en": "Museum: Rahmi M. Koç Museum. Vessel type: Tench class. Origin: Turkey. Launched: 1944. Address: Piri Paşa, Hasköy Cd. No:5, 34445 Beyoğlu/İstanbul, Turquía.",
    "es": "Museo: Rahmi M. Koç Museum. Tipo de buque: Tench class. Origen: Turkey. Botado: 1944. Dirección: Piri Paşa, Hasköy Cd. No:5, 34445 Beyoğlu/İstanbul, Turquía."
@@ -2269,8 +2563,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-099",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: The Russian Scorpion Submarine. Vessel type: Foxtrot class. Origin: Rusia. Address: 1126 Queens Hwy, Long Beach, CA 90802, USA.",
    "es": "Museo: The Russian Scorpion Submarine. Tipo de buque: Foxtrot class. Origen: Rusia. Dirección: 1126 Queens Hwy, Long Beach, CA 90802, USA."
@@ -2292,8 +2589,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-100",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Louisiana State Museum. Vessel type: Military submarine. Origin: USA. Address: Louisiana, USA.",
    "es": "Museo: Louisiana State Museum. Tipo de buque: Military submarine. Origen: USA. Dirección: Louisiana, USA."
@@ -2315,8 +2615,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-101",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo de Mystic Seaport. Vessel type: DSRV. Origin: USA. Address: 75 Greenmanville Ave, Mystic, CT 06355, Estados Unidos.",
    "es": "Museo: Museo Marítimo de Mystic Seaport. Tipo de buque: DSRV. Origen: USA. Dirección: 75 Greenmanville Ave, Mystic, CT 06355, Estados Unidos."
@@ -2338,8 +2641,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-102",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Washington D.C.. Vessel type: Research submersible. Origin: USA. Address: Washington, DC, USA.",
    "es": "Museo: Museo Marítimo Nacional de Washington D.C.. Tipo de buque: Research submersible. Origen: USA. Dirección: Washington, DC, USA."
@@ -2361,8 +2667,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-103",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Warren Lasch Conservation Center. Vessel type: Military submarine. Origin: USA. Address: 1250 Supply St, North Charleston, SC 29405, USA.",
    "es": "Museo: Warren Lasch Conservation Center. Tipo de buque: Military submarine. Origen: USA. Dirección: 1250 Supply St, North Charleston, SC 29405, USA."
@@ -2384,8 +2693,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-104",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: National Museum of the Pacific War. Vessel type: Type A Kō-hyōteki class. Origin: USA. Address: 311 E Austin St, Fredericksburg, TX 78624, USA.",
    "es": "Museo: National Museum of the Pacific War. Tipo de buque: Type A Kō-hyōteki class. Origen: USA. Dirección: 311 E Austin St, Fredericksburg, TX 78624, USA."
@@ -2407,8 +2719,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-105",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: T. Stell Newman Visitor Center. Vessel type: Type C Kō-hyōteki class. Origin: USA. Address: 1657-B Old Army Road, Santa Rita, 96915, Guam.",
    "es": "Museo: T. Stell Newman Visitor Center. Tipo de buque: Type C Kō-hyōteki class. Origen: USA. Dirección: 1657-B Old Army Road, Santa Rita, 96915, Guam."
@@ -2430,8 +2745,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-106",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Groton. Vessel type: Type A Kō-hyōteki class. Origin: USA. Address: 1 Crystal Lake Rd, Groton, CT 06340, Estados Unidos.",
    "es": "Museo: Museo Naval de Groton. Tipo de buque: Type A Kō-hyōteki class. Origen: USA. Dirección: 1 Crystal Lake Rd, Groton, CT 06340, Estados Unidos."
@@ -2453,8 +2771,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-107",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Paterson Museum. Vessel type: Research submersible. Origin: USA. Address: 2 Market St, Paterson, NJ 07501, USA.",
    "es": "Museo: Paterson Museum. Tipo de buque: Research submersible. Origen: USA. Dirección: 2 Market St, Paterson, NJ 07501, USA."
@@ -2476,8 +2797,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-108",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: National Guard Militia Museum of New Jersey. Vessel type: Research submersible. Origin: USA. Address: 100 Camp Dr Building 2, Sea Girt, NJ 08750, USA.",
    "es": "Museo: National Guard Militia Museum of New Jersey. Tipo de buque: Research submersible. Origen: USA. Dirección: 100 Camp Dr Building 2, Sea Girt, NJ 08750, USA."
@@ -2499,8 +2823,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-109",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Freedom Park. Vessel type: T-1 class. Origin: USA. Address: 2497 Freedom Park Rd, Omaha, NE 68110.",
    "es": "Museo: Freedom Park. Tipo de buque: T-1 class. Origen: USA. Dirección: 2497 Freedom Park Rd, Omaha, NE 68110."
@@ -2522,8 +2849,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-110",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Londres. Vessel type: San Bartolomeo. Origin: Rusia. Launched: 1934. Address: Romney Rd, London SE10 9NF, UK.",
    "es": "Museo: Museo Marítimo Nacional de Londres. Tipo de buque: San Bartolomeo. Origen: Rusia. Botado: 1934. Dirección: Romney Rd, London SE10 9NF, UK."
@@ -2545,8 +2875,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-111",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: National Museum of the United States Navy. Vessel type: Bathyscaphe. Origin: USA. Address: 736 Sicard St SE, Washington, DC 20374, USA.",
    "es": "Museo: National Museum of the United States Navy. Tipo de buque: Bathyscaphe. Origen: USA. Dirección: 736 Sicard St SE, Washington, DC 20374, USA."
@@ -2568,8 +2901,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-112",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Naval Undersea Museum. Vessel type: Bathyscaphe. Origin: USA. Address: 1 Garnett Way, Keyport, WA 98345, USA.",
    "es": "Museo: Naval Undersea Museum. Tipo de buque: Bathyscaphe. Origen: USA. Dirección: 1 Garnett Way, Keyport, WA 98345, USA."
@@ -2591,8 +2927,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-113",
+  "situation": "",
+  "featured": true,
   "description": {
    "en": "Museum: Museum of Science and Industry. Vessel type: Type IXC. Origin: USA. Address: 5700 S DuSable Lake Shore Dr, Chicago, IL 60637, USA.",
    "es": "Museo: Museum of Science and Industry. Tipo de buque: Type IXC. Origen: USA. Dirección: 5700 S DuSable Lake Shore Dr, Chicago, IL 60637, USA."
@@ -2614,8 +2953,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-114",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Albacore Park and Museum. Vessel type: Research submersible. Origin: USA. Address: 569 Submarine Way, Portsmouth, NH 03801, USA.",
    "es": "Museo: Albacore Park and Museum. Tipo de buque: Research submersible. Origen: USA. Dirección: 569 Submarine Way, Portsmouth, NH 03801, USA."
@@ -2637,8 +2979,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-115",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Washington Navy Yard. Vessel type: Balao class. Origin: USA. Address: Washington Navy Yard, Washington, DC, USA.",
    "es": "Museo: Washington Navy Yard. Tipo de buque: Balao class. Origen: USA. Dirección: Washington Navy Yard, Washington, DC, USA."
@@ -2660,8 +3005,11 @@
   "website": "http://www.ussbatfish.com/",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-116",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Muskogee War Memorial Park. Vessel type: Balao class. Origin: USA. Address: 3500 Batfish Rd, Muskogee, OK 74403, Estados Unidos.",
    "es": "Museo: Muskogee War Memorial Park. Tipo de buque: Balao class. Origen: USA. Dirección: 3500 Batfish Rd, Muskogee, OK 74403, Estados Unidos."
@@ -2683,8 +3031,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-117",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Vallejo Naval and Historical Museum. Vessel type: Balao class. Origin: USA. Address: 734 Marin St, Vallejo, CA 94590, USA.",
    "es": "Museo: Vallejo Naval and Historical Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 734 Marin St, Vallejo, CA 94590, USA."
@@ -2706,8 +3057,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-118",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Independence Seaport Museum. Vessel type: Balao class. Origin: USA. Address: 211 S Christopher Columbus Blvd, Philadelphia, PA 19106, USA.",
    "es": "Museo: Independence Seaport Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 211 S Christopher Columbus Blvd, Philadelphia, PA 19106, USA."
@@ -2729,8 +3083,11 @@
   "website": "https://omsi.edu/events/uss-blueback-submarine-tech-tour/",
   "mediaUrl": "https://www.youtube.com/watch?v=4lgkqQ-zeAo",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-119",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: Oregon Museum of Science and Industry. Vessel type: Barbel class. Origin: USA. Address: 1945 SE Water Ave, Portland, OR 97214, USA.",
    "es": "Museo: Oregon Museum of Science and Industry. Tipo de buque: Barbel class. Origen: USA. Dirección: 1945 SE Water Ave, Portland, OR 97214, USA."
@@ -2752,8 +3109,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-120",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Boston. Vessel type: Los Angeles class. Origin: USA. Address: Boston, MA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Boston. Tipo de buque: Los Angeles class. Origen: USA. Dirección: Boston, MA, USA."
@@ -2775,8 +3135,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-121",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: USS Bowfin Submarine Museum. Vessel type: Balao class. Origin: USA. Address: 11 Arizona Memorial Dr, Honolulu, HI 96818, USA.",
    "es": "Museo: USS Bowfin Submarine Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 11 Arizona Memorial Dr, Honolulu, HI 96818, USA."
@@ -2798,8 +3161,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-122",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Seawolf Park. Vessel type: Gato class. Origin: USA. Address: Seawolf Park, 100 Seawolf Park Blvd, Galveston, TX 77550, USA.",
    "es": "Museo: Seawolf Park. Tipo de buque: Gato class. Origen: USA. Dirección: Seawolf Park, 100 Seawolf Park Blvd, Galveston, TX 77550, USA."
@@ -2821,8 +3187,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=-RjNay2FvOQ",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-123",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Patriots Point Maritime Museum. Vessel type: Balao class. Origin: USA. Address: 40 Patriots Point Rd, Mt Pleasant, SC 29464, USA.",
    "es": "Museo: Patriots Point Maritime Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 40 Patriots Point Rd, Mt Pleasant, SC 29464, USA."
@@ -2844,8 +3213,11 @@
   "website": "https://www.wisconsinmaritime.org/visit/stay-on-the-sub/",
   "mediaUrl": "https://www.youtube.com/watch?v=BO8mvZCjXks",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-124",
+  "situation": "agua",
+  "featured": true,
   "description": {
    "en": "Museum: Wisconsin Maritime Museum. Vessel type: Gato class. Origin: USA. Address: 75 Maritime Dr, Manitowoc, WI 54220, USA.",
    "es": "Museo: Wisconsin Maritime Museum. Tipo de buque: Gato class. Origen: USA. Dirección: 75 Maritime Dr, Manitowoc, WI 54220, USA."
@@ -2867,8 +3239,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=EqPHNeXXA2Y",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-125",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: USS Cod Submarine Memorial. Vessel type: Gato class. Origin: USA. Address: 1201 N Marginal Rd, Cleveland, OH 44114, USA.",
    "es": "Museo: USS Cod Submarine Memorial. Tipo de buque: Gato class. Origen: USA. Dirección: 1201 N Marginal Rd, Cleveland, OH 44114, USA."
@@ -2890,8 +3265,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=uaGJvGRp36Y",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-126",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Buffalo and Erie County Naval & Military Park. Vessel type: Gato class. Origin: USA. Address: 1 Naval, Marina Park S, Buffalo, NY 14202, USA.",
    "es": "Museo: Buffalo and Erie County Naval & Military Park. Tipo de buque: Gato class. Origen: USA. Dirección: 1 Naval, Marina Park S, Buffalo, NY 14202, USA."
@@ -2913,8 +3291,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-127",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Maritime Museum of San Diego. Vessel type: Research submersible. Origin: USA. Address: 1492 N Harbor Dr, San Diego, CA 92101, USA.",
    "es": "Museo: Maritime Museum of San Diego. Tipo de buque: Research submersible. Origen: USA. Dirección: 1492 N Harbor Dr, San Diego, CA 92101, USA."
@@ -2936,8 +3317,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-128",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Portsmouth Naval Shipyard. Vessel type: Gato class. Origin: USA. Address: Kittery, ME 03904, USA.",
    "es": "Museo: Portsmouth Naval Shipyard. Tipo de buque: Gato class. Origen: USA. Dirección: Kittery, ME 03904, USA."
@@ -2959,8 +3343,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-129",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Naval Submarine Base Kings Bay. Vessel type: Benjamin Franklin class. Origin: USA. Address: 1216 USS Daniel Boone Ave bldg 1033, St Marys, GA 31558, USA.",
    "es": "Museo: Naval Submarine Base Kings Bay. Tipo de buque: Benjamin Franklin class. Origen: USA. Dirección: 1216 USS Daniel Boone Ave bldg 1033, St Marys, GA 31558, USA."
@@ -2982,8 +3369,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-130",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Newport News. Vessel type: George Washington class. Origin: USA. Address: Newport News, VA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Newport News. Tipo de buque: George Washington class. Origen: USA. Dirección: Newport News, VA, USA."
@@ -3005,8 +3395,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-131",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Portsmouth Naval Shipyard. Vessel type: Sturgeon class. Origin: USA. Address: Kittery, ME 03904, USA.",
    "es": "Museo: Portsmouth Naval Shipyard. Tipo de buque: Sturgeon class. Origen: USA. Dirección: Kittery, ME 03904, USA."
@@ -3028,8 +3421,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-132",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Intrepid Sea, Air & Space Museum. Vessel type: Grayback class. Origin: USA. Address: Pier 86, W 46th St, New York, NY 10036, USA.",
    "es": "Museo: Intrepid Sea, Air & Space Museum. Tipo de buque: Grayback class. Origen: USA. Dirección: Pier 86, W 46th St, New York, NY 10036, USA."
@@ -3051,8 +3447,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-133",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Diego. Vessel type: Balao class. Origin: USA. Address: San Diego, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Diego. Tipo de buque: Balao class. Origen: USA. Dirección: San Diego, CA, USA."
@@ -3074,8 +3473,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-134",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Idaho Science Center. Vessel type: Sturgeon class. Origin: USA. Address: 335 S Front St, Arco, ID 83213, USA.",
    "es": "Museo: Idaho Science Center. Tipo de buque: Sturgeon class. Origen: USA. Dirección: 335 S Front St, Arco, ID 83213, USA."
@@ -3097,8 +3499,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-135",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Indiana Military Museum. Vessel type: Los Angeles class. Origin: USA. Address: 4305 Bruceville Rd, Vincennes, IN 47591, USA.",
    "es": "Museo: Indiana Military Museum. Tipo de buque: Los Angeles class. Origen: USA. Dirección: 4305 Bruceville Rd, Vincennes, IN 47591, USA."
@@ -3120,8 +3525,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-136",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: National Museum of Nuclear Science & History. Vessel type: Benjamin Franklin class. Origin: USA. Address: 601 Eubank Blvd SE, Albuquerque, NM 87123, USA.",
    "es": "Museo: National Museum of Nuclear Science & History. Tipo de buque: Benjamin Franklin class. Origen: USA. Dirección: 601 Eubank Blvd SE, Albuquerque, NM 87123, USA."
@@ -3143,8 +3551,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-137",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Bremerton. Vessel type: Benjamin Franklin class. Origin: USA. Address: Bremerton, WA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Bremerton. Tipo de buque: Benjamin Franklin class. Origen: USA. Dirección: Bremerton, WA, USA."
@@ -3166,8 +3577,11 @@
   "website": "https://www.elsnorkel.com/2022/05/El-submarino-USS-Ling-en-la-lista-de-los-lugares-historicos-mas-amenazados-de-Nueva-Jersey.html",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-138",
+  "situation": "agua",
+  "featured": true,
   "description": {
    "en": "Museum: New Jersey Naval Museum. Vessel type: Balao class. Origin: USA. Address: 78 River St, Hackensack, NJ 07601, USA.",
    "es": "Museo: New Jersey Naval Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 78 River St, Hackensack, NJ 07601, USA."
@@ -3189,8 +3603,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-139",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Battleship Cove. Vessel type: Balao class. Origin: USA. Address: 5 Water St, Fall River, MA 02721, USA.",
    "es": "Museo: Battleship Cove. Tipo de buque: Balao class. Origen: USA. Dirección: 5 Water St, Fall River, MA 02721, USA."
@@ -3212,8 +3629,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-140",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Mare Island Historic Park Foundation. Vessel type: Benjamin Franklin class. Origin: USA. Address: Walnut Ave, Vallejo, CA 94592, USA.",
    "es": "Museo: Mare Island Historic Park Foundation. Tipo de buque: Benjamin Franklin class. Origen: USA. Dirección: Walnut Ave, Vallejo, CA 94592, USA."
@@ -3235,8 +3655,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-141",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: 41 for Freedom Memorial. Vessel type: James Madison class. Origin: USA. Address: Cape Canaveral, FL 32920, Estados Unidos.",
    "es": "Museo: 41 for Freedom Memorial. Tipo de buque: James Madison class. Origen: USA. Dirección: Cape Canaveral, FL 32920, Estados Unidos."
@@ -3258,8 +3681,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-142",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Submarine Force Library and Museum. Vessel type: Nautilus class. Origin: USA. Address: 1 Crystal Lake Rd, Groton, CT 06340, USA.",
    "es": "Museo: Submarine Force Library and Museum. Tipo de buque: Nautilus class. Origen: USA. Dirección: 1 Crystal Lake Rd, Groton, CT 06340, USA."
@@ -3281,8 +3707,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-143",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Levi Carter Park. Vessel type: Los Angeles class. Origin: USA. Address: Levi Carter Park, 4405 Carter Lk Shr Dr, Omaha, NE 68110, USA.",
    "es": "Museo: Levi Carter Park. Tipo de buque: Los Angeles class. Origen: USA. Dirección: Levi Carter Park, 4405 Carter Lk Shr Dr, Omaha, NE 68110, USA."
@@ -3304,8 +3733,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=0jM6-UO5ZEo",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-144",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: San Francisco Maritime National Historical Park. Vessel type: Balao class. Origin: USA. Address: San Francisco, CA 94109, USA.",
    "es": "Museo: San Francisco Maritime National Historical Park. Tipo de buque: Balao class. Origen: USA. Dirección: San Francisco, CA 94109, USA."
@@ -3327,8 +3759,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-145",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Francisco. Vessel type: Balao class. Origin: USA. Address: San Francisco, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Francisco. Tipo de buque: Balao class. Origen: USA. Dirección: San Francisco, CA, USA."
@@ -3350,8 +3785,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-146",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Harbourside Park. Vessel type: Sturgeon class. Origin: USA. Address: harbourside park, Eastern Rd, Portsmouth PO3 6QB, UK.",
    "es": "Museo: Harbourside Park. Tipo de buque: Sturgeon class. Origen: USA. Dirección: harbourside park, Eastern Rd, Portsmouth PO3 6QB, UK."
@@ -3373,8 +3811,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-147",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Francisco. Vessel type: Balao class. Origin: USA. Address: San Francisco, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Francisco. Tipo de buque: Balao class. Origen: USA. Dirección: San Francisco, CA, USA."
@@ -3396,8 +3837,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-148",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Arkansas Inland Maritime Museum. Vessel type: Balao class. Origin: USA. Address: 120 Riverfront Park Dr, North Little Rock, AR 72114, USA.",
    "es": "Museo: Arkansas Inland Maritime Museum. Tipo de buque: Balao class. Origen: USA. Dirección: 120 Riverfront Park Dr, North Little Rock, AR 72114, USA."
@@ -3419,8 +3863,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-149",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: The Carnegie Science Center. Vessel type: Tench class. Origin: USA. Address: 1 Allegheny Ave, Pittsburgh, PA 15212, USA.",
    "es": "Museo: The Carnegie Science Center. Tipo de buque: Tench class. Origen: USA. Dirección: 1 Allegheny Ave, Pittsburgh, PA 15212, USA."
@@ -3442,8 +3889,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-150",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Portsmouth Naval Shipyard. Vessel type: Sargo class. Origin: USA. Address: Kittery, ME 03904, USA.",
    "es": "Museo: Portsmouth Naval Shipyard. Tipo de buque: Sargo class. Origen: USA. Dirección: Kittery, ME 03904, USA."
@@ -3465,8 +3915,11 @@
   "website": "https://silversidesmuseum.org/live-camera/",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-151",
+  "situation": "agua",
+  "featured": false,
   "description": {
    "en": "Museum: USS Silversides Submarine Museum. Vessel type: Gato class. Origin: USA. Address: 1346 Bluff St, Muskegon, MI 49441, USA.",
    "es": "Museo: USS Silversides Submarine Museum. Tipo de buque: Gato class. Origen: USA. Dirección: 1346 Bluff St, Muskegon, MI 49441, USA."
@@ -3488,8 +3941,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-152",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Groton. Vessel type: Sturgeon class. Origin: USA. Address: 1 Garnett Way, Keyport, WA 98345, EE. UU..",
    "es": "Museo: Museo Naval de Groton. Tipo de buque: Sturgeon class. Origen: USA. Dirección: 1 Garnett Way, Keyport, WA 98345, EE. UU.."
@@ -3511,8 +3967,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-153",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Dossin Great Lakes Museum. Vessel type: Tambor class. Origin: USA. Address: 100 The Strand, Detroit, MI 48207, USA.",
    "es": "Museo: Dossin Great Lakes Museum. Tipo de buque: Tambor class. Origen: USA. Dirección: 100 The Strand, Detroit, MI 48207, USA."
@@ -3534,8 +3993,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-154",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Galveston Naval Museum. Vessel type: Sturgeon class. Origin: USA. Address: 100 Seawolf Park Blvd, Galveston, TX 77554, Estados Unidos.",
    "es": "Museo: Galveston Naval Museum. Tipo de buque: Sturgeon class. Origen: USA. Dirección: 100 Seawolf Park Blvd, Galveston, TX 77554, Estados Unidos."
@@ -3557,8 +4019,11 @@
   "website": "",
   "mediaUrl": "https://www.youtube.com/watch?v=rMxIcQtQW3A",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-155",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Historic Ships in Baltimore. Vessel type: Tench class. Origin: USA. Address: 301 E Pratt St, Baltimore, MD 21202, USA.",
    "es": "Museo: Historic Ships in Baltimore. Tipo de buque: Tench class. Origen: USA. Dirección: 301 E Pratt St, Baltimore, MD 21202, USA."
@@ -3580,8 +4045,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-156",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: USS Triton Submarine Memorial Park. Vessel type: Triton class. Origin: USA. Address: 3250 Port of Benton Blvd, Richland, WA 99354, Estados Unidos.",
    "es": "Museo: USS Triton Submarine Memorial Park. Tipo de buque: Triton class. Origen: USA. Dirección: 3250 Port of Benton Blvd, Richland, WA 99354, Estados Unidos."
@@ -3603,8 +4071,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-157",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Naval Submarine Base Bangor, Wash.. Vessel type: Lafayette-class. Origin: USA. Address: Naval Submarine Base Bangor, Wash..",
    "es": "Museo: Naval Submarine Base Bangor, Wash.. Tipo de buque: Lafayette-class. Origen: USA. Dirección: Naval Submarine Base Bangor, Wash.."
@@ -3626,8 +4097,11 @@
   "website": "",
   "mediaUrl": "",
   "validation": "pending",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
+  "dossier": "SNK-158",
+  "situation": "",
+  "featured": false,
   "description": {
    "en": "Museum: Submarine Force Library and Museum. Vessel type: Midget submarine. Origin: USA. Address: 1 Crystal Lake Rd, Groton, CT 06340, USA.",
    "es": "Museo: Submarine Force Library and Museum. Tipo de buque: Midget submarine. Origen: USA. Dirección: 1 Crystal Lake Rd, Groton, CT 06340, USA."
@@ -3649,8 +4123,11 @@
   "website": "https://www.elsnorkel.com/2025/02/submarino-museo-griego-Proteus-S-113.html",
   "mediaUrl": "https://www.youtube.com/watch?v=o8qmEB4sALM",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-159",
+  "situation": "tierra",
+  "featured": true,
   "description": {
    "en": "Museum: Naval Tradition Park de Faliro. Vessel type: IKL 209/1100 Class. Origin: Grecia. Launched: 1972. Address: Flisvos Marina, Athens 175 61, Grecia.",
    "es": "Museo: Naval Tradition Park de Faliro. Tipo de buque: IKL 209/1100 Class. Origen: Grecia. Botado: 1972. Dirección: Flisvos Marina, Athens 175 61, Grecia."
@@ -3672,8 +4149,11 @@
   "website": "https://www.elsnorkel.com/2025/02/vista-exclusiva-al-submarino-museo-orp-sokol.html",
   "mediaUrl": "https://www.youtube.com/watch?v=FUIzBhgn5DE",
   "validation": "validated",
-  "source": "Submarinos Museos SNK 2025",
+  "source": "Submarinos Museos (published Sheet)",
   "notes": "Validado",
+  "dossier": "SNK-160",
+  "situation": "tierra",
+  "featured": false,
   "description": {
    "en": "Museum: Muzeum Marynarki Wojennej w Gdyni. Vessel type: Kobben Class. Origin: Alemania. Launched: 1967. Address: Zawiszy Czarnego 1B, 81-374 Gdynia, Polonia.",
    "es": "Museo: Muzeum Marynarki Wojennej w Gdyni. Tipo de buque: Kobben Class. Origen: Alemania. Botado: 1967. Dirección: Zawiszy Czarnego 1B, 81-374 Gdynia, Polonia."

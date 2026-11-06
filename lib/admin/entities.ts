@@ -86,10 +86,11 @@ export const ADMIN_ENTITIES: AdminEntity[] = [
     draftValue: 'draft',
     defaultSort: 'name',
     columns: [
+      { key: 'dossier', label: 'File' },
       { key: 'name', label: 'Submarine', type: 'localized' },
       { key: 'museumName', label: 'Museum', type: 'localized' },
       { key: 'country', label: 'Country' },
-      { key: 'launchYear', label: 'Launched', type: 'number' },
+      { key: 'situation', label: 'Situation', type: 'status' },
       { key: 'status', label: 'Status', type: 'status' },
     ],
     fields: [
@@ -108,6 +109,15 @@ export const ADMIN_ENTITIES: AdminEntity[] = [
       { key: 'website', label: 'Website', type: 'text' },
       { key: 'mediaUrl', label: 'Video URL', type: 'text' },
       { key: 'description', label: 'Description', type: 'localizedTextarea' },
+      { key: 'dossier', label: 'Archive file', type: 'text', hint: 'e.g. SNK-012' },
+      { key: 'situation', label: 'Situation', type: 'select', options: [
+        { value: 'flote', label: 'Afloat' },
+        { value: 'agua', label: 'In the water' },
+        { value: 'tierra', label: 'On land' },
+        { value: 'cerrado', label: 'Under cover' },
+        { value: 'monumento', label: 'Monument only' },
+      ] },
+      { key: 'featured', label: 'Featured', type: 'boolean' },
       { key: 'validation', label: 'Validation', type: 'select', options: [
         { value: 'pending', label: 'Pending' },
         { value: 'validated', label: 'Validated' },
