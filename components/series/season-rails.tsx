@@ -26,6 +26,7 @@ export function SeasonRails({ locale }: { locale: Locale }) {
               eyebrow={`Temporada ${season.number} · ${season.tagline}`}
               color={season.color}
               meta={`${done} / ${season.episodes.length} vistos`}
+              centered
             >
               {season.episodes.map((episode) => (
                 <EpisodeCard

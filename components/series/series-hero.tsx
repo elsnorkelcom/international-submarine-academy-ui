@@ -78,8 +78,8 @@ export function SeriesHero() {
             </button>
           </div>
 
-          <div className="mt-8" role="group" aria-label="Elegir temporada">
-            <ul className="flex flex-wrap gap-2">
+          <div className="mt-8 flex justify-center" role="group" aria-label="Elegir temporada">
+            <ul className="flex flex-wrap justify-center gap-2">
               {seasons.map((s) => {
                 const active = s.id === season.id
                 return (

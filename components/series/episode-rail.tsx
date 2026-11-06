@@ -9,10 +9,11 @@ type EpisodeRailProps = {
   eyebrow?: string
   color?: string
   meta?: string
+  centered?: boolean
   children: ReactNode
 }
 
-export function EpisodeRail({ id, title, eyebrow, color, meta, children }: EpisodeRailProps) {
+export function EpisodeRail({ id, title, eyebrow, color, meta, centered = false, children }: EpisodeRailProps) {
   const scroller = useRef<HTMLUListElement>(null)
 
   const scroll = (direction: 1 | -1) =>
@@ -20,7 +21,11 @@ export function EpisodeRail({ id, title, eyebrow, color, meta, children }: Episo
 
   return (
     <section aria-labelledby={`${id}-title`} className="group/rail relative scroll-mt-20" id={id}>
-      <div className="mx-auto mb-3 flex max-w-[1600px] items-end justify-between gap-4 px-4 md:px-10">
+      <div
+        className={`mx-auto mb-3 flex max-w-[1600px] items-end justify-between gap-4 px-4 md:px-10 ${
+          centered ? 'md:flex-col md:items-center md:justify-center md:text-center' : ''
+        }`}
+      >
         <div>
           {eyebrow && (
             <p className="mb-0.5 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
@@ -38,7 +43,9 @@ export function EpisodeRail({ id, title, eyebrow, color, meta, children }: Episo
       <div className="relative">
         <ul
           ref={scroller}
-          className="scrollbar-none flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2 pt-2 md:scroll-px-10 md:px-10"
+          className={`scrollbar-none flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2 pt-2 md:scroll-px-10 md:px-10 ${
+            centered ? 'md:mx-auto md:w-fit md:max-w-full' : ''
+          }`}
         >
           {children}
         </ul>

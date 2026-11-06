@@ -7,6 +7,7 @@ import type { Locale } from '@/lib/i18n/config'
 const NAV = [
   { label: 'Inicio', href: '/' },
   { label: 'Temporadas', href: '#temporadas' },
+  { label: 'Museos', href: '/museums' },
   { label: 'Seguir viendo', href: '#seguir-viendo' },
 ]
 
@@ -17,7 +18,7 @@ export function SeriesHeader({ locale, activeHref = '/' }: { locale: Locale; act
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-background/95 via-background/60 to-transparent">
-      <div className="mx-auto flex h-16 max-w-[1600px] items-center gap-6 px-4 md:px-10">
+      <div className="relative mx-auto flex h-16 max-w-[1600px] items-center gap-6 px-4 md:px-10">
         <Link href="/" className="flex items-center gap-2.5" aria-label="International Submarine Academy, inicio">
           <Image src="/images/academy-logo.png" alt="" width={32} height={32} className="size-8" />
           <span className="font-display text-sm font-bold uppercase leading-none tracking-[0.18em] text-foreground md:text-base">
@@ -25,7 +26,7 @@ export function SeriesHeader({ locale, activeHref = '/' }: { locale: Locale; act
           </span>
         </Link>
 
-        <nav aria-label="Principal" className="hidden md:block">
+        <nav aria-label="Principal" className="absolute left-1/2 hidden -translate-x-1/2 md:block">
           <ul className="flex items-center gap-5">
             {NAV.map((item) => (
               <li key={item.label}>
@@ -69,24 +70,6 @@ export function SeriesHeader({ locale, activeHref = '/' }: { locale: Locale; act
         </nav>
 
         <div className="ml-auto flex items-center gap-1 md:gap-3">
-          <Link
-            href="/insignias"
-            aria-label={badges.navLabel}
-            title={badges.navLabel}
-            className={`flex size-9 items-center justify-center rounded-full transition-colors hover:text-foreground md:hidden ${
-              activeHref === '/insignias' ? 'text-foreground' : 'text-muted-foreground'
-            }`}
-          >
-            <BadgeCheck className="size-5" aria-hidden="true" />
-          </Link>
-          <Link
-            href="#mi-progreso"
-            aria-label={progress.navLabel}
-            title={progress.navLabel}
-            className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground md:hidden"
-          >
-            <Award className="size-5" aria-hidden="true" />
-          </Link>
           <button
             type="button"
             className="hidden size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground sm:flex"
@@ -111,6 +94,57 @@ export function SeriesHeader({ locale, activeHref = '/' }: { locale: Locale; act
           </button>
         </div>
       </div>
+
+      <nav aria-label="Menú principal" className="border-t border-white/5 bg-background/80 px-4 py-2 backdrop-blur md:hidden">
+        <ul className="mx-auto grid max-w-[1600px] grid-cols-5 gap-1">
+          <li>
+            <Link
+              href="/"
+              aria-current={activeHref === '/' ? 'page' : undefined}
+              className={`flex min-h-8 items-center justify-center rounded-sm px-1 text-center font-mono text-[10px] uppercase tracking-wider transition-colors hover:text-foreground ${
+                activeHref === '/' ? 'bg-white/10 text-foreground' : 'text-muted-foreground'
+              }`}
+            >
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#temporadas"
+              className="flex min-h-8 items-center justify-center rounded-sm px-1 text-center font-mono text-[10px] uppercase tracking-wider text-muted-foreground transition-colors hover:bg-white/10 hover:text-foreground"
+            >
+              Temporadas
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/museums"
+              className="flex min-h-8 items-center justify-center rounded-sm px-1 text-center font-mono text-[10px] uppercase tracking-wider text-muted-foreground transition-colors hover:bg-white/10 hover:text-foreground"
+            >
+              Museos
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/insignias"
+              aria-current={activeHref === '/insignias' ? 'page' : undefined}
+              className={`flex min-h-8 items-center justify-center rounded-sm px-1 text-center font-mono text-[10px] uppercase tracking-wider transition-colors hover:text-foreground ${
+                activeHref === '/insignias' ? 'bg-white/10 text-foreground' : 'text-muted-foreground'
+              }`}
+            >
+              {badges.navLabel}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#mi-progreso"
+              className="flex min-h-8 items-center justify-center rounded-sm px-1 text-center font-mono text-[10px] uppercase tracking-wider text-muted-foreground transition-colors hover:bg-white/10 hover:text-foreground"
+            >
+              {progress.navLabel}
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }
