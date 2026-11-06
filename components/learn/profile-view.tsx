@@ -5,7 +5,8 @@ import { useEffect, useState } from 'react';
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
 import { buildUnsignedCredential, type IsaBadgeSource } from '@/lib/badges/openbadge';
-import { localize, type Badge } from '@/lib/domain/types';
+import { listCredentials } from '@/lib/badges/registry';
+import { localize, type Badge, type CredentialRecord } from '@/lib/domain/types';
 
 export function ProfileView() {
   const { database, language, t } = useApp();
@@ -13,6 +14,7 @@ export function ProfileView() {
   const [badges, setBadges] = useState<Badge[]>([]);
   const [confirming, setConfirming] = useState(false);
   const [exportMessage, setExportMessage] = useState('');
+  const [credentials, setCredentials] = useState<CredentialRecord[]>([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -22,10 +24,14 @@ export function ProfileView() {
         return;
       }
 
-      const result = await database.repository('badges').list({ pageSize: 0 });
+      const [result, registry] = await Promise.all([
+        database.repository('badges').list({ pageSize: 0 }),
+        listCredentials(database),
+      ]);
 
       if (!cancelled) {
         setBadges(result.items);
+        setCredentials(registry);
       }
     }
 
@@ -129,6 +135,63 @@ export function ProfileView() {
                   className="shrink-0 border border-white/15 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-muted-foreground transition hover:border-primary hover:text-primary"
                 >
                   OB 3.0
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section className="mt-9">
+        <h2 className="font-mono text-[10px] uppercase tracking-[0.24em] text-metal">{t.learn.profile.registry}</h2>
+
+        {credentials.length === 0 ? (
+          <p className="mt-3 border border-white/10 bg-white/[0.02] px-4 py-3 text-sm text-muted-foreground">
+            {t.learn.profile.registryEmpty}
+          </p>
+        ) : (
+          <ul className="mt-3 divide-y divide-white/5 border-y border-white/10">
+            {credentials.map((record) => (
+              <li key={record.id} className="flex flex-wrap items-center gap-3 px-1 py-2.5">
+                <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">
+                  {record.registryNo}
+                </span>
+                <span className="min-w-0 flex-1 truncate text-sm text-foreground">
+                  {String((record.document as { name?: string }).name ?? record.badgeId)}
+                </span>
+                <span
+                  className={`border px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.14em] ${
+                    record.credentialStatus === 'issued'
+                      ? 'border-primary/40 text-primary'
+                      : 'border-red-500/40 text-red-300'
+                  }`}
+                >
+                  {record.credentialStatus === 'issued'
+                    ? t.learn.profile.registryIssued
+                    : t.learn.profile.registryRevoked}
+                </span>
+                <span className="border border-white/15 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.14em] text-amber-200">
+                  {record.proofStatus === 'unsigned'
+                    ? t.learn.profile.registryUnsigned
+                    : 'Signed'}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const blob = new Blob([JSON.stringify(record.document, null, 2)], {
+                      type: 'application/json',
+                    });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = `${record.registryNo}.openbadge.json`;
+                    link.click();
+                    URL.revokeObjectURL(url);
+                    setExportMessage(t.learn.profile.unsignedNote);
+                  }}
+                  className="font-mono text-[9px] uppercase tracking-[0.14em] text-muted-foreground hover:text-primary"
+                >
+                  {t.learn.profile.registryExport}
                 </button>
               </li>
             ))}

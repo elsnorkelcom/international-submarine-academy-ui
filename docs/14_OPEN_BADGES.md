@@ -29,6 +29,33 @@ Open Badges 3.0 is no longer a badge image with metadata: it is a **Verifiable C
 | `proof` | — | **Missing** (needs an issuer service) |
 | `credentialStatus` | — | **Missing** (needs a status list service) |
 
+## 2.1 Award rules
+
+| Rule | Trigger | Fields on `Badge` |
+|---|---|---|
+| `mission` | Completing the linked mission | `missionId` |
+| `season-count` | Completing N missions of the season (end of season) | `seasonId`, `ruleCount` |
+
+`lib/badges/rules.ts` evaluates every published badge after a correct answer.
+Awards are additive: a failure in the awarding path never blocks the mission
+result, and re-evaluating never duplicates a credential.
+
+## 2.2 Credential registry
+
+`lib/badges/registry.ts` stores every award as a `CredentialRecord`:
+
+| Field | Meaning |
+|---|---|
+| `registryNo` | `ISA-2026-0001` style sequence |
+| `document` | Full Open Badge 3.0 document (unsigned) |
+| `credentialStatus` | `issued` or `revoked` |
+| `proofStatus` | `unsigned` until an issuer signs it |
+| `subject` | `anonymous`: ISA stores no personal data |
+
+The registry survives reloads in IndexedDB, is exportable per credential, and is
+the object a future signing service would consume without rewriting the award
+logic.
+
 ## 3. Implemented now (phase 1)
 
 `lib/badges/openbadge.ts` builds an OB-shaped document from the local record:
@@ -58,6 +85,23 @@ make it verifiable.
 Technical constraint: Google Apps Script cannot produce Ed25519 or RS256
 signatures reliably, so a real issuer must be a small Node service (Cloudflare
 Worker, serverless function or similar). The static app keeps working without it.
+
+## 4.1 Registry verification
+
+Node run over `MemoryStorage` with a synthetic end-of-season badge:
+
+```text
+AWARDED [ 'BDG-EXPEDITION-CREDENTIAL', 'BDG-CF4D24F7' ]
+REGISTRY [
+  { no: 'ISA-2026-0002', badge: 'BDG-CF4D24F7', status: 'issued', proof: 'unsigned' },
+  { no: 'ISA-2026-0001', badge: 'BDG-EXPEDITION-CREDENTIAL', status: 'issued', proof: 'unsigned' }
+]
+```
+
+- re-evaluating the same mission issues nothing new;
+- raising the threshold to 5 blocks the season badge;
+- every document has `type: [VerifiableCredential, OpenBadgeCredential]`, a
+  stable `id` and no `proof`.
 
 ## 5. Verification performed
 

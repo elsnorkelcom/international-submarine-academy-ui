@@ -430,6 +430,11 @@ export const ADMIN_ENTITIES: AdminEntity[] = [
       { key: 'icon', label: 'Icon', type: 'text' },
       { key: 'color', label: 'Colour', type: 'text' },
       { key: 'criteria', label: 'Criteria', type: 'localizedTextarea' },
+      { key: 'ruleType', label: 'Award rule', type: 'select', options: [
+        { value: 'mission', label: 'Completing the mission' },
+        { value: 'season-count', label: 'Completing N missions of the season' },
+      ] },
+      { key: 'ruleCount', label: 'Missions required', type: 'number', hint: 'Only for the season rule.' },
       { key: 'status', label: 'Status', type: 'select', options: [
         { value: 'draft', label: 'Draft' },
         { value: 'published', label: 'Published' },

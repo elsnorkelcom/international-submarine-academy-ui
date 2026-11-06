@@ -6,6 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useApp } from '@/components/app/data-provider';
 import { QuestionEngine, type QuestionOutcome } from '@/components/learn/question-engine';
 import { useProgress } from '@/components/learn/progress-provider';
+import { completedMissionIds, evaluateAwards } from '@/lib/badges/rules';
 import {
   localize,
   type Badge,
@@ -33,12 +34,13 @@ interface MissionBundle {
 
 export function MissionView() {
   const { database, ready, language, t } = useApp();
-  const { progress, record } = useProgress();
+  const { progress, record, grantBadges } = useProgress();
   const [missionId, setMissionId] = useState<string | null>(null);
   const [bundle, setBundle] = useState<MissionBundle | null>(null);
   const [stage, setStage] = useState<'intro' | 'question' | 'reward'>('intro');
   const [outcome, setOutcome] = useState<QuestionOutcome | null>(null);
   const [reward, setReward] = useState<{ points: number; badge: string | null } | null>(null);
+  const [awarded, setAwarded] = useState<Badge[]>([]);
 
   // Kept in a ref so the loader reads the current progress without re-running
   // and overwriting the reward screen after a mission is recorded.
@@ -107,8 +109,25 @@ export function MissionView() {
     return bundle.settings.featureFlags.enableTimer ? bundle.settings.timerSeconds : null;
   }, [bundle]);
 
-  function handleResolved(result: QuestionOutcome) {
+  async function handleResolved(result: QuestionOutcome) {
     if (!bundle) {
+      return;
+    }
+
+    if (!result.correct) {
+      const earned = record(
+        {
+          missionId: bundle.mission.id,
+          episodeId: bundle.mission.episodeId,
+          seasonId: bundle.mission.seasonId,
+          badgeId: bundle.badge?.id ?? null,
+        },
+        result,
+      );
+
+      setOutcome(result);
+      setReward({ points: earned.pointsEarned, badge: earned.newBadge });
+      setStage('reward');
       return;
     }
 
@@ -124,6 +143,28 @@ export function MissionView() {
 
     setOutcome(result);
     setReward({ points: earned.pointsEarned, badge: earned.newBadge });
+
+    // End-of-season rules run after the mission is recorded.
+    try {
+      const context = {
+        database: database!,
+        mission: bundle.mission,
+        completedMissionIds: [
+          ...new Set([...completedMissionIds(progress), bundle.mission.id]),
+        ],
+        baseUrl: window.location.origin,
+      };
+
+      const awards = await evaluateAwards(context);
+
+      if (awards.badges.length > 0) {
+        grantBadges(awards.badges.map((item) => item.id));
+        setAwarded(awards.badges);
+      }
+    } catch {
+      // Awarding is additive: a failure must not block the mission result.
+    }
+
     setStage('reward');
   }
 
@@ -201,7 +242,7 @@ export function MissionView() {
             t={t.learn.episode}
             timerSeconds={timerSeconds}
             maxAttempts={bundle.settings?.maxAttempts ?? 2}
-            onResolved={handleResolved}
+            onResolved={(result) => void handleResolved(result)}
           />
         </div>
       ) : null}
@@ -219,6 +260,19 @@ export function MissionView() {
               {t.learn.episode.results}
             </p>
           )}
+
+          {awarded.length > 0 ? (
+            <ul className="mt-3 space-y-1">
+              {awarded.map((item) => (
+                <li key={item.id} className="border-l border-primary/40 pl-3 text-sm text-foreground">
+                  {localize(item.name, language)}{' '}
+                  <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
+                    {item.type}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
 
           <p className="mt-3 text-sm text-foreground/90">
             {t.learn.reward.points}:{' '}

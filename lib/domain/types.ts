@@ -69,6 +69,13 @@ export type BadgeType = 'credential' | 'coin' | 'badge';
 export type BadgeStatus = 'draft' | 'published' | 'archived';
 
 /**
+ * How a badge is awarded.
+ * - `mission`: completing the linked mission.
+ * - `season-count`: completing N missions of the linked season (end of season).
+ */
+export type BadgeRuleType = 'mission' | 'season-count';
+
+/**
  * Whether the historical or museum information is backed by a reviewed source.
  * The learner UI must show "Information to be validated." while it is pending.
  */
@@ -265,6 +272,9 @@ export interface Badge extends EntityBase {
   color: string;
   criteria: LocalizedText;
   status: BadgeStatus;
+  ruleType: BadgeRuleType;
+  /** Missions required when `ruleType` is `season-count`. */
+  ruleCount: number;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -323,6 +333,30 @@ export interface Settings extends EntityBase {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Issued credentials (Open Badges 3.0 registry)                              */
+/* -------------------------------------------------------------------------- */
+
+export type CredentialStatus = 'issued' | 'revoked';
+
+/**
+ * A credential issued to the local learner. Until an issuer service signs it,
+ * the document has no proof and stays marked as unsigned.
+ */
+export interface CredentialRecord extends EntityBase {
+  badgeId: string;
+  missionId: string;
+  seasonId: string;
+  institutionId: string;
+  registryNo: string;
+  criteriaSnapshot: string;
+  document: Record<string, unknown>;
+  credentialStatus: CredentialStatus;
+  proofStatus: 'unsigned' | 'signed';
+  /** ISA collects no personal data, so the subject stays anonymous. */
+  subject: 'anonymous';
+}
+
+/* -------------------------------------------------------------------------- */
 /* Collections                                                               */
 /* -------------------------------------------------------------------------- */
 
@@ -339,6 +373,7 @@ export const COLLECTIONS = [
   'badges',
   'roles',
   'disciplines',
+  'credentials',
   'settings',
 ] as const;
 
@@ -360,6 +395,7 @@ export type EntityByCollection = {
   badges: Badge;
   roles: Role;
   disciplines: Discipline;
+  credentials: CredentialRecord;
 };
 
 export type AnyEntity = EntityByCollection[EntityCollectionName];
@@ -384,6 +420,7 @@ export const READABLE_ID_PREFIX: Record<EntityCollectionName, string> = {
   badges: 'BDG',
   roles: 'ROL',
   disciplines: 'DIS',
+  credentials: 'CRD',
 };
 
 /** True when the record was soft deleted. */

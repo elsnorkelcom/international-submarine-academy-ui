@@ -117,6 +117,19 @@ export function completeMission(
   return { progress: next, pointsEarned, newBadge };
 }
 
+/** Adds badges that were awarded by rules outside the mission itself. */
+export function addBadges(progress: LearningProgress, badgeIds: string[]): LearningProgress {
+  const missing = badgeIds.filter((id) => !progress.badges.includes(id));
+
+  if (missing.length === 0) {
+    return progress;
+  }
+
+  const next: LearningProgress = { ...progress, badges: [...progress.badges, ...missing] };
+  writeProgress(next);
+  return next;
+}
+
 export function resetProgress(): LearningProgress {
   const empty = emptyProgress();
   writeProgress(empty);

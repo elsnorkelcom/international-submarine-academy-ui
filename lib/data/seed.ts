@@ -484,6 +484,8 @@ export const SEED_BADGES: Badge[] = [
     color: '#8FA3B0',
     criteria: { en: 'Complete the Steel 04 mission.', es: 'Completar la misión Acero 04.' },
     status: 'published',
+    ruleType: 'mission',
+    ruleCount: 1,
   },
   {
     id: 'BDG-COPPER-COIN',
@@ -500,6 +502,8 @@ export const SEED_BADGES: Badge[] = [
     color: '#B87333',
     criteria: { en: 'Complete the Copper mission.', es: 'Completar la misión Cobre.' },
     status: 'published',
+    ruleType: 'mission',
+    ruleCount: 1,
   },
 ];
 

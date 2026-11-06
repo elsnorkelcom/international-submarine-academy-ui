@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 
 import {
+  addBadges,
   completeMission,
   emptyProgress,
   readProgress,
@@ -18,6 +19,7 @@ interface ProgressContextValue {
     input: { missionId: string; episodeId: string; seasonId: string; badgeId: string | null },
     answer: AnswerSummary,
   ) => { pointsEarned: number; newBadge: string | null };
+  grantBadges: (badgeIds: string[]) => void;
   reset: () => void;
 }
 
@@ -44,13 +46,17 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     return outcome;
   }, []);
 
+  const grantBadges = useCallback((badgeIds: string[]) => {
+    setProgress((current) => addBadges(current, badgeIds));
+  }, []);
+
   const reset = useCallback(() => {
     setProgress(resetProgress());
   }, []);
 
   const value = useMemo<ProgressContextValue>(
-    () => ({ progress, ready, record, reset }),
-    [progress, ready, record, reset],
+    () => ({ progress, ready, record, grantBadges, reset }),
+    [progress, ready, record, grantBadges, reset],
   );
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;
