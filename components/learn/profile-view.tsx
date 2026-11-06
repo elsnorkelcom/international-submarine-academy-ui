@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
+import { buildUnsignedCredential, type IsaBadgeSource } from '@/lib/badges/openbadge';
 import { localize, type Badge } from '@/lib/domain/types';
 
 export function ProfileView() {
@@ -11,6 +12,7 @@ export function ProfileView() {
   const { progress, ready, reset } = useProgress();
   const [badges, setBadges] = useState<Badge[]>([]);
   const [confirming, setConfirming] = useState(false);
+  const [exportMessage, setExportMessage] = useState('');
 
   useEffect(() => {
     let cancelled = false;
@@ -36,6 +38,44 @@ export function ProfileView() {
 
   const completed = Object.values(progress.missions).filter((mission) => mission.correct).length;
   const earned = badges.filter((badge) => progress.badges.includes(badge.id));
+
+  async function exportBadge(badge: Badge) {
+    if (!database) {
+      return;
+    }
+
+    const record = Object.values(progress.missions).find((mission) => mission.badgeId === badge.id);
+    const mission = record ? await database.repository('missions').get(record.missionId) : null;
+    const season = mission ? await database.repository('seasons').get(mission.seasonId) : null;
+    const museum = mission ? await database.repository('museums').get(mission.museumId) : null;
+
+    const source: IsaBadgeSource = {
+      badgeId: badge.id,
+      badgeName: localize(badge.name, 'en'),
+      badgeDescription: localize(badge.description, 'en'),
+      badgeType: badge.type,
+      seasonTitle: season ? localize(season.title, 'en') : '',
+      missionTitle: mission ? localize(mission.title, 'en') : '',
+      institutionName: museum ? localize(museum.museumName, 'en') : '',
+      institutionCity: museum?.city ?? '',
+      institutionCountry: museum?.country ?? '',
+      criteria: localize(badge.criteria, 'en'),
+      color: badge.color,
+      gsaCompetency: mission?.gsaCompetency,
+      timssDomain: mission?.timssDomain,
+      earnedAt: record ? new Date(record.completedAt).toISOString() : undefined,
+    };
+
+    const credential = buildUnsignedCredential(window.location.origin, source);
+    const blob = new Blob([JSON.stringify(credential, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${badge.id}.openbadge.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+    setExportMessage(t.learn.profile.unsignedNote);
+  }
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -74,7 +114,7 @@ export function ProfileView() {
                 >
                   {badge.type === 'coin' ? '◎' : badge.type === 'credential' ? '⚓' : '★'}
                 </span>
-                <span className="min-w-0">
+                <span className="min-w-0 flex-1">
                   <span className="block truncate font-display text-sm font-bold uppercase tracking-wide">
                     {localize(badge.name, language)}
                   </span>
@@ -82,11 +122,25 @@ export function ProfileView() {
                     {badge.type}
                   </span>
                 </span>
+                <button
+                  type="button"
+                  onClick={() => void exportBadge(badge)}
+                  title={t.learn.profile.exportHint}
+                  className="shrink-0 border border-white/15 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-muted-foreground transition hover:border-primary hover:text-primary"
+                >
+                  OB 3.0
+                </button>
               </li>
             ))}
           </ul>
         )}
       </section>
+
+      {exportMessage ? (
+        <p className="mt-3 border border-amber-300/40 bg-amber-300/5 px-3 py-2 text-[11px] text-amber-200">
+          {exportMessage}
+        </p>
+      ) : null}
 
       <p className="mt-8 text-[10px] leading-relaxed text-muted-foreground">{t.learn.profile.disclaimer}</p>
 

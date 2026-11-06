@@ -158,6 +158,10 @@ const en = {
       badges: 'Recognitions',
       empty: 'Nothing recorded yet.',
       emptyHint: 'Complete a mission to start your record.',
+      export: 'Export Open Badge 3.0 (unsigned)',
+      exportHint: 'Exports the achievement as an Open Badge document without a proof.',
+      unsignedNote:
+        'Unsigned document. It is not a verifiable credential until an issuer service signs it.',
       reset: 'Reset local progress',
       resetConfirm: 'This clears points, streaks and recognitions stored in this browser.',
       disclaimer:
@@ -315,6 +319,10 @@ const es: typeof en = {
       badges: 'Reconocimientos',
       empty: 'Todavía no hay nada registrado.',
       emptyHint: 'Completá una misión para empezar tu registro.',
+      export: 'Exportar Open Badge 3.0 (sin firmar)',
+      exportHint: 'Exporta el logro como documento Open Badge sin prueba criptográfica.',
+      unsignedNote:
+        'Documento sin firmar. No es una credencial verificable hasta que un emisor lo firme.',
       reset: 'Borrar progreso local',
       resetConfirm: 'Esto borra puntos, rachas y reconocimientos guardados en este navegador.',
       disclaimer:
