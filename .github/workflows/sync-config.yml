@@ -21,13 +21,17 @@ jobs:
       - name: Regenerate configuration from the tables
         env:
           SEASONS_URL: ${{ vars.ISA_CONFIG_SEASONS_URL }}
+          EPISODES_URL: ${{ vars.ISA_CONFIG_EPISODES_URL }}
           MISSIONS_URL: ${{ vars.ISA_CONFIG_MISSIONS_URL }}
+          QUESTIONS_URL: ${{ vars.ISA_CONFIG_QUESTIONS_URL }}
           AWARDS_URL: ${{ vars.ISA_CONFIG_AWARDS_URL }}
           SETTINGS_URL: ${{ vars.ISA_CONFIG_SETTINGS_URL }}
         run: |
           args=""
           if [ -n "$SEASONS_URL" ]; then args="$args --seasons $SEASONS_URL"; fi
+          if [ -n "$EPISODES_URL" ]; then args="$args --episodes $EPISODES_URL"; fi
           if [ -n "$MISSIONS_URL" ]; then args="$args --missions $MISSIONS_URL"; fi
+          if [ -n "$QUESTIONS_URL" ]; then args="$args --questions $QUESTIONS_URL"; fi
           if [ -n "$AWARDS_URL" ]; then args="$args --awards $AWARDS_URL"; fi
           if [ -n "$SETTINGS_URL" ]; then args="$args --settings $SETTINGS_URL"; fi
 

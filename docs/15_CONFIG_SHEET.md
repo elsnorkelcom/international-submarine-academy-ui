@@ -13,7 +13,9 @@ Four optional tables feed one versioned file, `lib/data/datasets/isa-config.json
 |---|---|---|
 | Settings | `--settings` | App name, default language, attempts, timer, welcome / access / fiction texts |
 | Seasons | `--seasons` | Season titles, order, colours, TIMSS domain, GSA emphasis |
+| Episodes | `--episodes` | Episode titles, museum, compartment, equipment, media, order, status |
 | Missions | `--missions` | Mission titles, objective, season, museum, compartment, equipment, status |
+| Questions | `--questions` | Question text, four options, correct answer, feedback, alignment, status |
 | Awards | `--awards` | Badge rules and thresholds |
 
 Sections are merged: sending only `--awards` keeps the existing seasons and missions.
@@ -52,7 +54,24 @@ Header names are matched without case or accents, so `Badge ID`, `badge_id` and 
 `equipment_id`, `description_en`, `description_es`, `objective_en`, `objective_es`,
 `timss_domain`, `gsa_competency`, `civil_en`, `civil_es`, `order`, `status`.
 
-## 1.3 Settings table
+## 1.3 Episodes table
+
+`id`, `title_en`, `title_es`, `season_id`, `museum_id`, `compartment_id`, `equipment_id`,
+`media_url`, `duration_seconds`, `description_en`, `description_es`, `narrative_en`,
+`narrative_es`, `order`, `status`.
+
+## 1.4 Questions table
+
+`id`, `text_en`, `text_es`, `mission_id`, `episode_id`, `museum_id`, `compartment_id`,
+`equipment_id`, `area`, `timss_domain`, `gsa_competency`, `topic`, `level`,
+`option_a_en`, `option_a_es`, `option_b_en`, `option_b_es`, `option_c_en`, `option_c_es`,
+`option_d_en`, `option_d_es`, `correct_option_id`, `feedback_en`, `feedback_es`,
+`civil_en`, `civil_es`, `source`, `status`, `notes`.
+
+Validation rejects a missing option, a wrong `correct_option_id` or an unknown
+`timss_domain`, and reports the line number.
+
+## 1.5 Settings table
 
 Key/value rows: `key`, `value`, `value_es`.
 
@@ -79,8 +98,8 @@ python3 scripts/sync_config.py --awards "https://docs.google.com/.../pub?gid=...
 ## 2.1 Automatic sync
 
 `.github/workflows/sync-config.yml` runs weekly and on dispatch, reading the sheet URLs from
-repository variables: `ISA_CONFIG_SEASONS_URL`, `ISA_CONFIG_MISSIONS_URL`,
-`ISA_CONFIG_AWARDS_URL`, `ISA_CONFIG_SETTINGS_URL`. If any is set, it regenerates
+repository variables: `ISA_CONFIG_SEASONS_URL`, `ISA_CONFIG_EPISODES_URL`, `ISA_CONFIG_MISSIONS_URL`,
+`ISA_CONFIG_QUESTIONS_URL`, `ISA_CONFIG_AWARDS_URL`, `ISA_CONFIG_SETTINGS_URL`. If any is set, it regenerates
 `isa-config.json` and commits the change; the commit deploys the site.
 
 Validation rejects unknown `rule_type`, unknown `type`, non-numeric `rule_count` and reports the line number.

@@ -5,7 +5,14 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { credentialBundle, listCredentials, revokeCredential } from '@/lib/badges/registry';
-import { applyConfig, awardsConfig, missionsConfig, seasonsConfig } from '@/lib/data/config';
+import {
+  applyConfig,
+  awardsConfig,
+  episodesConfig,
+  missionsConfig,
+  questionsConfig,
+  seasonsConfig,
+} from '@/lib/data/config';
 import { localize, type Badge, type CredentialRecord, type Mission, type Season } from '@/lib/domain/types';
 
 export function AccreditationPanel() {
@@ -20,6 +27,8 @@ export function AccreditationPanel() {
   const config = useMemo(() => awardsConfig(), []);
   const seasonsCfg = useMemo(() => seasonsConfig(), []);
   const missionsCfg = useMemo(() => missionsConfig(), []);
+  const episodesCfg = useMemo(() => episodesConfig(), []);
+  const questionsCfg = useMemo(() => questionsConfig(), []);
 
   const refresh = useCallback(async () => {
     if (!database) {
@@ -68,7 +77,7 @@ export function AccreditationPanel() {
     try {
       const result = await applyConfig(database);
       setMessage(
-        `Config applied — settings: ${result.settings.updated}; seasons: ${result.seasons.created}+/${result.seasons.updated}~; missions: ${result.missions.created}+/${result.missions.updated}~; awards: ${result.awards.created}+/${result.awards.updated}~.`,
+        `Config applied — settings: ${result.settings.updated}; seasons: ${result.seasons.created}+/${result.seasons.updated}~; episodes: ${result.episodes.created}+/${result.episodes.updated}~; missions: ${result.missions.created}+/${result.missions.updated}~; questions: ${result.questions.created}+/${result.questions.updated}~; awards: ${result.awards.created}+/${result.awards.updated}~.`,
       );
       await refresh();
     } catch {
@@ -109,7 +118,8 @@ export function AccreditationPanel() {
           </h1>
           <p className="mt-2 max-w-2xl text-xs text-muted-foreground">
             Rules, thresholds and the credential registry. The configuration tables come from the sheet:
-            {' '}{seasonsCfg.length} seasons, {missionsCfg.length} missions, {config.length} awards.
+            {' '}{seasonsCfg.length} seasons, {episodesCfg.length} episodes, {missionsCfg.length} missions,{' '}
+            {questionsCfg.length} questions, {config.length} awards.
           </p>
         </div>
 

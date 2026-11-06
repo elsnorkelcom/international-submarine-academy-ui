@@ -54,6 +54,25 @@ SECTIONS = {
             "civil_en", "civil_es", "order", "status",
         ],
     },
+    "episodes": {
+        "required": ["id", "title_en", "season_id"],
+        "columns": [
+            "id", "title_en", "title_es", "season_id", "museum_id", "compartment_id",
+            "equipment_id", "media_url", "duration_seconds", "description_en",
+            "description_es", "narrative_en", "narrative_es", "order", "status",
+        ],
+    },
+    "questions": {
+        "required": ["id", "text_en", "mission_id", "correct_option_id"],
+        "columns": [
+            "id", "text_en", "text_es", "mission_id", "episode_id", "museum_id",
+            "compartment_id", "equipment_id", "area", "timss_domain", "gsa_competency",
+            "topic", "level", "option_a_en", "option_a_es", "option_b_en", "option_b_es",
+            "option_c_en", "option_c_es", "option_d_en", "option_d_es",
+            "correct_option_id", "feedback_en", "feedback_es", "civil_en", "civil_es",
+            "source", "status", "notes",
+        ],
+    },
     "awards": {
         "required": ["badge_id", "badge_name_en", "type", "rule_type"],
         "columns": [
@@ -174,6 +193,105 @@ def parse_missions(rows: list[dict[str, str]]) -> tuple[list[dict], list[str]]:
     return out, problems
 
 
+def parse_episodes(rows: list[dict[str, str]]) -> tuple[list[dict], list[str]]:
+    out, problems = [], []
+
+    for index, row in enumerate(rows, start=2):
+        if not row.get("id"):
+            continue
+        status = (row.get("status") or "draft").lower()
+
+        if status not in KNOWN_STATUS:
+            problems.append(f"L{index}: status '{status}' no es válido.")
+            continue
+
+        try:
+            duration = int(row.get("duration_seconds") or 0) or None
+        except ValueError:
+            problems.append(f"L{index}: duration_seconds no es un número entero.")
+            continue
+
+        out.append(
+            {
+                "id": row["id"],
+                "titleEn": row.get("title_en", ""),
+                "titleEs": row.get("title_es") or row.get("title_en", ""),
+                "seasonId": row.get("season_id", ""),
+                "museumId": row.get("museum_id", ""),
+                "compartmentId": row.get("compartment_id", ""),
+                "equipmentId": row.get("equipment_id", ""),
+                "mediaUrl": row.get("media_url", ""),
+                "durationSeconds": duration,
+                "descriptionEn": row.get("description_en", ""),
+                "descriptionEs": row.get("description_es") or row.get("description_en", ""),
+                "narrativeEn": row.get("narrative_en", ""),
+                "narrativeEs": row.get("narrative_es") or row.get("narrative_en", ""),
+                "order": int(row.get("order") or 0),
+                "status": status,
+            }
+        )
+
+    return out, problems
+
+
+def parse_questions(rows: list[dict[str, str]]) -> tuple[list[dict], list[str]]:
+    out, problems = [], []
+
+    for index, row in enumerate(rows, start=2):
+        if not row.get("id"):
+            continue
+        domain = (row.get("timss_domain") or "knowing").lower()
+        status = (row.get("status") or "proposal").lower()
+        correct = (row.get("correct_option_id") or "").upper()
+
+        if domain not in KNOWN_DOMAIN:
+            problems.append(f"L{index}: timss_domain '{domain}' no es válido.")
+            continue
+        if correct not in {"A", "B", "C", "D"}:
+            problems.append(f"L{index}: correct_option_id '{correct}' debe ser A, B, C o D.")
+            continue
+
+        options = {}
+        for letter in "abcd":
+            text_en = row.get(f"option_{letter}_en", "")
+            if not text_en:
+                problems.append(f"L{index}: falta option_{letter}_en.")
+                break
+            options[letter.upper()] = {
+                "en": text_en,
+                "es": row.get(f"option_{letter}_es") or text_en,
+            }
+        else:
+            out.append(
+                {
+                    "id": row["id"],
+                    "textEn": row.get("text_en", ""),
+                    "textEs": row.get("text_es") or row.get("text_en", ""),
+                    "missionId": row.get("mission_id", ""),
+                    "episodeId": row.get("episode_id", ""),
+                    "museumId": row.get("museum_id", ""),
+                    "compartmentId": row.get("compartment_id", ""),
+                    "equipmentId": row.get("equipment_id", ""),
+                    "area": row.get("area", ""),
+                    "timssDomain": domain,
+                    "gsaCompetency": row.get("gsa_competency", ""),
+                    "topic": row.get("topic", ""),
+                    "level": row.get("level", ""),
+                    "options": options,
+                    "correctOptionId": correct,
+                    "feedbackEn": row.get("feedback_en", ""),
+                    "feedbackEs": row.get("feedback_es") or row.get("feedback_en", ""),
+                    "civilEn": row.get("civil_en", ""),
+                    "civilEs": row.get("civil_es") or row.get("civil_en", ""),
+                    "source": row.get("source", ""),
+                    "status": status,
+                    "notes": row.get("notes", ""),
+                }
+            )
+
+    return out, problems
+
+
 def parse_awards(rows: list[dict[str, str]]) -> tuple[list[dict], list[str]]:
     out, problems = [], []
 
@@ -233,7 +351,9 @@ def parse_settings(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[str
 
 PARSERS = {
     "seasons": parse_seasons,
+    "episodes": parse_episodes,
     "missions": parse_missions,
+    "questions": parse_questions,
     "awards": parse_awards,
     "settings": parse_settings,
 }
