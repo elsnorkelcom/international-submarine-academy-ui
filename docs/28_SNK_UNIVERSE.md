@@ -145,6 +145,19 @@ Herramientas concretas:
 | 6 | Página `/universo` en ISA con enlaces y UTM |
 | 7 | Métricas de tráfico cruzado (respetando privacidad) |
 
+## 8.1 Workspace de coordinación
+
+La estructura vive en `C:\Users\MDQdam\Proyectos\snk` (fuera de este repositorio):
+
+- `AGENTS.md` — reglas comunes del universo
+- `docs/01_ROLES.md` — coordinador, leads y funciones transversales
+- `docs/02_CONTRATO_DATOS.md` — contrato de la base única
+- `docs/03_DRIVE_ASSETS.md` — indexación del archivo de 26 años
+- `sessions/PROMPTS.md` — prompt de cada sesión
+- `templates/` — cola editorial y registro de activos
+
+Los repositorios de producto **no se mueven**: el workspace los referencia.
+
 ## 9. Decisiones abiertas
 
 | # | Decisión | Opciones |
