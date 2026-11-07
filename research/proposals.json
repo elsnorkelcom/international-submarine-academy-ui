@@ -348,5 +348,12 @@
   "value": "Washington",
   "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
   "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-102",
+  "field": "city",
+  "value": "Paterson",
+  "source": "https://patersonmuseum.com/permanent-exhibits-2/john-p-holland/",
+  "confidence": "high"
  }
 ]

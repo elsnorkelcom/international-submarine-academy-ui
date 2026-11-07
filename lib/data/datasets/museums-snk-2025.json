@@ -2468,27 +2468,54 @@
  {
   "id": "MUS-SNK-095",
   "name": "SM UB-46",
-  "museumName": "Dardanelles Naval Museum",
+  "museumName": "Çanakkale Naval Museum (Çanakkale Deniz Müzesi)",
   "country": "Türkiye",
-  "city": "",
+  "city": "Çanakkale",
   "vesselType": "Human torpedo",
   "propulsion": "Diesel",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1916,
   "latitude": 40.0481634,
   "longitude": 26.3013267,
   "address": "Dardanelles Strait, Türkiye",
-  "website": "",
+  "website": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-095",
-  "situation": "",
+  "situation": "tierra",
   "featured": false,
   "description": {
    "en": "Museum: Dardanelles Naval Museum. Vessel type: Human torpedo. Origin: USA. Address: Dardanelles Strait, Türkiye.",
    "es": "Museo: Dardanelles Naval Museum. Tipo de buque: Human torpedo. Origen: USA. Dirección: Dardanelles Strait, Türkiye."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://uboat.net/wwi/boats/index.html?boat=UB+46",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "http://www.canakkaletravel.com/public/haber/canakkaletravel.com/public/haber/canakkale-deniz-muzesinde-100-yillik-bir-alman-denizaltisi.html",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -2808,27 +2835,54 @@
  {
   "id": "MUS-SNK-106",
   "name": "HA. 8",
-  "museumName": "Museo Naval de Groton",
+  "museumName": "Submarine Force Library and Museum",
   "country": "United States",
-  "city": "",
+  "city": "Groton",
   "vesselType": "Type A Kō-hyōteki class",
   "propulsion": "Electric",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1938,
   "latitude": 41.3874594,
   "longitude": 72.0917749,
   "address": "1 Crystal Lake Rd, Groton, CT 06340, Estados Unidos",
-  "website": "",
+  "website": "https://ussnautilus.org",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-106",
-  "situation": "",
+  "situation": "tierra",
   "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Groton. Vessel type: Type A Kō-hyōteki class. Origin: USA. Address: 1 Crystal Lake Rd, Groton, CT 06340, Estados Unidos.",
    "es": "Museo: Museo Naval de Groton. Tipo de buque: Type A Kō-hyōteki class. Origen: USA. Dirección: 1 Crystal Lake Rd, Groton, CT 06340, Estados Unidos."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://ussnautilus.org/museum-information/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://www.npshistory.com/publications/maritime/large-preserved-historic-vessels.pdf",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://ussnautilus.org/museum-information/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://ussnautilus.org/museum-information/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://pacificwrecks.com/sub/midget-sub-groton.html",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3172,27 +3226,54 @@
  {
   "id": "MUS-SNK-120",
   "name": "USS Boston",
-  "museumName": "Museo Marítimo Nacional de Boston",
+  "museumName": "Buffalo and Erie County Naval & Military Park",
   "country": "United States",
-  "city": "",
+  "city": "Buffalo",
   "vesselType": "Los Angeles class",
   "propulsion": "Nuclear",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1980,
   "latitude": 42.3600825,
   "longitude": -71.0588801,
   "address": "Boston, MA, USA",
-  "website": "",
+  "website": "https://buffalonavalpark.org/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-120",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Boston. Vessel type: Los Angeles class. Origin: USA. Address: Boston, MA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Boston. Tipo de buque: Los Angeles class. Origen: USA. Dirección: Boston, MA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://en.wikipedia.org/wiki/USS_Boston_(SSN-703)",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "http://www.navsource.net/archives/08/08703.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://buffalonavalpark.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://buffalonavalpark.org/about-us/history-mission/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://en.wikipedia.org/wiki/List_of_United_States_submarine_museum_ships",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3432,27 +3513,54 @@
  {
   "id": "MUS-SNK-130",
   "name": "USS George Washington",
-  "museumName": "Museo Marítimo Nacional de Newport News",
+  "museumName": "Submarine Force Library and Museum (Submarine Force Museum)",
   "country": "United States",
-  "city": "",
+  "city": "Groton",
   "vesselType": "George Washington class",
   "propulsion": "Nuclear",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1959,
   "latitude": 37.0870821,
   "longitude": -76.4730122,
   "address": "Newport News, VA, USA",
-  "website": "",
+  "website": "https://ussnautilus.org/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-130",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Newport News. Vessel type: George Washington class. Origin: USA. Address: Newport News, VA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Newport News. Tipo de buque: George Washington class. Origen: USA. Dirección: Newport News, VA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://ussnautilus.org/ssbn-598/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://ussnautilus.org/ssbn-598/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.hmdb.org/m.asp?m=206626",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://www.hmdb.org/m.asp?m=206626",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://en.wikipedia.org/wiki/USS_George_Washington_(SSBN-598)",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3510,13 +3618,13 @@
  {
   "id": "MUS-SNK-133",
   "name": "USS Halfbeak",
-  "museumName": "Museo Marítimo Nacional de San Diego",
+  "museumName": "New Jersey Naval Museum (Submarine Memorial Association)",
   "country": "United States",
-  "city": "",
+  "city": "Hackensack",
   "vesselType": "Balao class",
   "propulsion": "Diesel",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1946,
   "latitude": 32.715738,
   "longitude": -117.1610838,
   "address": "San Diego, CA, USA",
@@ -3526,11 +3634,33 @@
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-133",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Diego. Vessel type: Balao class. Origin: USA. Address: San Diego, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Diego. Tipo de buque: Balao class. Origen: USA. Dirección: San Diego, CA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "http://sous.marins.musees.free.fr/index.php/les-inclassables/242-halfbeak",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "http://www.navsource.net/archives/08/08352.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "http://sous.marins.musees.free.fr/index.php/les-inclassables/242-halfbeak",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://en.wikipedia.org/wiki/List_of_submarines_on_display",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3614,27 +3744,54 @@
  {
   "id": "MUS-SNK-137",
   "name": "USS Lewis and Clark",
-  "museumName": "Museo Marítimo Nacional de Bremerton",
+  "museumName": "Patriots Point Naval & Maritime Museum (Cold War Memorial)",
   "country": "United States",
-  "city": "",
+  "city": "Mount Pleasant",
   "vesselType": "Benjamin Franklin class",
   "propulsion": "Nuclear",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1964,
   "latitude": 47.5650067,
   "longitude": -122.6269768,
   "address": "Bremerton, WA, USA",
-  "website": "",
+  "website": "https://www.patriotspoint.org/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-137",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Bremerton. Vessel type: Benjamin Franklin class. Origin: USA. Address: Bremerton, WA, USA.",
    "es": "Museo: Museo Marítimo Nacional de Bremerton. Tipo de buque: Benjamin Franklin class. Origen: USA. Dirección: Bremerton, WA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://www.patriotspoint.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://www.nps.gov/articles/uss-lewis-and-clark-submarine.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.patriotspoint.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://www.patriotspoint.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://www.nps.gov/articles/uss-lewis-and-clark-submarine.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3822,27 +3979,54 @@
  {
   "id": "MUS-SNK-145",
   "name": "USS Parche (SS-384)",
-  "museumName": "Museo Marítimo Nacional de San Francisco",
+  "museumName": "Pacific Fleet Submarine Museum",
   "country": "United States",
-  "city": "",
+  "city": "Honolulu",
   "vesselType": "Balao class",
   "propulsion": "Diesel",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1943,
   "latitude": 37.7749295,
   "longitude": -122.4194155,
   "address": "San Francisco, CA, USA",
-  "website": "",
+  "website": "https://www.bowfin.org",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-145",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Francisco. Vessel type: Balao class. Origin: USA. Address: San Francisco, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Francisco. Tipo de buque: Balao class. Origen: USA. Dirección: San Francisco, CA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://www.bowfin.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "http://www.navsource.net/archives/08/08384.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.bowfin.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "http://www.navsource.net/archives/08/08384.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://pearlharbor.org/blog/remains-seen-pearl-harbor-uss-parche/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -3874,27 +4058,54 @@
  {
   "id": "MUS-SNK-147",
   "name": "USS Pintado",
-  "museumName": "Museo Marítimo Nacional de San Francisco",
+  "museumName": "National Museum of the Pacific War",
   "country": "United States",
-  "city": "",
+  "city": "Fredericksburg",
   "vesselType": "Balao class",
   "propulsion": "Diesel",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1943,
   "latitude": 37.7749295,
   "longitude": -122.4194155,
   "address": "San Francisco, CA, USA",
-  "website": "",
+  "website": "https://www.pacificwarmuseum.org/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-147",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de San Francisco. Vessel type: Balao class. Origin: USA. Address: San Francisco, CA, USA.",
    "es": "Museo: Museo Marítimo Nacional de San Francisco. Tipo de buque: Balao class. Origen: USA. Dirección: San Francisco, CA, USA."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://www.pacificwarmuseum.org/visit/campus",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://www.hmdb.org/m.asp?m=42424",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.pacificwarmuseum.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://www.pacificwarmuseum.org/visit/campus",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://www.hmdb.org/m.asp?m=42424",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -4004,27 +4215,54 @@
  {
   "id": "MUS-SNK-152",
   "name": "USS Sturgeon",
-  "museumName": "Museo Naval de Groton",
+  "museumName": "U.S. Naval Undersea Museum",
   "country": "United States",
-  "city": "",
+  "city": "Keyport",
   "vesselType": "Sturgeon class",
   "propulsion": "Nuclear",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1966,
   "latitude": 47.6998121,
   "longitude": -122.6244237,
   "address": "1 Garnett Way, Keyport, WA 98345, EE. UU.",
-  "website": "",
+  "website": "https://navalunderseamuseum.org/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-152",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Museo Naval de Groton. Vessel type: Sturgeon class. Origin: USA. Address: 1 Garnett Way, Keyport, WA 98345, EE. UU..",
    "es": "Museo: Museo Naval de Groton. Tipo de buque: Sturgeon class. Origen: USA. Dirección: 1 Garnett Way, Keyport, WA 98345, EE. UU.."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://navalunderseamuseum.org/sturgeon-sail/",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://en.wikipedia.org/wiki/USS_Sturgeon_(SSN-637)",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://navalunderseamuseum.org/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://navalunderseamuseum.org/directions/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://navalunderseamuseum.org/sturgeon-sail/",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -4056,27 +4294,54 @@
  {
   "id": "MUS-SNK-154",
   "name": "USS Tautog",
-  "museumName": "Galveston Naval Museum",
+  "museumName": "Galveston Naval Museum (Cavalla Historical Foundation)",
   "country": "United States",
-  "city": "",
+  "city": "Galveston",
   "vesselType": "Sturgeon class",
   "propulsion": "Nuclear",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1967,
   "latitude": 29.3342847,
   "longitude": -94.7819886,
   "address": "100 Seawolf Park Blvd, Galveston, TX 77554, Estados Unidos",
-  "website": "",
+  "website": "https://www.galvestonnavalmuseum.com",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-154",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Galveston Naval Museum. Vessel type: Sturgeon class. Origin: USA. Address: 100 Seawolf Park Blvd, Galveston, TX 77554, Estados Unidos.",
    "es": "Museo: Galveston Naval Museum. Tipo de buque: Sturgeon class. Origen: USA. Dirección: 100 Seawolf Park Blvd, Galveston, TX 77554, Estados Unidos."
+  },
+  "research": {
+   "museumName": {
+    "source": "https://www.galvestonnavalmuseum.com/about",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "launchYear": {
+    "source": "https://www.navsource.net/archives/08/08639.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.galvestonnavalmuseum.com/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://www.galvestonnavalmuseum.com/about",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://www.galvestonnavalmuseum.com/uss-tautog",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
