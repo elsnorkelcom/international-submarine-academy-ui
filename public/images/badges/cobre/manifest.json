@@ -1,0 +1,474 @@
+{
+  "season": "COBRE",
+  "level": 1,
+  "generated_with": "Pillow",
+  "ribbons": [
+    {
+      "id": "RIB-CU-SCI-MAQ",
+      "discipline_code": "SCI",
+      "specialty_code": "MAQ",
+      "discipline_es": "Ciencias",
+      "specialty_es": "Maquinista",
+      "discipline_color": "#14b4f0",
+      "specialty_color": "#e0a63c",
+      "items": [
+        "ISA-KNOW-011",
+        "ISA-KNOW-026",
+        "ISA-KNOW-051",
+        "ISA-KNOW-063",
+        "ISA-KNOW-075",
+        "ISA-KNOW-086"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-SCI-MAQ.png",
+      "icon": "gear"
+    },
+    {
+      "id": "RIB-CU-SCI-ELE",
+      "discipline_code": "SCI",
+      "specialty_code": "ELE",
+      "discipline_es": "Ciencias",
+      "specialty_es": "Electricista",
+      "discipline_color": "#14b4f0",
+      "specialty_color": "#e2d23c",
+      "items": [
+        "ISA-KNOW-007",
+        "ISA-KNOW-031",
+        "ISA-KNOW-064",
+        "ISA-KNOW-073"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-SCI-ELE.png",
+      "icon": "bolt"
+    },
+    {
+      "id": "RIB-CU-SCI-ELN",
+      "discipline_code": "SCI",
+      "specialty_code": "ELN",
+      "discipline_es": "Ciencias",
+      "specialty_es": "Electrónico",
+      "discipline_color": "#14b4f0",
+      "specialty_color": "#14b4f0",
+      "items": [
+        "ISA-KNOW-002",
+        "ISA-KNOW-019",
+        "ISA-KNOW-036",
+        "ISA-KNOW-052",
+        "ISA-KNOW-057",
+        "ISA-KNOW-066",
+        "ISA-KNOW-076",
+        "ISA-KNOW-093"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-SCI-ELN.png",
+      "icon": "sonar"
+    },
+    {
+      "id": "RIB-CU-SCI-NAV",
+      "discipline_code": "SCI",
+      "specialty_code": "NAV",
+      "discipline_es": "Ciencias",
+      "specialty_es": "Naval",
+      "discipline_color": "#14b4f0",
+      "specialty_color": "#3d8bd9",
+      "items": [
+        "ISA-KNOW-008",
+        "ISA-KNOW-041",
+        "ISA-KNOW-071",
+        "ISA-KNOW-089",
+        "ISA-KNOW-090",
+        "ISA-KNOW-097"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-SCI-NAV.png",
+      "icon": "helm"
+    },
+    {
+      "id": "RIB-CU-SCI-LOG",
+      "discipline_code": "SCI",
+      "specialty_code": "LOG",
+      "discipline_es": "Ciencias",
+      "specialty_es": "Logístico",
+      "discipline_color": "#14b4f0",
+      "specialty_color": "#4caf93",
+      "items": [
+        "ISA-KNOW-024",
+        "ISA-KNOW-046",
+        "ISA-KNOW-067",
+        "ISA-KNOW-070",
+        "ISA-KNOW-081",
+        "ISA-KNOW-083",
+        "ISA-KNOW-098"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-SCI-LOG.png",
+      "icon": "compass"
+    },
+    {
+      "id": "RIB-CU-TEC-MAQ",
+      "discipline_code": "TEC",
+      "specialty_code": "MAQ",
+      "discipline_es": "Tecnología",
+      "specialty_es": "Maquinista",
+      "discipline_color": "#22a34a",
+      "specialty_color": "#e0a63c",
+      "items": [
+        "ISA-KNOW-003",
+        "ISA-KNOW-027",
+        "ISA-KNOW-060"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-TEC-MAQ.png",
+      "icon": "gear"
+    },
+    {
+      "id": "RIB-CU-TEC-ELE",
+      "discipline_code": "TEC",
+      "specialty_code": "ELE",
+      "discipline_es": "Tecnología",
+      "specialty_es": "Electricista",
+      "discipline_color": "#22a34a",
+      "specialty_color": "#e2d23c",
+      "items": [
+        "ISA-KNOW-015",
+        "ISA-KNOW-061",
+        "ISA-KNOW-082"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-TEC-ELE.png",
+      "icon": "bolt"
+    },
+    {
+      "id": "RIB-CU-TEC-ELN",
+      "discipline_code": "TEC",
+      "specialty_code": "ELN",
+      "discipline_es": "Tecnología",
+      "specialty_es": "Electrónico",
+      "discipline_color": "#22a34a",
+      "specialty_color": "#14b4f0",
+      "items": [
+        "ISA-KNOW-001",
+        "ISA-KNOW-032",
+        "ISA-KNOW-037",
+        "ISA-KNOW-053",
+        "ISA-KNOW-054",
+        "ISA-KNOW-056",
+        "ISA-KNOW-077",
+        "ISA-KNOW-079",
+        "ISA-KNOW-096"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-TEC-ELN.png",
+      "icon": "sonar"
+    },
+    {
+      "id": "RIB-CU-TEC-NAV",
+      "discipline_code": "TEC",
+      "specialty_code": "NAV",
+      "discipline_es": "Tecnología",
+      "specialty_es": "Naval",
+      "discipline_color": "#22a34a",
+      "specialty_color": "#3d8bd9",
+      "items": [
+        "ISA-KNOW-009",
+        "ISA-KNOW-042",
+        "ISA-KNOW-092"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-TEC-NAV.png",
+      "icon": "helm"
+    },
+    {
+      "id": "RIB-CU-TEC-LOG",
+      "discipline_code": "TEC",
+      "specialty_code": "LOG",
+      "discipline_es": "Tecnología",
+      "specialty_es": "Logístico",
+      "discipline_color": "#22a34a",
+      "specialty_color": "#4caf93",
+      "items": [
+        "ISA-KNOW-006",
+        "ISA-KNOW-047",
+        "ISA-KNOW-099"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-TEC-LOG.png",
+      "icon": "compass"
+    },
+    {
+      "id": "RIB-CU-ING-MAQ",
+      "discipline_code": "ING",
+      "specialty_code": "MAQ",
+      "discipline_es": "Ingeniería",
+      "specialty_es": "Maquinista",
+      "discipline_color": "#d6339a",
+      "specialty_color": "#e0a63c",
+      "items": [
+        "ISA-KNOW-012",
+        "ISA-KNOW-028",
+        "ISA-KNOW-084",
+        "ISA-KNOW-085",
+        "ISA-KNOW-087",
+        "ISA-KNOW-088",
+        "ISA-KNOW-100"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-ING-MAQ.png",
+      "icon": "gear"
+    },
+    {
+      "id": "RIB-CU-ING-ELE",
+      "discipline_code": "ING",
+      "specialty_code": "ELE",
+      "discipline_es": "Ingeniería",
+      "specialty_es": "Electricista",
+      "discipline_color": "#d6339a",
+      "specialty_color": "#e2d23c",
+      "items": [
+        "ISA-KNOW-016",
+        "ISA-KNOW-033",
+        "ISA-KNOW-058"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-ING-ELE.png",
+      "icon": "bolt"
+    },
+    {
+      "id": "RIB-CU-ING-ELN",
+      "discipline_code": "ING",
+      "specialty_code": "ELN",
+      "discipline_es": "Ingeniería",
+      "specialty_es": "Electrónico",
+      "discipline_color": "#d6339a",
+      "specialty_color": "#14b4f0",
+      "items": [
+        "ISA-KNOW-020",
+        "ISA-KNOW-038",
+        "ISA-KNOW-059",
+        "ISA-KNOW-062"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-ING-ELN.png",
+      "icon": "sonar"
+    },
+    {
+      "id": "RIB-CU-ING-NAV",
+      "discipline_code": "ING",
+      "specialty_code": "NAV",
+      "discipline_es": "Ingeniería",
+      "specialty_es": "Naval",
+      "discipline_color": "#d6339a",
+      "specialty_color": "#3d8bd9",
+      "items": [
+        "ISA-KNOW-004",
+        "ISA-KNOW-043",
+        "ISA-KNOW-055",
+        "ISA-KNOW-078",
+        "ISA-KNOW-080",
+        "ISA-KNOW-091",
+        "ISA-KNOW-094",
+        "ISA-KNOW-095"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-ING-NAV.png",
+      "icon": "helm"
+    },
+    {
+      "id": "RIB-CU-ING-LOG",
+      "discipline_code": "ING",
+      "specialty_code": "LOG",
+      "discipline_es": "Ingeniería",
+      "specialty_es": "Logístico",
+      "discipline_color": "#d6339a",
+      "specialty_color": "#4caf93",
+      "items": [
+        "ISA-KNOW-010",
+        "ISA-KNOW-048"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-ING-LOG.png",
+      "icon": "compass"
+    },
+    {
+      "id": "RIB-CU-MAT-MAQ",
+      "discipline_code": "MAT",
+      "specialty_code": "MAQ",
+      "discipline_es": "Matemática",
+      "specialty_es": "Maquinista",
+      "discipline_color": "#e2d23c",
+      "specialty_color": "#e0a63c",
+      "items": [
+        "ISA-KNOW-013",
+        "ISA-KNOW-072"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-MAT-MAQ.png",
+      "icon": "gear"
+    },
+    {
+      "id": "RIB-CU-MAT-ELE",
+      "discipline_code": "MAT",
+      "specialty_code": "ELE",
+      "discipline_es": "Matemática",
+      "specialty_es": "Electricista",
+      "discipline_color": "#e2d23c",
+      "specialty_color": "#e2d23c",
+      "items": [
+        "ISA-KNOW-017",
+        "ISA-KNOW-034",
+        "ISA-KNOW-065"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-MAT-ELE.png",
+      "icon": "bolt"
+    },
+    {
+      "id": "RIB-CU-MAT-ELN",
+      "discipline_code": "MAT",
+      "specialty_code": "ELN",
+      "discipline_es": "Matemática",
+      "specialty_es": "Electrónico",
+      "discipline_color": "#e2d23c",
+      "specialty_color": "#14b4f0",
+      "items": [
+        "ISA-KNOW-021",
+        "ISA-KNOW-039"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-MAT-ELN.png",
+      "icon": "sonar"
+    },
+    {
+      "id": "RIB-CU-MAT-NAV",
+      "discipline_code": "MAT",
+      "specialty_code": "NAV",
+      "discipline_es": "Matemática",
+      "specialty_es": "Naval",
+      "discipline_color": "#e2d23c",
+      "specialty_color": "#3d8bd9",
+      "items": [
+        "ISA-KNOW-005",
+        "ISA-KNOW-029",
+        "ISA-KNOW-044",
+        "ISA-KNOW-068"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-MAT-NAV.png",
+      "icon": "helm"
+    },
+    {
+      "id": "RIB-CU-MAT-LOG",
+      "discipline_code": "MAT",
+      "specialty_code": "LOG",
+      "discipline_es": "Matemática",
+      "specialty_es": "Logístico",
+      "discipline_color": "#e2d23c",
+      "specialty_color": "#4caf93",
+      "items": [
+        "ISA-KNOW-049"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-MAT-LOG.png",
+      "icon": "compass"
+    },
+    {
+      "id": "RIB-CU-HUM-MAQ",
+      "discipline_code": "HUM",
+      "specialty_code": "MAQ",
+      "discipline_es": "Humanidades y Artes",
+      "specialty_es": "Maquinista",
+      "discipline_color": "#d9942f",
+      "specialty_color": "#e0a63c",
+      "items": [
+        "ISA-KNOW-014",
+        "ISA-KNOW-030",
+        "ISA-KNOW-035"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-HUM-MAQ.png",
+      "icon": "gear"
+    },
+    {
+      "id": "RIB-CU-HUM-ELE",
+      "discipline_code": "HUM",
+      "specialty_code": "ELE",
+      "discipline_es": "Humanidades y Artes",
+      "specialty_es": "Electricista",
+      "discipline_color": "#d9942f",
+      "specialty_color": "#e2d23c",
+      "items": [
+        "ISA-KNOW-018"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-HUM-ELE.png",
+      "icon": "bolt"
+    },
+    {
+      "id": "RIB-CU-HUM-ELN",
+      "discipline_code": "HUM",
+      "specialty_code": "ELN",
+      "discipline_es": "Humanidades y Artes",
+      "specialty_es": "Electrónico",
+      "discipline_color": "#d9942f",
+      "specialty_color": "#14b4f0",
+      "items": [
+        "ISA-KNOW-022",
+        "ISA-KNOW-040"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-HUM-ELN.png",
+      "icon": "sonar"
+    },
+    {
+      "id": "RIB-CU-HUM-NAV",
+      "discipline_code": "HUM",
+      "specialty_code": "NAV",
+      "discipline_es": "Humanidades y Artes",
+      "specialty_es": "Naval",
+      "discipline_color": "#d9942f",
+      "specialty_color": "#3d8bd9",
+      "items": [
+        "ISA-KNOW-023",
+        "ISA-KNOW-045",
+        "ISA-KNOW-069"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-HUM-NAV.png",
+      "icon": "helm"
+    },
+    {
+      "id": "RIB-CU-HUM-LOG",
+      "discipline_code": "HUM",
+      "specialty_code": "LOG",
+      "discipline_es": "Humanidades y Artes",
+      "specialty_es": "Logístico",
+      "discipline_color": "#d9942f",
+      "specialty_color": "#4caf93",
+      "items": [
+        "ISA-KNOW-025",
+        "ISA-KNOW-050",
+        "ISA-KNOW-074"
+      ],
+      "file": "public/images/badges/cobre/ribbons/ribbon-HUM-LOG.png",
+      "icon": "compass"
+    }
+  ],
+  "coins": [
+    {
+      "id": "coin-cobre",
+      "label": "Coin Cobre",
+      "file": "public/images/badges/cobre/coins/coin-cobre.png"
+    },
+    {
+      "id": "coin-trayectoria-stem",
+      "label": "Coin Trayectoria STEM",
+      "file": "public/images/badges/cobre/coins/coin-trayectoria-stem.png"
+    },
+    {
+      "id": "coin-trayectoria-especialidad",
+      "label": "Coin Trayectoria Especialidad",
+      "file": "public/images/badges/cobre/coins/coin-trayectoria-especialidad.png"
+    },
+    {
+      "id": "coin-cobre-maq",
+      "label": "Coin Cobre · Maquinista",
+      "file": "public/images/badges/cobre/coins/coin-cobre-maq.png"
+    },
+    {
+      "id": "coin-cobre-ele",
+      "label": "Coin Cobre · Electricista",
+      "file": "public/images/badges/cobre/coins/coin-cobre-ele.png"
+    },
+    {
+      "id": "coin-cobre-eln",
+      "label": "Coin Cobre · Electrónico",
+      "file": "public/images/badges/cobre/coins/coin-cobre-eln.png"
+    },
+    {
+      "id": "coin-cobre-nav",
+      "label": "Coin Cobre · Naval",
+      "file": "public/images/badges/cobre/coins/coin-cobre-nav.png"
+    },
+    {
+      "id": "coin-cobre-log",
+      "label": "Coin Cobre · Logístico",
+      "file": "public/images/badges/cobre/coins/coin-cobre-log.png"
+    }
+  ]
+}

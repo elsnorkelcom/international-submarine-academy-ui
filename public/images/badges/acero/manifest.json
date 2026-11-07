@@ -1,0 +1,47 @@
+{
+  "season": "ACERO",
+  "level": 0,
+  "ribbons": [
+    {
+      "id": "RIB-AC-CONTROL",
+      "compartment": "Control y Comando",
+      "icon": "periscope",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-CONTROL.png"
+    },
+    {
+      "id": "RIB-AC-MAQUINAS",
+      "compartment": "Sala de Máquinas",
+      "icon": "gear",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-MAQUINAS.png"
+    },
+    {
+      "id": "RIB-AC-BATERIAS",
+      "compartment": "Baterías",
+      "icon": "battery",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-BATERIAS.png"
+    },
+    {
+      "id": "RIB-AC-PROA",
+      "compartment": "Proa",
+      "icon": "bow",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-PROA.png"
+    },
+    {
+      "id": "RIB-AC-POPA",
+      "compartment": "Popa",
+      "icon": "propeller",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-POPA.png"
+    },
+    {
+      "id": "RIB-AC-REACTOR",
+      "compartment": "Reactor nuclear",
+      "icon": "radiation",
+      "file": "public/images/badges/acero/ribbons/ribbon-AC-REACTOR.png"
+    }
+  ],
+  "badge": {
+    "id": "BADGE-ACERO",
+    "label": "Diploma de Visitante",
+    "file": "public/images/badges/acero/badge-acero-diploma.png"
+  }
+}
