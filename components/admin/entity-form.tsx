@@ -1,8 +1,13 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select } from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
 import type { AdminEntity, AdminField } from '@/lib/admin/entities';
+import { validateValues } from '@/lib/admin/validation';
 
 export type EntityValues = Record<string, unknown>;
 
@@ -28,22 +33,13 @@ export function EntityForm({ entity, initial, onSubmit, onCancel, busy }: Entity
     setValues(base);
   }, [entity, initial]);
 
-  const missing = useMemo(
-    () =>
-      entity.fields.filter((field) => {
-        if (!field.required) return false;
-        const value = values[field.key];
-        if (isLocalized(value)) return !value.en.trim() && !value.es.trim();
-        return value === '' || value === null || value === undefined;
-      }),
-    [entity, values],
-  );
-
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
 
-    if (missing.length > 0) {
-      setError(`Required: ${missing.map((field) => field.label).join(', ')}.`);
+    const outcome = validateValues(entity, values);
+
+    if (!outcome.valid) {
+      setError(outcome.message);
       return;
     }
 
@@ -118,15 +114,15 @@ function FieldInput({
   onChange: (value: unknown) => void;
 }) {
   const label = (
-    <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">
+    <Label className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">
       {field.label}
       {field.required ? <span className="text-primary"> *</span> : null}
-    </span>
+    </Label>
   );
 
   if (field.type === 'localized' || field.type === 'localizedTextarea') {
     const localized = isLocalized(value) ? value : { en: '', es: '' };
-    const Input = field.type === 'localizedTextarea' ? 'textarea' : 'input';
+    const Control = field.type === 'localizedTextarea' ? Textarea : Input;
 
     return (
       <div className="md:col-span-2">
@@ -137,13 +133,13 @@ function FieldInput({
               <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
                 {language}
               </span>
-              <Input
+              <Control
                 value={localized[language]}
                 onChange={(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
                   onChange({ ...localized, [language]: event.target.value })
                 }
                 rows={field.type === 'localizedTextarea' ? 3 : undefined}
-                className="mt-1 w-full rounded-sm border border-white/15 bg-white/5 px-2 py-1.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                className="mt-1"
               />
             </div>
           ))}
@@ -156,10 +152,10 @@ function FieldInput({
     return (
       <label className="block">
         {label}
-        <select
+        <Select
           value={String(value ?? '')}
           onChange={(event) => onChange(event.target.value)}
-          className="mt-1.5 h-9 w-full rounded-sm border border-white/15 bg-white/5 px-2 text-sm outline-none focus:border-primary"
+          className="mt-1.5"
         >
           <option value="">—</option>
           {(field.options ?? []).map((option) => (
@@ -167,22 +163,22 @@ function FieldInput({
               {option.label}
             </option>
           ))}
-        </select>
+        </Select>
       </label>
     );
   }
 
   if (field.type === 'boolean') {
     return (
-      <label className="mt-6 flex items-center gap-2 text-sm">
+      <Label className="mt-6">
         <input
           type="checkbox"
           checked={Boolean(value)}
           onChange={(event) => onChange(event.target.checked)}
-          className="accent-[#00e08a]"
+          className="size-4 accent-[#00e08a]"
         />
         {field.label}
-      </label>
+      </Label>
     );
   }
 
@@ -190,11 +186,11 @@ function FieldInput({
     return (
       <label className="block md:col-span-2">
         {label}
-        <textarea
+        <Textarea
           value={String(value ?? '')}
           onChange={(event) => onChange(event.target.value)}
           rows={3}
-          className="mt-1.5 w-full rounded-sm border border-white/15 bg-white/5 px-2 py-1.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+          className="mt-1.5"
         />
       </label>
     );
@@ -205,7 +201,7 @@ function FieldInput({
     return (
       <label className="block">
         {label}
-        <input
+        <Input
           value={list.join(', ')}
           onChange={(event) =>
             onChange(
@@ -215,7 +211,7 @@ function FieldInput({
                 .filter((item) => item.length > 0),
             )
           }
-          className="mt-1.5 h-9 w-full rounded-sm border border-white/15 bg-white/5 px-2 text-sm outline-none focus:border-primary"
+          className="mt-1.5"
         />
       </label>
     );
@@ -224,7 +220,7 @@ function FieldInput({
   return (
     <label className="block">
       {label}
-      <input
+      <Input
         type={field.type === 'number' ? 'number' : field.type === 'date' ? 'date' : 'text'}
         value={
           field.type === 'number'
@@ -244,7 +240,7 @@ function FieldInput({
               : event.target.value,
           )
         }
-        className="mt-1.5 h-9 w-full rounded-sm border border-white/15 bg-white/5 px-2 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+        className="mt-1.5"
       />
       {field.hint ? <span className="mt-1 block text-[10px] text-muted-foreground">{field.hint}</span> : null}
     </label>

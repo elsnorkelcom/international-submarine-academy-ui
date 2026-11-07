@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useState, type ReactNode } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
+import { VerticalVideo } from '@/components/media/vertical-video';
+import { SAMPLE_VIDEO, youtubeId } from '@/lib/media/youtube';
 import type { Compartment, Episode, Mission, Museum, Question } from '@/lib/domain/types';
 import { localize } from '@/lib/domain/types';
 
@@ -142,6 +144,27 @@ export function MuseumFile({ id }: { id: string }) {
         ) : null}
       </section>
 
+      {(() => {
+        const ownId = youtubeId(museum.mediaUrl);
+        const videoId = ownId ?? SAMPLE_VIDEO.id;
+
+        return (
+          <section className="mt-8">
+            <h2 className="font-mono text-[10px] uppercase tracking-[0.24em] text-metal">{t.file.video}</h2>
+            <div className="mt-3">
+              <VerticalVideo
+                videoId={videoId}
+                title={localize(museum.name, language)}
+                sample={!ownId}
+                credit={ownId ? undefined : { author: SAMPLE_VIDEO.author, url: SAMPLE_VIDEO.authorUrl }}
+                sampleLabel={t.file.videoSample}
+                creditLabel={t.file.videoCredit}
+              />
+            </div>
+          </section>
+        );
+      })()}
+
       <section className="mt-8 flex flex-wrap gap-3">
         {museum.website ? (
           <a
@@ -163,11 +186,7 @@ export function MuseumFile({ id }: { id: string }) {
           >
             {t.file.film} ▶
           </a>
-        ) : (
-          <span className="border border-white/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-            {t.file.noFilm}
-          </span>
-        )}
+        ) : null}
       </section>
 
       {compartments.length + episodes.length + missions.length + questions.length > 0 ? (
