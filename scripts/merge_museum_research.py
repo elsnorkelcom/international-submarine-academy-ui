@@ -29,8 +29,19 @@ RESULTS = ROOT / "research" / "results"
 REVIEW = ROOT / "research" / "review.csv"
 PROPOSALS = ROOT / "research" / "proposals.json"
 
-FIELDS = ["launchYear", "website", "city", "situation"]
+FIELDS = ["museumName", "launchYear", "website", "city", "situation"]
 SITUATIONS = {"flote", "agua", "tierra", "cerrado", "monumento"}
+SITUATION_ALIASES = {
+    "afloat": "flote",
+    "water": "agua",
+    "submerged": "agua",
+    "land": "tierra",
+    "dry": "tierra",
+    "indoor": "cerrado",
+    "under cover": "cerrado",
+    "monument": "monumento",
+    "memorial": "monumento",
+}
 ACCEPTED = {"high", "medium"}
 HEADER = ["id", "name", "field", "current", "proposed", "confidence", "source", "status", "notes"]
 
@@ -66,7 +77,13 @@ def normalize_field(field: str, value: str) -> object:
         return value if value.startswith("http") else None
 
     if field == "situation":
-        return value.lower() if value.lower() in SITUATIONS else None
+        key = value.lower()
+        key = SITUATION_ALIASES.get(key, key)
+        return key if key in SITUATIONS else None
+
+    if field == "city":
+        # "Groton, Connecticut" -> "Groton"
+        return value.split(",")[0].strip()
 
     return value
 

@@ -1,86 +1,352 @@
 [
  {
-  "id": "MUS-SNK-087",
+  "id": "MUS-SNK-106",
+  "field": "museumName",
+  "value": "Submarine Force Library and Museum",
+  "source": "https://ussnautilus.org/museum-information/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-106",
   "field": "launchYear",
-  "value": 1934,
-  "source": "https://deepstorm.ru/DeepStorm.files/17-45/sh%20V-b-2/Sh-307/Sh-307.htm",
-  "confidence": "high"
+  "value": 1938,
+  "source": "https://www.npshistory.com/publications/maritime/large-preserved-historic-vessels.pdf",
+  "confidence": "medium"
  },
  {
-  "id": "MUS-SNK-087",
+  "id": "MUS-SNK-106",
   "field": "website",
-  "value": "https://victorymuseum.ru/",
-  "source": "https://victorymuseum.ru/",
+  "value": "https://ussnautilus.org",
+  "source": "https://ussnautilus.org/museum-information/",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-087",
+  "id": "MUS-SNK-106",
   "field": "city",
-  "value": "Moscow",
-  "source": "https://victorymuseum.ru/",
+  "value": "Groton",
+  "source": "https://ussnautilus.org/museum-information/",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-087",
+  "id": "MUS-SNK-106",
+  "field": "situation",
+  "value": "tierra",
+  "source": "https://pacificwrecks.com/sub/midget-sub-groton.html",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-095",
+  "field": "museumName",
+  "value": "Çanakkale Naval Museum (Çanakkale Deniz Müzesi)",
+  "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-095",
+  "field": "launchYear",
+  "value": 1916,
+  "source": "https://uboat.net/wwi/boats/index.html?boat=UB+46",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-095",
+  "field": "website",
+  "value": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+  "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-095",
+  "field": "city",
+  "value": "Çanakkale",
+  "source": "https://www.turkishmuseums.com/museum/detail/22316-canakkale-naval-museum/22316/4",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-095",
+  "field": "situation",
+  "value": "tierra",
+  "source": "http://www.canakkaletravel.com/public/haber/canakkaletravel.com/public/haber/canakkale-deniz-muzesinde-100-yillik-bir-alman-denizaltisi.html",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-120",
+  "field": "museumName",
+  "value": "Buffalo and Erie County Naval & Military Park",
+  "source": "https://en.wikipedia.org/wiki/USS_Boston_(SSN-703)",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-120",
+  "field": "launchYear",
+  "value": 1980,
+  "source": "http://www.navsource.net/archives/08/08703.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-120",
+  "field": "website",
+  "value": "https://buffalonavalpark.org/",
+  "source": "https://buffalonavalpark.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-120",
+  "field": "city",
+  "value": "Buffalo",
+  "source": "https://buffalonavalpark.org/about-us/history-mission/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-120",
   "field": "situation",
   "value": "monumento",
-  "source": "https://victorymuseum.ru/external-navigation/bmf/38043/",
+  "source": "https://en.wikipedia.org/wiki/List_of_United_States_submarine_museum_ships",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-101",
+  "id": "MUS-SNK-130",
+  "field": "museumName",
+  "value": "Submarine Force Library and Museum (Submarine Force Museum)",
+  "source": "https://ussnautilus.org/ssbn-598/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-130",
   "field": "launchYear",
-  "value": 1970,
-  "source": "https://en.wikipedia.org/wiki/DSRV-1_Mystic",
+  "value": 1959,
+  "source": "https://ussnautilus.org/ssbn-598/",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-101",
+  "id": "MUS-SNK-130",
   "field": "website",
-  "value": "https://navalunderseamuseum.org",
-  "source": "https://navalunderseamuseum.org/dsrv-mystic/",
+  "value": "https://ussnautilus.org/",
+  "source": "https://www.hmdb.org/m.asp?m=206626",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-101",
+  "id": "MUS-SNK-130",
+  "field": "city",
+  "value": "Groton",
+  "source": "https://www.hmdb.org/m.asp?m=206626",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-130",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://en.wikipedia.org/wiki/USS_George_Washington_(SSBN-598)",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-133",
+  "field": "museumName",
+  "value": "New Jersey Naval Museum (Submarine Memorial Association)",
+  "source": "http://sous.marins.musees.free.fr/index.php/les-inclassables/242-halfbeak",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-133",
+  "field": "launchYear",
+  "value": 1946,
+  "source": "http://www.navsource.net/archives/08/08352.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-133",
+  "field": "city",
+  "value": "Hackensack",
+  "source": "http://sous.marins.musees.free.fr/index.php/les-inclassables/242-halfbeak",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-133",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://en.wikipedia.org/wiki/List_of_submarines_on_display",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-137",
+  "field": "museumName",
+  "value": "Patriots Point Naval & Maritime Museum (Cold War Memorial)",
+  "source": "https://www.patriotspoint.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-137",
+  "field": "launchYear",
+  "value": 1964,
+  "source": "https://www.nps.gov/articles/uss-lewis-and-clark-submarine.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-137",
+  "field": "website",
+  "value": "https://www.patriotspoint.org/",
+  "source": "https://www.patriotspoint.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-137",
+  "field": "city",
+  "value": "Mount Pleasant",
+  "source": "https://www.patriotspoint.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-137",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://www.nps.gov/articles/uss-lewis-and-clark-submarine.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-145",
+  "field": "museumName",
+  "value": "Pacific Fleet Submarine Museum",
+  "source": "https://www.bowfin.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-145",
+  "field": "launchYear",
+  "value": 1943,
+  "source": "http://www.navsource.net/archives/08/08384.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-145",
+  "field": "website",
+  "value": "https://www.bowfin.org",
+  "source": "https://www.bowfin.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-145",
+  "field": "city",
+  "value": "Honolulu",
+  "source": "http://www.navsource.net/archives/08/08384.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-145",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://pearlharbor.org/blog/remains-seen-pearl-harbor-uss-parche/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-147",
+  "field": "museumName",
+  "value": "National Museum of the Pacific War",
+  "source": "https://www.pacificwarmuseum.org/visit/campus",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-147",
+  "field": "launchYear",
+  "value": 1943,
+  "source": "https://www.hmdb.org/m.asp?m=42424",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-147",
+  "field": "website",
+  "value": "https://www.pacificwarmuseum.org/",
+  "source": "https://www.pacificwarmuseum.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-147",
+  "field": "city",
+  "value": "Fredericksburg",
+  "source": "https://www.pacificwarmuseum.org/visit/campus",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-147",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://www.hmdb.org/m.asp?m=42424",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-152",
+  "field": "museumName",
+  "value": "U.S. Naval Undersea Museum",
+  "source": "https://navalunderseamuseum.org/sturgeon-sail/",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-152",
+  "field": "launchYear",
+  "value": 1966,
+  "source": "https://en.wikipedia.org/wiki/USS_Sturgeon_(SSN-637)",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-152",
+  "field": "website",
+  "value": "https://navalunderseamuseum.org/",
+  "source": "https://navalunderseamuseum.org/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-152",
   "field": "city",
   "value": "Keyport",
   "source": "https://navalunderseamuseum.org/directions/",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-101",
+  "id": "MUS-SNK-152",
   "field": "situation",
-  "value": "tierra",
-  "source": "https://navalunderseamuseum.org/outdoor-exhibits/",
+  "value": "monumento",
+  "source": "https://navalunderseamuseum.org/sturgeon-sail/",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-154",
+  "field": "museumName",
+  "value": "Galveston Naval Museum (Cavalla Historical Foundation)",
+  "source": "https://www.galvestonnavalmuseum.com/about",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-102",
+  "id": "MUS-SNK-154",
   "field": "launchYear",
-  "value": 1881,
-  "source": "https://www.navsource.net/archives/08/08449.htm",
+  "value": 1967,
+  "source": "https://www.navsource.net/archives/08/08639.htm",
   "confidence": "high"
  },
  {
-  "id": "MUS-SNK-102",
+  "id": "MUS-SNK-154",
   "field": "website",
-  "value": "https://www.history.navy.mil/content/history/museums/nmusn.html",
-  "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
+  "value": "https://www.galvestonnavalmuseum.com",
+  "source": "https://www.galvestonnavalmuseum.com/",
   "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-154",
+  "field": "city",
+  "value": "Galveston",
+  "source": "https://www.galvestonnavalmuseum.com/about",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-154",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://www.galvestonnavalmuseum.com/uss-tautog",
+  "confidence": "medium"
  },
  {
   "id": "MUS-SNK-102",
   "field": "city",
   "value": "Washington",
   "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
-  "confidence": "medium"
- },
- {
-  "id": "MUS-SNK-102",
-  "field": "situation",
-  "value": "cerrado",
-  "source": "https://www.navsource.net/archives/08/08449.htm",
   "confidence": "medium"
  }
 ]

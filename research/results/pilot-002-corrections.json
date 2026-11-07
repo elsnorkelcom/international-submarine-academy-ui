@@ -1,0 +1,26 @@
+{
+ "source": "pilot-corrections",
+ "generatedAt": "2026-11-07",
+ "results": [
+  {
+   "id": "MUS-SNK-101",
+   "museumName": "U.S. Naval Undersea Museum",
+   "museumNameSource": "https://navalunderseamuseum.org/dsrv-mystic/",
+   "museumNameConfidence": "high",
+   "city": "Keyport",
+   "citySource": "https://navalunderseamuseum.org/directions/",
+   "cityConfidence": "high",
+   "notes": "Correccion de atribucion: el DSRV-1 Mystic se exhibe en el U.S. Naval Undersea Museum (Keyport, WA). Mystic es el nombre del vehiculo, no del museo."
+  },
+  {
+   "id": "MUS-SNK-102",
+   "museumName": "Paterson Museum",
+   "museumNameSource": "https://patersonmuseum.com/permanent-exhibits-2/john-p-holland/",
+   "museumNameConfidence": "high",
+   "city": "Paterson",
+   "citySource": "https://patersonmuseum.com/permanent-exhibits-2/john-p-holland/",
+   "cityConfidence": "high",
+   "notes": "Correccion de atribucion: el Fenian Ram esta en el Paterson Museum (Paterson, NJ) desde 1980, no en el National Museum of the US Navy."
+  }
+ ]
+}

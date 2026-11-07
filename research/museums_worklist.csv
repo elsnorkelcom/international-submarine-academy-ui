@@ -1,7 +1,4 @@
 id,name,museum_name,country,city,missing_fields,missing_count,priority,validation
-MUS-SNK-087,Shch-307,Memorial of Victory at Poklonnaya,Russia,,launchYear|website|city|situation|mediaUrl|origin,6,12,pending
-MUS-SNK-101,DSRV-1 Mystic,Museo Marítimo de Mystic Seaport,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
-MUS-SNK-102,Fenian Ram,Museo Marítimo Nacional de Washington D.C.,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
 MUS-SNK-106,HA. 8,Museo Naval de Groton,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
 MUS-SNK-095,SM UB-46,Dardanelles Naval Museum,Türkiye,,launchYear|website|city|situation|mediaUrl,5,11,pending
 MUS-SNK-120,USS Boston,Museo Marítimo Nacional de Boston,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
@@ -147,7 +144,10 @@ MUS-SNK-063,HMS X24,Royal Navy Submarine Museum,United Kingdom,,city|mediaUrl,2,
 MUS-SNK-015,Submarino Museo Riachuelo,Espaço Cultural da Marinha,Brazil,Rio de Janeiro,launchYear,1,3,pending
 MUS-SNK-119,USS Blueback,Oregon Museum of Science and Industry,United States,Portland,launchYear,1,3,pending
 MUS-SNK-124,USS Cobia,Wisconsin Maritime Museum,United States,Manitowoc,launchYear,1,3,pending
+MUS-SNK-087,Shch-307,Memorial of Victory at Poklonnaya,Russia,Moscow,mediaUrl|origin,2,2,pending
+MUS-SNK-101,DSRV-1 Mystic,U.S. Naval Undersea Museum,United States,Keyport,mediaUrl,1,1,pending
 MUS-SNK-045,Enrico Toti,Museo Nazionale della Scienza e della Tecnologia,Italy,Milan,mediaUrl,1,1,pending
+MUS-SNK-102,Fenian Ram,Paterson Museum,United States,Paterson,mediaUrl,1,1,pending
 MUS-SNK-012,HMAS Onslow,Australian National Maritime Museum,Australia,Sydney,mediaUrl,1,1,pending
 MUS-SNK-014,HMAS Ovens,Western Australian Maritime Museum,Australia,Fremantle,mediaUrl,1,1,pending
 MUS-SNK-018,HMCS Ojibwa,Elgin Military Museum,Canada,Port Burwell,mediaUrl,1,1,pending

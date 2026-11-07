@@ -85,6 +85,31 @@ Resultado del merge: **12 propuestas**, todas `proposed`, dataset intacto.
 
 Estos casos justifican el pipeline: investigar no solo completa campos, también detecta atribuciones incorrectas que hoy se publican en `/museums`.
 
+## 5.1 Lote 2 (10 museos) — hallazgo sistémico
+
+Resultado del merge en modo revisión: **50 propuestas**, 10 `not-found`, 15 `same`.
+
+Lo importante no es el volumen sino el patrón: **8 de los 10 museos declarados eran incorrectos**.
+
+| Registro decía | Realidad |
+|---|---|
+| Museo Naval de Groton | Submarine Force Library and Museum |
+| Dardanelles Naval Museum | Çanakkale Deniz Müzesi |
+| Museo Marítimo Nacional de Boston | Buffalo and Erie County Naval & Military Park |
+| Museo Marítimo Nacional de Newport News | Submarine Force Library and Museum (Groton) |
+| Museo Marítimo Nacional de San Diego | New Jersey Naval Museum (Hackensack) |
+| Museo Marítimo Nacional de Bremerton | Patriots Point (Mount Pleasant) |
+| Museo Marítimo Nacional de San Francisco (×2) | Pacific Fleet Submarine Museum / National Museum of the Pacific War |
+| Museo Naval de Groton | U.S. Naval Undersea Museum (Keyport) |
+
+El patrón `Museo Marítimo Nacional de <ciudad>` no corresponde a ninguna institución real: parece
+una traducción automática del registro de origen. Además, en 6 casos el casco ya **no existe**
+(desguazado) y lo conservado es la vela o la torre de mando, por eso la situación correcta es
+`monumento` y no `tierra`.
+
+**Consecuencia:** la revisión no puede ser opcional. Aplicar sin revisar publicaría atribuciones
+falsas en `/museums`.
+
 ## 6. Escala
 
 - 152 museos pendientes, 4 campos prioritarios → ~600 datos por investigar.

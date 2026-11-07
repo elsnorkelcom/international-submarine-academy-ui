@@ -2240,25 +2240,47 @@
   "name": "Shch-307",
   "museumName": "Memorial of Victory at Poklonnaya",
   "country": "Russia",
-  "city": "",
+  "city": "Moscow",
   "vesselType": "Shchuka-class",
   "propulsion": "Diesel",
   "origin": "",
-  "launchYear": null,
+  "launchYear": 1934,
   "latitude": 55.7313811,
   "longitude": 37.5062685,
   "address": "Moscow, Russia, 121096",
-  "website": "",
+  "website": "https://victorymuseum.ru/",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-087",
-  "situation": "",
+  "situation": "monumento",
   "featured": false,
   "description": {
    "en": "Museum: Memorial of Victory at Poklonnaya. Vessel type: Shchuka-class. Address: Moscow, Russia, 121096.",
    "es": "Museo: Memorial of Victory at Poklonnaya. Tipo de buque: Shchuka-class. Dirección: Moscow, Russia, 121096."
+  },
+  "research": {
+   "launchYear": {
+    "source": "https://deepstorm.ru/DeepStorm.files/17-45/sh%20V-b-2/Sh-307/Sh-307.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://victorymuseum.ru/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://victorymuseum.ru/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://victorymuseum.ru/external-navigation/bmf/38043/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
@@ -2602,53 +2624,107 @@
  {
   "id": "MUS-SNK-101",
   "name": "DSRV-1 Mystic",
-  "museumName": "Museo Marítimo de Mystic Seaport",
+  "museumName": "U.S. Naval Undersea Museum",
   "country": "United States",
-  "city": "",
+  "city": "Keyport",
   "vesselType": "DSRV",
   "propulsion": "Electric",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1970,
   "latitude": 41.3612271,
   "longitude": -71.9664979,
   "address": "75 Greenmanville Ave, Mystic, CT 06355, Estados Unidos",
-  "website": "",
+  "website": "https://navalunderseamuseum.org",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-101",
-  "situation": "",
+  "situation": "tierra",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo de Mystic Seaport. Vessel type: DSRV. Origin: USA. Address: 75 Greenmanville Ave, Mystic, CT 06355, Estados Unidos.",
    "es": "Museo: Museo Marítimo de Mystic Seaport. Tipo de buque: DSRV. Origen: USA. Dirección: 75 Greenmanville Ave, Mystic, CT 06355, Estados Unidos."
+  },
+  "research": {
+   "launchYear": {
+    "source": "https://en.wikipedia.org/wiki/DSRV-1_Mystic",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://navalunderseamuseum.org/dsrv-mystic/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://navalunderseamuseum.org/directions/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://navalunderseamuseum.org/outdoor-exhibits/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "museumName": {
+    "source": "https://navalunderseamuseum.org/dsrv-mystic/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
   "id": "MUS-SNK-102",
   "name": "Fenian Ram",
-  "museumName": "Museo Marítimo Nacional de Washington D.C.",
+  "museumName": "Paterson Museum",
   "country": "United States",
-  "city": "",
+  "city": "Paterson",
   "vesselType": "Research submersible",
   "propulsion": "Diesel",
   "origin": "United States",
-  "launchYear": null,
+  "launchYear": 1881,
   "latitude": 38.9071923,
   "longitude": -77.0368707,
   "address": "Washington, DC, USA",
-  "website": "",
+  "website": "https://www.history.navy.mil/content/history/museums/nmusn.html",
   "mediaUrl": "",
   "validation": "pending",
   "source": "Submarinos Museos (published Sheet)",
   "notes": "Revisar: Faltan Secundarios",
   "dossier": "SNK-102",
-  "situation": "",
+  "situation": "cerrado",
   "featured": false,
   "description": {
    "en": "Museum: Museo Marítimo Nacional de Washington D.C.. Vessel type: Research submersible. Origin: USA. Address: Washington, DC, USA.",
    "es": "Museo: Museo Marítimo Nacional de Washington D.C.. Tipo de buque: Research submersible. Origen: USA. Dirección: Washington, DC, USA."
+  },
+  "research": {
+   "launchYear": {
+    "source": "https://www.navsource.net/archives/08/08449.htm",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "website": {
+    "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "city": {
+    "source": "https://patersonmuseum.com/permanent-exhibits-2/john-p-holland/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   },
+   "situation": {
+    "source": "https://www.navsource.net/archives/08/08449.htm",
+    "confidence": "medium",
+    "accessed": "2026-11-07"
+   },
+   "museumName": {
+    "source": "https://patersonmuseum.com/permanent-exhibits-2/john-p-holland/",
+    "confidence": "high",
+    "accessed": "2026-11-07"
+   }
   }
  },
  {
