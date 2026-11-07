@@ -138,7 +138,29 @@ A verificar por la sesión, con URL de fuente:
 - No inventar cifras: si un límite no se puede verificar, se marca como tal.
 - No borrar ni renombrar IDs existentes.
 
-## 7. Después de esta sesión
+## 7. Decisión previa adoptada: grilla 5×5
+
+La grilla queda **decidida**: es una entidad de primera clase, no un cálculo derivado.
+
+Modelo esperado:
+
+| Concepto | Tabla | Clave |
+|---|---|---|
+| Especialidad (rol) | `roles` | `ROL-*` |
+| Disciplina | `disciplines` | `DIS-*` |
+| Celda de la grilla | `grid_cells` | `(specialty_id, discipline_id)` único |
+| Contenido de la celda | referencia a misión, insignia y estado | `mission_id`, `badge_id` |
+
+Reglas:
+
+- 5 especialidades × 5 disciplinas = **25 celdas**, sin duplicar misiones.
+- Una misión puede aparecer en una sola celda; la celda es la unidad de publicación.
+- La celda guarda su estado editorial y su trazabilidad, igual que el resto del contenido.
+- El sitio puede renderizar la grilla sin recorrer misiones.
+- La sesión S debe incorporar `grid_cells` al esquema y al plan de migración; no debe
+  reabrir la discusión conceptual.
+
+## 8. Después de esta sesión
 
 Con el ADR aprobado, se abren las sesiones por incumbencia (`docs/17_SESSION_MAP.md`) y la A ·
 Datos ejecuta la migración al modelo decidido.
