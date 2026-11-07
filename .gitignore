@@ -6,3 +6,7 @@ node_modules
 .next/
 out/
 .DS_Store
+
+# Generados por Next/TS
+next-env.d.ts
+*.tsbuildinfo
