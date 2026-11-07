@@ -1,0 +1,86 @@
+[
+ {
+  "id": "MUS-SNK-087",
+  "field": "launchYear",
+  "value": 1934,
+  "source": "https://deepstorm.ru/DeepStorm.files/17-45/sh%20V-b-2/Sh-307/Sh-307.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-087",
+  "field": "website",
+  "value": "https://victorymuseum.ru/",
+  "source": "https://victorymuseum.ru/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-087",
+  "field": "city",
+  "value": "Moscow",
+  "source": "https://victorymuseum.ru/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-087",
+  "field": "situation",
+  "value": "monumento",
+  "source": "https://victorymuseum.ru/external-navigation/bmf/38043/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-101",
+  "field": "launchYear",
+  "value": 1970,
+  "source": "https://en.wikipedia.org/wiki/DSRV-1_Mystic",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-101",
+  "field": "website",
+  "value": "https://navalunderseamuseum.org",
+  "source": "https://navalunderseamuseum.org/dsrv-mystic/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-101",
+  "field": "city",
+  "value": "Keyport",
+  "source": "https://navalunderseamuseum.org/directions/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-101",
+  "field": "situation",
+  "value": "tierra",
+  "source": "https://navalunderseamuseum.org/outdoor-exhibits/",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-102",
+  "field": "launchYear",
+  "value": 1881,
+  "source": "https://www.navsource.net/archives/08/08449.htm",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-102",
+  "field": "website",
+  "value": "https://www.history.navy.mil/content/history/museums/nmusn.html",
+  "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
+  "confidence": "high"
+ },
+ {
+  "id": "MUS-SNK-102",
+  "field": "city",
+  "value": "Washington",
+  "source": "https://www.history.navy.mil/content/history/museums/nmusn.html",
+  "confidence": "medium"
+ },
+ {
+  "id": "MUS-SNK-102",
+  "field": "situation",
+  "value": "cerrado",
+  "source": "https://www.navsource.net/archives/08/08449.htm",
+  "confidence": "medium"
+ }
+]

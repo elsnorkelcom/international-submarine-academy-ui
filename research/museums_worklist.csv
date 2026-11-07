@@ -1,0 +1,161 @@
+id,name,museum_name,country,city,missing_fields,missing_count,priority,validation
+MUS-SNK-087,Shch-307,Memorial of Victory at Poklonnaya,Russia,,launchYear|website|city|situation|mediaUrl|origin,6,12,pending
+MUS-SNK-101,DSRV-1 Mystic,Museo Marítimo de Mystic Seaport,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-102,Fenian Ram,Museo Marítimo Nacional de Washington D.C.,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-106,HA. 8,Museo Naval de Groton,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-095,SM UB-46,Dardanelles Naval Museum,Türkiye,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-120,USS Boston,Museo Marítimo Nacional de Boston,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-130,USS George Washington,Museo Marítimo Nacional de Newport News,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-133,USS Halfbeak,Museo Marítimo Nacional de San Diego,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-137,USS Lewis and Clark,Museo Marítimo Nacional de Bremerton,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-145,USS Parche (SS-384),Museo Marítimo Nacional de San Francisco,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-147,USS Pintado,Museo Marítimo Nacional de San Francisco,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-152,USS Sturgeon,Museo Naval de Groton,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-154,USS Tautog,Galveston Naval Museum,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-158,X-1,Submarine Force Library and Museum,United States,,launchYear|website|city|situation|mediaUrl,5,11,pending
+MUS-SNK-099,B-427 (Scorpion),The Russian Scorpion Submarine,United States,Long Beach,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-100,Bayou St. John submarine,Louisiana State Museum,United States,Baton Rouge,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-017,Ben Franklin,Vancouver Maritime Museum,Canada,Vancouver,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-022,CB-20,Nikola Tesla Technical Museum,Croatia,Zagreb,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-103,H. L. Hunley,Warren Lasch Conservation Center,United States,North Charleston,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-104,HA. 19,National Museum of the Pacific War,United States,Fredericksburg,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-105,HA. 62-76,T. Stell Newman Visitor Center,United States,Santa Rita,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-107,Holland I,Paterson Museum,United States,Paterson,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-108,Intelligent Whale,National Guard Militia Museum of New Jersey,United States,Sea Girt,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-109,Marlin (SST-2),Freedom Park,United States,Omaha,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-111,Trieste,National Museum of the United States Navy,United States,"Washington, D.C.",launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-112,Trieste II,Naval Undersea Museum,United States,Keyport,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-113,U-505,Museum of Science and Industry,United States,Chicago,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-114,USS Albacore,Albacore Park and Museum,United States,Portsmouth,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-115,USS Balao,Washington Navy Yard,United States,"Washington, D.C.",launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-117,USS Baya,Vallejo Naval and Historical Museum,United States,Vallejo,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-118,USS Becuna,Independence Seaport Museum,United States,Philadelphia,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-122,USS Cavalla,Seawolf Park,United States,Galveston,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-127,USS Dolphin,Maritime Museum of San Diego,United States,San Diego,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-128,USS Drum,Portsmouth Naval Shipyard,United States,Mobile,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-129,USS George Bancroft,Naval Submarine Base Kings Bay,United States,St. Marys,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-131,USS Grayling,Portsmouth Naval Shipyard,United States,Kittery,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-132,USS Growler,"Intrepid Sea, Air & Space Museum",United States,New York City,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-134,USS Hawkbill,Idaho Science Center,United States,Arco,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-135,USS Indianapolis,Indiana Military Museum,United States,Vincennes,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-136,USS James K. Polk,National Museum of Nuclear Science & History,United States,Albuquerque,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-139,USS Lionfish,Battleship Cove,United States,Fall River,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-140,USS Mariano G. Vallejo,Mare Island Historic Park Foundation,United States,Vallejo,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-141,USS Nathanael Greene,41 for Freedom Memorial,United States,Port Canaveral,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-142,USS Nautilus,Submarine Force Library and Museum,United States,Groton,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-143,USS Omaha,Levi Carter Park,United States,Omaha,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-146,USS Parche (SSN-683),Harbourside Park,United States,Bremerton,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-148,USS Razorback,Arkansas Inland Maritime Museum,United States,North Little Rock,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-149,USS Requin,The Carnegie Science Center,United States,Pittsburgh,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-150,USS Sailfish,Portsmouth Naval Shipyard,United States,Kittery,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-153,USS Tambor,Dossin Great Lakes Museum,United States,Detroit,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-156,USS Triton,USS Triton Submarine Memorial Park,United States,Richland,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-157,USS Woodrow Wilson,"Naval Submarine Base Bangor, Wash.",United States,Bangor,launchYear|website|situation|mediaUrl,4,9,pending
+MUS-SNK-056,Biber 105,Royal Navy Submarine Museum,United Kingdom,,website|city|situation|mediaUrl,4,8,pending
+MUS-SNK-060,HMS E17,Royal Navy Submarine Museum,United Kingdom,,website|city|situation|mediaUrl,4,8,pending
+MUS-SNK-061,HMS Holland 1,Royal Navy Submarine Museum,United Kingdom,,website|city|situation|mediaUrl,4,8,pending
+MUS-SNK-065,HMS XE8 Expunge,The Historic Dockyard Chatham,United Kingdom,,website|city|situation|mediaUrl,4,8,pending
+MUS-SNK-019,HMCS Onondaga,Site historique maritime de la Pointe-au-Père,Canada,Rimouski,launchYear|website|situation,3,8,pending
+MUS-SNK-123,USS Clamagore,Patriots Point Maritime Museum,United States,Mount Pleasant,launchYear|website|situation,3,8,pending
+MUS-SNK-125,USS Cod,USS Cod Submarine Memorial,United States,Cleveland,launchYear|website|situation,3,8,pending
+MUS-SNK-126,USS Croaker,Buffalo and Erie County Naval & Military Park,United States,Buffalo,launchYear|website|situation,3,8,pending
+MUS-SNK-144,USS Pampanito,San Francisco Maritime National Historical Park,United States,San Francisco,launchYear|website|situation,3,8,pending
+MUS-SNK-155,USS Torsk,Historic Ships in Baltimore,United States,Baltimore,launchYear|website|situation,3,8,pending
+MUS-SNK-121,USS Bowfin,USS Bowfin Submarine Museum,United States,Pearl Harbor,launchYear|website|mediaUrl,3,7,pending
+MUS-SNK-035,Alose,COMEX à Marseille,France,Marseille,website|situation|mediaUrl,3,6,pending
+MUS-SNK-044,Andrea Provana,Parco del Valentino,Italy,Turin,website|situation|mediaUrl,3,6,pending
+MUS-SNK-036,Argonaute,Cité des Sciences et de l'Industrie,France,Paris,website|situation|mediaUrl,3,6,pending
+MUS-SNK-069,B-107,Museum of Russian Submarine Forces,Russia,Saint Petersburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-070,B-307,History of Equipment Park Complex,Russia,Tolyatti,website|situation|mediaUrl,3,6,pending
+MUS-SNK-071,B-396,Muzey Istorii Voyenno-Morskogo Flota Rossii,Russia,Moscow,website|situation|mediaUrl,3,6,pending
+MUS-SNK-073,B-440,B-440 Submarine Museum,Russia,Vytegra,website|situation|mediaUrl,3,6,pending
+MUS-SNK-057,Biber 90,Imperial War Museum,United Kingdom,London,website|situation|mediaUrl,3,6,pending
+MUS-SNK-001,Brandtaucher,Bundeswehr Military History Museum,Germany,Dresden,website|situation|mediaUrl,3,6,pending
+MUS-SNK-074,D-2 Narodovolets,Central Naval Museum,Russia,Saint Petersburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-027,Delfín,Museo del Mar y de la Sal,Spain,Torrevieja,website|situation|mediaUrl,3,6,pending
+MUS-SNK-075,Dzhevetsky's Submarine,Central Naval Museum,Russia,Saint Petersburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-037,Espadon,Saint-Nazaire submarine base,France,Saint Nazaire,website|situation|mediaUrl,3,6,pending
+MUS-SNK-038,Flore,Submarine Museum of Lorient,France,Lorient,website|situation|mediaUrl,3,6,pending
+MUS-SNK-047,HA-18,Japan Maritime Self-Defense Force (JMSDF) Kure Museum,Japan,Etajima,website|situation|mediaUrl,3,6,pending
+MUS-SNK-024,HDMS Springeren (S324),Langelandsfort,Denmark,Bagenkop,website|situation|mediaUrl,3,6,pending
+MUS-SNK-025,HDMS Springeren (S329),Aalborg Maritime Museum,Denmark,Aalborg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-058,HMS Alliance,Royal Navy Submarine Museum,United Kingdom,Gosport,website|situation|mediaUrl,3,6,pending
+MUS-SNK-059,HMS Courageous,Devonport Naval Heritage Centre,United Kingdom,Plymouth,website|situation|mediaUrl,3,6,pending
+MUS-SNK-026,HMS E50,Sea War Museum Jutland,Denmark,Thyborøn,website|situation|mediaUrl,3,6,pending
+MUS-SNK-062,HMS Ocelot,Chatham Historic Dockyard,United Kingdom,Chatham,website|situation|mediaUrl,3,6,pending
+MUS-SNK-002,HMS Otus,Erlebnsiwelt U-Boot,Germany,Sassnitz,website|situation|mediaUrl,3,6,pending
+MUS-SNK-064,HMS X51 Stickleback,Scottish Submarine Center,United Kingdom,Helensburgh,website|situation|mediaUrl,3,6,pending
+MUS-SNK-051,HNoMS Utstein (S203),Royal Norwegian Navy Museum,Norway,Horten,website|situation|mediaUrl,3,6,pending
+MUS-SNK-090,HSwMS Hajen,Marinmuseum,Sweden,Karlskrona,website|situation|mediaUrl,3,6,pending
+MUS-SNK-091,HSwMS Neptun,Marinmuseum,Sweden,Karlskrona,website|situation|mediaUrl,3,6,pending
+MUS-SNK-092,HSwMS Nordkaparen,Göteborgs Maritima Centrum,Sweden,Gothenburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-093,HSwMS U3,Teknikens och sjöfartens hus,Sweden,Malmö,website|situation|mediaUrl,3,6,pending
+MUS-SNK-042,INS Dakar,Clandestine Immigration and Naval Museum,Israel,Haifa,website|situation|mediaUrl,3,6,pending
+MUS-SNK-043,INS Gal,Clandestine Immigration and Naval Museum,Israel,Haifa,website|situation|mediaUrl,3,6,pending
+MUS-SNK-040,INS Kursura,RK Beach,India,Visakhapatnam,website|situation|mediaUrl,3,6,pending
+MUS-SNK-048,JDS Akishio (SS-579),Kure Maritime Museum,Japan,Kure,website|situation|mediaUrl,3,6,pending
+MUS-SNK-076,K-21,Northern Fleet Naval Museum,Russia,Severomorsk,website|situation|mediaUrl,3,6,pending
+MUS-SNK-078,K-306,Victory Park,Russia,Ufa,website|situation|mediaUrl,3,6,pending
+MUS-SNK-079,K-403 Kazan,Victory Park,Russia,Kazan,website|situation|mediaUrl,3,6,pending
+MUS-SNK-003,K-434,U-Boot Museum Hamburg,Germany,Hamburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-080,K-506 Zelenograd,Exploits of the Nuclear Fleet Memorial,Russia,Fokino,website|situation|mediaUrl,3,6,pending
+MUS-SNK-041,KRI Pasopati,Indonesian Navy Submarine Monument,Indonesia,Surabaya,website|situation|mediaUrl,3,6,pending
+MUS-SNK-081,L-3 Frunzenets,Victory Park,Russia,Moscow,website|situation|mediaUrl,3,6,pending
+MUS-SNK-066,LR3,Royal Navy Submarine Museum,United Kingdom,Gosport,website|situation|mediaUrl,3,6,pending
+MUS-SNK-039,Le Redoutable,Cité de la Mer,France,Cherbourg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-082,M-261,Weapons of Victory Museum,Russia,Krasnodar,website|situation|mediaUrl,3,6,pending
+MUS-SNK-046,Nazario Sauro,Galata - Museo del mare,Italy,Genoa,website|situation|mediaUrl,3,6,pending
+MUS-SNK-049,Ouessant,Malacca Submarine Museum,Malaysia,Klebang,website|situation|mediaUrl,3,6,pending
+MUS-SNK-053,PNS Hangor,Pakistan Maritime Museum,Pakistan,Karachi,website|situation|mediaUrl,3,6,pending
+MUS-SNK-028,Peral,Cartagena Naval Museum,Spain,Cartagena,website|situation|mediaUrl,3,6,pending
+MUS-SNK-083,S-156,Baltic Submariners Memorial,Russia,Rio de Janeiro,website|situation|mediaUrl,3,6,pending
+MUS-SNK-084,S-189,S-189 Submarine Museum,Russia,Kronstadt,website|situation|mediaUrl,3,6,pending
+MUS-SNK-085,S-51,Gremikha Naval base,Russia,Saint Petersburg,website|situation|mediaUrl,3,6,pending
+MUS-SNK-086,S-56,The Museum of Pacific Fleet,Russia,Vladivostok,website|situation|mediaUrl,3,6,pending
+MUS-SNK-029,SA-41,Mahon Naval Station,Spain,Beloslav,website|situation|mediaUrl,3,6,pending
+MUS-SNK-030,SA-42,Museo Naval de Cartagena,Spain,Mahón,website|situation|mediaUrl,3,6,pending
+MUS-SNK-031,SA-51,CosmoCaixa,Spain,Cartagena,website|situation|mediaUrl,3,6,pending
+MUS-SNK-032,SA-52,Museo Naval de Cartagena,Spain,Barcelona,website|situation|mediaUrl,3,6,pending
+MUS-SNK-050,Sang-O-class submarine,Tongil (Unification) Park near Gangneung,North Korea,Cartagena,website|situation|mediaUrl,3,6,pending
+MUS-SNK-110,Siluro San Bartolomeo,Museo Marítimo Nacional de Londres,United States,Moscu,website|situation|mediaUrl,3,6,pending
+MUS-SNK-094,South Korea[edit],Korea National Maritime Museum.,South Korea,Çanakkale,website|situation|mediaUrl,3,6,pending
+MUS-SNK-096,TCG Hızırreis,Gayret Gemi Museum,Türkiye,İzmit,website|situation|mediaUrl,3,6,pending
+MUS-SNK-097,TCG Pirireis,İnciraltı Sea Museum,Türkiye,İzmir,website|situation|mediaUrl,3,6,pending
+MUS-SNK-098,TCG Uluçalireis,Rahmi M. Koç Museum,Türkiye,Istanbul,website|situation|mediaUrl,3,6,pending
+MUS-SNK-004,U-1,Deutsches Museum,Germany,Munich,website|situation|mediaUrl,3,6,pending
+MUS-SNK-007,U-2540,Deutsches Schiffahrtsmuseum,Germany,Bremerhaven,website|situation|mediaUrl,3,6,pending
+MUS-SNK-067,U-475 Black Widow,River Medway,United Kingdom,Strood,website|situation|mediaUrl,3,6,pending
+MUS-SNK-068,U-534,U-boat Story,United Kingdom,Birkenhead,website|situation|mediaUrl,3,6,pending
+MUS-SNK-010,U-9 (S188),Technik Museum Speyer,Germany,Speyer,website|situation|mediaUrl,3,6,pending
+MUS-SNK-034,Vesikko,Technical museum,Finland,Helsinki,website|situation|mediaUrl,3,6,pending
+MUS-SNK-088,Zeta (P-913),Pivka Park of Military History,Slovenia,Pivka,website|situation|mediaUrl,3,6,pending
+MUS-SNK-021,Type 033,Lvshun Submarine Museum,China,,city|situation|mediaUrl,3,5,pending
+MUS-SNK-072,B-413,Museum of the World Oceans,Russia,Kaliningrad,website|situation,2,5,pending
+MUS-SNK-033,EML Lembit,Estonian Maritime Museum,Estonia,Tallinn,website|situation,2,5,pending
+MUS-SNK-013,HMAS Otway,Holbrook Submarine Museum,Australia,Holbrook,website|situation,2,5,pending
+MUS-SNK-052,HNLMS Tonijn,Dutch Navy Museum,Netherlands,Den Helder,website|situation,2,5,pending
+MUS-SNK-077,"K-3 ""Leninsky Komsomol""",Museum of Naval Glory,Russia,Kronstadt,website|situation,2,5,pending
+MUS-SNK-005,U-10 (S189),Deutsches Marinemuseum,Germany,Wilhelmshaven,website|situation,2,5,pending
+MUS-SNK-006,U-11 (S190),U-Boot Museum,Germany,Fehmarn,website|situation,2,5,pending
+MUS-SNK-008,U-434,U-Bootmuseum Hamburg,Germany,Hamburg,website|situation,2,5,pending
+MUS-SNK-009,U-461,Museum Peenemünde,Germany,Peenemuende,website|situation,2,5,pending
+MUS-U995,U-995,Laboe Naval Memorial,Germany,Laboe,website|situation,2,5,pending
+MUS-SNK-116,USS Batfish,Muskogee War Memorial Park,United States,Muskogee,launchYear|mediaUrl,2,4,pending
+MUS-SNK-138,USS Ling,New Jersey Naval Museum,United States,Hackensack,launchYear|mediaUrl,2,4,pending
+MUS-SNK-151,USS Silversides,USS Silversides Submarine Museum,United States,Muskegon,launchYear|mediaUrl,2,4,pending
+MUS-SNK-063,HMS X24,Royal Navy Submarine Museum,United Kingdom,,city|mediaUrl,2,3,pending
+MUS-SNK-015,Submarino Museo Riachuelo,Espaço Cultural da Marinha,Brazil,Rio de Janeiro,launchYear,1,3,pending
+MUS-SNK-119,USS Blueback,Oregon Museum of Science and Industry,United States,Portland,launchYear,1,3,pending
+MUS-SNK-124,USS Cobia,Wisconsin Maritime Museum,United States,Manitowoc,launchYear,1,3,pending
+MUS-SNK-045,Enrico Toti,Museo Nazionale della Scienza e della Tecnologia,Italy,Milan,mediaUrl,1,1,pending
+MUS-SNK-012,HMAS Onslow,Australian National Maritime Museum,Australia,Sydney,mediaUrl,1,1,pending
+MUS-SNK-014,HMAS Ovens,Western Australian Maritime Museum,Australia,Fremantle,mediaUrl,1,1,pending
+MUS-SNK-018,HMCS Ojibwa,Elgin Military Museum,Canada,Port Burwell,mediaUrl,1,1,pending
+MUS-SNK-054,BAP Abtao,Museo Abtao del Callao,Peru,Lima,,0,0,validated
+MUS-SNK-023,HDMS Sælen (S323),Royal Danish Naval Museum,Denmark,Copenhagen,,0,0,validated
+MUS-SNK-020,O' Brien,Museo Submarino O’Brien,Chile,Chile,,0,0,validated
+MUS-SNK-160,ORP Sokol (ex KNM Stord S-308),Muzeum Marynarki Wojennej w Gdyni,Poland,"Gdynia,",,0,0,validated
+MUS-SNK-159,Proteus S-113 (Proximamente),Naval Tradition Park de Faliro,Greece,Atenas,,0,0,validated
+MUS-SNK-016,S-84 Slava,Museum of Glass,Bulgaria,Beloslav,,0,0,validated
+MUS-SNK-089,SAS Assegaai (Proximamente),South African Naval Museum,South Africa,Simon's Town,,0,0,validated
+MUS-SNK-055,Submarino Barracuda (S164),Museu de Marinha,Portugal,Almada,,0,0,validated
