@@ -17,8 +17,31 @@ Four optional tables feed one versioned file, `lib/data/datasets/isa-config.json
 | Missions | `--missions` | Mission titles, objective, season, museum, compartment, equipment, status |
 | Questions | `--questions` | Question text, four options, correct answer, feedback, alignment, status |
 | Awards | `--awards` | Badge rules and thresholds |
+| Institutions | `--institutions` | Museos, asociaciones y aliados |
+| Roles | `--roles` | Especialidades de la grilla |
+| Disciplines | `--disciplines` | Disciplinas STEM+A |
+| Compartments | `--compartments` | Compartimentos por museo |
+| Systems | `--systems` | Sistemas y equipos |
+| Grid cells | `--gridCells` | Grilla 5×5 (especialidad × disciplina) |
 
 Sections are merged: sending only `--awards` keeps the existing seasons and missions.
+
+Un segundo modo lee directamente el **workbook base** (`templates/ISA_Base.xlsx`), con una
+pestaña por componente:
+
+```bash
+python3 scripts/sync_config.py --xlsx ISA_Base.xlsx --check
+python3 scripts/sync_config.py --xlsx ISA_Base.xlsx
+```
+
+Mapa pestaña → sección: `Config` → settings, `Instituciones` → institutions, `Compartimentos` →
+compartments, `Sistemas` → systems, `Temporadas` → seasons, `Episodios` → episodes, `Misiones` →
+missions, `Reactivos` → questions, `Insignias` → awards, `Roles` → roles, `Disciplinas` →
+disciplines, `Grilla_5x5` → gridCells. `Museos` se sigue sincronizando con `sync_museums.py`.
+
+Cada corrida valida **referencias cruzadas** (por ejemplo, que `season_id` de una misión exista
+en temporadas y que `mission_id` de una celda de la grilla exista en misiones) y, si todo pasa,
+escribe un manifiesto con el hash SHA-256 del JSON para trazabilidad.
 The first visit applies every section; **Apply config** re-applies them to an existing browser.
 
 ## 1. Awards table columns

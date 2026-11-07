@@ -357,6 +357,20 @@ export interface CredentialRecord extends EntityBase {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Grid (specialty x discipline)                                              */
+/* -------------------------------------------------------------------------- */
+
+/** One cell of the 5x5 matrix: a mission published for a specialty+discipline. */
+export interface GridCell extends EntityBase {
+  specialtyId: string;
+  disciplineId: string;
+  missionId: string;
+  order: number;
+  notes: string;
+  status: BadgeStatus;
+}
+
+/* -------------------------------------------------------------------------- */
 /* Collections                                                               */
 /* -------------------------------------------------------------------------- */
 
@@ -373,6 +387,7 @@ export const COLLECTIONS = [
   'badges',
   'roles',
   'disciplines',
+  'gridCells',
   'credentials',
   'settings',
 ] as const;
@@ -395,6 +410,7 @@ export type EntityByCollection = {
   badges: Badge;
   roles: Role;
   disciplines: Discipline;
+  gridCells: GridCell;
   credentials: CredentialRecord;
 };
 
@@ -420,6 +436,7 @@ export const READABLE_ID_PREFIX: Record<EntityCollectionName, string> = {
   badges: 'BDG',
   roles: 'ROL',
   disciplines: 'DIS',
+  gridCells: 'GRD',
   credentials: 'CRD',
 };
 

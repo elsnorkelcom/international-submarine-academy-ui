@@ -104,6 +104,73 @@ export interface MissionConfigEntry {
   status: string;
 }
 
+export interface InstitutionConfigEntry {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  type: string;
+  country: string;
+  city: string;
+  website: string;
+  contactName: string;
+  contactEmail: string;
+  status: string;
+  notes: string;
+}
+
+export interface RoleConfigEntry {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  descriptionEn: string;
+  descriptionEs: string;
+  status: string;
+}
+
+export interface DisciplineConfigEntry {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  descriptionEn: string;
+  descriptionEs: string;
+  color: string;
+  status: string;
+}
+
+export interface CompartmentConfigEntry {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  museumId: string;
+  descriptionEn: string;
+  descriptionEs: string;
+  systemIds: string[];
+  status: string;
+}
+
+export interface SystemConfigEntry {
+  id: string;
+  nameEn: string;
+  nameEs: string;
+  category: string;
+  descriptionEn: string;
+  descriptionEs: string;
+  compartmentId: string;
+  museumId: string;
+  topics: string[];
+  status: string;
+}
+
+export interface GridCellConfigEntry {
+  id: string;
+  specialtyId: string;
+  disciplineId: string;
+  missionId: string;
+  order: number;
+  notes: string;
+  status: string;
+}
+
 export interface IsaConfigFile {
   version: number;
   generatedAt?: string;
@@ -112,6 +179,12 @@ export interface IsaConfigFile {
   missions?: MissionConfigEntry[];
   questions?: QuestionConfigEntry[];
   awards?: AwardConfigEntry[];
+  institutions?: InstitutionConfigEntry[];
+  roles?: RoleConfigEntry[];
+  disciplines?: DisciplineConfigEntry[];
+  compartments?: CompartmentConfigEntry[];
+  systems?: SystemConfigEntry[];
+  gridCells?: GridCellConfigEntry[];
   settings?: Record<string, string>;
 }
 
@@ -135,6 +208,30 @@ export function missionsConfig(): MissionConfigEntry[] {
   return Array.isArray(file().missions) ? file().missions! : [];
 }
 
+export function institutionsConfig(): InstitutionConfigEntry[] {
+  return Array.isArray(file().institutions) ? file().institutions! : [];
+}
+
+export function rolesConfig(): RoleConfigEntry[] {
+  return Array.isArray(file().roles) ? file().roles! : [];
+}
+
+export function disciplinesConfig(): DisciplineConfigEntry[] {
+  return Array.isArray(file().disciplines) ? file().disciplines! : [];
+}
+
+export function compartmentsConfig(): CompartmentConfigEntry[] {
+  return Array.isArray(file().compartments) ? file().compartments! : [];
+}
+
+export function systemsConfig(): SystemConfigEntry[] {
+  return Array.isArray(file().systems) ? file().systems! : [];
+}
+
+export function gridCellsConfig(): GridCellConfigEntry[] {
+  return Array.isArray(file().gridCells) ? file().gridCells! : [];
+}
+
 export function awardsConfig(): AwardConfigEntry[] {
   return Array.isArray(file().awards) ? file().awards! : [];
 }
@@ -150,7 +247,18 @@ export interface SectionResult {
 }
 
 export type ApplyResult = Record<
-  'settings' | 'seasons' | 'episodes' | 'missions' | 'questions' | 'awards',
+  | 'settings'
+  | 'seasons'
+  | 'episodes'
+  | 'missions'
+  | 'questions'
+  | 'awards'
+  | 'institutions'
+  | 'roles'
+  | 'disciplines'
+  | 'compartments'
+  | 'systems'
+  | 'gridCells',
   SectionResult
 >;
 
@@ -360,6 +468,110 @@ async function applyQuestions(database: LocalDatabase): Promise<SectionResult> {
   return result;
 }
 
+type ConfigCollection = 'institutions' | 'roles' | 'disciplines' | 'compartments' | 'systems' | 'gridCells';
+
+/** Upserts a whole section by id, without deleting rows that left the table. */
+async function applySection(
+  database: LocalDatabase,
+  collection: ConfigCollection,
+  entries: { id: string }[],
+  toPayload: (entry: never) => Record<string, unknown>,
+): Promise<SectionResult> {
+  const result = emptyResult();
+  result.total = entries.length;
+
+  if (entries.length === 0) {
+    return result;
+  }
+
+  const repository = database.repository(collection) as unknown as {
+    list(options: Record<string, unknown>): Promise<{ items: { id: string }[] }>;
+    update(id: string, patch: Record<string, unknown>): Promise<unknown>;
+    create(input: Record<string, unknown>): Promise<unknown>;
+  };
+
+  const existing = await repository.list({ pageSize: 0, includeDeleted: true });
+  const known = new Set(existing.items.map((item) => item.id));
+
+  for (const entry of entries) {
+    const payload = toPayload(entry as never);
+
+    if (known.has(entry.id)) {
+      await repository.update(entry.id, payload);
+      result.updated += 1;
+    } else {
+      await repository.create({ id: entry.id, ...payload });
+      result.created += 1;
+    }
+  }
+
+  return result;
+}
+
+async function applyInstitutions(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'institutions', institutionsConfig(), (entry: InstitutionConfigEntry) => ({
+    name: { en: entry.nameEn || entry.id, es: entry.nameEs || entry.nameEn || entry.id },
+    type: entry.type as never,
+    country: entry.country,
+    city: entry.city,
+    website: entry.website,
+    contactName: entry.contactName,
+    contactEmail: entry.contactEmail,
+    status: entry.status as never,
+    notes: entry.notes,
+  }));
+}
+
+async function applyRoles(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'roles', rolesConfig(), (entry: RoleConfigEntry) => ({
+    name: { en: entry.nameEn || entry.id, es: entry.nameEs || entry.nameEn || entry.id },
+    description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
+    status: entry.status as never,
+  }));
+}
+
+async function applyDisciplines(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'disciplines', disciplinesConfig(), (entry: DisciplineConfigEntry) => ({
+    name: { en: entry.nameEn || entry.id, es: entry.nameEs || entry.nameEn || entry.id },
+    description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
+    color: entry.color || '#8FA3B0',
+    status: entry.status as never,
+  }));
+}
+
+async function applyCompartments(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'compartments', compartmentsConfig(), (entry: CompartmentConfigEntry) => ({
+    name: { en: entry.nameEn || entry.id, es: entry.nameEs || entry.nameEn || entry.id },
+    museumId: entry.museumId,
+    description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
+    systemIds: entry.systemIds,
+    status: entry.status as never,
+  }));
+}
+
+async function applySystems(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'systems', systemsConfig(), (entry: SystemConfigEntry) => ({
+    name: { en: entry.nameEn || entry.id, es: entry.nameEs || entry.nameEn || entry.id },
+    category: entry.category,
+    description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
+    compartmentId: entry.compartmentId,
+    museumId: entry.museumId,
+    topics: entry.topics,
+    status: entry.status as never,
+  }));
+}
+
+async function applyGridCells(database: LocalDatabase): Promise<SectionResult> {
+  return applySection(database, 'gridCells', gridCellsConfig(), (entry: GridCellConfigEntry) => ({
+    specialtyId: entry.specialtyId,
+    disciplineId: entry.disciplineId,
+    missionId: entry.missionId,
+    order: entry.order,
+    notes: entry.notes,
+    status: entry.status as never,
+  }));
+}
+
 async function applyAwards(database: LocalDatabase): Promise<SectionResult> {
   const entries = awardsConfig();
   const result = emptyResult();
@@ -415,6 +627,12 @@ export async function applyConfig(database: LocalDatabase): Promise<ApplyResult>
     missions: await applyMissions(database),
     questions: await applyQuestions(database),
     awards: await applyAwards(database),
+    institutions: await applyInstitutions(database),
+    roles: await applyRoles(database),
+    disciplines: await applyDisciplines(database),
+    compartments: await applyCompartments(database),
+    systems: await applySystems(database),
+    gridCells: await applyGridCells(database),
   };
 }
 

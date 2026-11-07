@@ -13,7 +13,7 @@ import { COLLECTIONS, type CollectionName } from '../domain/types';
 import type { StorageAdapter } from './storage';
 
 const DATABASE_NAME = 'isa';
-const DATABASE_VERSION = 2;
+const DATABASE_VERSION = 3;
 
 export class IndexedDbStorage implements StorageAdapter {
   private database: Promise<IDBDatabase> | null = null;

@@ -27,7 +27,7 @@ SOURCE = ROOT / "docs" / "22_MODELO_DATOS_SHEET.md"
 OUTPUT = ROOT / "templates" / "ISA_Base.xlsx"
 
 SECTION_RE = re.compile(r"^### 5\.(\d+) `([^`]+)`", re.M)
-ROW_RE = re.compile(r"^\| `([^`]+)` \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ?([^|]*)\|?")
+FIELD_CELL_RE = re.compile(r"`([^`]+)`")
 
 HEADER_FILL = PatternFill("solid", fgColor="0B1622")
 HEADER_FONT = Font(color="E6EDF3", bold=True)
@@ -53,17 +53,27 @@ def parse_model() -> list[dict]:
         if current is None:
             continue
 
-        row = ROW_RE.match(line.strip())
+        stripped = line.strip()
 
-        if row:
+        if not stripped.startswith("| `"):
+            continue
+
+        cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+        names = FIELD_CELL_RE.findall(cells[0])
+
+        if not names or len(cells) < 6:
+            continue
+
+        # Una fila puede declarar dos campos: `option_b_en` / `option_b_es`.
+        for name in names:
             current["fields"].append(
                 {
-                    "name": row.group(1).strip(),
-                    "type": row.group(2).strip(),
-                    "required": row.group(3).strip(),
-                    "default": row.group(4).strip(),
-                    "bilingual": row.group(5).strip(),
-                    "notes": row.group(6).strip(),
+                    "name": name.strip(),
+                    "type": cells[1],
+                    "required": cells[2],
+                    "default": cells[3],
+                    "bilingual": cells[4],
+                    "notes": cells[5],
                 }
             )
 
