@@ -18,13 +18,13 @@ Referencia histórica verificada el 28/10/2026, ampliada el 03/11/2026 con el es
 - Ruta `/` (serie vertical educativa). `/v1` fue desestimada y **responde 404** (la redirección de `next.config.mjs` fue eliminada el 03/11/2026 por decisión del usuario). El build genera `/`, `/manifest.webmanifest` y `/_not-found`, y con `output: 'export'` además produce la carpeta estática `out/`.
 - `pnpm exec tsc --noEmit` y `pnpm build` finalizan sin errores.
 - Verificación de esta etapa: `/` responde HTTP 200 (local y en producción) y `/v1` responde 404 (local y en producción).
-- `components/academy/mission-badge.tsx` y `components/academy/hero-backdrop.tsx` permanecen en `components/academy` porque los usa la Home; el resto de los componentes académicos fue eliminado con `/v1`.
-- `lib/missions.ts`, `lib/seasons.ts` y `lib/progress.ts` siguen siendo la fuente de datos de la Home; no se migraron en esta etapa.
+- `components/academy/mission-badge.tsx` permanece porque lo usa `/insignias`; `hero-backdrop.tsx` fue eliminado con la unificación de la Home (8/11/2026).
+- La Home se alimenta del modelo de datos (IndexedDB sembrado desde `isa-config.json`) vía `components/home/*`; `lib/missions.ts` queda solo como insumo de `/insignias`; `lib/seasons.ts` y `lib/progress.ts` fueron eliminados.
 - Base de internacionalización integrada en `lib/i18n/` (`config.ts`, `index.ts` con `getMessages` y `formatMessage`, mensajes `en.ts` y `es.ts` en `lib/i18n/messages/`); la usan la Home (`app/page.tsx`) y todos los componentes de `components/series/`.
 - `TEMPORARY_VISIBLE_HOME_LOCALE = 'es'` mantiene la Home en español de forma provisoria. El inglés (`en`, `TRANSLATION_BASE_LOCALE`) es el idioma base de los diccionarios y de la forma (`Messages = DeepString<typeof en>`), pero no debe mostrarse en la interfaz ni habilitarse un selector de idioma en esta etapa.
 - En el MVP de esta UI no existen rutas por idioma ni selector de idioma: la Home se pinta con el idioma fijado en `lib/i18n/config.ts`; los diccionarios se tienen sincronizados (`en.ts` y `es.ts` con 81 hojas cada uno, ninguna clave faltante, extra o vacía, y marcadores `{}` coincidentes, comprobado el 03/11/2026).
-- La demo Acero/Cobre vive en `lib/demo/*` y `components/series/demo-*`; su contenido sigue pendiente y no depende del catálogo.
-- `components/series/progress-band.tsx` reporta únicamente el progreso del catálogo; las insignias del demo no se suman a 8/31.
+- La demo Acero/Cobre fue retirada y eliminada (8/11/2026): el recorrido real vive en `/series` y `/episodes`, y la Home es la presentación con tráiler.
+- Los componentes legacy de la Home (`series-hero`, `season-rails`, `episode-rail`, `episode-card`, `progress-band`, `series-context`, `demo-*`) fueron eliminados con la unificación.
 - No se detectaron Server Actions, directivas `use cache` ni `next/og`/`ImageResponse`.
 - `next.config.mjs`: `output: 'export'`, `images.unoptimized: true` y `typescript.ignoreBuildErrors: true`. Por eso el typecheck debe ejecutarse aparte con `tsc --noEmit`. `app/manifest.ts` declara `export const dynamic = 'force-static'` (requisito de la exportación estática).
 - Despliegue: **GitHub Pages vía GitHub Actions** (`.github/workflows/next-pages.yml`, pnpm + Node 22, build exportable, `.nojekyll`); producción en `https://academy.elsnorkel.com` con CNAME DNS que llega a GitHub a través del proxy Cloudflare del dominio. Cada push a `main` dispara el despliegue.

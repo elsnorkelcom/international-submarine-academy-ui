@@ -212,3 +212,19 @@
   background: #12222f;
   color: var(--primary);
 }
+
+/* Home: entrada de la moneda y barrido sonar */
+@keyframes coin-enter {
+  0% { opacity: 0; transform: translateY(44px) scale(1.42) rotateY(-540deg); }
+  55% { opacity: 1; }
+  100% { opacity: 1; transform: translateY(0) scale(1) rotateY(0deg); }
+}
+
+@keyframes sonar-sweep {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes sonar-ping {
+  0% { transform: scale(0.25); opacity: 0.85; }
+  75%, 100% { transform: scale(1.5); opacity: 0; }
+}
