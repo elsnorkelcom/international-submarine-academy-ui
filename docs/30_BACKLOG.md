@@ -99,7 +99,7 @@ Prioridad = impacto × 2 − esfuerzo (S=1, M=3, L=5).
 | ID | Tema | E | I | P | Sesión | Depende |
 |---|---|---|---|---|---|---|
 | APP-050 | Suite mínima de tests (repositorios, reglas, config) | M | 4 | 5 | F | — |
-| APP-051 | Lint + CI con typecheck y build en cada push | S | 4 | 7 | F | — |
+| APP-051 | Lint + CI con typecheck y build en cada push — **completado 8/11/2026** (`ci.yml` + typecheck en el deploy) | S | 4 | 7 | F | — |
 | APP-052 | Revisión de accesibilidad AA en rutas públicas | M | 3 | 3 | B | — |
 
 ---
