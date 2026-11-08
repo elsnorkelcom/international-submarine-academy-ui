@@ -46,7 +46,7 @@ function AdminGate({ children }: { children: ReactNode }) {
     const passphrase = value.trim();
 
     if (passphrase.length < 6) {
-      setError('Use at least six characters.');
+      setError('Usá al menos seis caracteres.');
       return;
     }
 
@@ -66,17 +66,17 @@ function AdminGate({ children }: { children: ReactNode }) {
         return;
       }
 
-      setError('Wrong passphrase.');
+      setError('Contraseña incorrecta.');
       setValue('');
     } catch {
-      setError('Web Crypto is unavailable. Use a secure context (HTTPS or localhost).');
+      setError('Web Crypto no está disponible. Usá un contexto seguro (HTTPS o localhost).');
     }
   }
 
   if (state === 'loading') {
     return (
       <div className="flex min-h-svh items-center justify-center bg-background">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Loading admin…</p>
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Cargando admin…</p>
       </div>
     );
   }
@@ -90,16 +90,16 @@ function AdminGate({ children }: { children: ReactNode }) {
         >
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">Admin // Local</p>
           <h1 className="mt-3 font-display text-3xl font-extrabold uppercase leading-none tracking-tight">
-            {state === 'setup' ? 'Set passphrase' : 'Unlock panel'}
+            {state === 'setup' ? 'Definir contraseña' : 'Desbloquear panel'}
           </h1>
           <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
             {state === 'setup'
-              ? 'First run: choose a passphrase for this browser. It is stored as a SHA-256 hash in localStorage.'
-              : 'Enter the passphrase configured for this browser.'}
+              ? 'Primera vez: elegí una contraseña para este navegador. Se guarda como hash SHA-256 en localStorage.'
+              : 'Ingresá la contraseña configurada para este navegador.'}
           </p>
 
           <label className="mt-5 block">
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-metal">Passphrase</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-metal">Contraseña</span>
             <input
               type="password"
               value={value}
@@ -119,7 +119,7 @@ function AdminGate({ children }: { children: ReactNode }) {
             type="submit"
             className="mt-5 w-full border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
           >
-            {state === 'setup' ? 'Create local admin' : 'Unlock'}
+            {state === 'setup' ? 'Crear administrador local' : 'Desbloquear'}
           </button>
 
           <p className="mt-4 text-[10px] leading-relaxed text-muted-foreground">
@@ -128,7 +128,7 @@ function AdminGate({ children }: { children: ReactNode }) {
           </p>
 
           <Link href="/" className="mt-4 inline-block font-mono text-[10px] uppercase tracking-[0.18em] text-metal hover:text-primary">
-            ← Back to site
+            ← Volver al sitio
           </Link>
         </form>
       </main>
@@ -137,7 +137,7 @@ function AdminGate({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-svh bg-background text-foreground">
-      <AdminHeader onLock={() => {
+      <AdminHeader onBloquear={() => {
         closeAdminSession();
         setState('locked');
       }} />
@@ -146,9 +146,9 @@ function AdminGate({ children }: { children: ReactNode }) {
   );
 }
 
-function AdminHeader({ onLock }: { onLock: () => void }) {
+function AdminHeader({ onBloquear }: { onBloquear: () => void }) {
   const pathname = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenúOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-black/80 backdrop-blur">
@@ -159,18 +159,18 @@ function AdminHeader({ onLock }: { onLock: () => void }) {
 
         <button
           type="button"
-          onClick={() => setMenuOpen((open) => !open)}
+          onClick={() => setMenúOpen((open) => !open)}
           className="ml-auto border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground md:hidden"
           aria-expanded={menuOpen}
         >
-          Menu
+          Menú
         </button>
 
         <nav
           aria-label="Admin sections"
           className={`${menuOpen ? 'flex' : 'hidden'} w-full flex-wrap items-center gap-1 md:flex md:w-auto`}
         >
-          <AdminNav href="/admin" label="Overview" active={pathname === '/admin'} />
+          <AdminNav href="/admin" label="Resumen" active={pathname === '/admin'} />
           <span className="mx-2 hidden h-4 w-px bg-white/10 md:block" />
           {ADMIN_ENTITIES.map((entity) => (
             <AdminNav
@@ -183,11 +183,11 @@ function AdminHeader({ onLock }: { onLock: () => void }) {
           <span className="mx-2 hidden h-4 w-px bg-white/10 md:block" />
           <AdminNav
             href="/admin/accreditation"
-            label="Accreditation"
+            label="Acreditaciones"
             active={pathname === '/admin/accreditation'}
           />
-          <AdminNav href="/admin/import" label="Import" active={pathname === '/admin/import'} />
-          <AdminNav href="/admin/settings" label="Settings" active={pathname === '/admin/settings'} />
+          <AdminNav href="/admin/import" label="Importar" active={pathname === '/admin/import'} />
+          <AdminNav href="/admin/settings" label="Ajustes" active={pathname === '/admin/settings'} />
         </nav>
 
         <div className="ml-auto hidden items-center gap-1 md:flex">
@@ -195,14 +195,14 @@ function AdminHeader({ onLock }: { onLock: () => void }) {
             href="/"
             className="px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
           >
-            View site
+            Ver sitio
           </Link>
           <button
             type="button"
-            onClick={onLock}
+            onClick={onBloquear}
             className="px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
           >
-            Lock
+            Bloquear
           </button>
         </div>
       </div>

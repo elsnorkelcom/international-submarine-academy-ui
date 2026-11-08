@@ -41,9 +41,9 @@ export function SettingsForm() {
 
     try {
       await database.settings().save(values as never);
-      setMessage('Settings saved.');
+      setMessage('Ajustes guardados.');
     } catch {
-      setMessage('Settings could not be saved.');
+      setMessage('No se pudieron guardar los ajustes.');
     }
   }
 
@@ -54,10 +54,10 @@ export function SettingsForm() {
   return (
     <div>
       <header>
-        <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Admin // Settings</p>
-        <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-none tracking-tight">Settings</h1>
+        <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Admin // Ajustes</p>
+        <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-none tracking-tight">Ajustes</h1>
         <p className="mt-2 max-w-xl text-xs text-muted-foreground">
-          Application name, welcome copy, theme colours and feature flags.
+          Nombre de la aplicación, mensajes, colores del tema y funciones.
         </p>
       </header>
 
@@ -195,7 +195,7 @@ export function SettingsForm() {
         onClick={() => void save()}
         className="mt-5 border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
       >
-        Save settings
+        Guardar ajustes
       </button>
     </div>
   );

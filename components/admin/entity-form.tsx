@@ -56,14 +56,14 @@ export function EntityForm({ entity, initial, onSubmit, onCancel, busy }: Entity
     <form onSubmit={handleSubmit} className="border border-white/10 bg-black/40 p-5">
       <div className="flex items-center justify-between">
         <h2 className="font-display text-lg font-bold uppercase tracking-wide">
-          {initial ? `Edit ${entity.singular}` : `New ${entity.singular}`}
+          {initial ? `Editar ${entity.singular}` : `Crear ${entity.singular}`}
         </h2>
         <button
           type="button"
           onClick={onCancel}
           className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground"
         >
-          Close
+          Cerrar
         </button>
       </div>
 
@@ -90,14 +90,14 @@ export function EntityForm({ entity, initial, onSubmit, onCancel, busy }: Entity
           disabled={busy}
           className="border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition enabled:hover:bg-primary/20 disabled:opacity-40"
         >
-          {busy ? 'Saving…' : 'Save'}
+          {busy ? 'Guardando…' : 'Guardar'}
         </button>
         <button
           type="button"
           onClick={onCancel}
           className="border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
         >
-          Cancel
+          Cancelar
         </button>
       </div>
     </form>

@@ -12,7 +12,7 @@ export function fieldSchema(field: AdminField): z.ZodTypeAny {
 
     return field.required
       ? base.refine((value) => value.en.trim().length > 0 || value.es.trim().length > 0, {
-          message: `${field.label}: write at least one language`,
+          message: `${field.label}: escriba al menos un idioma`,
         })
       : base;
   }
@@ -33,7 +33,7 @@ export function fieldSchema(field: AdminField): z.ZodTypeAny {
 
   if (field.required) {
     return text.refine((value) => value.trim().length > 0, {
-      message: `${field.label} is required`,
+      message: `${field.label}: valor obligatorio`,
     });
   }
 

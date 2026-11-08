@@ -123,11 +123,11 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
         }
       }
 
-      setMessage(`${selected.size} record(s) updated.`);
+      setMessage(`${selected.size} registro(s) actualizados.`);
       setSelected(new Set());
       await refresh();
     } catch {
-      setMessage('Some records could not be updated.');
+      setMessage('Some registros could not be updated.');
     } finally {
       setBusy(false);
     }
@@ -198,7 +198,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
             onClick={() => exportRows(visible)}
             className="border border-white/15 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
           >
-            Export CSV
+            Exportar CSV
           </button>
           <button
             type="button"
@@ -208,28 +208,28 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
             }}
             className="border border-primary/40 bg-primary/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
           >
-            New {entity.singular}
+            Crear {entity.singular}
           </button>
         </div>
       </header>
 
       <div className="mt-6 flex flex-wrap items-end gap-3 border-y border-white/10 py-3">
         <label className="flex min-w-48 flex-1 flex-col gap-1.5">
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Search</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Buscar</span>
           <input
             value={search}
             onChange={(event) => {
               setSearch(event.target.value);
               setPage(1);
             }}
-            placeholder="Search any field"
+            placeholder="Buscar en cualquier campo"
             className="h-9 rounded-sm border border-white/15 bg-white/5 px-2 text-sm outline-none focus:border-primary"
           />
         </label>
 
         {statuses.length > 0 ? (
           <label className="flex flex-col gap-1.5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Status</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Estado</span>
             <select
               value={status}
               onChange={(event) => {
@@ -249,7 +249,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
         ) : null}
 
         <label className="flex flex-col gap-1.5">
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Sort</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">Orden</span>
           <select
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value)}
@@ -260,7 +260,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
                 {column.label}
               </option>
             ))}
-            <option value="updatedAt">Updated</option>
+            <option value="updatedAt">Actualizado</option>
           </select>
         </label>
 
@@ -273,7 +273,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
         </button>
 
         <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-          <span className="text-primary">{String(visible.length).padStart(3, '0')}</span> records
+          <span className="text-primary">{String(visible.length).padStart(3, '0')}</span> registros
         </span>
       </div>
 
@@ -282,17 +282,17 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
           <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
             {selected.size} selected
           </span>
-          <BulkButton label="Publish" onClick={() => void runBulk('publish')} disabled={busy || !entity.statusField} />
-          <BulkButton label="Unpublish" onClick={() => void runBulk('unpublish')} disabled={busy || !entity.statusField} />
-          <BulkButton label="Delete" onClick={() => void runBulk('delete')} disabled={busy} />
-          <BulkButton label="Restore" onClick={() => void runBulk('restore')} disabled={busy} />
-          <BulkButton label="Duplicate" onClick={() => void runBulk('duplicate')} disabled={busy} />
+          <BulkButton label="Publicar" onClick={() => void runBulk('publish')} disabled={busy || !entity.statusField} />
+          <BulkButton label="Ocultar" onClick={() => void runBulk('unpublish')} disabled={busy || !entity.statusField} />
+          <BulkButton label="Eliminar" onClick={() => void runBulk('delete')} disabled={busy} />
+          <BulkButton label="Restaurar" onClick={() => void runBulk('restore')} disabled={busy} />
+          <BulkButton label="Duplicar" onClick={() => void runBulk('duplicate')} disabled={busy} />
           <button
             type="button"
             onClick={() => setSelected(new Set())}
             className="ml-auto font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground"
           >
-            Clear
+            Quitar
           </button>
         </div>
       ) : null}
@@ -317,10 +317,10 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
       ) : null}
 
       {loading ? (
-        <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Loading…</p>
+        <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Cargando…</p>
       ) : visible.length === 0 ? (
         <p className="mt-8 border border-white/10 bg-white/[0.02] px-4 py-6 text-sm text-muted-foreground">
-          No records match the current filters.
+          Ningún registro coincide con los filtros actuales.
         </p>
       ) : (
         <div className="mt-4 overflow-x-auto border border-white/10">
@@ -330,7 +330,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
                 <th className="w-8 px-2 py-2">
                   <input
                     type="checkbox"
-                    aria-label="Select page"
+                    aria-label="Seleccionar pagina"
                     checked={pageItems.length > 0 && pageItems.every((row) => selected.has(row.id))}
                     onChange={(event) => {
                       setSelected((current) => {
@@ -350,8 +350,8 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
                     {column.label}
                   </th>
                 ))}
-                <th className="px-3 py-2">Updated</th>
-                <th className="px-3 py-2 text-right">Actions</th>
+                <th className="px-3 py-2">Actualizado</th>
+                <th className="px-3 py-2 text-right">Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -363,7 +363,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
                     <td className="px-2 py-2">
                       <input
                         type="checkbox"
-                        aria-label={`Select ${row.id}`}
+                        aria-label={`Seleccionar ${row.id}`}
                         checked={selected.has(row.id)}
                         onChange={() => toggleSelection(row.id)}
                         className="accent-[#00e08a]"
@@ -379,12 +379,12 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 text-right">
                       {deleted ? (
-                        <RowButton label="Restore" onClick={() => void restoreRow(row.id)} />
+                        <RowButton label="Restaurar" onClick={() => void restoreRow(row.id)} />
                       ) : (
                         <>
-                          <RowButton label="Edit" onClick={() => setEditing(row)} />
-                          <RowButton label="Duplicate" onClick={() => void duplicateRow(row.id)} />
-                          <RowButton label="Delete" onClick={() => void deleteRow(row.id)} danger />
+                          <RowButton label="Editar" onClick={() => setEditing(row)} />
+                          <RowButton label="Duplicar" onClick={() => void duplicateRow(row.id)} />
+                          <RowButton label="Eliminar" onClick={() => void deleteRow(row.id)} danger />
                         </>
                       )}
                     </td>
@@ -404,10 +404,10 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
             disabled={safePage === 1}
             className="border border-white/15 px-3 py-1.5 disabled:opacity-40"
           >
-            Prev
+            Anterior
           </button>
           <span>
-            Page {safePage} / {pageCount}
+            Página {safePage} de {pageCount}
           </span>
           <button
             type="button"
@@ -415,7 +415,7 @@ export function EntityTable({ entity }: { entity: AdminEntity }) {
             disabled={safePage === pageCount}
             className="border border-white/15 px-3 py-1.5 disabled:opacity-40"
           >
-            Next
+            Siguiente
           </button>
         </div>
       ) : null}

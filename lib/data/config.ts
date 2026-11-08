@@ -66,6 +66,7 @@ export interface AwardConfigEntry {
   ruleCount: number;
   color: string;
   status: string;
+  icon?: string;
 }
 
 export interface SeasonConfigEntry {
@@ -602,7 +603,7 @@ async function applyAwards(database: LocalDatabase): Promise<SectionResult> {
       seasonId: entry.seasonId,
       missionId: entry.ruleType === 'mission' ? entry.missionId : '',
       description: { en: entry.nameEn, es: entry.nameEs },
-      icon: 'season',
+      icon: entry.icon || 'season',
       color: entry.color || '#8FA3B0',
       criteria: { en: entry.criteriaEn, es: entry.criteriaEs },
       status: entry.status as Badge['status'],

@@ -251,7 +251,11 @@ export function MissionView() {
         <section className="mt-8 border border-primary/40 bg-primary/5 p-6">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">{t.learn.reward.title}</p>
 
-          {badge && reward?.badge ? (
+          {badge && (reward?.badge || awarded.some((item) => item.id === badge.id)) && badge.icon.startsWith('/') ? (
+            <img src={badge.icon} alt="" className="mt-3 size-16 object-contain" />
+          ) : null}
+
+          {badge && (reward?.badge || awarded.some((item) => item.id === badge.id)) ? (
             <p className="mt-3 font-display text-2xl font-extrabold uppercase tracking-wide text-foreground">
               {localize(badge.name, language)}
             </p>
@@ -264,7 +268,10 @@ export function MissionView() {
           {awarded.length > 0 ? (
             <ul className="mt-3 space-y-1">
               {awarded.map((item) => (
-                <li key={item.id} className="border-l border-primary/40 pl-3 text-sm text-foreground">
+                <li key={item.id} className="flex items-center gap-2 border-l border-primary/40 pl-3 text-sm text-foreground">
+                  {item.icon.startsWith('/') ? (
+                    <img src={item.icon} alt="" className="size-8 object-contain" />
+                  ) : null}
                   {localize(item.name, language)}{' '}
                   <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
                     {item.type}

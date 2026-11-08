@@ -113,13 +113,17 @@ export function ProfileView() {
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
             {earned.map((badge) => (
               <li key={badge.id} className="flex items-center gap-3 border border-primary/30 bg-primary/5 px-3 py-2">
-                <span
-                  className="flex size-9 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold uppercase text-background"
-                  style={{ backgroundColor: badge.color || '#00e08a', borderColor: badge.color || '#00e08a' }}
-                  aria-hidden="true"
-                >
-                  {badge.type === 'coin' ? '◎' : badge.type === 'credential' ? '⚓' : '★'}
-                </span>
+                {badge.icon.startsWith('/') ? (
+                  <img src={badge.icon} alt="" className="size-10 shrink-0 object-contain" />
+                ) : (
+                  <span
+                    className="flex size-9 shrink-0 items-center justify-center rounded-full border text-[10px] font-bold uppercase text-background"
+                    style={{ backgroundColor: badge.color || '#00e08a', borderColor: badge.color || '#00e08a' }}
+                    aria-hidden="true"
+                  >
+                    {badge.type === 'coin' ? '◎' : badge.type === 'credential' ? '⚓' : '★'}
+                  </span>
+                )}
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-display text-sm font-bold uppercase tracking-wide">
                     {localize(badge.name, language)}

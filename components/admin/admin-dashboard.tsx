@@ -70,12 +70,12 @@ export function AdminDashboard() {
     <div>
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Admin // Overview</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Admin // Resumen</p>
           <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-none tracking-tight">
-            Content overview
+            Contenido general
           </h1>
           <p className="mt-2 max-w-xl text-xs text-muted-foreground">
-            Everything here lives in this browser. Use Export to keep a copy, or Import to load a CSV file.
+            Todo vive en este navegador. Usá Exportar para guardar una copia o Importar para cargar un CSV.
           </p>
         </div>
 
@@ -84,25 +84,25 @@ export function AdminDashboard() {
             href="/admin/accreditation"
             className="border border-white/15 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
           >
-            Accreditation
+            Acreditaciones
           </Link>
           <Link
             href="/admin/import"
             className="border border-primary/40 bg-primary/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
           >
-            Import CSV
+            Importar CSV
           </Link>
           <Link
             href="/admin/settings"
             className="border border-white/15 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition hover:text-foreground"
           >
-            Settings
+            Ajustes
           </Link>
         </div>
       </header>
 
       {loading ? (
-        <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Loading…</p>
+        <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Cargando…</p>
       ) : (
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {counts.map((item) => (
@@ -116,7 +116,7 @@ export function AdminDashboard() {
                 {item.total}
               </p>
               <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
-                {item.published} published · {item.drafts} draft
+                {item.published} publicados · {item.drafts} borradores
               </p>
             </Link>
           ))}
