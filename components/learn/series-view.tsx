@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
+import { CopperGrid } from '@/components/learn/copper-grid';
 import { SeasonProgression } from '@/components/learn/season-progression';
 import { localize, type Episode, type Mission, type Museum, type Season } from '@/lib/domain/types';
 
@@ -130,28 +131,47 @@ export function SeriesView() {
     return set;
   }, [data, completedMissionIds]);
 
+  const header = (
+    <header className="max-w-3xl">
+      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">{t.learn.series.eyebrow}</p>
+      <h1 className="mt-3 font-display text-4xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-5xl">
+        {t.learn.series.title}
+      </h1>
+      <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{t.learn.series.subtitle}</p>
+    </header>
+  );
+
   if (!ready || !data) {
     return <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">{t.common.loading}</p>;
   }
 
   if (grouped.length === 0) {
     return (
-      <div className="border border-white/10 bg-white/[0.02] p-6">
-        <p className="text-sm text-foreground">{t.learn.series.empty}</p>
-        <p className="mt-1 text-sm text-muted-foreground">{t.learn.series.emptyHint}</p>
+      <div>
+        {header}
+
+        <SeasonProgression
+          seasons={data.seasons}
+          missions={data.missions}
+          completedMissionIds={completedMissionIds}
+          unlockedSeasonIds={unlockedSeasonIds}
+          language={language}
+          t={t.learn.series}
+        />
+
+        <CopperGrid language={language} t={t.learn.series} />
+
+        <div className="mt-8 border border-white/10 bg-white/[0.02] p-6">
+          <p className="text-sm text-foreground">{t.learn.series.empty}</p>
+          <p className="mt-1 text-sm text-muted-foreground">{t.learn.series.emptyHint}</p>
+        </div>
       </div>
     );
   }
 
   return (
     <div>
-      <header className="max-w-3xl">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">{t.learn.series.eyebrow}</p>
-        <h1 className="mt-3 font-display text-4xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-5xl">
-          {t.learn.series.title}
-        </h1>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{t.learn.series.subtitle}</p>
-      </header>
+      {header}
 
       <SeasonProgression
         seasons={data.seasons}
@@ -161,6 +181,8 @@ export function SeriesView() {
         language={language}
         t={t.learn.series}
       />
+
+      <CopperGrid language={language} t={t.learn.series} />
 
       <div className="mt-8 space-y-10">
         {grouped.map(({ season, missions }, seasonIndex) => {

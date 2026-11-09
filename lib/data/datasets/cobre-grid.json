@@ -1,0 +1,672 @@
+{
+ "version": 1,
+ "seasonId": "SEA-COPPER",
+ "season": {
+  "es": "Cobre",
+  "en": "Copper"
+ },
+ "status": "propuesta",
+ "note": "Grilla Cobre v1.0 · 20 celdas STEM × 3 variantes. Las preguntas viven en el banco de Cobre; esta vista muestra la estructura y el color.",
+ "cells": [
+  {
+   "cellCode": "CU-SCI-MAQ",
+   "cellIndex": 1,
+   "specialtyId": "MAQ",
+   "specialtyEs": "Maquinista",
+   "specialtyEn": "Machinist",
+   "disciplineId": "SCI",
+   "disciplineEs": "Ciencia",
+   "disciplineEn": "Science",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-SCI-MAQ-1",
+     "variantIndex": 1,
+     "timssItemId": "S052046",
+     "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+     "contentCode": "QUÍ"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-MAQ-2",
+     "variantIndex": 2,
+     "timssItemId": "S042100",
+     "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+     "contentCode": "QUÍ"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-MAQ-3",
+     "variantIndex": 3,
+     "timssItemId": "S042073",
+     "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+     "contentCode": "QUÍ"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-TEC-MAQ",
+   "cellIndex": 2,
+   "specialtyId": "MAQ",
+   "specialtyEs": "Maquinista",
+   "specialtyEn": "Machinist",
+   "disciplineId": "TEC",
+   "disciplineEs": "Tecnología",
+   "disciplineEn": "Technology",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-TEC-MAQ-1",
+     "variantIndex": 1,
+     "timssItemId": "M032538",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-MAQ-2",
+     "variantIndex": 2,
+     "timssItemId": "M042103",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-MAQ-3",
+     "variantIndex": 3,
+     "timssItemId": "M042226",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+     "contentCode": "ÁLG"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-ING-MAQ",
+   "cellIndex": 3,
+   "specialtyId": "MAQ",
+   "specialtyEs": "Maquinista",
+   "specialtyEn": "Machinist",
+   "disciplineId": "ING",
+   "disciplineEs": "Ingeniería",
+   "disciplineEn": "Engineering",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-ING-MAQ-1",
+     "variantIndex": 1,
+     "timssItemId": "M052302",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-ING-MAQ-2",
+     "variantIndex": 2,
+     "timssItemId": "S042272",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-ING-MAQ-3",
+     "variantIndex": 3,
+     "timssItemId": "M032166",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-MAT-MAQ",
+   "cellIndex": 4,
+   "specialtyId": "MAQ",
+   "specialtyEs": "Maquinista",
+   "specialtyEn": "Machinist",
+   "disciplineId": "MAT",
+   "disciplineEs": "Matemática",
+   "disciplineEn": "Mathematics",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-MAT-MAQ-1",
+     "variantIndex": 1,
+     "timssItemId": "M042169A",
+     "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+     "contentCode": "DAT"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-MAQ-2",
+     "variantIndex": 2,
+     "timssItemId": "M032094",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-MAQ-3",
+     "variantIndex": 3,
+     "timssItemId": "M052231",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-SCI-ELE",
+   "cellIndex": 5,
+   "specialtyId": "ELE",
+   "specialtyEs": "Electricista",
+   "specialtyEn": "Electrician",
+   "disciplineId": "SCI",
+   "disciplineEs": "Ciencia",
+   "disciplineEn": "Science",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-SCI-ELE-1",
+     "variantIndex": 1,
+     "timssItemId": "S042076",
+     "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+     "contentCode": "QUÍ"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-ELE-2",
+     "variantIndex": 2,
+     "timssItemId": "S042306",
+     "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+     "contentCode": "QUÍ"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-ELE-3",
+     "variantIndex": 3,
+     "timssItemId": "S042112",
+     "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+     "contentCode": "QUÍ"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-TEC-ELE",
+   "cellIndex": 6,
+   "specialtyId": "ELE",
+   "specialtyEs": "Electricista",
+   "specialtyEn": "Electrician",
+   "disciplineId": "TEC",
+   "disciplineEs": "Tecnología",
+   "disciplineEn": "Technology",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-TEC-ELE-1",
+     "variantIndex": 1,
+     "timssItemId": "S032024",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-ELE-2",
+     "variantIndex": 2,
+     "timssItemId": "M042032",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-ELE-3",
+     "variantIndex": 3,
+     "timssItemId": "M032681A",
+     "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Organization and Representation",
+     "contentCode": "DAT"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-ING-ELE",
+   "cellIndex": 7,
+   "specialtyId": "ELE",
+   "specialtyEs": "Electricista",
+   "specialtyEn": "Electrician",
+   "disciplineId": "ING",
+   "disciplineEs": "Ingeniería",
+   "disciplineEn": "Engineering",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-ING-ELE-1",
+     "variantIndex": 1,
+     "timssItemId": "M042059",
+     "timssContentDomain": "NUMBER (Número) · Ratio, Proportion and Percent",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-ING-ELE-2",
+     "variantIndex": 2,
+     "timssItemId": "M032477",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-ING-ELE-3",
+     "variantIndex": 3,
+     "timssItemId": "M052214",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-MAT-ELE",
+   "cellIndex": 8,
+   "specialtyId": "ELE",
+   "specialtyEs": "Electricista",
+   "specialtyEn": "Electrician",
+   "disciplineId": "MAT",
+   "disciplineEs": "Matemática",
+   "disciplineEn": "Mathematics",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-MAT-ELE-1",
+     "variantIndex": 1,
+     "timssItemId": "M032725",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-ELE-2",
+     "variantIndex": 2,
+     "timssItemId": "M032295",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-ELE-3",
+     "variantIndex": 3,
+     "timssItemId": "M032738",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-SCI-ELN",
+   "cellIndex": 9,
+   "specialtyId": "ELN",
+   "specialtyEs": "Electrónico",
+   "specialtyEn": "Electronics",
+   "disciplineId": "SCI",
+   "disciplineEs": "Ciencia",
+   "disciplineEn": "Science",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-SCI-ELN-1",
+     "variantIndex": 1,
+     "timssItemId": "S042274",
+     "timssContentDomain": "PHYSICS (Física) · Light and Sound",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-ELN-2",
+     "variantIndex": 2,
+     "timssItemId": "S052207",
+     "timssContentDomain": "PHYSICS (Física) · Forces and Motion",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-ELN-3",
+     "variantIndex": 3,
+     "timssItemId": "S052297",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+     "contentCode": "TIE"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-TEC-ELN",
+   "cellIndex": 10,
+   "specialtyId": "ELN",
+   "specialtyEs": "Electrónico",
+   "specialtyEn": "Electronics",
+   "disciplineId": "TEC",
+   "disciplineEs": "Tecnología",
+   "disciplineEn": "Technology",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-TEC-ELN-1",
+     "variantIndex": 1,
+     "timssItemId": "M032397",
+     "timssContentDomain": "GEOMETRY (Geometría) · Location and Movement",
+     "contentCode": "GEO"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-ELN-2",
+     "variantIndex": 2,
+     "timssItemId": "M042150",
+     "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+     "contentCode": "GEO"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-ELN-3",
+     "variantIndex": 3,
+     "timssItemId": "M032679",
+     "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+     "contentCode": "GEO"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-ING-ELN",
+   "cellIndex": 11,
+   "specialtyId": "ELN",
+   "specialtyEs": "Electrónico",
+   "specialtyEn": "Electronics",
+   "disciplineId": "ING",
+   "disciplineEs": "Ingeniería",
+   "disciplineEn": "Engineering",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-ING-ELN-1",
+     "variantIndex": 1,
+     "timssItemId": "S032160",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+     "contentCode": "TIE"
+    },
+    {
+     "id": "COB-STEM-CU-ING-ELN-2",
+     "variantIndex": 2,
+     "timssItemId": "M032673",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-ING-ELN-3",
+     "variantIndex": 3,
+     "timssItemId": "M042198A",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Patterns",
+     "contentCode": "ÁLG"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-MAT-ELN",
+   "cellIndex": 12,
+   "specialtyId": "ELN",
+   "specialtyEs": "Electrónico",
+   "specialtyEn": "Electronics",
+   "disciplineId": "MAT",
+   "disciplineEs": "Matemática",
+   "disciplineEn": "Mathematics",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-MAT-ELN-1",
+     "variantIndex": 1,
+     "timssItemId": "M042024",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-ELN-2",
+     "variantIndex": 2,
+     "timssItemId": "M032683",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-ELN-3",
+     "variantIndex": 3,
+     "timssItemId": "M052216",
+     "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+     "contentCode": "NÚM"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-SCI-NAV",
+   "cellIndex": 13,
+   "specialtyId": "NAV",
+   "specialtyEs": "Ingeniero Naval",
+   "specialtyEn": "Naval Engineer",
+   "disciplineId": "SCI",
+   "disciplineEs": "Ciencia",
+   "disciplineEn": "Science",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-SCI-NAV-1",
+     "variantIndex": 1,
+     "timssItemId": "S032158",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-NAV-2",
+     "variantIndex": 2,
+     "timssItemId": "S052165A",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-NAV-3",
+     "variantIndex": 3,
+     "timssItemId": "S052165B",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-TEC-NAV",
+   "cellIndex": 14,
+   "specialtyId": "NAV",
+   "specialtyEs": "Ingeniero Naval",
+   "specialtyEn": "Naval Engineer",
+   "disciplineId": "TEC",
+   "disciplineEs": "Tecnología",
+   "disciplineEn": "Technology",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-TEC-NAV-1",
+     "variantIndex": 1,
+     "timssItemId": "M042235",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-NAV-2",
+     "variantIndex": 2,
+     "timssItemId": "M032419",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-NAV-3",
+     "variantIndex": 3,
+     "timssItemId": "M042077",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-ING-NAV",
+   "cellIndex": 15,
+   "specialtyId": "NAV",
+   "specialtyEs": "Ingeniero Naval",
+   "specialtyEn": "Naval Engineer",
+   "disciplineId": "ING",
+   "disciplineEs": "Ingeniería",
+   "disciplineEn": "Engineering",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-ING-NAV-1",
+     "variantIndex": 1,
+     "timssItemId": "M032734",
+     "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+     "contentCode": "GEO"
+    },
+    {
+     "id": "COB-STEM-CU-ING-NAV-2",
+     "variantIndex": 2,
+     "timssItemId": "M042152",
+     "timssContentDomain": "GEOMETRY (Geometría) · Location and Movement",
+     "contentCode": "GEO"
+    },
+    {
+     "id": "COB-STEM-CU-ING-NAV-3",
+     "variantIndex": 3,
+     "timssItemId": "M042236",
+     "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+     "contentCode": "ÁLG"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-MAT-NAV",
+   "cellIndex": 16,
+   "specialtyId": "NAV",
+   "specialtyEs": "Ingeniero Naval",
+   "specialtyEn": "Naval Engineer",
+   "disciplineId": "MAT",
+   "disciplineEs": "Matemática",
+   "disciplineEn": "Mathematics",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-MAT-NAV-1",
+     "variantIndex": 1,
+     "timssItemId": "S032151",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+     "contentCode": "TIE"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-NAV-2",
+     "variantIndex": 2,
+     "timssItemId": "S042141",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+     "contentCode": "TIE"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-NAV-3",
+     "variantIndex": 3,
+     "timssItemId": "M042169B",
+     "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+     "contentCode": "DAT"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-SCI-LOG",
+   "cellIndex": 17,
+   "specialtyId": "LOG",
+   "specialtyEs": "Logístico",
+   "specialtyEn": "Logistics",
+   "disciplineId": "SCI",
+   "disciplineEs": "Ciencia",
+   "disciplineEn": "Science",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-SCI-LOG-1",
+     "variantIndex": 1,
+     "timssItemId": "S032611",
+     "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+     "contentCode": "BIO"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-LOG-2",
+     "variantIndex": 2,
+     "timssItemId": "S042024",
+     "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+     "contentCode": "BIO"
+    },
+    {
+     "id": "COB-STEM-CU-SCI-LOG-3",
+     "variantIndex": 3,
+     "timssItemId": "S042261",
+     "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+     "contentCode": "BIO"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-TEC-LOG",
+   "cellIndex": 18,
+   "specialtyId": "LOG",
+   "specialtyEs": "Logístico",
+   "specialtyEn": "Logistics",
+   "disciplineId": "TEC",
+   "disciplineEs": "Tecnología",
+   "disciplineEn": "Technology",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-TEC-LOG-1",
+     "variantIndex": 1,
+     "timssItemId": "S042238A",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-LOG-2",
+     "variantIndex": 2,
+     "timssItemId": "S042272",
+     "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+     "contentCode": "FÍS"
+    },
+    {
+     "id": "COB-STEM-CU-TEC-LOG-3",
+     "variantIndex": 3,
+     "timssItemId": "S032530Z",
+     "timssContentDomain": "BIOLOGY (Biología) · Life Cycles, Reproduction, and Heredity",
+     "contentCode": "BIO"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-ING-LOG",
+   "cellIndex": 19,
+   "specialtyId": "LOG",
+   "specialtyEs": "Logístico",
+   "specialtyEn": "Logistics",
+   "disciplineId": "ING",
+   "disciplineEs": "Ingeniería",
+   "disciplineEn": "Engineering",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-ING-LOG-1",
+     "variantIndex": 1,
+     "timssItemId": "S042095",
+     "timssContentDomain": "CHEMISTRY (Química) · Properties of Matter",
+     "contentCode": "QUÍ"
+    },
+    {
+     "id": "COB-STEM-CU-ING-LOG-2",
+     "variantIndex": 2,
+     "timssItemId": "S032510",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+     "contentCode": "TIE"
+    },
+    {
+     "id": "COB-STEM-CU-ING-LOG-3",
+     "variantIndex": 3,
+     "timssItemId": "S032463",
+     "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+     "contentCode": "TIE"
+    }
+   ]
+  },
+  {
+   "cellCode": "CU-MAT-LOG",
+   "cellIndex": 20,
+   "specialtyId": "LOG",
+   "specialtyEs": "Logístico",
+   "specialtyEn": "Logistics",
+   "disciplineId": "MAT",
+   "disciplineEs": "Matemática",
+   "disciplineEn": "Mathematics",
+   "variants": [
+    {
+     "id": "COB-STEM-CU-MAT-LOG-1",
+     "variantIndex": 1,
+     "timssItemId": "M032132",
+     "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Chance",
+     "contentCode": "DAT"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-LOG-2",
+     "variantIndex": 2,
+     "timssItemId": "M032626",
+     "timssContentDomain": "NUMBER (Número) · Whole Numbers",
+     "contentCode": "NÚM"
+    },
+    {
+     "id": "COB-STEM-CU-MAT-LOG-3",
+     "variantIndex": 3,
+     "timssItemId": "S032645",
+     "timssContentDomain": "BIOLOGY (Biología) · Ecosystems",
+     "contentCode": "BIO"
+    }
+   ]
+  }
+ ]
+}

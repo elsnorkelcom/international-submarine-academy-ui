@@ -79,11 +79,12 @@ ni documento necesita edición.
 
 ## 6. Uso en la app
 
-1. `palette.json` es la única fuente; el componente de grilla lee los tokens.
-2. En CSS se exponen como variables (`--grid-sci`, `--grid-tec`, …) generadas desde el
-   JSON; no se escriben hex en los componentes.
-3. Estados: disponible (borde + barra de dimensión), completada (color + ícono, nunca solo
-   color), bloqueada (gris al 40 % con etiqueta), en revisión (`R` cobre).
+1. `palette.json` es la única fuente de color; el componente no escribe hex propios.
+2. **Implementado:** `components/learn/copper-grid.tsx` renderiza la grilla 5×5 en
+   `/series`, leyendo `lib/data/datasets/cobre-grid.json` (20 celdas × 3 variantes) y
+   `palette.json` (colores de Cobre). Muestra dimensión, especialidad, variantes y codes.
+3. Pendiente: exponer los tokens como variables CSS (`--grid-sci`, …), estados de
+   completada/bloqueada con progreso real y enlaces a la experiencia de cada celda.
 4. Las Challenge Coins y badges usan la misma familia: metal del nivel + tono de la
    disciplina; los PNG actuales son provisorios hasta la sesión de Arte.
 
