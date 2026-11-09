@@ -4,6 +4,10 @@
 **Fuente de verdad:** `lib/data/datasets/palette.json` (todos los hex salen de ahí).
 **Visual:** `artifacts/grilla-cobre/grilla-cobre.png` y `paleta-temporadas.png`.
 
+![Grilla Cobre 5x5 con colores metalizados](../artifacts/grilla-cobre/grilla-cobre.png)
+
+![Sistema de color por temporada](../artifacts/grilla-cobre/paleta-temporadas.png)
+
 ## 1. Principio: el color informa cuatro cosas
 
 | Canal | Qué comunica | Cómo |
