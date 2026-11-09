@@ -48,24 +48,34 @@ disciplina (no tiene preguntas TIMSS). Cobre en adelante usa la mezcla.
 
 ## 4. Cobre · colores de dimensión
 
-| Dimensión | Hex | Contraste sobre fondo |
+| Dimensión | Hex | Contraste sobre tarjeta |
 |---|---|---|
-| Ciencia | `#D8A423` (amarillo cobreado) | 8,72:1 |
-| Tecnología | `#5E83A1` (azul cobreado) | 4,94:1 |
-| Ingeniería | `#D0621B` (cobre encendido) | 5,13:1 |
-| Matemática | `#A26E9E` (violeta cobreado) | 4,96:1 |
-| Factor Humano | `#C97575` (cobre rosado) | 5,93:1 |
+| Ciencia | `#199FC6` (cian cobreado) | 5,98:1 |
+| Tecnología | `#309833` (verde cobreado) | 4,97:1 |
+| Ingeniería | `#DA5291` (magenta cobreado) | 4,91:1 |
+| Matemática | `#D9B717` (amarillo cobreado) | 9,42:1 |
+| Factor Humano | `#D27E0C` (naranja cobreado) | 5,90:1 |
 
 Rampa de especialidad en Cobre: `#855930` · `#9B612B` · `#B87333` · `#C38954` · `#CFA074`
 (MAQ → LOG). Los dos primeros pasos son estructurales (barras), no texto; siempre van con
 la etiqueta de la fila.
 
-## 5. Colores STEM: provisionales hasta el logo
+## 5. Colores STEM: los del escudo de ISA
 
-Los tonos base actuales son una aproximación (amarillo, azul, naranja, violeta, rosa).
-Cuando el equipo de arte entregue los colores del logo, se reemplazan en `palette.json`
-bajo `stem` y se regeneran las imágenes con `render_palette.py`. Ningún componente ni
-documento necesita cambios.
+Los tonos base salen del escudo de la academia (`lib/missions.ts`, `DISCIPLINE_META`):
+
+| Dimensión | Tono base del escudo |
+|---|---|
+| Ciencia | `#14B4F0` |
+| Tecnología | `#22A34A` |
+| Ingeniería | `#D6339A` |
+| Matemática | `#E2D23C` |
+| Factor Humano | `#D9942F` |
+
+El color de la grilla es la mezcla de ese tono con el metal de la temporada
+(`metal_weight`, hoy 0,22) más un ajuste de saturación. Si el equipo de arte ajusta el
+peso metálico o los tonos, se cambia en `palette.json` y se regenera; ningún componente
+ni documento necesita edición.
 
 ## 6. Uso en la app
 

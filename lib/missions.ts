@@ -56,7 +56,7 @@ const NODES = [
   'USS Bowfin',
   'USS Cod',
   'HMS Alliance',
-  'U-995',
+  'Submarino museo',
   'ARA Santa Fe',
 ]
 

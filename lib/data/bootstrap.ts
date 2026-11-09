@@ -21,14 +21,19 @@ export async function ensureSeed(
   storage: { getItem(key: string): string | null; setItem(key: string, value: string): void } | null,
 ): Promise<BootstrapResult> {
   const seasons = await database.repository('seasons').count();
+  const storedVersion = Number(storage?.getItem(SEED_MARKER_KEY) ?? 0);
 
-  if (seasons > 0) {
+  if (seasons > 0 && storedVersion >= SEED_VERSION) {
     return { seeded: false, version: SEED_VERSION };
   }
 
+  // A version bump resets the seeded collections so removed example content does not
+  // survive in existing browsers. Settings and access keys are not part of the seed.
+  const reset = seasons > 0;
+
   for (const collection of seedCollections()) {
     const repository = database.repository(collection.name);
-    await repository.importRecords(collection.records, 'upsert');
+    await repository.importRecords(collection.records, reset ? 'replace' : 'upsert');
   }
 
   const settings = await database.settings().get();

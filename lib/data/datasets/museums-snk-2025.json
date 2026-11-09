@@ -260,32 +260,6 @@
   }
  },
  {
-  "id": "MUS-U995",
-  "name": "U-995",
-  "museumName": "Laboe Naval Memorial",
-  "country": "Germany",
-  "city": "Laboe",
-  "vesselType": "Type VIIC/41",
-  "propulsion": "Diesel",
-  "origin": "Germany",
-  "launchYear": 1943,
-  "latitude": 54.4122016,
-  "longitude": 10.2307112,
-  "address": "Strandstraße 92, 24235 Laboe, Germany",
-  "website": "",
-  "mediaUrl": "https://www.youtube.com/watch?v=rGMWF3EZlPw",
-  "validation": "pending",
-  "source": "Submarinos Museos (published Sheet)",
-  "notes": "Revisar: Faltan Secundarios",
-  "dossier": "SNK-011",
-  "situation": "",
-  "featured": false,
-  "description": {
-   "en": "Museum: Laboe Naval Memorial. Vessel type: Type VIIC/41. Origin: Alemania. Launched: 1943. Address: Strandstraße 92, 24235 Laboe, Germany.",
-   "es": "Museo: Laboe Naval Memorial. Tipo de buque: Type VIIC/41. Origen: Alemania. Botado: 1943. Dirección: Strandstraße 92, 24235 Laboe, Germany."
-  }
- },
- {
   "id": "MUS-SNK-012",
   "name": "HMAS Onslow",
   "museumName": "Australian National Maritime Museum",

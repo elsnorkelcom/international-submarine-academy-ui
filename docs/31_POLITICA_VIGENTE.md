@@ -63,6 +63,12 @@ Sustituciones aprobadas:
 Bronce, Plata y Oro no tienen actividades, matrícula ni acreditación hasta decisión
 explícita. Los 111 ítems de TIMSS 2011 de dominio Applying/Reasoning quedan reservados.
 
+**Estado del contenido (9/11/2026):** la plataforma parte sin contenido de ejemplo. Se
+retiró el submarino-museo U-995 usado como muestra, junto con su episodio, sus misiones,
+sus preguntas, sus insignias y su institución. La app arranca con temporadas,
+disciplinas y roles, y el archivo de museos reales (159 fichas) para construir Acero y
+Cobre desde los insumos aprobados.
+
 ## 5. Temporada Acero
 
 Visita por compartimentos y sistemas. Cada episodio presenta un sistema real con

@@ -94,7 +94,7 @@ export const ADMIN_ENTITIES: AdminEntity[] = [
       { key: 'status', label: 'Status', type: 'status' },
     ],
     fields: [
-      { key: 'id', label: 'ID', type: 'text', required: true, hint: 'Readable ID, e.g. MUS-U995.' },
+      { key: 'id', label: 'ID', type: 'text', required: true, hint: 'Readable ID, e.g. MUS-SNK-001.' },
       LOCALIZED('name', 'Submarine name', true),
       LOCALIZED('museumName', 'Museum name'),
       { key: 'country', label: 'Country', type: 'text' },

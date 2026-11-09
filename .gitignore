@@ -10,3 +10,7 @@ out/
 # Generados por Next/TS
 next-env.d.ts
 *.tsbuildinfo
+
+# Insumos locales de TIMSS (PDF de IEA y documentos fuente): no se versionan.
+# Las copias de trabajo del banco viven en TIMSS/banco-preguntas/insumos/.
+/TIMSS/Insumos/

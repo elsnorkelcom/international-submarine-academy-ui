@@ -1,7 +1,7 @@
 {
  "version": 1,
  "status": "provisional-stem-colors",
- "metal_weight": 0.28,
+ "metal_weight": 0.22,
  "metals": {
   "STEEL": {
    "name": "Acero",
@@ -27,23 +27,23 @@
  "stem": {
   "SCI": {
    "name": "Ciencia",
-   "hex": "#E5C34B"
+   "hex": "#14B4F0"
   },
   "TEC": {
    "name": "Tecnología",
-   "hex": "#3F86C4"
+   "hex": "#22A34A"
   },
   "ING": {
    "name": "Ingeniería",
-   "hex": "#D9773F"
+   "hex": "#D6339A"
   },
   "MAT": {
    "name": "Matemática",
-   "hex": "#9A78C9"
+   "hex": "#E2D23C"
   },
   "HUM": {
    "name": "Factor Humano",
-   "hex": "#D08AA4"
+   "hex": "#D9942F"
   }
  },
  "seasons": {
@@ -62,11 +62,11 @@
   "COPPER": {
    "metal": "#B87333",
    "disciplines": {
-    "SCI": "#D8A423",
-    "TEC": "#5E83A1",
-    "ING": "#D0621B",
-    "MAT": "#A26E9E",
-    "HUM": "#C97575"
+    "SCI": "#199FC6",
+    "TEC": "#309833",
+    "ING": "#DA5291",
+    "MAT": "#D9B717",
+    "HUM": "#D27E0C"
    },
    "specialty_ramp": [
     "#855930",
@@ -79,11 +79,11 @@
   "BRONZE": {
    "metal": "#CD7F32",
    "disciplines": {
-    "SCI": "#DEA622",
-    "TEC": "#5C7F9B",
-    "ING": "#D66519",
-    "MAT": "#A8709D",
-    "HUM": "#CF7774"
+    "SCI": "#1FA1C6",
+    "TEC": "#369B32",
+    "ING": "#DB498A",
+    "MAT": "#DDBA16",
+    "HUM": "#D67F0B"
    },
    "specialty_ramp": [
     "#8B5622",
@@ -96,11 +96,11 @@
   "SILVER": {
    "metal": "#C0C7CE",
    "disciplines": {
-    "SCI": "#DBBF58",
-    "TEC": "#4D8EC7",
-    "ING": "#D27E4F",
-    "MAT": "#9D81CA",
-    "HUM": "#CC90AA"
+    "SCI": "#13ADE9",
+    "TEC": "#2FAB58",
+    "ING": "#D750A7",
+    "MAT": "#DBCE40",
+    "HUM": "#D49335"
    },
    "specialty_ramp": [
     "#83878C",
@@ -113,11 +113,11 @@
   "GOLD": {
    "metal": "#D4AF37",
    "disciplines": {
-    "SCI": "#E0B523",
-    "TEC": "#5E8E9D",
-    "ING": "#D8751B",
-    "MAT": "#AA7F9E",
-    "HUM": "#D18774"
+    "SCI": "#20AFC7",
+    "TEC": "#35A631",
+    "ING": "#DC538A",
+    "MAT": "#DFC517",
+    "HUM": "#D88C0C"
    },
    "specialty_ramp": [
     "#907725",

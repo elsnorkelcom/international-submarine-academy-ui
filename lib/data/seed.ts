@@ -27,7 +27,7 @@ import type {
 import { SETTINGS_ID } from './repository';
 import museumsDataset from './datasets/museums-snk-2025.json';
 
-export const SEED_VERSION = 1;
+export const SEED_VERSION = 2;
 
 const SEED_ACTOR = 'seed';
 const SEED_TIMESTAMP = '2026-11-05T00:00:00.000Z';
@@ -206,21 +206,7 @@ export const SEED_ROLES: Role[] = [
 /* Institutions and museums                                                   */
 /* -------------------------------------------------------------------------- */
 
-export const SEED_INSTITUTIONS: Institution[] = [
-  {
-    id: 'INS-LABOE',
-    ...BASE,
-    name: { en: 'Laboe Naval Memorial', es: 'Memorial Naval de Laboe' },
-    type: 'museum',
-    country: 'Germany',
-    city: 'Laboe',
-    website: '',
-    contactName: '',
-    contactEmail: '',
-    status: 'active',
-    notes: 'Museum record imported from the Submarinos Museos reference dataset. Contact data pending.',
-  },
-];
+export const SEED_INSTITUTIONS: Institution[] = [];
 
 interface MuseumDatasetRecord {
   id: string;
@@ -260,8 +246,8 @@ export const SEED_MUSEUMS: Museum[] = MUSEUM_DATASET.map((record) => ({
   propulsion: record.propulsion,
   origin: record.origin,
   description: record.description,
-  compartmentIds: record.id === 'MUS-U995' ? ['CMP-U995-CONTROL'] : [],
-  episodeIds: record.id === 'MUS-U995' ? ['EPI-STEEL-04'] : [],
+  compartmentIds: [],
+  episodeIds: [],
   status: 'published',
   source: record.source,
   notes: record.notes,
@@ -276,236 +262,29 @@ export const SEED_MUSEUMS: Museum[] = MUSEUM_DATASET.map((record) => ({
   featured: record.featured ?? false,
 }));
 
-export const SEED_COMPARTMENTS: Compartment[] = [
-  {
-    id: 'CMP-U995-CONTROL',
-    ...BASE,
-    name: { en: 'Control Room', es: 'Sala de Control' },
-    museumId: 'MUS-U995',
-    description: VALIDATION_PLACEHOLDER,
-    systemIds: ['SYS-U995-PERISCOPE'],
-    status: 'published',
-  },
-];
+export const SEED_COMPARTMENTS: Compartment[] = [];
 
-export const SEED_SYSTEMS: SubmarineSystem[] = [
-  {
-    id: 'SYS-U995-PERISCOPE',
-    ...BASE,
-    name: { en: 'Periscope', es: 'Periscopio' },
-    category: 'Observation',
-    description: {
-      en: 'An optical instrument that lets the crew observe the surface while the submarine remains submerged.',
-      es: 'Instrumento óptico que permite a la tripulación observar la superficie mientras el submarino permanece sumergido.',
-    },
-    compartmentId: 'CMP-U995-CONTROL',
-    museumId: 'MUS-U995',
-    topics: ['Optics', 'Reflection', 'Observation'],
-    status: 'published',
-  },
-];
+export const SEED_SYSTEMS: SubmarineSystem[] = [];
 
 /* -------------------------------------------------------------------------- */
 /* Episodes and missions                                                      */
 /* -------------------------------------------------------------------------- */
 
-export const SEED_EPISODES: Episode[] = [
-  {
-    id: 'EPI-STEEL-04',
-    ...BASE,
-    title: { en: 'Steel 04 — Submarine Command', es: 'Acero 04 — Comando del Submarino' },
-    seasonId: 'SEA-STEEL',
-    museumId: 'MUS-U995',
-    compartmentId: 'CMP-U995-CONTROL',
-    equipmentId: 'SYS-U995-PERISCOPE',
-    mediaUrl: '',
-    durationSeconds: null,
-    description: {
-      en: 'Control room of U-995: a periscope, a dark surface, and a first observation.',
-      es: 'Sala de control del U-995: un periscopio, una superficie oscura y una primera observación.',
-    },
-    narrative: {
-      en: 'This story is fiction. The place, the vessel and the museum are real.',
-      es: 'Esta historia es ficción. El lugar, el buque y el museo son reales.',
-    },
-    status: 'published',
-    order: 1,
-  },
-];
+export const SEED_EPISODES: Episode[] = [];
 
-export const SEED_MISSIONS: Mission[] = [
-  {
-    id: 'MIS-STEEL-04',
-    ...BASE,
-    title: { en: 'Recognize the periscope', es: 'Reconocer el periscopio' },
-    episodeId: 'EPI-STEEL-04',
-    seasonId: 'SEA-STEEL',
-    museumId: 'MUS-U995',
-    compartmentId: 'CMP-U995-CONTROL',
-    equipmentId: 'SYS-U995-PERISCOPE',
-    description: {
-      en: 'A first look through the periscope.',
-      es: 'Una primera mirada a través del periscopio.',
-    },
-    learningObjective: {
-      en: 'Identify the main function of a periscope in a submarine.',
-      es: 'Identificar la función principal de un periscopio en un submarino.',
-    },
-    timssDomain: 'knowing',
-    gsaCompetency: 'Curiosity and observation',
-    civilSocietyConnection: { en: '', es: '' },
-    status: 'published',
-    order: 1,
-  },
-  {
-    id: 'MIS-COPPER-01',
-    ...BASE,
-    title: {
-      en: 'Copper — Periscope and Astronomical Observation',
-      es: 'Cobre — Periscopio y observación astronómica',
-    },
-    episodeId: 'EPI-STEEL-04',
-    seasonId: 'SEA-COPPER',
-    museumId: 'MUS-U995',
-    compartmentId: 'CMP-U995-CONTROL',
-    equipmentId: 'SYS-U995-PERISCOPE',
-    description: {
-      en: 'Use the periscope principle to explain how we see what is not directly in front of us.',
-      es: 'Usar el principio del periscopio para explicar cómo vemos lo que no está directamente frente a nosotros.',
-    },
-    learningObjective: {
-      en: 'Apply the periscope principle to astronomical observation.',
-      es: 'Aplicar el principio del periscopio a la observación astronómica.',
-    },
-    timssDomain: 'knowing',
-    gsaCompetency: 'Critical thinking',
-    civilSocietyConnection: {
-      en: 'The periscope principle is also used in inspection cameras, endoscopes and systems for seeing around corners.',
-      es: 'El principio del periscopio también se usa en cámaras de inspección, endoscopios y sistemas para ver en las esquinas.',
-    },
-    status: 'published',
-    order: 2,
-  },
-];
+export const SEED_MISSIONS: Mission[] = [];
 
 /* -------------------------------------------------------------------------- */
 /* Questions                                                                  */
 /* -------------------------------------------------------------------------- */
 
-export const SEED_QUESTIONS: Question[] = [
-  {
-    id: 'QST-STEEL-04-01',
-    ...BASE,
-    missionId: 'MIS-STEEL-04',
-    episodeId: 'EPI-STEEL-04',
-    museumId: 'MUS-U995',
-    compartmentId: 'CMP-U995-CONTROL',
-    equipmentId: 'SYS-U995-PERISCOPE',
-    area: 'Science — Physics (Optics)',
-    timssDomain: 'knowing',
-    gsaCompetency: 'Curiosity and observation',
-    topic: 'Periscope',
-    level: 'Steel (Grade 8 / Secondary)',
-    text: {
-      en: 'What is the main function of a periscope in a submarine?',
-      es: '¿Cuál es la función principal de un periscopio en un submarino?',
-    },
-    options: [
-      { id: 'A', text: { en: "Measure the submarine's depth.", es: 'Medir la profundidad del submarino.' } },
-      { id: 'B', text: { en: 'Allow observation from a protected position.', es: 'Permitir la observación desde una posición protegida.' } },
-      { id: 'C', text: { en: 'Generate electrical power for the engines.', es: 'Generar energía eléctrica para los motores.' } },
-      { id: 'D', text: { en: "Filter the submarine's internal air.", es: 'Filtrar el aire interno del submarino.' } },
-    ],
-    correctOptionId: 'B',
-    feedback: {
-      en: 'Correct. A periscope lets the crew observe the surface from a protected position, without exposing the submarine.',
-      es: 'Correcto. El periscopio permite a la tripulación observar la superficie desde una posición protegida, sin exponer el submarino.',
-    },
-    civilSocietyConnection: { en: '', es: '' },
-    source: 'ISA pilot specification — Steel 04 episode',
-    status: 'review',
-    notes: 'Civil society connection not provided by the pilot specification.',
-  },
-  {
-    id: 'QST-COPPER-01-01',
-    ...BASE,
-    missionId: 'MIS-COPPER-01',
-    episodeId: 'EPI-STEEL-04',
-    museumId: 'MUS-U995',
-    compartmentId: 'CMP-U995-CONTROL',
-    equipmentId: 'SYS-U995-PERISCOPE',
-    area: 'Science — Physics (Optics)',
-    timssDomain: 'knowing',
-    gsaCompetency: 'Critical thinking',
-    topic: 'Periscope and astronomical observation',
-    level: 'Copper (Grade 8 / Secondary)',
-    text: {
-      en: 'What principle allows a periscope to observe objects that are not directly visible?',
-      es: '¿Qué principio permite a un periscopio observar objetos que no son directamente visibles?',
-    },
-    options: [
-      { id: 'A', text: { en: 'Reflection of light through mirrors or prisms.', es: 'Reflexión de la luz mediante espejos o prismas.' } },
-      { id: 'B', text: { en: 'Conversion of light into electricity.', es: 'Conversión de la luz en electricidad.' } },
-      { id: 'C', text: { en: 'Increase in air pressure.', es: 'Aumento de la presión del aire.' } },
-      { id: 'D', text: { en: 'Water filtration.', es: 'Filtración del agua.' } },
-    ],
-    correctOptionId: 'A',
-    feedback: {
-      en: 'Correct. Mirrors or prisms reflect light along the tube, so the observer sees outside without being exposed.',
-      es: 'Correcto. Los espejos o prismas reflejan la luz a lo largo del tubo, de modo que el observador ve el exterior sin exponerse.',
-    },
-    civilSocietyConnection: {
-      en: 'The periscope principle is also used in inspection cameras, endoscopes and systems for seeing around corners.',
-      es: 'El principio del periscopio también se usa en cámaras de inspección, endoscopios y sistemas para ver en las esquinas.',
-    },
-    source: 'ISA pilot specification — Copper mission',
-    status: 'review',
-    notes: 'Question text provided by the pilot specification.',
-  },
-];
+export const SEED_QUESTIONS: Question[] = [];
 
 /* -------------------------------------------------------------------------- */
 /* Badges                                                                     */
 /* -------------------------------------------------------------------------- */
 
-export const SEED_BADGES: Badge[] = [
-  {
-    id: 'BDG-EXPEDITION-CREDENTIAL',
-    ...BASE,
-    name: { en: 'Submarine Expedition Credential', es: 'Credencial de Expedición Submarina' },
-    type: 'credential',
-    seasonId: 'SEA-STEEL',
-    missionId: 'MIS-STEEL-04',
-    description: {
-      en: 'A symbolic recognition for completing the first observation.',
-      es: 'Un reconocimiento simbólico por completar la primera observación.',
-    },
-    icon: 'anchor',
-    color: '#8FA3B0',
-    criteria: { en: 'Complete the Steel 04 mission.', es: 'Completar la misión Acero 04.' },
-    status: 'published',
-    ruleType: 'mission',
-    ruleCount: 1,
-  },
-  {
-    id: 'BDG-COPPER-COIN',
-    ...BASE,
-    name: { en: 'Copper Coin', es: 'Coin Cobre' },
-    type: 'coin',
-    seasonId: 'SEA-COPPER',
-    missionId: 'MIS-COPPER-01',
-    description: {
-      en: 'A symbolic recognition for validating knowledge.',
-      es: 'Un reconocimiento simbólico por validar conocimiento.',
-    },
-    icon: 'coin',
-    color: '#B87333',
-    criteria: { en: 'Complete the Copper mission.', es: 'Completar la misión Cobre.' },
-    status: 'published',
-    ruleType: 'mission',
-    ruleCount: 1,
-  },
-];
+export const SEED_BADGES: Badge[] = [];
 
 /* -------------------------------------------------------------------------- */
 /* Settings                                                                   */

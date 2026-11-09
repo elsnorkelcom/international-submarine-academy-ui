@@ -222,10 +222,6 @@ def main() -> int:
             record["id"] = candidate
             used.add(candidate)
 
-    if "U-995" in {record["name"] for record in records}:
-        for record in records:
-            if record["name"] == "U-995":
-                record["id"] = "MUS-U995"
 
     names = {record["name"] for record in records}
     previous = {item["name"] for item in existing}
