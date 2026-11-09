@@ -1,0 +1,131 @@
+{
+ "version": 1,
+ "status": "provisional-stem-colors",
+ "metal_weight": 0.28,
+ "metals": {
+  "STEEL": {
+   "name": "Acero",
+   "hex": "#8FA3B0"
+  },
+  "COPPER": {
+   "name": "Cobre",
+   "hex": "#B87333"
+  },
+  "BRONZE": {
+   "name": "Bronce",
+   "hex": "#CD7F32"
+  },
+  "SILVER": {
+   "name": "Plata",
+   "hex": "#C0C7CE"
+  },
+  "GOLD": {
+   "name": "Oro",
+   "hex": "#D4AF37"
+  }
+ },
+ "stem": {
+  "SCI": {
+   "name": "Ciencia",
+   "hex": "#E5C34B"
+  },
+  "TEC": {
+   "name": "Tecnología",
+   "hex": "#3F86C4"
+  },
+  "ING": {
+   "name": "Ingeniería",
+   "hex": "#D9773F"
+  },
+  "MAT": {
+   "name": "Matemática",
+   "hex": "#9A78C9"
+  },
+  "HUM": {
+   "name": "Factor Humano",
+   "hex": "#D08AA4"
+  }
+ },
+ "seasons": {
+  "STEEL": {
+   "metal": "#8FA3B0",
+   "disciplines": {},
+   "specialty_ramp": [
+    "#616F78",
+    "#788994",
+    "#8FA3B0",
+    "#A1B2BD",
+    "#B3C0C9"
+   ],
+   "note": "Acero no usa dimensiones STEM: se representa solo con su metal."
+  },
+  "COPPER": {
+   "metal": "#B87333",
+   "disciplines": {
+    "SCI": "#D8A423",
+    "TEC": "#5E83A1",
+    "ING": "#D0621B",
+    "MAT": "#A26E9E",
+    "HUM": "#C97575"
+   },
+   "specialty_ramp": [
+    "#855930",
+    "#9B612B",
+    "#B87333",
+    "#C38954",
+    "#CFA074"
+   ]
+  },
+  "BRONZE": {
+   "metal": "#CD7F32",
+   "disciplines": {
+    "SCI": "#DEA622",
+    "TEC": "#5C7F9B",
+    "ING": "#D66519",
+    "MAT": "#A8709D",
+    "HUM": "#CF7774"
+   },
+   "specialty_ramp": [
+    "#8B5622",
+    "#AC6B2A",
+    "#CD7F32",
+    "#D59353",
+    "#DDA874"
+   ]
+  },
+  "SILVER": {
+   "metal": "#C0C7CE",
+   "disciplines": {
+    "SCI": "#DBBF58",
+    "TEC": "#4D8EC7",
+    "ING": "#D27E4F",
+    "MAT": "#9D81CA",
+    "HUM": "#CC90AA"
+   },
+   "specialty_ramp": [
+    "#83878C",
+    "#A1A7AD",
+    "#C0C7CE",
+    "#CAD0D6",
+    "#D4D9DE"
+   ]
+  },
+  "GOLD": {
+   "metal": "#D4AF37",
+   "disciplines": {
+    "SCI": "#E0B523",
+    "TEC": "#5E8E9D",
+    "ING": "#D8751B",
+    "MAT": "#AA7F9E",
+    "HUM": "#D18774"
+   },
+   "specialty_ramp": [
+    "#907725",
+    "#B2932E",
+    "#D4AF37",
+    "#DBBC57",
+    "#E2C977"
+   ]
+  }
+ }
+}
