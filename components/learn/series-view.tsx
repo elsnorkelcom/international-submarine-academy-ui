@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
+import { SeasonProgression } from '@/components/learn/season-progression';
 import { localize, type Episode, type Mission, type Museum, type Season } from '@/lib/domain/types';
 
 interface LearnData {
@@ -88,6 +89,47 @@ export function SeriesView() {
     return map;
   }, [progress.missions]);
 
+  const completedMissionIds = useMemo(() => {
+    const set = new Set<string>();
+
+    for (const [missionId, result] of Object.entries(progress.missions)) {
+      if (result.correct) {
+        set.add(missionId);
+      }
+    }
+
+    return set;
+  }, [progress.missions]);
+
+  // Una temporada abre cuando la anterior (con misiones publicadas) tiene al menos una misión
+  // completada. Las temporadas sin misiones publicadas heredan el estado del tramo anterior.
+  const unlockedSeasonIds = useMemo(() => {
+    const set = new Set<string>();
+
+    if (!data) {
+      return set;
+    }
+
+    let previousSeasonId: string | null = null;
+    let previousDone = 0;
+
+    for (const season of data.seasons) {
+      const own = data.missions.filter((mission) => mission.seasonId === season.id);
+      const unlocked = previousSeasonId === null || previousDone > 0;
+
+      if (unlocked) {
+        set.add(season.id);
+      }
+
+      if (own.length > 0) {
+        previousSeasonId = season.id;
+        previousDone = own.filter((mission) => completedMissionIds.has(mission.id)).length;
+      }
+    }
+
+    return set;
+  }, [data, completedMissionIds]);
+
   if (!ready || !data) {
     return <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">{t.common.loading}</p>;
   }
@@ -111,13 +153,19 @@ export function SeriesView() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{t.learn.series.subtitle}</p>
       </header>
 
+      <SeasonProgression
+        seasons={data.seasons}
+        missions={data.missions}
+        completedMissionIds={completedMissionIds}
+        unlockedSeasonIds={unlockedSeasonIds}
+        language={language}
+        t={t.learn.series}
+      />
+
       <div className="mt-8 space-y-10">
         {grouped.map(({ season, missions }, seasonIndex) => {
           const completed = completedBySeason.get(season.id) ?? 0;
-          const previous = grouped[seasonIndex - 1];
-          const unlocked =
-            seasonIndex === 0 ||
-            (previous ? (completedBySeason.get(previous.season.id) ?? 0) > 0 : true);
+          const unlocked = unlockedSeasonIds.has(season.id);
 
           return (
             <section key={season.id} aria-labelledby={`season-${season.id}`}>

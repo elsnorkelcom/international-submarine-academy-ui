@@ -23,10 +23,10 @@ Foto del proyecto al 7 de noviembre de 2026, con el backlog priorizado.
 
 | Tema | Situación |
 |---|---|
-| **Contenido educativo** | 1 temporada con 1 episodio y 2 misiones; los 100 reactivos curados no están en la app |
+| **Contenido educativo** | 1 episodio; temporadas Acero (5 misiones publicadas) y Cobre (1) en la app; los 100 reactivos curados están en la configuración, con 4 vinculados a misiones |
 | **Datos de museos** | 421 campos faltantes; 147 museos sin investigar |
-| **Home** | sigue usando fixtures legacy (`lib/missions.ts`), no la base de datos |
-| **i18n** | bilingüe en museos y aprendiz; Home y admin sólo en inglés |
+| **Home** | unificada con el modelo nuevo (`components/home/*`), sin fixtures legacy; `lib/missions.ts` sólo alimenta `/insignias` |
+| **i18n** | bilingüe en museos y aprendiz; Home en español; admin sólo en español |
 | **PWA** | hay `manifest.ts`, **no hay service worker** |
 | **Credenciales** | sin firma ni identidad del destinatario |
 | **Importador** | no cubre temporadas, episodios, misiones, insignias ni grilla |
@@ -39,7 +39,6 @@ Foto del proyecto al 7 de noviembre de 2026, con el backlog priorizado.
 - Endpoint Apps Script desplegado.
 - Claves institucionales reales.
 - Métricas y propuestas de instituciones.
-- Unificación de la Home con el modelo nuevo.
 
 ---
 
@@ -63,7 +62,7 @@ Prioridad = impacto × 2 − esfuerzo (S=1, M=3, L=5).
 
 | ID | Tema | E | I | P | Sesión | Depende |
 |---|---|---|---|---|---|---|
-| APP-010 | Franja de temporadas con color y progreso en `/series` | S | 4 | 7 | B | — |
+| APP-010 | Franja de temporadas con color y progreso en `/series` — **completado 8/11/2026** (`components/learn/season-progression.tsx`) | S | 4 | 7 | B | — |
 | APP-011 | Render de video en episodios (con fallback sin media) | S | 4 | 7 | B | APP-004 |
 | APP-012 | Sonido ambiente opcional con mute | M | 2 | 1 | B | — |
 | APP-013 | Repaso de misión y reintento explícito | S | 3 | 5 | B | — |
@@ -90,7 +89,7 @@ Prioridad = impacto × 2 − esfuerzo (S=1, M=3, L=5).
 | ID | Tema | E | I | P | Sesión | Depende |
 |---|---|---|---|---|---|---|
 | APP-040 | Service worker + cache offline + instalación | M | 4 | 5 | F | — |
-| APP-041 | Unificar Home con el modelo nuevo y retirar fixtures legacy | L | 4 | 3 | B | APP-001 |
+| APP-041 | Unificar Home con el modelo nuevo y retirar fixtures legacy — **completado 8/11/2026** | L | 4 | 3 | B | APP-001 |
 | APP-042 | i18n completo en Home y admin | M | 3 | 3 | B | — |
 | APP-043 | Desplegar endpoint Apps Script read-only | M | 3 | 3 | F | decisiones U1–U3 |
 
@@ -111,7 +110,7 @@ Prioridad = impacto × 2 − esfuerzo (S=1, M=3, L=5).
 | 1 | APP-051 | CI evita publicar roto; es barato y protege todo lo demás |
 | 2 | APP-002 | 100 reactivos ya curados: convierten el recorrido en contenido real |
 | 3 | APP-001 | Habilita temporadas completas y la grilla |
-| 4 | APP-010 | Mejora visible de `/series` |
+| 4 | APP-010 | Mejora visible de `/series` — **hecho** |
 | 5 | APP-040 | Cierra la promesa de “PWA instalable” |
 
 ## 6. Cómo se relaciona con el backlog del universo
