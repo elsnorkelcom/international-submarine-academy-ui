@@ -1,0 +1,70 @@
+,Sistema,Descripción Detallada,Desafío Submarino
+1. COMPARTIMENTO DE PROA (Ofensiva y Detección),,,
+1.1,Sensores Externos,,
+1.1.1,Sonar Pasivo,Hidrófonos de alta sensibilidad para escucha hidrofónica.,Sigilo: Detectar sin ser visto.
+1.1.2,Sonar Activo,Emisión de pulsos sónicos para ecolocalización precisa.,Precisión: Fijar blancos.
+1.1.3,Arreglo de Flanco,Sensores en el casco para visión lateral.,Puntos Ciegos: Cobertura 360°.
+1.2,Armamento,,
+1.2.1,Tubos Lanzatorpedos,Cilindros de expulsión mediante agua o aire.,Ataque: Proyección de fuerza.
+1.2.2,Puertas de Proa,Mecanismos hidráulicos de apertura exterior.,Hidrodinámica: Minimizar ruido.
+1.2.3,Sistema de Recarga,Rieles automáticos para movimiento de armas.,Cadencia: Tiempo de respuesta.
+1.2.4,Central de Armas,Consolas de programación de algoritmos de búsqueda.,Eficacia: Guía del proyectil.
+1.2.5,Sensores de Torpedo,Cables de fibra óptica para control post-lanzamiento.,Control: Corrección de trayectoria.
+1.3,Tanques de Inundación,Compensan el peso perdido al lanzar un torpedo.,Flotabilidad: Evitar que la proa flote.
+2. COMPARTIMENTO DE CONTROL Y COMANDO (El Cerebro),,,
+2.1,Visualización,,
+2.1.1,Periscopio de Ataque,Óptica de bajo perfil para observación sigilosa.,Sigilo Visual: Ver desde profundidad.
+2.1.2,Periscopio de Búsqueda,Incluye sensores IR y medidas de apoyo electrónico.,Reconocimiento: Identificar naves.
+2.1.3,Mástil Optrónico,Cámaras digitales de alta resolución (sin tubo físico).,Integridad: No perforar el casco.
+2.2,Navegación,,
+2.2.1,Giroscopio Láser,Determina el norte verdadero sin magnetismo.,Orientación: Navegación inercial.
+2.2.2,Plotter de Cartas,Integración de datos GPS (en superficie) y batimetría.,Geolocalización: Evitar encallamientos.
+2.2.3,Ecosonda,Medición de la profundidad bajo la quilla.,Seguridad: Evitar colisión con el fondo.
+2.3,Comunicaciones,,
+2.3.1,Antena HF/VHF,Comunicación de corto y largo alcance.,Conectividad: Enlace con la base.
+2.3.2,Antena de Satélite,Datos cifrados de alta velocidad.,Inteligencia: Recibir órdenes.
+2.3.3,Teléfono Submarino,Comunicación acústica con otros buques.,Interoperabilidad: Hablar bajo el agua.
+2.4,Gobierno,,
+2.4.1,Estación de Timonel,Volante/Joystick de control de rumbo y profundidad.,Maniobra: Control tridimensional.
+2.4.2,Panel de Inmersión,Control central de válvulas de lastre.,Estabilidad: Cambio de estado.
+3. COMPARTIMENTO DE BATERÍAS Y LOGÍSTICA (El Corazón),,,
+3.1,Energía,,
+3.1.1,Bancos de Baterías,Celdas de alta capacidad (Plomo-Ácido o Litio).,Autonomía: Energía en inmersión.
+3.1.2,Conversores AC/DC,Transforman energía para diversos equipos.,Compatibilidad: Distribución eléctrica.
+3.1.3,Ventilación de Gases,Extracción de hidrógeno peligroso de las baterías.,Seguridad: Evitar explosiones.
+3.2,Soporte Vital,,
+3.2.1,Generador de Oxígeno,Electrólisis para extraer O2​ del agua.,Respiración: Renovación de aire.
+3.2.2,Scrubber de CO2​,Filtros químicos para eliminar dióxido de carbono.,Toxicidad: Mantener aire limpio.
+3.2.3,Climatización,Control de temperatura y humedad extrema.,Corrosión: Cuidado de la electrónica.
+3.3,Servicios,,
+3.3.1,Cocina (Galley),Equipos eléctricos para alimentación masiva.,Sustento: Moral de la tripulación.
+3.3.2,Desalinizadora,Ósmosis inversa para obtener agua potable.,Hidratación: Autosuficiencia de agua.
+3.3.3,Eyector de Basura,Esclusa para expulsar desechos compactados.,Sanidad: Gestión de residuos.
+4. COMPARTIMENTO DE MÁQUINAS (El Músculo),,,
+4.1,Generación,,
+4.1.1,Motores Diésel,Motores de combustión interna de gran torque.,Carga: Recarga rápida de baterías.
+4.1.2,Esmórquel,Tubo de admisión de aire para usar diésel sumergido.,Indiscreción: Recarga oculta.
+4.1.3,Escape de Gases,Sistema de enfriamiento y salida de humos.,Rastro Térmico: Evitar detección IR.
+4.2,Hidráulica,,
+4.2.1,Bombas Principales,Presurización del aceite para mover timones.,Fuerza: Mover superficies pesadas.
+4.2.2,Acumuladores,Reserva de presión para fallos eléctricos.,Emergencia: Fallo de potencia.
+4.3,Mecánica,,
+4.3.1,Bombas de Achique,Expulsión de agua del interior hacia el mar.,Inundación: Mantenerse seco.
+4.3.2,Compresores de Aire,Llenado de botellas de alta presión (200-300 bar).,Presión: Aire para soplar lastre.
+4.3.3,Separadores de Aceite,Limpieza de lubricantes para motores.,Mantenimiento: Longevidad mecánica.
+5. COMPARTIMENTO DE POPA (La Cola),,,
+5.1,Propulsión,,
+5.1.1,Motor Eléctrico (MEP),Motor silencioso acoplado al eje de hélice.,Silencio: Propulsión táctica.
+5.1.2,Eje Propulsor,Transmisión de torque desde el motor a la hélice.,Estanqueidad: Girar sin meter agua.
+5.1.3,Hélice de Bajo Ruido,Diseño especial para evitar la cavitación.,Detección: Evitar burbujas sonoras.
+5.2,Maniobra,,
+5.2.1,Timón de Dirección,Superficie vertical para cambios de rumbo.,Control Lateral: Giro de la nave.
+5.2.2,Planos de Popa,Superficies horizontales para control de profundidad.,Cota: Mantener profundidad estable.
+5.3,Ingeniería Naval,,
+5.3.1,Tanques de Trimado,Ajuste de peso fino entre proa y popa.,Equilibrio: Navegación nivelada.
+5.3.2,Sello del Eje,Sistema de empaquetaduras de alta presión.,Presión: Evitar entrada de agua por el eje.
+5.3.3,Recubrimiento Anecoico,Placas de caucho que absorben ondas de sonar.,Invisibilidad: Rebotar menos sonido.
+Otros Sistemas Transversales (Seguridad y Daños),,,
+S.1 Control de Daños: Mamparos estancos (Compartimentación para evitar hundimiento total).,,,
+S.2 Escape: Escotillas de rescate (Permiten el acople de vehículos de salvamento).,,,
+S.3 Vigilancia Interna: Sensores de inundación y cámaras de circuito cerrado (Conciencia situacional interna).,,,
