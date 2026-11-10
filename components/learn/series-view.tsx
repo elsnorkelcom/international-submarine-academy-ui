@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
+import { AceroStations } from '@/components/learn/acero-stations';
 import { CopperGrid } from '@/components/learn/copper-grid';
 import { FactorHumanoList } from '@/components/learn/factor-humano-list';
 import { SeasonProgression } from '@/components/learn/season-progression';
@@ -117,7 +118,9 @@ export function SeriesView() {
 
     for (const season of data.seasons) {
       const own = data.missions.filter((mission) => mission.seasonId === season.id);
-      const unlocked = previousSeasonId === null || previousDone > 0;
+      // En la beta, Acero y Cobre quedan abiertas a la vez.
+      const alwaysOpen = season.id === 'SEA-STEEL' || season.id === 'SEA-COPPER';
+      const unlocked = alwaysOpen || previousSeasonId === null || previousDone > 0;
 
       if (unlocked) {
         set.add(season.id);
@@ -160,6 +163,13 @@ export function SeriesView() {
           t={t.learn.series}
         />
 
+        <AceroStations
+          language={language}
+          t={t.learn.series}
+          missions={data.missions}
+          completedMissionIds={completedMissionIds}
+        />
+
         <CopperGrid
           language={language}
           t={t.learn.series}
@@ -195,6 +205,13 @@ export function SeriesView() {
         t={t.learn.series}
       />
 
+      <AceroStations
+        language={language}
+        t={t.learn.series}
+        missions={data.missions}
+        completedMissionIds={completedMissionIds}
+      />
+
       <CopperGrid
         language={language}
         t={t.learn.series}
@@ -210,9 +227,9 @@ export function SeriesView() {
       />
 
       <div className="mt-8 space-y-10">
-        {/* Cobre se navega desde la grilla; el listado queda para las demás temporadas. */}
+        {/* Acero y Cobre se navegan desde sus paneles; el listado queda para las demás temporadas. */}
         {grouped
-          .filter(({ season }) => season.id !== 'SEA-COPPER')
+          .filter(({ season }) => season.id !== 'SEA-COPPER' && season.id !== 'SEA-STEEL')
           .map(({ season, missions }, seasonIndex) => {
           const completed = completedBySeason.get(season.id) ?? 0;
           const unlocked = unlockedSeasonIds.has(season.id);

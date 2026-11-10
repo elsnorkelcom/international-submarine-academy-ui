@@ -35,6 +35,40 @@
    "narrativeEs": "Esta historia es ficción. La experiencia que recuerda forma parte del registro.",
    "order": 2,
    "status": "published"
+  },
+  {
+   "id": "EPI-AC-01",
+   "titleEn": "Steel — museum submarine visit",
+   "titleEs": "Acero — visita al submarino museo",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "mediaUrl": "",
+   "durationSeconds": null,
+   "descriptionEn": "Seven heritage stations of a diesel-electric museum submarine, from bow to stern.",
+   "descriptionEs": "Siete estaciones patrimoniales de un submarino museo diésel-eléctrico, de proa a popa.",
+   "narrativeEn": "This story is fiction. The museum space and its history are real.",
+   "narrativeEs": "Esta historia es ficción. El espacio del museo y su historia son reales.",
+   "order": 1,
+   "status": "published"
+  },
+  {
+   "id": "EPI-AC-ESP",
+   "titleEn": "Special episode — nuclear propulsion",
+   "titleEs": "Episodio especial — propulsión nuclear",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "mediaUrl": "",
+   "durationSeconds": null,
+   "descriptionEn": "A separate episode about energy and architecture, outside the seven-station tour.",
+   "descriptionEs": "Un episodio aparte sobre energía y arquitectura, fuera del recorrido de siete estaciones.",
+   "narrativeEn": "This story is fiction. The engineering concepts are real.",
+   "narrativeEs": "Esta historia es ficción. Los conceptos de ingeniería son reales.",
+   "order": 2,
+   "status": "published"
   }
  ],
  "missions": [
@@ -877,6 +911,198 @@
    "cellIndex": 15,
    "specialtyId": "LOG",
    "disciplineId": "HUM"
+  },
+  {
+   "id": "MIS-AC-01",
+   "titleEn": "Forward torpedo room",
+   "titleEs": "Sala de torpedos de proa",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Heritage working and rest space: folding bunks next to the reserve torpedoes and a loading and exit hatch.",
+   "descriptionEs": "Espacio patrimonial de trabajo y descanso: literas plegables junto a los torpedos de reserva y escotilla de carga y salida.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 1,
+   "status": "published",
+   "cellCode": "AC-01",
+   "cellIndex": 1,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-02",
+   "titleEn": "Forward batteries, radio and sonar",
+   "titleEs": "Baterías de proa, radio y sonar",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Battery banks below deck, radio and listening station and the commander cabin.",
+   "descriptionEs": "Bancos de baterías bajo cubierta, puesto de radio, escucha y camarote del comandante.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 2,
+   "status": "published",
+   "cellCode": "AC-02",
+   "cellIndex": 2,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-03",
+   "titleEn": "Central station and command",
+   "titleEs": "Puesto central y mando",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Periscopes, helm, depth planes and ballast valve manifold under the conning tower.",
+   "descriptionEs": "Periscopios, timón, planos de profundidad y colector de válvulas de lastre bajo la vela.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 3,
+   "status": "published",
+   "cellCode": "AC-03",
+   "cellIndex": 3,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-04",
+   "titleEn": "Aft batteries, galley and mess",
+   "titleEs": "Baterías de popa, cocina y comedor",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Second battery bank under the floor, smoke-free galley and multi-purpose mess.",
+   "descriptionEs": "Segundo banco de baterías bajo el piso, cocina sin humos y comedor multiuso.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 4,
+   "status": "published",
+   "cellCode": "AC-04",
+   "cellIndex": 4,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-05",
+   "titleEn": "Diesel engine room",
+   "titleEs": "Sala de motores diésel",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Diesel engines, generators, air intake and thermal and acoustic insulation.",
+   "descriptionEs": "Motores diésel, generadores, admisión de aire y aislamiento térmico y acústico.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 5,
+   "status": "published",
+   "cellCode": "AC-05",
+   "cellIndex": 5,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-06",
+   "titleEn": "Electric motors and switchboard",
+   "titleEs": "Motores eléctricos y cuadro de maniobra",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Electric motors, propeller shafts and switchboard for underwater navigation.",
+   "descriptionEs": "Motores eléctricos, ejes de hélice y cuadro de conmutación para la navegación sumergida.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 6,
+   "status": "published",
+   "cellCode": "AC-06",
+   "cellIndex": 6,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-07",
+   "titleEn": "Aft torpedo room and emergency rudder",
+   "titleEs": "Sala de torpedos de popa y timón de emergencia",
+   "episodeId": "EPI-AC-01",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Aft end: tubes, exit hatch and manual rudder linkage.",
+   "descriptionEs": "Extremo de popa: tubos, escotilla de salida y varillaje del timón manual.",
+   "objectiveEn": "Walk the station and answer the observation question.",
+   "objectiveEs": "Recorrer la estación y responder la pregunta de observación.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 7,
+   "status": "published",
+   "cellCode": "AC-07",
+   "cellIndex": 7,
+   "specialtyId": "",
+   "disciplineId": ""
+  },
+  {
+   "id": "MIS-AC-ESP",
+   "titleEn": "Special episode: nuclear propulsion",
+   "titleEs": "Episodio especial: propulsión nuclear",
+   "episodeId": "EPI-AC-ESP",
+   "seasonId": "SEA-STEEL",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Why a nuclear-propelled submarine does not need outside air to sail submerged and how that changes its architecture.",
+   "descriptionEs": "Por qué un submarino de propulsión nuclear no necesita aire exterior para navegar sumergido y cómo cambia su arquitectura.",
+   "objectiveEn": "Understand how nuclear energy changes the submarine.",
+   "objectiveEs": "Entender cómo la energía nuclear cambia el submarino.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 8,
+   "status": "published",
+   "cellCode": "AC-ESP",
+   "cellIndex": 8,
+   "specialtyId": "",
+   "disciplineId": ""
   }
  ],
  "questions": [
@@ -4404,6 +4630,1134 @@
    "timssItemId": "",
    "timssContentDomain": "",
    "referenceRelation": ""
+  },
+  {
+   "id": "AC-01-Q1",
+   "textEn": "In the forward torpedo room, where did part of the crew sleep?",
+   "textEs": "En la sala de torpedos de proa, ¿dónde dormía parte de la tripulación?",
+   "missionId": "MIS-AC-01",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de proa",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "En literas plegables junto a los torpedos de reserva",
+     "en": "In folding bunks next to the reserve torpedoes"
+    },
+    "B": {
+     "es": "En el puesto central",
+     "en": "In the central station"
+    },
+    "C": {
+     "es": "En la sala de máquinas",
+     "en": "In the engine room"
+    },
+    "D": {
+     "es": "Fuera del casco, en la vela",
+     "en": "Outside the hull, in the conning tower"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Space was so tight that people slept in shifts, on stacked folding bunks next to the reserve torpedoes.",
+   "feedbackEs": "El espacio era tan chico que se dormía en turnos, en literas plegables superpuestas junto a los torpedos de reserva.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-01",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-01-Q2",
+   "textEn": "What was the tilted upper hatch of that compartment used for?",
+   "textEs": "¿Para qué servía la escotilla superior inclinada de ese compartimento?",
+   "missionId": "MIS-AC-01",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de proa",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para ventilar el motor diésel",
+     "en": "To ventilate the diesel engine"
+    },
+    "B": {
+     "es": "Para cargar material desde el exterior y como salida de emergencia",
+     "en": "For loading material from outside and as an emergency exit"
+    },
+    "C": {
+     "es": "Para izar el periscopio",
+     "en": "To raise the periscope"
+    },
+    "D": {
+     "es": "Para enfriar las baterías",
+     "en": "To cool the batteries"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The upper hatch allowed material to be brought in from the deck and, in an emergency, the crew to get out.",
+   "feedbackEs": "La escotilla superior permitía introducir material desde cubierta y, en emergencia, salir del buque.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-01",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-01-Q3",
+   "textEn": "Besides the tubes and spares, what other use did that space have?",
+   "textEs": "Además de los tubos y los repuestos, ¿qué otro uso tenía ese espacio?",
+   "missionId": "MIS-AC-01",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de proa",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Cocina principal",
+     "en": "Main galley"
+    },
+    "B": {
+     "es": "Sala de radio",
+     "en": "Radio room"
+    },
+    "C": {
+     "es": "Dormitorio improvisado y almacenamiento",
+     "en": "Improvised dormitory and storage"
+    },
+    "D": {
+     "es": "Cuarto de baterías",
+     "en": "Battery room"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "The forward compartment was multi-purpose: storage, work and rest in shifts.",
+   "feedbackEs": "El compartimento de proa era un espacio multiuso: guardado, trabajo y descanso en turnos.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-01",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-02-Q1",
+   "textEn": "Where were the large forward battery banks?",
+   "textEs": "¿Dónde estaban los grandes bancos de baterías de proa?",
+   "missionId": "MIS-AC-02",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de proa, radio y sonar",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "En la vela",
+     "en": "In the conning tower"
+    },
+    "B": {
+     "es": "En la popa, junto al timón",
+     "en": "Aft, next to the rudder"
+    },
+    "C": {
+     "es": "Sobre la cubierta exterior",
+     "en": "On the outer deck"
+    },
+    "D": {
+     "es": "Bajo la cubierta transitable inferior",
+     "en": "Below the lower walkable deck"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Batteries were placed below the lower deck to lower the centre of gravity.",
+   "feedbackEs": "Las baterías se alojaban bajo la cubierta inferior para bajar el centro de gravedad.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-02",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-02-Q2",
+   "textEn": "Which communication and listening station was on the upper deck?",
+   "textEs": "¿Qué puesto de comunicación y escucha estaba en la cubierta superior?",
+   "missionId": "MIS-AC-02",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de proa, radio y sonar",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "La radiotelegrafía y la escucha pasiva",
+     "en": "Radiotelegraphy and passive listening"
+    },
+    "B": {
+     "es": "La cocina",
+     "en": "The galley"
+    },
+    "C": {
+     "es": "El motor diésel",
+     "en": "The diesel engine"
+    },
+    "D": {
+     "es": "El timón de emergencia",
+     "en": "The emergency rudder"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The radio and passive listening were above; with the boat submerged, hearing becomes more important.",
+   "feedbackEs": "Arriba estaban la radio y la escucha pasiva; con el buque sumergido, el oído gana importancia.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-02",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-02-Q3",
+   "textEn": "Why were heavy items such as batteries placed low?",
+   "textEs": "¿Por qué los pesos grandes, como las baterías, se ubicaban en la parte baja?",
+   "missionId": "MIS-AC-02",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de proa, radio y sonar",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para que no se mojaran",
+     "en": "So they would not get wet"
+    },
+    "B": {
+     "es": "Para bajar el centro de gravedad y mantener estable el buque",
+     "en": "To lower the centre of gravity and keep the boat stable"
+    },
+    "C": {
+     "es": "Para calentar la comida",
+     "en": "To heat the food"
+    },
+    "D": {
+     "es": "Para que hicieran menos ruido",
+     "en": "To make less noise"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The stability of the boat depends on where its centre of gravity is.",
+   "feedbackEs": "La estabilidad del buque depende de dónde esté su centro de gravedad.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-02",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-03-Q1",
+   "textEn": "Where was the central station located?",
+   "textEs": "¿Dónde se encontraba el puesto central?",
+   "missionId": "MIS-AC-03",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Puesto central y mando",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "En la proa extrema",
+     "en": "At the very bow"
+    },
+    "B": {
+     "es": "En la popa extrema",
+     "en": "At the very stern"
+    },
+    "C": {
+     "es": "Bajo la vela o torre de mando",
+     "en": "Under the conning tower"
+    },
+    "D": {
+     "es": "Fuera del casco",
+     "en": "Outside the hull"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "The central station was under the conning tower, in the middle of the boat.",
+   "feedbackEs": "El puesto central estaba bajo la vela, en el centro del buque.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-03",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-03-Q2",
+   "textEn": "What was centralised in the central station?",
+   "textEs": "¿Qué se centralizaba en el puesto central?",
+   "missionId": "MIS-AC-03",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Puesto central y mando",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "La cocina y el comedor",
+     "en": "The galley and mess"
+    },
+    "B": {
+     "es": "Los motores diésel",
+     "en": "The diesel engines"
+    },
+    "C": {
+     "es": "El equipo de radio",
+     "en": "The radio equipment"
+    },
+    "D": {
+     "es": "Los periscopios y los mandos de gobierno y lastre",
+     "en": "The periscopes and the steering and ballast controls"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "From the central station the crew observed, steered and managed ballast.",
+   "feedbackEs": "Desde el puesto central se observa, se gobierna y se maneja el lastre.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-03",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-03-Q3",
+   "textEn": "What did the periscope columns allow?",
+   "textEs": "¿Qué permitían las columnas de los periscopios?",
+   "missionId": "MIS-AC-03",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Puesto central y mando",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Observar la superficie sin que el buque salga a flote",
+     "en": "To observe the surface without the boat surfacing"
+    },
+    "B": {
+     "es": "Medir la profundidad del fondo",
+     "en": "To measure the depth of the seabed"
+    },
+    "C": {
+     "es": "Cargar los torpedos",
+     "en": "To load the torpedoes"
+    },
+    "D": {
+     "es": "Ventilar el compartimento",
+     "en": "To ventilate the compartment"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The periscope brings the surface image down to the observer eye.",
+   "feedbackEs": "El periscopio lleva la imagen de la superficie hasta el ojo del observador.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-03",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-04-Q1",
+   "textEn": "Where was the second battery group?",
+   "textEs": "¿Dónde estaba el segundo grupo de baterías?",
+   "missionId": "MIS-AC-04",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de popa, cocina y comedor",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "En la vela",
+     "en": "In the conning tower"
+    },
+    "B": {
+     "es": "Bajo el suelo del compartimento de popa",
+     "en": "Under the floor of the aft compartment"
+    },
+    "C": {
+     "es": "En la proa",
+     "en": "At the bow"
+    },
+    "D": {
+     "es": "En el techo del compartimento",
+     "en": "On the compartment ceiling"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The second battery well was under the mess and galley floor.",
+   "feedbackEs": "El segundo pozo de baterías estaba bajo el piso del comedor y la cocina.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-04",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-04-Q2",
+   "textEn": "Why did the galley have to run without smoke?",
+   "textEs": "¿Por qué la cocina debía funcionar sin humos?",
+   "missionId": "MIS-AC-04",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de popa, cocina y comedor",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para que la comida supiera mejor",
+     "en": "To make the food taste better"
+    },
+    "B": {
+     "es": "Para ahorrar agua",
+     "en": "To save water"
+    },
+    "C": {
+     "es": "Para mantener el aire respirable y evitar riesgos en un espacio cerrado",
+     "en": "To keep the air breathable and avoid risks in a closed space"
+    },
+    "D": {
+     "es": "Para que arrancara el motor",
+     "en": "To start the engine"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "In a closed space, smoke and smells directly affect air quality.",
+   "feedbackEs": "En un espacio cerrado, el humo y los olores afectan directamente la calidad del aire.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-04",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-04-Q3",
+   "textEn": "What other use did the mess have?",
+   "textEs": "¿Qué otro uso se le daba al comedor?",
+   "missionId": "MIS-AC-04",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Baterías de popa, cocina y comedor",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Taller de motores",
+     "en": "Engine workshop"
+    },
+    "B": {
+     "es": "Puesto de radio",
+     "en": "Radio station"
+    },
+    "C": {
+     "es": "Almacén de torpedos",
+     "en": "Torpedo store"
+    },
+    "D": {
+     "es": "Sala de reuniones y quirófano de emergencia",
+     "en": "Meeting room and emergency surgery"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "The mess was multi-purpose: meals, meetings and, if needed, emergency medical care.",
+   "feedbackEs": "El comedor era polivalente: rancho, reunión y, si hacía falta, atención médica de emergencia.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-04",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-05-Q1",
+   "textEn": "What were the diesel engines used for?",
+   "textEs": "¿Para qué se usaban los motores diésel?",
+   "missionId": "MIS-AC-05",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de motores diésel",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para navegar en superficie y cargar las baterías",
+     "en": "To sail on the surface and charge the batteries"
+    },
+    "B": {
+     "es": "Para sumergir el buque",
+     "en": "To submerge the boat"
+    },
+    "C": {
+     "es": "Para filtrar el agua",
+     "en": "To filter water"
+    },
+    "D": {
+     "es": "Para mover el periscopio",
+     "en": "To move the periscope"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The diesels moved the boat on the surface or at snorkel depth and recharged the batteries.",
+   "feedbackEs": "Los diésel movían el buque en superficie o a cota de esnórquel y recargaban las baterías.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-05",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-05-Q2",
+   "textEn": "What was the environment like in the diesel engine room?",
+   "textEs": "¿Cómo era el ambiente en la sala de motores diésel?",
+   "missionId": "MIS-AC-05",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de motores diésel",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Silencioso y frío",
+     "en": "Quiet and cold"
+    },
+    "B": {
+     "es": "Muy ruidoso y caluroso: más de 100 dB y hasta 50 °C",
+     "en": "Very noisy and hot: over 100 dB and up to 50 °C"
+    },
+    "C": {
+     "es": "Húmedo y sin ventilación",
+     "en": "Humid and unventilated"
+    },
+    "D": {
+     "es": "Igual al puesto central",
+     "en": "The same as the central station"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "It was the noisiest and hottest space in the submarine.",
+   "feedbackEs": "Era el espacio más ruidoso y caluroso del submarino.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-05",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-05-Q3",
+   "textEn": "Why did that compartment need large flows of outside air?",
+   "textEs": "¿Por qué ese compartimento necesitaba grandes caudales de aire del exterior?",
+   "missionId": "MIS-AC-05",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de motores diésel",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para enfriar la radio",
+     "en": "To cool the radio"
+    },
+    "B": {
+     "es": "Para inflar los chalecos",
+     "en": "To inflate the life jackets"
+    },
+    "C": {
+     "es": "Porque los diésel necesitan aire para funcionar",
+     "en": "Because diesels need air to run"
+    },
+    "D": {
+     "es": "Para llenar los tanques de agua",
+     "en": "To fill the water tanks"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Without enough air, diesel engines cannot run.",
+   "feedbackEs": "Sin aire suficiente, los motores diésel no pueden funcionar.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-05",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-06-Q1",
+   "textEn": "Which motors turned the propellers while submerged?",
+   "textEs": "¿Qué motores movían las hélices durante la inmersión?",
+   "missionId": "MIS-AC-06",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Motores eléctricos y cuadro de maniobra",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Los diésel",
+     "en": "The diesels"
+    },
+    "B": {
+     "es": "El motor del periscopio",
+     "en": "The periscope motor"
+    },
+    "C": {
+     "es": "El timón manual",
+     "en": "The manual rudder"
+    },
+    "D": {
+     "es": "Los motores eléctricos",
+     "en": "The electric motors"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "When submerged, electric motors drive the propeller shafts, decoupled from the diesels.",
+   "feedbackEs": "En inmersión los motores eléctricos mueven los ejes de las hélices, desacoplados de los diésel.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-06",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-06-Q2",
+   "textEn": "What did the switchboard do?",
+   "textEs": "¿De qué se encargaba el cuadro de maniobra?",
+   "missionId": "MIS-AC-06",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Motores eléctricos y cuadro de maniobra",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "De regular velocidad, polaridad y acoplamiento de los motores",
+     "en": "To regulate motor speed, polarity and coupling"
+    },
+    "B": {
+     "es": "De la cocina",
+     "en": "To run the galley"
+    },
+    "C": {
+     "es": "De la carga de los tubos",
+     "en": "To load the tubes"
+    },
+    "D": {
+     "es": "De ventilar el casco",
+     "en": "To ventilate the hull"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The switchboard controlled the power delivered to the motors.",
+   "feedbackEs": "El cuadro de conmutación controlaba la energía que llegaba a los motores.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-06",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-06-Q3",
+   "textEn": "How were the diesel and electric motors coupled?",
+   "textEs": "¿Cómo se acoplaban los motores diésel y los eléctricos?",
+   "missionId": "MIS-AC-06",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Motores eléctricos y cuadro de maniobra",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Funcionaban siempre juntos",
+     "en": "They always ran together"
+    },
+    "B": {
+     "es": "Se desacoplaban para navegar sumergido en silencio",
+     "en": "They were decoupled to run silently underwater"
+    },
+    "C": {
+     "es": "Compartían la hélice sin desacople",
+     "en": "They shared the propeller without decoupling"
+    },
+    "D": {
+     "es": "No existían",
+     "en": "They did not exist"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "To run silently, the electric motors work without the diesels.",
+   "feedbackEs": "Para navegar en silencio, los eléctricos trabajan sin los diésel.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-06",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-07-Q1",
+   "textEn": "What is in the aft compartment besides the tubes?",
+   "textEs": "¿Qué hay en el compartimento de popa además de los tubos?",
+   "missionId": "MIS-AC-07",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de popa y timón de emergencia",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "La cocina",
+     "en": "The galley"
+    },
+    "B": {
+     "es": "La radio",
+     "en": "The radio"
+    },
+    "C": {
+     "es": "El varillaje del timón manual de emergencia",
+     "en": "The manual emergency rudder linkage"
+    },
+    "D": {
+     "es": "El periscopio",
+     "en": "The periscope"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Aft is the manual rudder that allows steering if the hydraulic system fails.",
+   "feedbackEs": "En popa está el timón manual que permite gobernar si falla el sistema hidráulico.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-07",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-07-Q2",
+   "textEn": "What was the manual emergency rudder for?",
+   "textEs": "¿Para qué servía el timón manual de emergencia?",
+   "missionId": "MIS-AC-07",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de popa y timón de emergencia",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Para izar la bandera",
+     "en": "To raise the flag"
+    },
+    "B": {
+     "es": "Para cargar baterías",
+     "en": "To charge batteries"
+    },
+    "C": {
+     "es": "Para ventilar el motor",
+     "en": "To ventilate the engine"
+    },
+    "D": {
+     "es": "Para gobernar la pala si fallaba el sistema hidráulico",
+     "en": "To steer the blade if the hydraulic system failed"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "It was the mechanical backup for steering the boat.",
+   "feedbackEs": "Era la reserva mecánica del gobierno del buque.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-07",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-07-Q3",
+   "textEn": "What did the aft compartment hatch allow?",
+   "textEs": "¿Qué permitía la escotilla del compartimento de popa?",
+   "missionId": "MIS-AC-07",
+   "episodeId": "EPI-AC-01",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Visita patrimonial",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "topic": "Sala de torpedos de popa y timón de emergencia",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Entrar y salir del buque y evacuar en emergencia",
+     "en": "To enter and leave the boat and to evacuate in an emergency"
+    },
+    "B": {
+     "es": "Regular la temperatura del motor",
+     "en": "To regulate engine temperature"
+    },
+    "C": {
+     "es": "Medir la profundidad",
+     "en": "To measure depth"
+    },
+    "D": {
+     "es": "Cargar combustible",
+     "en": "To load fuel"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Hatches connect the inside with the outside and serve as emergency exits.",
+   "feedbackEs": "Las escotillas conectan el interior con el exterior y sirven de salida de emergencia.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Playlist El Snorkel · Submarino Abtao 360° (D4-JeWuErfw) + docs locales de Visita Virtual",
+   "status": "published",
+   "notes": "Acero v0.1 · pregunta de observación · revisión pendiente",
+   "cellCode": "AC-07",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-ESP-Q1",
+   "textEn": "Why can a nuclear-propelled submarine sail submerged for weeks without surfacing for air?",
+   "textEs": "¿Por qué un submarino de propulsión nuclear puede navegar sumergido durante semanas sin salir a tomar aire?",
+   "missionId": "MIS-AC-ESP",
+   "episodeId": "EPI-AC-ESP",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Energía y arquitectura",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Episodio especial: propulsión nuclear",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Porque su reactor no quema combustible con oxígeno del aire",
+     "en": "Because its reactor does not burn fuel with oxygen from the air"
+    },
+    "B": {
+     "es": "Porque guarda aire comprimido en botellas",
+     "en": "Because it stores compressed air in bottles"
+    },
+    "C": {
+     "es": "Porque usa el esnórquel cada hora",
+     "en": "Because it uses the snorkel every hour"
+    },
+    "D": {
+     "es": "Porque las baterías se cargan con el movimiento",
+     "en": "Because batteries charge with motion"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Nuclear propulsion generates heat without burning fuel with oxygen, so it needs no outside air.",
+   "feedbackEs": "La propulsión nuclear genera calor sin combustión con oxígeno, así que no necesita aire exterior.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Episodio especial · arquitectura naval (docs Visita Virtual)",
+   "status": "published",
+   "notes": "Episodio especial · propulsión nuclear · revisión pendiente",
+   "cellCode": "AC-ESP",
+   "variantIndex": 1,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-ESP-Q2",
+   "textEn": "What change does nuclear propulsion bring to submarine compartmentation?",
+   "textEs": "¿Qué cambio introduce la propulsión nuclear en la compartimentación del submarino?",
+   "missionId": "MIS-AC-ESP",
+   "episodeId": "EPI-AC-ESP",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Energía y arquitectura",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Episodio especial: propulsión nuclear",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Se eliminan todos los mamparos estancos",
+     "en": "All watertight bulkheads are removed"
+    },
+    "B": {
+     "es": "Aparece un compartimento blindado para el reactor y desaparecen los grandes pozos de baterías",
+     "en": "A shielded reactor compartment appears and the large battery wells disappear"
+    },
+    "C": {
+     "es": "Desaparece la sala de máquinas",
+     "en": "The engine room disappears"
+    },
+    "D": {
+     "es": "El casco deja de ser resistente",
+     "en": "The pressure hull stops being pressure-resistant"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The reactor needs its own shielded compartment and the large battery banks are no longer needed.",
+   "feedbackEs": "El reactor necesita su propio compartimento blindado y ya no hacen falta los grandes bancos de baterías.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Episodio especial · arquitectura naval (docs Visita Virtual)",
+   "status": "published",
+   "notes": "Episodio especial · propulsión nuclear · revisión pendiente",
+   "cellCode": "AC-ESP",
+   "variantIndex": 2,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
+  },
+  {
+   "id": "AC-ESP-Q3",
+   "textEn": "What habitability advantage does nuclear energy bring on board?",
+   "textEs": "¿Qué ventaja de habitabilidad trae la energía nuclear a bordo?",
+   "missionId": "MIS-AC-ESP",
+   "episodeId": "EPI-AC-ESP",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "area": "Energía y arquitectura",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Episodio especial: propulsión nuclear",
+   "level": "",
+   "options": {
+    "A": {
+     "es": "Más espacio para torpedos",
+     "en": "More room for torpedoes"
+    },
+    "B": {
+     "es": "Menos necesidad de mamparos",
+     "en": "Less need for bulkheads"
+    },
+    "C": {
+     "es": "Electricidad continua para aire, agua y climatización",
+     "en": "Continuous electricity for air, water and climate control"
+    },
+    "D": {
+     "es": "Más ruido en la sala de máquinas",
+     "en": "More noise in the engine room"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Continuously available energy supports life support and comfort for longer.",
+   "feedbackEs": "La energía disponible de forma continua permite sostener soporte vital y confort durante más tiempo.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "Episodio especial · arquitectura naval (docs Visita Virtual)",
+   "status": "published",
+   "notes": "Episodio especial · propulsión nuclear · revisión pendiente",
+   "cellCode": "AC-ESP",
+   "variantIndex": 3,
+   "timssCycle": "",
+   "timssItemId": "",
+   "timssContentDomain": "",
+   "referenceRelation": ""
   }
  ],
  "awards": [
@@ -4931,6 +6285,126 @@
    "color": "#D27E0C",
    "status": "published",
    "icon": "/images/badges/cobre/ribbons/ribbon-HUM-LOG.png"
+  },
+  {
+   "badgeId": "BDG-AC-01",
+   "nameEn": "Steel piece · Forward torpedo room",
+   "nameEs": "Pieza de acero · Sala de torpedos de proa",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-01",
+   "criteriaEn": "Complete the AC-01 station.",
+   "criteriaEs": "Completar la estación AC-01.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-PROA.png"
+  },
+  {
+   "badgeId": "BDG-AC-02",
+   "nameEn": "Steel piece · Forward batteries, radio and sonar",
+   "nameEs": "Pieza de acero · Baterías de proa, radio y sonar",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-02",
+   "criteriaEn": "Complete the AC-02 station.",
+   "criteriaEs": "Completar la estación AC-02.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-BATERIAS.png"
+  },
+  {
+   "badgeId": "BDG-AC-03",
+   "nameEn": "Steel piece · Central station and command",
+   "nameEs": "Pieza de acero · Puesto central y mando",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-03",
+   "criteriaEn": "Complete the AC-03 station.",
+   "criteriaEs": "Completar la estación AC-03.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-CONTROL.png"
+  },
+  {
+   "badgeId": "BDG-AC-04",
+   "nameEn": "Steel piece · Aft batteries, galley and mess",
+   "nameEs": "Pieza de acero · Baterías de popa, cocina y comedor",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-04",
+   "criteriaEn": "Complete the AC-04 station.",
+   "criteriaEs": "Completar la estación AC-04.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-BATERIAS.png"
+  },
+  {
+   "badgeId": "BDG-AC-05",
+   "nameEn": "Steel piece · Diesel engine room",
+   "nameEs": "Pieza de acero · Sala de motores diésel",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-05",
+   "criteriaEn": "Complete the AC-05 station.",
+   "criteriaEs": "Completar la estación AC-05.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-MAQUINAS.png"
+  },
+  {
+   "badgeId": "BDG-AC-06",
+   "nameEn": "Steel piece · Electric motors and switchboard",
+   "nameEs": "Pieza de acero · Motores eléctricos y cuadro de maniobra",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-06",
+   "criteriaEn": "Complete the AC-06 station.",
+   "criteriaEs": "Completar la estación AC-06.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-MAQUINAS.png"
+  },
+  {
+   "badgeId": "BDG-AC-07",
+   "nameEn": "Steel piece · Aft torpedo room and emergency rudder",
+   "nameEs": "Pieza de acero · Sala de torpedos de popa y timón de emergencia",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-07",
+   "criteriaEn": "Complete the AC-07 station.",
+   "criteriaEs": "Completar la estación AC-07.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-POPA.png"
+  },
+  {
+   "badgeId": "BDG-AC-ESP",
+   "nameEn": "Steel piece · nuclear propulsion",
+   "nameEs": "Pieza de acero · propulsión nuclear",
+   "type": "ribbon",
+   "seasonId": "SEA-STEEL",
+   "missionId": "MIS-AC-ESP",
+   "criteriaEn": "Complete the special episode.",
+   "criteriaEs": "Completar el episodio especial.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#8FA3B0",
+   "status": "published",
+   "icon": "/images/badges/acero/ribbons/ribbon-AC-REACTOR.png"
   }
  ],
  "institutions": [],
