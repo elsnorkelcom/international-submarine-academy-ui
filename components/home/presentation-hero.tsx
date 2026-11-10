@@ -62,20 +62,20 @@ export function PresentationHero() {
           <div
             className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-widest text-metal animate-in fade-in fill-mode-both duration-700 [animation-delay:250ms]"
           >
-            <span className="text-primary">Temporada 1 · Steel</span>
+            <span className="text-primary">Temporada Cobre</span>
             <span aria-hidden="true">·</span>
-            <span>5 misiones</span>
+            <span>20 celdas STEM</span>
             <span aria-hidden="true">·</span>
-            <span className="rounded-sm border border-white/20 px-1.5 py-0.5">9:16</span>
+            <span>15 temas de vida a bordo</span>
             <span aria-hidden="true">·</span>
-            <span>STEM+A</span>
+            <span>75 preguntas</span>
           </div>
 
           <div
             className="mt-8 flex flex-wrap gap-3 animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-700 [animation-delay:350ms]"
           >
             <Link
-              href="/episodes?id=MIS-STEEL-04"
+              href="/series"
               className="inline-flex items-center gap-2 rounded-sm bg-foreground px-7 py-3 text-sm font-bold uppercase tracking-wider text-background transition hover:bg-foreground/85"
             >
               <Play className="size-4 fill-current" aria-hidden="true" />
@@ -95,7 +95,7 @@ export function PresentationHero() {
           <div className="motion-safe:animate-[coin-enter_1.4s_ease-out_both]">
             <AcademyCoin
               glow="#00E08A"
-              seasonLabel="Temporada 1 · Steel"
+              seasonLabel="Temporada Cobre"
               className="w-44 md:w-72 lg:w-80"
             />
           </div>

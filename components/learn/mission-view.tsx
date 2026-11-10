@@ -205,6 +205,9 @@ export function MissionView() {
       <header className="mt-5">
         <p className="font-mono text-[10px] uppercase tracking-[0.24em]" style={{ color: season?.colorTheme }}>
           {season ? localize(season.title, language) : ''} · {mission.id}
+          {question?.variantIndex && question.cellCode && !question.cellCode.startsWith('FH-')
+            ? ` · ${t.learn.episode.variant} ${question.variantIndex}`
+            : ''}
         </p>
         <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-tight tracking-tight sm:text-4xl">
           {localize(mission.title, language)}

@@ -4,7 +4,7 @@ import { seasonsConfig } from '@/lib/data/config'
 
 const ACCREDITATION_LEVELS = [
   { level: 0, name: 'steel', status: 'available' },
-  { level: 1, name: 'copper', status: 'inDevelopment' },
+  { level: 1, name: 'copper', status: 'available' },
   { level: 2, name: 'bronze', status: 'classified' },
   { level: 3, name: 'silver', status: 'classified' },
   { level: 4, name: 'gold', status: 'classified' },

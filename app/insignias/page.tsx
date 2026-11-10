@@ -1,5 +1,7 @@
 import { AccessGate } from '@/components/series/access-gate'
 import { SeriesHeader } from '@/components/series/series-header'
+import { DataProvider } from '@/components/app/data-provider'
+import { ProgressProvider } from '@/components/learn/progress-provider'
 import { BadgeMatrix } from '@/components/insignias/badge-matrix'
 import { getMessages } from '@/lib/i18n'
 import { TEMPORARY_VISIBLE_HOME_LOCALE } from '@/lib/i18n/config'
@@ -20,7 +22,11 @@ export default function BadgesPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">{messages.intro}</p>
           </section>
-          <BadgeMatrix locale={locale} />
+          <DataProvider>
+            <ProgressProvider>
+              <BadgeMatrix locale={locale} />
+            </ProgressProvider>
+          </DataProvider>
         </div>
       </main>
     </AccessGate>

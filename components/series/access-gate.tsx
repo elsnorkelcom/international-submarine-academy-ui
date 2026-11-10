@@ -121,6 +121,12 @@ export function AccessGate({ children }: { children: ReactNode }) {
           </button>
         </form>
 
+        {evaluationCode === FALLBACK_EVALUATION_CODE ? (
+          <p className="mt-5 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+            Versión de prueba · código <span className="text-primary">ISA-DEMO</span>
+          </p>
+        ) : null}
+
       </section>
     </main>
   )
