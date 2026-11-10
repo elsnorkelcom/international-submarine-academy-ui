@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useApp } from '@/components/app/data-provider';
 import { useProgress } from '@/components/learn/progress-provider';
 import { CopperGrid } from '@/components/learn/copper-grid';
+import { FactorHumanoList } from '@/components/learn/factor-humano-list';
 import { SeasonProgression } from '@/components/learn/season-progression';
 import { localize, type Episode, type Mission, type Museum, type Season } from '@/lib/domain/types';
 
@@ -166,6 +167,13 @@ export function SeriesView() {
           completedMissionIds={completedMissionIds}
         />
 
+        <FactorHumanoList
+          language={language}
+          t={t.learn.series}
+          missions={data.missions}
+          completedMissionIds={completedMissionIds}
+        />
+
         <div className="mt-8 border border-white/10 bg-white/[0.02] p-6">
           <p className="text-sm text-foreground">{t.learn.series.empty}</p>
           <p className="mt-1 text-sm text-muted-foreground">{t.learn.series.emptyHint}</p>
@@ -188,6 +196,13 @@ export function SeriesView() {
       />
 
       <CopperGrid
+        language={language}
+        t={t.learn.series}
+        missions={data.missions}
+        completedMissionIds={completedMissionIds}
+      />
+
+      <FactorHumanoList
         language={language}
         t={t.learn.series}
         missions={data.missions}

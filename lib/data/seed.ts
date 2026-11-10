@@ -27,7 +27,7 @@ import type {
 import { SETTINGS_ID } from './repository';
 import museumsDataset from './datasets/museums-snk-2025.json';
 
-export const SEED_VERSION = 3;
+export const SEED_VERSION = 4;
 
 const SEED_ACTOR = 'seed';
 const SEED_TIMESTAMP = '2026-11-05T00:00:00.000Z';

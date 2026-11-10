@@ -107,6 +107,10 @@ disciplina. Son **15 temas**, un episodio y una pregunta por tema, sin variantes
 ancla TIMSS. Cada afirmación histórica o patrimonial necesita fuente; lo que no tiene
 fuente se marca como propuesta a revisar.
 
+**Cargado en la app (9/11/2026):** 15 experiencias `MIS-FH-01`…`MIS-FH-15` con su
+pregunta y su ribbon (iconos `ribbon-HUM-<especialidad>.png`), agrupadas en el episodio
+`EPI-COB-FH`. Se listan en `/series` debajo de la grilla STEM.
+
 ## 8. Idioma, nivel y accesibilidad
 
 - Español neutro e inglés en todo el contenido publicado (enunciados, opciones,
