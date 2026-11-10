@@ -157,6 +157,9 @@ const en = {
       noQuestion: 'This mission has no question yet.',
       pending: 'Information to be validated.',
       civil: 'Civil society connection',
+      videoLabel: 'Episode video',
+      videoSoon: 'Video in production',
+      videoHint: 'The video for this experience is being produced. The thumbnail is provisional.',
       fiction: 'This story is fiction. The place and the knowledge are real.',
     },
     reward: {
@@ -341,6 +344,9 @@ const es: typeof en = {
       noQuestion: 'Esta misión todavía no tiene pregunta.',
       pending: 'Información a validar.',
       civil: 'Vínculo con la sociedad civil',
+      videoLabel: 'Video del episodio',
+      videoSoon: 'Video en producción',
+      videoHint: 'El video de esta experiencia está en producción. La miniatura es provisoria.',
       fiction: 'Esta historia es ficción. El lugar y el conocimiento son reales.',
     },
     reward: {

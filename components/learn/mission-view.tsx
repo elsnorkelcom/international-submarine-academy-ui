@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
+import { EpisodeMedia } from '@/components/learn/episode-media';
 import { QuestionEngine, type QuestionOutcome } from '@/components/learn/question-engine';
 import { useProgress } from '@/components/learn/progress-provider';
 import { completedMissionIds, evaluateAwards } from '@/lib/badges/rules';
@@ -212,6 +213,8 @@ export function MissionView() {
           {localize(mission.description, language)}
         </p>
       </header>
+
+      <EpisodeMedia episode={bundle.episode} mission={mission} language={language} t={t.learn.episode} />
 
       <dl className="mt-6 grid gap-3 border-y border-white/10 py-4 sm:grid-cols-3">
         <Meta label={t.learn.episode.museum} value={museum ? localize(museum.name, language) : ''} />
