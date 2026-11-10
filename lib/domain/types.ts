@@ -224,6 +224,11 @@ export interface Mission extends EntityBase {
   civilSocietyConnection: LocalizedText;
   status: PublicationStatus;
   order: number;
+  /** Cobre: celda de la grilla (especialidad × disciplina) y su índice 1-20. */
+  cellCode?: string;
+  cellIndex?: number;
+  specialtyId?: string;
+  disciplineId?: string;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -256,6 +261,13 @@ export interface Question extends EntityBase {
   source: string;
   status: QuestionStatus;
   notes: string;
+  /** Cobre: variante de la celda (1-3) y trazabilidad TIMSS. */
+  cellCode?: string;
+  variantIndex?: number;
+  timssCycle?: string;
+  timssItemId?: string;
+  timssContentDomain?: string;
+  referenceRelation?: string;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -88,6 +88,11 @@ objetivo es patrimonio, observación y orientación hacia Cobre.
   determinista según el día (bucket ALFA/BRAVO/CHARLY). El banco solo etiqueta la
   variante; la asignación es implementación aparte.
 - **Ribbon por celda**, no por pregunta. Completar la celda otorga el reconocimiento.
+- **Cargado en la app (9/11/2026):** 20 experiencias (una por celda `MIS-COB-<DISC>-<ESP>`),
+  60 preguntas (3 variantes por celda) y 20 ribbons con iconos provisorios en
+  `public/images/badges/cobre/ribbons/`. La variante del episodio se elige por día con
+  `lib/learning/variant.ts`: `bucket = dayNumber % 3` y
+  `variante = (dayNumber + cellIndex) % 3`, con zona fija UTC-3. Sin azar en el cliente.
 - Las preguntas son originales ISA, ancladas de forma no literal a una de las 67
   referencias. Una misma referencia puede inspirar preguntas de celdas distintas; una
   pregunta no se repite entre celdas.

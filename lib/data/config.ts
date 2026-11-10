@@ -51,6 +51,12 @@ export interface QuestionConfigEntry {
   source: string;
   status: string;
   notes: string;
+  cellCode?: string;
+  variantIndex?: number;
+  timssCycle?: string;
+  timssItemId?: string;
+  timssContentDomain?: string;
+  referenceRelation?: string;
 }
 
 export interface AwardConfigEntry {
@@ -103,6 +109,10 @@ export interface MissionConfigEntry {
   civilEs: string;
   order: number;
   status: string;
+  cellCode?: string;
+  cellIndex?: number;
+  specialtyId?: string;
+  disciplineId?: string;
 }
 
 export interface InstitutionConfigEntry {
@@ -373,6 +383,10 @@ async function applyMissions(database: LocalDatabase): Promise<SectionResult> {
       civilSocietyConnection: { en: entry.civilEn, es: entry.civilEs || entry.civilEn },
       order: entry.order,
       status: entry.status as never,
+      ...(entry.cellCode ? { cellCode: entry.cellCode } : {}),
+      ...(typeof entry.cellIndex === 'number' ? { cellIndex: entry.cellIndex } : {}),
+      ...(entry.specialtyId ? { specialtyId: entry.specialtyId } : {}),
+      ...(entry.disciplineId ? { disciplineId: entry.disciplineId } : {}),
     };
 
     if (byId.has(entry.id)) {
@@ -455,6 +469,12 @@ async function applyQuestions(database: LocalDatabase): Promise<SectionResult> {
       source: entry.source,
       status: entry.status as never,
       notes: entry.notes,
+      ...(entry.cellCode ? { cellCode: entry.cellCode } : {}),
+      ...(typeof entry.variantIndex === 'number' ? { variantIndex: entry.variantIndex } : {}),
+      ...(entry.timssCycle ? { timssCycle: entry.timssCycle } : {}),
+      ...(entry.timssItemId ? { timssItemId: entry.timssItemId } : {}),
+      ...(entry.timssContentDomain ? { timssContentDomain: entry.timssContentDomain } : {}),
+      ...(entry.referenceRelation ? { referenceRelation: entry.referenceRelation } : {}),
     };
 
     if (byId.has(entry.id)) {

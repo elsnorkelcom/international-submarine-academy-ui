@@ -1,10 +1,3631 @@
 {
  "version": 2,
  "seasons": [],
- "episodes": [],
- "missions": [],
- "questions": [],
- "awards": [],
+ "episodes": [
+  {
+   "id": "EPI-COB-01",
+   "titleEn": "Copper — STEM experiences",
+   "titleEs": "Cobre — Experiencias STEM",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "mediaUrl": "",
+   "durationSeconds": null,
+   "descriptionEn": "Twenty cells, three variants each: one experience per cell in the Copper season.",
+   "descriptionEs": "Veinte celdas, tres variantes cada una: una experiencia por celda de la temporada Cobre.",
+   "narrativeEn": "This story is fiction. The museums and their historical context are real.",
+   "narrativeEs": "Esta historia es ficción. Los museos y su contexto histórico son reales.",
+   "order": 1,
+   "status": "published"
+  }
+ ],
+ "missions": [
+  {
+   "id": "MIS-COB-SCI-MAQ",
+   "titleEn": "Machinist · Science",
+   "titleEs": "Maquinista · Ciencia",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-SCI-MAQ: three TIMSS variants of Science for the Machinist role.",
+   "descriptionEs": "Celda Cobre CU-SCI-MAQ: tres variantes TIMSS de Ciencia para el rol de Maquinista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 1,
+   "status": "published",
+   "cellCode": "CU-SCI-MAQ",
+   "cellIndex": 1,
+   "specialtyId": "MAQ",
+   "disciplineId": "SCI"
+  },
+  {
+   "id": "MIS-COB-TEC-MAQ",
+   "titleEn": "Machinist · Technology",
+   "titleEs": "Maquinista · Tecnología",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-TEC-MAQ: three TIMSS variants of Technology for the Machinist role.",
+   "descriptionEs": "Celda Cobre CU-TEC-MAQ: tres variantes TIMSS de Tecnología para el rol de Maquinista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 2,
+   "status": "published",
+   "cellCode": "CU-TEC-MAQ",
+   "cellIndex": 2,
+   "specialtyId": "MAQ",
+   "disciplineId": "TEC"
+  },
+  {
+   "id": "MIS-COB-ING-MAQ",
+   "titleEn": "Machinist · Engineering",
+   "titleEs": "Maquinista · Ingeniería",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-ING-MAQ: three TIMSS variants of Engineering for the Machinist role.",
+   "descriptionEs": "Celda Cobre CU-ING-MAQ: tres variantes TIMSS de Ingeniería para el rol de Maquinista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 3,
+   "status": "published",
+   "cellCode": "CU-ING-MAQ",
+   "cellIndex": 3,
+   "specialtyId": "MAQ",
+   "disciplineId": "ING"
+  },
+  {
+   "id": "MIS-COB-MAT-MAQ",
+   "titleEn": "Machinist · Mathematics",
+   "titleEs": "Maquinista · Matemática",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-MAT-MAQ: three TIMSS variants of Mathematics for the Machinist role.",
+   "descriptionEs": "Celda Cobre CU-MAT-MAQ: tres variantes TIMSS de Matemática para el rol de Maquinista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 4,
+   "status": "published",
+   "cellCode": "CU-MAT-MAQ",
+   "cellIndex": 4,
+   "specialtyId": "MAQ",
+   "disciplineId": "MAT"
+  },
+  {
+   "id": "MIS-COB-SCI-ELE",
+   "titleEn": "Electrician · Science",
+   "titleEs": "Electricista · Ciencia",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-SCI-ELE: three TIMSS variants of Science for the Electrician role.",
+   "descriptionEs": "Celda Cobre CU-SCI-ELE: tres variantes TIMSS de Ciencia para el rol de Electricista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 5,
+   "status": "published",
+   "cellCode": "CU-SCI-ELE",
+   "cellIndex": 5,
+   "specialtyId": "ELE",
+   "disciplineId": "SCI"
+  },
+  {
+   "id": "MIS-COB-TEC-ELE",
+   "titleEn": "Electrician · Technology",
+   "titleEs": "Electricista · Tecnología",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-TEC-ELE: three TIMSS variants of Technology for the Electrician role.",
+   "descriptionEs": "Celda Cobre CU-TEC-ELE: tres variantes TIMSS de Tecnología para el rol de Electricista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 6,
+   "status": "published",
+   "cellCode": "CU-TEC-ELE",
+   "cellIndex": 6,
+   "specialtyId": "ELE",
+   "disciplineId": "TEC"
+  },
+  {
+   "id": "MIS-COB-ING-ELE",
+   "titleEn": "Electrician · Engineering",
+   "titleEs": "Electricista · Ingeniería",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-ING-ELE: three TIMSS variants of Engineering for the Electrician role.",
+   "descriptionEs": "Celda Cobre CU-ING-ELE: tres variantes TIMSS de Ingeniería para el rol de Electricista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 7,
+   "status": "published",
+   "cellCode": "CU-ING-ELE",
+   "cellIndex": 7,
+   "specialtyId": "ELE",
+   "disciplineId": "ING"
+  },
+  {
+   "id": "MIS-COB-MAT-ELE",
+   "titleEn": "Electrician · Mathematics",
+   "titleEs": "Electricista · Matemática",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-MAT-ELE: three TIMSS variants of Mathematics for the Electrician role.",
+   "descriptionEs": "Celda Cobre CU-MAT-ELE: tres variantes TIMSS de Matemática para el rol de Electricista.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 8,
+   "status": "published",
+   "cellCode": "CU-MAT-ELE",
+   "cellIndex": 8,
+   "specialtyId": "ELE",
+   "disciplineId": "MAT"
+  },
+  {
+   "id": "MIS-COB-SCI-ELN",
+   "titleEn": "Electronics · Science",
+   "titleEs": "Electrónico · Ciencia",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-SCI-ELN: three TIMSS variants of Science for the Electronics role.",
+   "descriptionEs": "Celda Cobre CU-SCI-ELN: tres variantes TIMSS de Ciencia para el rol de Electrónico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 9,
+   "status": "published",
+   "cellCode": "CU-SCI-ELN",
+   "cellIndex": 9,
+   "specialtyId": "ELN",
+   "disciplineId": "SCI"
+  },
+  {
+   "id": "MIS-COB-TEC-ELN",
+   "titleEn": "Electronics · Technology",
+   "titleEs": "Electrónico · Tecnología",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-TEC-ELN: three TIMSS variants of Technology for the Electronics role.",
+   "descriptionEs": "Celda Cobre CU-TEC-ELN: tres variantes TIMSS de Tecnología para el rol de Electrónico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 10,
+   "status": "published",
+   "cellCode": "CU-TEC-ELN",
+   "cellIndex": 10,
+   "specialtyId": "ELN",
+   "disciplineId": "TEC"
+  },
+  {
+   "id": "MIS-COB-ING-ELN",
+   "titleEn": "Electronics · Engineering",
+   "titleEs": "Electrónico · Ingeniería",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-ING-ELN: three TIMSS variants of Engineering for the Electronics role.",
+   "descriptionEs": "Celda Cobre CU-ING-ELN: tres variantes TIMSS de Ingeniería para el rol de Electrónico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 11,
+   "status": "published",
+   "cellCode": "CU-ING-ELN",
+   "cellIndex": 11,
+   "specialtyId": "ELN",
+   "disciplineId": "ING"
+  },
+  {
+   "id": "MIS-COB-MAT-ELN",
+   "titleEn": "Electronics · Mathematics",
+   "titleEs": "Electrónico · Matemática",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-MAT-ELN: three TIMSS variants of Mathematics for the Electronics role.",
+   "descriptionEs": "Celda Cobre CU-MAT-ELN: tres variantes TIMSS de Matemática para el rol de Electrónico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 12,
+   "status": "published",
+   "cellCode": "CU-MAT-ELN",
+   "cellIndex": 12,
+   "specialtyId": "ELN",
+   "disciplineId": "MAT"
+  },
+  {
+   "id": "MIS-COB-SCI-NAV",
+   "titleEn": "Naval Engineer · Science",
+   "titleEs": "Ingeniero Naval · Ciencia",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-SCI-NAV: three TIMSS variants of Science for the Naval Engineer role.",
+   "descriptionEs": "Celda Cobre CU-SCI-NAV: tres variantes TIMSS de Ciencia para el rol de Ingeniero Naval.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 13,
+   "status": "published",
+   "cellCode": "CU-SCI-NAV",
+   "cellIndex": 13,
+   "specialtyId": "NAV",
+   "disciplineId": "SCI"
+  },
+  {
+   "id": "MIS-COB-TEC-NAV",
+   "titleEn": "Naval Engineer · Technology",
+   "titleEs": "Ingeniero Naval · Tecnología",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-TEC-NAV: three TIMSS variants of Technology for the Naval Engineer role.",
+   "descriptionEs": "Celda Cobre CU-TEC-NAV: tres variantes TIMSS de Tecnología para el rol de Ingeniero Naval.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 14,
+   "status": "published",
+   "cellCode": "CU-TEC-NAV",
+   "cellIndex": 14,
+   "specialtyId": "NAV",
+   "disciplineId": "TEC"
+  },
+  {
+   "id": "MIS-COB-ING-NAV",
+   "titleEn": "Naval Engineer · Engineering",
+   "titleEs": "Ingeniero Naval · Ingeniería",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-ING-NAV: three TIMSS variants of Engineering for the Naval Engineer role.",
+   "descriptionEs": "Celda Cobre CU-ING-NAV: tres variantes TIMSS de Ingeniería para el rol de Ingeniero Naval.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 15,
+   "status": "published",
+   "cellCode": "CU-ING-NAV",
+   "cellIndex": 15,
+   "specialtyId": "NAV",
+   "disciplineId": "ING"
+  },
+  {
+   "id": "MIS-COB-MAT-NAV",
+   "titleEn": "Naval Engineer · Mathematics",
+   "titleEs": "Ingeniero Naval · Matemática",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-MAT-NAV: three TIMSS variants of Mathematics for the Naval Engineer role.",
+   "descriptionEs": "Celda Cobre CU-MAT-NAV: tres variantes TIMSS de Matemática para el rol de Ingeniero Naval.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 16,
+   "status": "published",
+   "cellCode": "CU-MAT-NAV",
+   "cellIndex": 16,
+   "specialtyId": "NAV",
+   "disciplineId": "MAT"
+  },
+  {
+   "id": "MIS-COB-SCI-LOG",
+   "titleEn": "Logistics · Science",
+   "titleEs": "Logístico · Ciencia",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-SCI-LOG: three TIMSS variants of Science for the Logistics role.",
+   "descriptionEs": "Celda Cobre CU-SCI-LOG: tres variantes TIMSS de Ciencia para el rol de Logístico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 17,
+   "status": "published",
+   "cellCode": "CU-SCI-LOG",
+   "cellIndex": 17,
+   "specialtyId": "LOG",
+   "disciplineId": "SCI"
+  },
+  {
+   "id": "MIS-COB-TEC-LOG",
+   "titleEn": "Logistics · Technology",
+   "titleEs": "Logístico · Tecnología",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-TEC-LOG: three TIMSS variants of Technology for the Logistics role.",
+   "descriptionEs": "Celda Cobre CU-TEC-LOG: tres variantes TIMSS de Tecnología para el rol de Logístico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 18,
+   "status": "published",
+   "cellCode": "CU-TEC-LOG",
+   "cellIndex": 18,
+   "specialtyId": "LOG",
+   "disciplineId": "TEC"
+  },
+  {
+   "id": "MIS-COB-ING-LOG",
+   "titleEn": "Logistics · Engineering",
+   "titleEs": "Logístico · Ingeniería",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-ING-LOG: three TIMSS variants of Engineering for the Logistics role.",
+   "descriptionEs": "Celda Cobre CU-ING-LOG: tres variantes TIMSS de Ingeniería para el rol de Logístico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 19,
+   "status": "published",
+   "cellCode": "CU-ING-LOG",
+   "cellIndex": 19,
+   "specialtyId": "LOG",
+   "disciplineId": "ING"
+  },
+  {
+   "id": "MIS-COB-MAT-LOG",
+   "titleEn": "Logistics · Mathematics",
+   "titleEs": "Logístico · Matemática",
+   "episodeId": "EPI-COB-01",
+   "seasonId": "SEA-COPPER",
+   "museumId": "",
+   "compartmentId": "",
+   "equipmentId": "",
+   "descriptionEn": "Copper cell CU-MAT-LOG: three TIMSS variants of Mathematics for the Logistics role.",
+   "descriptionEs": "Celda Cobre CU-MAT-LOG: tres variantes TIMSS de Matemática para el rol de Logístico.",
+   "objectiveEn": "Solve the three variants of this cell.",
+   "objectiveEs": "Resolver las tres variantes de esta celda.",
+   "timssDomain": "knowing",
+   "gsaCompetency": "Curiosity and observation",
+   "civilEn": "",
+   "civilEs": "",
+   "order": 20,
+   "status": "published",
+   "cellCode": "CU-MAT-LOG",
+   "cellIndex": 20,
+   "specialtyId": "LOG",
+   "disciplineId": "MAT"
+  }
+ ],
+ "questions": [
+  {
+   "id": "COB-STEM-CU-SCI-MAQ-1",
+   "textEn": "Before starting the diesel engine, the engineer reviews the conditions needed for the fuel oil to burn inside the cylinder. Which two conditions are essential for combustion?",
+   "textEs": "Antes de poner en marcha el motor diésel, el maquinista repasa las condiciones para que el gasóleo se queme dentro del cilindro. ¿Qué par de condiciones son imprescindibles para la combustión?",
+   "missionId": "MIS-COB-SCI-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Chemical Change",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Fire put out by blanket (Razón por la que una manta apaga un fuego)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Oxygen available and enough heat to reach ignition.",
+     "es": "Oxígeno disponible y calor suficiente para la ignición."
+    },
+    "B": {
+     "en": "Cold air in the cylinder and low injection pressure.",
+     "es": "Aire frío en el cilindro y baja presión de inyección."
+    },
+    "C": {
+     "en": "Water vapour in the mixture and no oxygen present.",
+     "es": "Vapor de agua en la mezcla y ausencia de oxígeno."
+    },
+    "D": {
+     "en": "Cold fuel oil and pressure reduced to almost vacuum.",
+     "es": "Gasóleo frío y presión reducida casi al vacío."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Combustion needs an oxidiser, the oxygen in the compressed air supplied through the snorkel (air-intake mast), plus enough heat to reach the fuel's ignition temperature. Cooling the air, adding vapour or lowering the pressure keeps the mixture below that temperature, so the fuel does not burn.",
+   "feedbackEs": "La combustión necesita un comburente, el oxígeno del aire comprimido que entra por el esmórquel, y calor suficiente para alcanzar la temperatura de ignición del gasóleo. Enfriar el aire, añadir vapor o bajar la presión impide que la mezcla llegue a esa temperatura y el combustible no se quema.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S052046 (liberado); concepto: condiciones de la combustión (comburente y calor); sistema: Motores Diésel (4.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-MAQ",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S052046",
+   "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+   "referenceRelation": "concepto adaptado: condiciones para apagar un fuego (falta de oxígeno) → condiciones de la combustión en el arranque del motor diésel"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-MAQ-2",
+   "textEn": "Several changes happen at once during combustion inside the cylinder. Which pair of observations shows that a chemical change took place and not only a physical one?",
+   "textEs": "Durante la combustión en el cilindro ocurren varios cambios a la vez. ¿Cuál par de observaciones indica que hubo un cambio químico y no solo un cambio físico?",
+   "missionId": "MIS-COB-SCI-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Chemical Change",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Observations for reaction (Describir dos observaciones de reacción química)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "The fuel oil warms up and flows more easily along the pipe.",
+     "es": "El gasóleo se calienta y fluye con menos resistencia por la cañería."
+    },
+    "B": {
+     "en": "New gases appear and the mixture releases heat steadily.",
+     "es": "Aparecen gases nuevos y la mezcla libera calor de forma sostenida."
+    },
+    "C": {
+     "en": "The air is compressed and takes up less volume in the cylinder.",
+     "es": "El aire se comprime y ocupa menos volumen dentro del cilindro."
+    },
+    "D": {
+     "en": "The lubricant thickens as it cools and loses its fluidity.",
+     "es": "El lubricante se espesa al enfriarse y pierde fluidez."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "A chemical change forms new substances; inside the cylinder this shows up as exhaust gases that differ from the air that came in and as heat released by the reaction. Warming the fuel oil, compressing the air or thickening the lubricant only changes temperature, volume or fluidity without forming new substances, so those are physical changes.",
+   "feedbackEs": "Un cambio químico forma sustancias nuevas; en el cilindro eso se manifiesta como gases de escape distintos del aire que entró y como calor liberado por la reacción. Calentar el gasóleo, comprimir el aire o espesar el lubricante solo modifican temperatura, volumen o fluidez sin generar sustancias nuevas, así que son cambios físicos.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042100 (liberado); concepto: evidencias observables de un cambio químico; sistema: Escape de Gases (4.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-MAQ",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042100",
+   "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+   "referenceRelation": "concepto adaptado: observaciones que evidencian un cambio químico → señales de combustión en el cilindro y en el escape"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-MAQ-3",
+   "textEn": "When carbon burns incompletely, the exhaust contains carbon monoxide. What is the chemical formula of that gas?",
+   "textEs": "Cuando la combustión del carbono es incompleta, el escape contiene monóxido de carbono. ¿Cuál es la fórmula química de ese gas?",
+   "missionId": "MIS-COB-SCI-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Formula for carbon dioxide (Fórmula química)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "O2",
+     "es": "O2"
+    },
+    "B": {
+     "en": "CO2",
+     "es": "CO2"
+    },
+    "C": {
+     "en": "CO",
+     "es": "CO"
+    },
+    "D": {
+     "en": "C2O",
+     "es": "C2O"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Carbon monoxide has one carbon atom bonded to one oxygen atom, which is why it is written CO. CO2 is carbon dioxide, formed when combustion is complete; O2 is molecular oxygen and C2O reverses the atom ratio.",
+   "feedbackEs": "El monóxido de carbono tiene un átomo de carbono unido a uno de oxígeno, por eso se escribe CO. CO2 corresponde al dióxido, que aparece cuando la combustión es completa; O2 es oxígeno molecular y C2O invierte la proporción de los átomos.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042073 (liberado); concepto: composición química de un gas de escape y su fórmula; sistema: Escape de Gases (4.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-MAQ",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S042073",
+   "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "referenceRelation": "concepto adaptado: fórmula de un compuesto a partir de su nombre → fórmula del monóxido de carbono en una combustión incompleta"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-MAQ-1",
+   "textEn": "In the hydraulic circuit, pressure is calculated as p = F / A. A main pump applies a force of 900 N to a piston with an area of 0.03 m². What pressure does it apply to the oil, in pascals?",
+   "textEs": "En el circuito hidráulico, la presión se calcula con p = F / A. Una bomba principal aplica una fuerza de 900 N sobre un émbolo de 0,03 m². ¿Qué presión ejerce sobre el aceite, en pascales?",
+   "missionId": "MIS-COB-TEC-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Find the value of y when t is 9 (Usando y = 10t)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "27 Pa",
+     "es": "27 Pa"
+    },
+    "B": {
+     "en": "300 Pa",
+     "es": "300 Pa"
+    },
+    "C": {
+     "en": "3,000 Pa",
+     "es": "3 000 Pa"
+    },
+    "D": {
+     "en": "30,000 Pa",
+     "es": "30 000 Pa"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Substituting the values gives p = 900 N ÷ 0.03 m² = 30,000 Pa. The value 27 Pa comes from multiplying instead of dividing, and 300 Pa or 3,000 Pa come from shifting the decimal point or dividing by 3 instead of by 0.03.",
+   "feedbackEs": "Al sustituir los valores, p = 900 N ÷ 0,03 m² = 30 000 Pa. El resultado 27 Pa aparece al multiplicar en lugar de dividir, y 300 Pa o 3 000 Pa salen de correr la coma decimal o de dividir por 3 en vez de por 0,03.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032538 (liberado); concepto: sustituir valores en una fórmula de presión; sistema: Bombas Principales (4.2.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-MAQ",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M032538",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "referenceRelation": "concepto adaptado: sustituir un valor en una fórmula (y = 10t) → sustituir fuerza y área en p = F/A"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-MAQ-2",
+   "textEn": "Before a test, the team checks that the accumulator pressure p, in bar, satisfies 4p − 6 < 2p + 4. Which values of p keep the circuit within the expected range?",
+   "textEs": "Antes de una prueba se verifica que la presión p del acumulador, en bar, cumpla la condición 4p − 6 < 2p + 4. ¿Qué valores de p mantienen el circuito dentro del rango previsto?",
+   "missionId": "MIS-COB-TEC-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Solve the inequality (9x – 6 < 4x + 4)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "p < 5 bar",
+     "es": "p < 5 bar"
+    },
+    "B": {
+     "en": "p > 5 bar",
+     "es": "p > 5 bar"
+    },
+    "C": {
+     "en": "p < 2 bar",
+     "es": "p < 2 bar"
+    },
+    "D": {
+     "en": "p < 10 bar",
+     "es": "p < 10 bar"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Grouping terms gives 4p − 2p < 4 + 6, that is 2p < 10, and dividing by 2 gives p < 5 bar. Flipping the sign (p > 5) or failing to divide 2p < 10 by 2 (p < 10) keeps values inside the range that do not satisfy the condition, while p < 2 rules out values that are admissible.",
+   "feedbackEs": "Se agrupan los términos: 4p − 2p < 4 + 6, es decir 2p < 10, y al dividir por 2 queda p < 5 bar. Dar vuelta el signo (p > 5) o no dividir 2p < 10 entre 2 (p < 10) deja dentro del rango valores que no cumplen la condición, y p < 2 descarta valores que sí son admisibles.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042103 (liberado); concepto: desigualdad como umbral operativo del acumulador; sistema: Acumuladores (4.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-MAQ",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M042103",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "referenceRelation": "concepto adaptado: resolver una inecuación lineal → umbral de presión admisible del acumulador"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-MAQ-3",
+   "textEn": "The hydraulic circuit shares 120 bar between two branches: branch A receives 20 bar more than branch B. How much pressure does each branch get?",
+   "textEs": "El circuito hidráulico reparte 120 bar entre dos ramas: la rama A recibe 20 bar más que la rama B. ¿Cuánta presión corresponde a cada rama?",
+   "missionId": "MIS-COB-TEC-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "What is the value P (Sistema de ecuaciones con P, Q, R)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A: 60 bar and B: 60 bar",
+     "es": "A: 60 bar y B: 60 bar"
+    },
+    "B": {
+     "en": "A: 70 bar and B: 50 bar",
+     "es": "A: 70 bar y B: 50 bar"
+    },
+    "C": {
+     "en": "A: 80 bar and B: 40 bar",
+     "es": "A: 80 bar y B: 40 bar"
+    },
+    "D": {
+     "en": "A: 100 bar and B: 20 bar",
+     "es": "A: 100 bar y B: 20 bar"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "From the two conditions, A + B = 120 and A = B + 20, you get 2B + 20 = 120, so B = 50 bar and A = 70 bar. Splitting the pressure evenly ignores the 20 bar offset, and the other options double or quadruple that difference.",
+   "feedbackEs": "Con las dos condiciones, A + B = 120 y A = B + 20, se obtiene 2B + 20 = 120, de donde B = 50 bar y A = 70 bar. El reparto en partes iguales ignora el desnivel de 20 bar, y las otras opciones duplican o cuadruplican esa diferencia.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042226 (liberado); concepto: sistema de ecuaciones para repartir presión entre dos ramas; sistema: Bombas Principales (4.2.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-MAQ",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M042226",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "referenceRelation": "concepto adaptado: sistema de ecuaciones con tres incógnitas → reparto de presión entre dos ramas del circuito"
+  },
+  {
+   "id": "COB-STEM-CU-ING-MAQ-1",
+   "textEn": "A bilge pump removes 4.5 m³ of water from the bilge in 90 s. What is the pump's average flow rate?",
+   "textEs": "Una bomba de achique extrae 4,5 m³ de agua de la sentina en 90 s. ¿Cuál es el caudal medio de la bomba?",
+   "missionId": "MIS-COB-ING-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Value of y in an expression (y = a + b/c)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "0.005 m³/s",
+     "es": "0,005 m³/s"
+    },
+    "B": {
+     "en": "20 m³/s",
+     "es": "20 m³/s"
+    },
+    "C": {
+     "en": "0.05 m³/s",
+     "es": "0,05 m³/s"
+    },
+    "D": {
+     "en": "405 m³/s",
+     "es": "405 m³/s"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Flow rate is volume divided by time: 4.5 m³ ÷ 90 s = 0.05 m³/s. Multiplying the data (405) or inverting the division (20) does not give a flow rate in m³/s, and 0.005 comes from shifting the decimal point one place too far.",
+   "feedbackEs": "El caudal es el volumen dividido por el tiempo: 4,5 m³ ÷ 90 s = 0,05 m³/s. Multiplicar los datos (405) o invertir la división (20) no da un caudal expresado en m³/s, y 0,005 aparece al correr la coma un lugar de más.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M052302 (liberado); concepto: caudal como cociente volumen/tiempo; sistema: Bombas de Achique (4.3.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-MAQ",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M052302",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "referenceRelation": "concepto adaptado: evaluar una expresión con una división (y = a + b/c) → caudal como cociente volumen/tiempo"
+  },
+  {
+   "id": "COB-STEM-CU-ING-MAQ-2",
+   "textEn": "The compressor raises the air pressure and then a cooler lowers its temperature. What happens to the water vapour carried by that air?",
+   "textEs": "El compresor eleva la presión del aire y después un enfriador baja su temperatura. ¿Qué le ocurre al vapor de agua que lleva ese aire?",
+   "missionId": "MIS-COB-ING-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Molecules of liquid when it cools (Qué pasa con las moléculas al enfriarse)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "It turns into extra oxygen for the tank.",
+     "es": "Se convierte en oxígeno extra para el tanque."
+    },
+    "B": {
+     "en": "It increases in volume and expands inside the tank.",
+     "es": "Aumenta su volumen y se expande dentro del tanque."
+    },
+    "C": {
+     "en": "It stays as vapour because the pressure is very high.",
+     "es": "Sigue siendo vapor porque la presión es muy alta."
+    },
+    "D": {
+     "en": "It condenses into droplets of liquid water as it cools.",
+     "es": "Condensa en gotas de agua líquida al enfriarse."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "As the vapour is compressed and then cooled, its molecules lose energy, slow down and move closer until they become liquid; that is why compressed air leaves water in traps and separators. High pressure does not prevent the change of state, and cooling does not create oxygen or expand the vapour.",
+   "feedbackEs": "Al comprimir y enfriar, las moléculas del vapor pierden energía, se mueven más despacio y se acercan hasta pasar al estado líquido; por eso el aire comprimido deja agua en las trampas y separadores. La presión alta no impide ese cambio de estado, y enfriar no genera oxígeno ni expande el vapor.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042272 (liberado); concepto: al comprimir y enfriar, el vapor condensa; sistema: Compresores de Aire (4.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-MAQ",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042272",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: movimiento de las moléculas al enfriarse → condensación del vapor en el aire comprimido"
+  },
+  {
+   "id": "COB-STEM-CU-ING-MAQ-3",
+   "textEn": "A bilge pump removes 4.5 m³ of water in 90 s, but a leak returns 20 % of that flow. What is the net bilge flow?",
+   "textEs": "Una bomba de achique extrae 4,5 m³ de agua en 90 s, pero una fuga devuelve el 20 % del caudal. ¿Cuál es el caudal neto de achique?",
+   "missionId": "MIS-COB-ING-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Best estimate of (7.21x3.86)/10.09 (Mejor estimación)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "0.04 m³/s",
+     "es": "0,04 m³/s"
+    },
+    "B": {
+     "en": "0.05 m³/s",
+     "es": "0,05 m³/s"
+    },
+    "C": {
+     "en": "0.045 m³/s",
+     "es": "0,045 m³/s"
+    },
+    "D": {
+     "en": "0.036 m³/s",
+     "es": "0,036 m³/s"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The gross flow is 4.5 ÷ 90 = 0.05 m³/s; with 20 % returning, 80 % remains, that is 0.04 m³/s. Option B ignores the leak, C deducts 10 %, and D applies the 20 % twice.",
+   "feedbackEs": "El caudal bruto es 4,5 ÷ 90 = 0,05 m³/s; con un 20 % de retorno queda el 80 %, es decir 0,04 m³/s. La opción B ignora la fuga, la C descuenta un 10 % y la D aplica el 20 % dos veces.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032166 (liberado); concepto: estimación de orden de magnitud del caudal; sistema: Bombas de Achique (4.3.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-MAQ",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M032166",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: estimación de orden de magnitud de un cociente → volumen estimado a partir del caudal"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-MAQ-1",
+   "textEn": "The oil separator is monitored with five residual-oil readings in the bilge water: 8, 11, 13, 16 and 22 mg/L. What is the mean of those five readings?",
+   "textEs": "El separador de aceite se controla con cinco lecturas de aceite residual en el agua de sentina: 8, 11, 13, 16 y 22 mg/L. ¿Cuál es la media de esas cinco lecturas?",
+   "missionId": "MIS-COB-MAT-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Mean number of staff members (Media de 5 restaurantes: 12, 18, 19, 21, 30)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "12 mg/L",
+     "es": "12 mg/L"
+    },
+    "B": {
+     "en": "14 mg/L",
+     "es": "14 mg/L"
+    },
+    "C": {
+     "en": "16 mg/L",
+     "es": "16 mg/L"
+    },
+    "D": {
+     "en": "70 mg/L",
+     "es": "70 mg/L"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The mean is found by adding the five readings (70 mg/L) and dividing by the number of readings: 70 ÷ 5 = 14 mg/L. The value 70 is the sum left undivided, 16 is a single reading, and 12 comes from dividing by the wrong number of data points.",
+   "feedbackEs": "La media se obtiene sumando las cinco lecturas (70 mg/L) y dividiendo por la cantidad de lecturas: 70 ÷ 5 = 14 mg/L. El valor 70 es la suma sin dividir, 16 es una lectura suelta y 12 aparece al dividir por un número equivocado de datos.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042169A (liberado); concepto: media de varias mediciones de contaminación; sistema: Separadores de Aceite (4.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-MAQ",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M042169A",
+   "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+   "referenceRelation": "concepto adaptado: media aritmética de cinco datos → media de las lecturas de aceite residual del separador"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-MAQ-2",
+   "textEn": "The workshop micrometer records an oil-film thickness of 0.47 mm. What value does the digit 7 stand for in that reading?",
+   "textEs": "El micrómetro del taller registra un espesor de película de aceite de 0,47 mm. ¿Qué valor representa el dígito 7 en esa lectura?",
+   "missionId": "MIS-COB-MAT-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "4/100 plus 3/1000 (Suma de fracciones)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "7 millimetres (whole units)",
+     "es": "7 milímetros (unidades enteras)"
+    },
+    "B": {
+     "en": "0.7 millimetres (tenths)",
+     "es": "0,7 milímetros (décimas)"
+    },
+    "C": {
+     "en": "0.07 millimetres (hundredths)",
+     "es": "0,07 milímetros (centésimas)"
+    },
+    "D": {
+     "en": "0.007 millimetres (thousandths)",
+     "es": "0,007 milímetros (milésimas)"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "After the decimal point the first place is tenths and the second is hundredths, so the 7 in 0.47 is worth 0.07 mm. Reading it as 0.7 mm moves it up to tenths, and the other options place it even further from its true position.",
+   "feedbackEs": "Después de la coma, el primer lugar corresponde a las décimas y el segundo a las centésimas; por eso el 7 de 0,47 vale 0,07 mm. Leerlo como 0,7 mm lo sube a las décimas y las otras opciones lo alejan todavía más del lugar que ocupa.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032094 (liberado); concepto: valor posicional en una lectura decimal; sistema: Separadores de Aceite (4.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-MAQ",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032094",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: valor posicional al combinar centésimas y milésimas → valor posicional en una lectura de micrómetro"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-MAQ-3",
+   "textEn": "The maintenance log adds two oil consumptions: 12.35 L and 4.628 L. What is the recorded total?",
+   "textEs": "En el registro de mantenimiento se suman dos consumos de aceite: 12,35 L y 4,628 L. ¿Cuál es el total registrado?",
+   "missionId": "MIS-COB-MAT-MAQ",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-MAQUINAS",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Add 42.65 to 5.748 (Suma de decimales)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "16.663 L",
+     "es": "16,663 L"
+    },
+    "B": {
+     "en": "17.008 L",
+     "es": "17,008 L"
+    },
+    "C": {
+     "en": "58.630 L",
+     "es": "58,630 L"
+    },
+    "D": {
+     "en": "16.978 L",
+     "es": "16,978 L"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Line up the decimal points and add matching units: 12.350 L + 4.628 L = 16.978 L. Adding without aligning the decimals gives 58.63 L, and the other values come from failing to carry between columns.",
+   "feedbackEs": "Se alinean las comas y se suman las mismas unidades: 12,350 L + 4,628 L = 16,978 L. Sumar sin alinear los decimales produce 58,63 L, y los otros valores aparecen al no trasladar el acarreo entre columnas.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M052231 (liberado); concepto: acumulación de lecturas decimales en un registro; sistema: Separadores de Aceite (4.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-MAQ",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M052231",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: suma de decimales con distinta cantidad de cifras → acumulación de consumos en el registro de mantenimiento"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELE-1",
+   "textEn": "Lead dioxide (PbO2) coats the positive plate of a lead-acid battery. How many lead and oxygen atoms does one PbO2 unit contain?",
+   "textEs": "El dióxido de plomo (PbO2) recubre la placa positiva de una batería de plomo-ácido. ¿Cuántos átomos de plomo y de oxígeno contiene una unidad de PbO2?",
+   "missionId": "MIS-COB-SCI-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Number of atoms in H2SO4 molecule (Número de átomos por elemento)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "1 lead and 2 oxygen",
+     "es": "1 de plomo y 2 de oxígeno"
+    },
+    "B": {
+     "en": "1 lead and 1 oxygen",
+     "es": "1 de plomo y 1 de oxígeno"
+    },
+    "C": {
+     "en": "2 lead and 1 oxygen",
+     "es": "2 de plomo y 1 de oxígeno"
+    },
+    "D": {
+     "en": "2 lead and 2 oxygen",
+     "es": "2 de plomo y 2 de oxígeno"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "The subscripts give the number of atoms of each element in the formula: PbO2 has 1 lead and 2 oxygen atoms. Reporting 1 oxygen ignores the subscript 2, and reporting 2 lead atoms moves the subscript onto lead.",
+   "feedbackEs": "Los subíndices indican cuántos átomos de cada elemento hay en la fórmula: PbO2 tiene 1 plomo y 2 oxígenos. Contar 1 oxígeno ignora el subíndice 2, y contar 2 plomos traslada el subíndice al plomo.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042076 (liberado); concepto: número de átomos por elemento en una fórmula química; sistema: Bancos de Baterías (3.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELE",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S042076",
+   "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "referenceRelation": "concepto adaptado: número de átomos de cada elemento en una fórmula → composición atómica del PbO2 de la placa positiva"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELE-2",
+   "textEn": "The battery bank's electrolyte contains sulfuric acid, H2SO4. Which statement correctly explains why H2SO4 is a compound?",
+   "textEs": "El electrolito del banco contiene ácido sulfúrico, de fórmula H2SO4. ¿Cuál afirmación explica correctamente por qué el H2SO4 es un compuesto?",
+   "missionId": "MIS-COB-SCI-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Definition of a compound (Definición de un compuesto)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Because its molecules contain atoms of a single element",
+     "es": "Porque sus moléculas contienen átomos de un solo elemento"
+    },
+    "B": {
+     "en": "Because its molecules combine atoms of different elements",
+     "es": "Porque sus moléculas combinan átomos de elementos distintos"
+    },
+    "C": {
+     "en": "Because it is a mixture of liquids that separates by settling",
+     "es": "Porque es una mezcla de líquidos que se separa por decantación"
+    },
+    "D": {
+     "en": "Because all its atoms are identical although differently sized",
+     "es": "Porque todos sus átomos son iguales aunque de distinto tamaño"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "A compound forms when atoms of different elements combine chemically in a fixed ratio; H2SO4 brings together hydrogen, sulfur, and oxygen. Saying it contains a single element describes a pure element, and a mixture that separates by settling is a mixture, not a compound.",
+   "feedbackEs": "Un compuesto se forma cuando átomos de elementos distintos se combinan químicamente en una proporción fija; el H2SO4 reúne hidrógeno, azufre y oxígeno. Decir que contiene un solo elemento describe un elemento puro, y hablar de una mezcla que se separa por decantación describe una mezcla, no un compuesto.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042306 (liberado); concepto: átomos de elementos distintos combinados forman un compuesto; sistema: Bancos de Baterías (3.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELE",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042306",
+   "timssContentDomain": "CHEMISTRY (Química) · Classification and Composition of Matter",
+   "referenceRelation": "concepto adaptado: definición de compuesto → clasificación del electrolito del banco de baterías"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELE-3",
+   "textEn": "While the battery bank charges, the electrolyte stores energy. Which statement correctly describes a process that absorbs energy?",
+   "textEs": "Mientras el banco de baterías se carga, el electrolito acumula energía. ¿Cuál afirmación describe correctamente un proceso que absorbe energía?",
+   "missionId": "MIS-COB-SCI-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Chemical Change",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Process in which energy absorbed (Proceso químico donde se absorbe energía)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Discharging absorbs energy from the surroundings because the bank cools down",
+     "es": "La descarga absorbe energía del ambiente porque el banco se enfría"
+    },
+    "B": {
+     "en": "Warming of the electrolyte proves that the process absorbs energy",
+     "es": "El calentamiento del electrolito prueba que el proceso absorbe energía"
+    },
+    "C": {
+     "en": "Charging absorbs electrical energy and stores it as chemical energy",
+     "es": "La carga absorbe energía eléctrica y la guarda como energía química"
+    },
+    "D": {
+     "en": "Charging releases chemical energy because the bank warms up",
+     "es": "La carga libera energía química porque el banco se calienta"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "In an energy-absorbing process, energy goes in and is stored: charging turns electrical energy into chemical energy inside the electrolyte. Warming points to losses through resistance rather than absorption, and discharging is the reverse case because it delivers energy to the circuit.",
+   "feedbackEs": "En un proceso que absorbe energía, la energía entra y queda almacenada: la carga convierte energía eléctrica en energía química dentro del electrolito. El calentamiento indica pérdidas por resistencia y no absorción, y la descarga es el caso inverso, porque entrega energía al circuito.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042112 (liberado); concepto: proceso que absorbe energía; sistema: Bancos de Baterías (3.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELE",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S042112",
+   "timssContentDomain": "CHEMISTRY (Química) · Chemical Change",
+   "referenceRelation": "concepto adaptado: proceso químico que absorbe energía → carga del electrolito que guarda energía"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELE-1",
+   "textEn": "While submerged, the battery bank feeds the converter, and the converter feeds the electric motor that drives the propeller. What is the chain of energy conversions?",
+   "textEs": "En inmersión, el banco de baterías alimenta al conversor y el conversor alimenta al motor eléctrico que mueve la hélice. ¿Cuál es la cadena de conversiones de energía?",
+   "missionId": "MIS-COB-TEC-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Energy conversion in a flashlight (Conversión de energía en linterna de batería)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "electrical, then chemical, then mechanical",
+     "es": "eléctrica, luego química, luego mecánica"
+    },
+    "B": {
+     "en": "chemical, then mechanical, then electrical",
+     "es": "química, luego mecánica, luego eléctrica"
+    },
+    "C": {
+     "en": "electrical, then mechanical, then chemical",
+     "es": "eléctrica, luego mecánica, luego química"
+    },
+    "D": {
+     "en": "chemical, then electrical, then mechanical",
+     "es": "química, luego eléctrica, luego mecánica"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "The battery stores chemical energy, delivers it as electrical energy to the converter, and the motor turns it into motion: chemical, electrical, then mechanical. Reversing the order describes charging rather than discharging, and jumping from chemical to motion skips the electrical stage at the converter.",
+   "feedbackEs": "La batería guarda energía química, la entrega como energía eléctrica al conversor y el motor la transforma en movimiento: química, eléctrica y mecánica. Invertir el orden describe la carga y no la descarga, y saltar de la energía química al movimiento omite la etapa eléctrica del conversor.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032024 (liberado); concepto: cadena de conversiones de energía; sistema: Conversores AC/DC (3.1.2) y Motor Eléctrico (5.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELE",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S032024",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: cadena de conversiones de energía en un dispositivo a batería → cadena banco, conversor y motor eléctrico"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELE-2",
+   "textEn": "The converter data sheet states that it delivers 37.5 % of the incoming energy as useful energy; the rest is lost as heat. What fraction of the incoming energy is delivered as useful energy?",
+   "textEs": "La ficha del conversor indica que entrega como energía útil el 37,5 % de la energía que recibe; el resto se pierde como calor. ¿Qué fracción de la energía recibida se entrega como energía útil?",
+   "missionId": "MIS-COB-TEC-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Equivalent fraction for 0.125 (Fracción equivalente)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "3/8 of the incoming energy",
+     "es": "3/8 de la energía recibida"
+    },
+    "B": {
+     "en": "1/3 of the incoming energy",
+     "es": "1/3 de la energía recibida"
+    },
+    "C": {
+     "en": "3/4 of the incoming energy",
+     "es": "3/4 de la energía recibida"
+    },
+    "D": {
+     "en": "3/7 of the incoming energy",
+     "es": "3/7 de la energía recibida"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "37.5 % equals 37.5/100, which simplifies to 3/8: eight parts of 12.5 % make 100 %. Option B is 33.3 %, C is 75 % and D is 42.9 %, so none matches the stated efficiency.",
+   "feedbackEs": "37,5 % equivale a 37,5/100, que simplificado es 3/8: ocho partes de 12,5 % completan el 100 %. La opción B corresponde a 33,3 %, la C a 75 % y la D a 42,9 %; ninguna coincide con el rendimiento indicado.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042032 (liberado); concepto: fracción equivalente a 0,125; sistema: Conversores AC/DC (3.1.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELE",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M042032",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: fracción equivalente a un decimal → rendimiento del conversor expresado como fracción"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELE-3",
+   "textEn": "A dive log records 400 kWh available at 07:00. The motor draws 40 kWh per hour and a reserve battery bank supplies 20 kWh per hour. If those values stay constant, at what time does the main bank reach 260 kWh?",
+   "textEs": "El registro de una inmersión anota 400 kWh disponibles a las 07:00. El motor consume 40 kWh por hora y un banco de reserva aporta 20 kWh por hora. Si esos valores se mantienen constantes, ¿a qué hora el banco principal queda con 260 kWh?",
+   "missionId": "MIS-COB-TEC-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "DATA AND CHANCE (Datos y Probabilidad) · Data Organization and Representation",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Car production graph/time cars made (¿A qué hora se produjeron 150 autos?)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "09:20",
+     "es": "09:20"
+    },
+    "B": {
+     "en": "14:00",
+     "es": "14:00"
+    },
+    "C": {
+     "en": "10:30",
+     "es": "10:30"
+    },
+    "D": {
+     "en": "12:00",
+     "es": "12:00"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "The main bank loses 20 kWh per hour, because the motor draws 40 and the reserve bank supplies 20; going from 400 to 260 kWh means losing 140 kWh, that is 7 hours, so 07:00 plus 7 hours is 14:00. Dividing only by the motor draw gives 10:30 because it ignores the reserve bank.",
+   "feedbackEs": "El banco principal pierde 20 kWh por hora, porque el motor consume 40 y el banco de reserva aporta 20; bajar de 400 a 260 kWh exige perder 140 kWh, es decir 7 horas, y las 07:00 más 7 horas dan las 14:00. Dividir solo por el consumo del motor da las 10:30 porque ignora el aporte del banco de reserva.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032681A (liberado); concepto: leer en el tiempo una relación lineal representada en un gráfico; sistema: Motor Eléctrico (5.1.1) y Conversores AC/DC (3.1.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELE",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M032681A",
+   "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Organization and Representation",
+   "referenceRelation": "concepto adaptado: lectura de un registro de valores en el tiempo → balance entre carga y consumo del banco hora por hora"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELE-1",
+   "textEn": "The ventilation sensor measures 0.8 m3 of hydrogen in a 40 m3 compartment. What percentage of the compartment's volume does that amount represent?",
+   "textEs": "El sensor de la ventilación mide 0,8 m3 de hidrógeno en un compartimento de 40 m3. ¿Qué porcentaje del volumen del compartimento representa esa cantidad?",
+   "missionId": "MIS-COB-ING-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Ratio, Proportion and Percent",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Complete the missing boxes (Completar tabla de porcentaje de tiros exitosos)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "0.2%",
+     "es": "0,2 %"
+    },
+    "B": {
+     "en": "5%",
+     "es": "5 %"
+    },
+    "C": {
+     "en": "2%",
+     "es": "2 %"
+    },
+    "D": {
+     "en": "20%",
+     "es": "20 %"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "A percentage compares the part with the total: 0.8 divided by 40 gives 0.02, which is 2 %. Option 0.2 % shifts the decimal one place too far, 20 % multiplies the correct result by ten, and 5 % comes from dividing 40 by 8 and dropping the decimal in 0.8.",
+   "feedbackEs": "El porcentaje compara la parte con el total: 0,8 dividido 40 da 0,02, que equivale a 2 %. El 0,2 % corre la coma un lugar de más, el 20 % multiplica por diez el resultado correcto y el 5 % sale de dividir 40 entre 8, sin arrastrar el decimal de 0,8.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042059 (liberado); concepto: porcentaje como parte de un total; sistema: Ventilación de Gases (3.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELE",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M042059",
+   "timssContentDomain": "NUMBER (Número) · Ratio, Proportion and Percent",
+   "referenceRelation": "concepto adaptado: proporción y porcentaje de una parte sobre un total → concentración de hidrógeno en el volumen del compartimento"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELE-2",
+   "textEn": "The compartment ventilation draws a fixed 30 m3/h plus 0.4 m3/h for each square metre of surface. If the surface is s square metres, which expression gives the total extracted flow?",
+   "textEs": "La ventilación del compartimento extrae un caudal fijo de 30 m3/h más 0,4 m3/h por cada metro cuadrado de superficie. Si la superficie es s metros cuadrados, ¿qué expresión da el caudal total extraído?",
+   "missionId": "MIS-COB-ING-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Cost in zeds for taxi trip of n km (25 base + 0.2/km)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "30 · 0.4 · s",
+     "es": "30 · 0,4 · s"
+    },
+    "B": {
+     "en": "0.4 + 30 · s",
+     "es": "0,4 + 30 · s"
+    },
+    "C": {
+     "en": "s · (30 + 0.4)",
+     "es": "s · (30 + 0,4)"
+    },
+    "D": {
+     "en": "30 + 0.4 · s",
+     "es": "30 + 0,4 · s"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "A fixed flow plus a contribution proportional to the surface is written as 30 + 0.4 · s: the fixed part does not depend on s, and only the 0.4 coefficient multiplies the variable. The options that multiply 30 by s make the fixed flow grow with the surface, and adding 0.4 instead of 30 changes the value of the constant part.",
+   "feedbackEs": "Un caudal fijo más un aporte proporcional a la superficie se escribe 30 + 0,4 · s: la parte fija no depende de s y solo el coeficiente 0,4 multiplica a la variable. Las opciones que multiplican el 30 por s hacen crecer el caudal fijo con la superficie, y sumar 0,4 en lugar de 30 cambia el valor de la parte constante.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032477 (liberado); concepto: expresión lineal con valor base y término proporcional; sistema: Ventilación de Gases (3.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELE",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032477",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: relación lineal con base fija más término proporcional → caudal de extracción de la ventilación según la superficie"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELE-3",
+   "textEn": "To keep the balance, the air entering the compartment must equal the air leaving. If the extractor runs at 12.5 m³ per minute, which equality correctly expresses that flow in cubic metres per hour?",
+   "textEs": "Para mantener el balance, el aire que entra en el compartimento debe igualar al que sale. Si el extractor trabaja a 12,5 m³ por minuto, ¿cuál igualdad expresa correctamente ese caudal en metros cúbicos por hora?",
+   "missionId": "MIS-COB-ING-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Which number sentence is true (Seleccionar igualdad correcta)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "12.5 × 60 = 750 m³/h",
+     "es": "12,5 × 60 = 750 m³/h"
+    },
+    "B": {
+     "en": "12.5 ÷ 60 = 0.21 m³/h",
+     "es": "12,5 ÷ 60 = 0,21 m³/h"
+    },
+    "C": {
+     "en": "12.5 × 6 = 75 m³/h",
+     "es": "12,5 × 6 = 75 m³/h"
+    },
+    "D": {
+     "en": "12.5 × 600 = 7,500 m³/h",
+     "es": "12,5 × 600 = 7 500 m³/h"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "One hour has 60 minutes, so the hourly flow is the per-minute flow multiplied by 60: 12.5 × 60 = 750 m³/h, and that figure sustains the balance between incoming and outgoing air. Dividing by 60 or multiplying by 6 or 600 uses the wrong factor and breaks the balance.",
+   "feedbackEs": "Una hora tiene 60 minutos, así que el caudal por hora es el caudal por minuto multiplicado por 60: 12,5 × 60 = 750 m³/h, y esa cifra sostiene la igualdad entre el aire que entra y el que sale. Dividir entre 60 o multiplicar por 6 o por 600 usa un factor equivocado y rompe el balance.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M052214 (liberado); concepto: reconocer una igualdad numérica verdadera; sistema: Ventilación de Gases (3.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELE",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M052214",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: igualdad numérica verdadera → balance entre caudal de aire que entra y que sale, con cambio de unidad"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELE-1",
+   "textEn": "The battery bank autonomy calculation gives 5 7/8 hours. What is that value in hours, rounded to two decimal places?",
+   "textEs": "El cálculo de autonomía del banco da 5 7/8 horas. ¿Cuál es ese valor en horas, redondeado a dos decimales?",
+   "missionId": "MIS-COB-MAT-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Write 3 5/6 in decimal form (Redondeado a 2 decimales)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "5.78 h",
+     "es": "5,78 h"
+    },
+    "B": {
+     "en": "5.88 h",
+     "es": "5,88 h"
+    },
+    "C": {
+     "en": "5.87 h",
+     "es": "5,87 h"
+    },
+    "D": {
+     "en": "5.80 h",
+     "es": "5,80 h"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "7/8 is 0.875, so 5 7/8 = 5.875, which rounds to 5.88 at two decimal places. Option C truncates instead of rounding, A copies the fraction's digits, and D rounds only to tenths.",
+   "feedbackEs": "7/8 vale 0,875, así que 5 7/8 = 5,875 y al redondear a dos decimales queda 5,88. La opción C trunca en lugar de redondear, la A copia los dígitos de la fracción y la D redondea solo a décimas.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032725 (liberado); concepto: convertir un número mixto a decimal; sistema: Bancos de Baterías (3.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELE",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M032725",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: número mixto a decimal → autonomía del banco expresada en horas decimales"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELE-2",
+   "textEn": "In one hour of diving, each of the m compartment lights draws P kWh and each of the n motors draws 2P kWh. Which expression gives the total consumption for that hour?",
+   "textEs": "En una hora de inmersión, cada una de las m luces del compartimento consume P kWh y cada uno de los n motores consume 2P kWh. ¿Qué expresión da el consumo total de esa hora?",
+   "missionId": "MIS-COB-MAT-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "m boys and n girls in a parade (2 globos c/u, expresión total)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "P · (m + n)",
+     "es": "P · (m + n)"
+    },
+    "B": {
+     "en": "2P · (m + n)",
+     "es": "2P · (m + n)"
+    },
+    "C": {
+     "en": "P · (m + 2n)",
+     "es": "P · (m + 2n)"
+    },
+    "D": {
+     "en": "P · (2m + n)",
+     "es": "P · (2m + n)"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "The total adds the m lights, P · m, and the n motors, 2P · n, which factors as P · (m + 2n). The option P · (m + n) assumes the motors draw the same as the lights, and the other two double the lights instead of the motors.",
+   "feedbackEs": "El total suma el consumo de las m luces, P · m, y el de los n motores, 2P · n, que factorizado da P · (m + 2n). La opción P · (m + n) supone que los motores consumen lo mismo que las luces, y las otras dos duplican el consumo de las luces en lugar del de los motores.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032295 (liberado); concepto: expresión de un total formada por dos grupos con coeficientes distintos; sistema: Bancos de Baterías (3.1.1) y Motor Eléctrico (5.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELE",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032295",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: expresión algebraica de un total con dos grupos de distinto consumo → consumo horario de luces y motores del compartimento"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELE-3",
+   "textEn": "The recorded consumption is estimated with C = P · t + 1, where P is power in kW, t is time in hours and 1 represents a fixed consumption of 1 kWh. If P = 6 and t = 3, what is the value of C?",
+   "textEs": "El consumo registrado se estima con C = P · t + 1, donde P es la potencia en kW, t el tiempo en horas y 1 representa un consumo fijo de 1 kWh. Si P = 6 y t = 3, ¿cuál es el valor de C?",
+   "missionId": "MIS-COB-MAT-ELE",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "What does xy plus 1 mean (Orden de operaciones)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "7",
+     "es": "7"
+    },
+    "B": {
+     "en": "18",
+     "es": "18"
+    },
+    "C": {
+     "en": "21",
+     "es": "21"
+    },
+    "D": {
+     "en": "19",
+     "es": "19"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "In an expression with multiplication and addition, multiplication comes first: 6 · 3 = 18, then add 1, so C = 19. The 7 adds 1 to the power before multiplying, 18 drops the constant term, and 21 multiplies the result of 6 + 1 by 3.",
+   "feedbackEs": "En una expresión con multiplicación y suma se resuelve primero la multiplicación: 6 · 3 = 18 y después se suma 1, así que C = 19. El 7 suma 1 a la potencia antes de multiplicar, el 18 omite el término fijo y el 21 multiplica por 3 el resultado de 6 + 1.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032738 (liberado); concepto: multiplicar antes de sumar al evaluar una expresión; sistema: Bancos de Baterías (3.1.1) y Motor Eléctrico (5.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELE",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M032738",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: orden de operaciones en una expresión con producto y suma → evaluación de la fórmula de consumo del motor"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELN-1",
+   "textEn": "A passive sonar hydrophone picks up the sound of a motor approaching through the water. What determines the speed at which that sound reaches the sensor?",
+   "textEs": "Un hidrófono del sonar pasivo recibe el sonido de un motor que se acerca por el agua. ¿De qué depende la velocidad con que ese sonido viaja hasta el sensor?",
+   "missionId": "MIS-COB-SCI-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-PROA",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Light and Sound",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Speed of light through substances (Más rápido viaja la luz)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "The medium the wave travels through.",
+     "es": "Del medio por el que se propaga la onda."
+    },
+    "B": {
+     "en": "The power at which the sound was emitted.",
+     "es": "De la potencia con que se emitió el sonido."
+    },
+    "C": {
+     "en": "The time the wave has already been travelling.",
+     "es": "Del tiempo que la onda lleva viajando."
+    },
+    "D": {
+     "en": "The frequency at which the motor vibrates.",
+     "es": "De la frecuencia con que vibra el motor."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "A wave's speed is set by the medium: sound travels at about 1500 m/s in seawater, far faster than in air. Power changes loudness and frequency changes pitch, but neither changes how fast the wave moves.",
+   "feedbackEs": "La velocidad de una onda la fija el medio: en el agua de mar el sonido avanza a unos 1500 m/s, mucho más rápido que en el aire. La potencia cambia la intensidad, no la velocidad, y la frecuencia cambia el tono, no la rapidez.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042274 (liberado); concepto: velocidad de la luz en distintas sustancias; sistema: Sonar Pasivo (1.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELN",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S042274",
+   "timssContentDomain": "PHYSICS (Física) · Light and Sound",
+   "referenceRelation": "concepto adaptado: la velocidad de una onda depende del medio → velocidad del sonido en el agua que recibe el sonar pasivo"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELN-2",
+   "textEn": "In a test, the same sound pulse is measured in air and in seawater, and it arrives much sooner in water. What is the best explanation for that difference?",
+   "textEs": "En una prueba se mide el mismo pulso sónico en aire y en agua de mar, y en el agua llega mucho antes. ¿Cuál es la mejor explicación de esa diferencia?",
+   "missionId": "MIS-COB-SCI-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-PROA",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Forces and Motion",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "In which liquid would object float (Objeto con densidad 1.1 g/cm3)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Because air particles move more freely and slow the vibration down.",
+     "es": "Porque en el aire las partículas se mueven con más libertad."
+    },
+    "B": {
+     "en": "Because water is far less compressible and passes the vibration faster.",
+     "es": "Porque el agua es menos compresible y transmite mejor la vibración."
+    },
+    "C": {
+     "en": "Because the speed depends only on the frequency of the pulse.",
+     "es": "Porque la velocidad depende solo de la frecuencia del pulso."
+    },
+    "D": {
+     "en": "Because sound cannot cross water and only travels through the hull.",
+     "es": "Porque el sonido no atraviesa el agua y llega por el casco."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Sound travels faster in a stiffer, less compressible medium: water passes the vibration along with less loss than air. Frequency changes pitch, not speed, and sound does travel through water, which is why sonar works.",
+   "feedbackEs": "El sonido viaja más rápido en un medio más rígido y menos compresible: el agua transmite la vibración con menos pérdida que el aire. La frecuencia cambia el tono, no la velocidad, y el sonido sí atraviesa el agua, por eso funciona el sonar.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S052207 (liberado); concepto: densidad del líquido y flotación de un objeto; sistema: Sonar Activo (1.1.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELN",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S052207",
+   "timssContentDomain": "PHYSICS (Física) · Forces and Motion",
+   "referenceRelation": "concepto adaptado: propiedades del medio y propagación de la onda → comparación de la velocidad del sonido en aire y en agua de mar (compresibilidad)"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-ELN-3",
+   "textEn": "The flank array records a repeated clicking next to the propeller when the water forms vapor bubbles that expand and collapse. Why does that process produce sound?",
+   "textEs": "El arreglo de flanco registra un chasquido repetido junto a la hélice cuando el agua forma burbujas de vapor que se expanden y colapsan. ¿Por qué ese fenómeno produce sonido?",
+   "missionId": "MIS-COB-SCI-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-PROA",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Holes in volcanic rocks (Cómo se hicieron los agujeros)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Because the bubbles give off light and the hydrophone turns it into sound.",
+     "es": "Porque las burbujas emiten luz y el hidrófono la convierte en sonido."
+    },
+    "B": {
+     "en": "Because the bubbles raise the water temperature until it boils.",
+     "es": "Porque las burbujas elevan la temperatura del agua hasta hacerla hervir."
+    },
+    "C": {
+     "en": "Because each collapsing bubble makes the water vibrate and sends out a sound wave.",
+     "es": "Porque el colapso de cada burbuja hace vibrar el agua y genera una onda sonora."
+    },
+    "D": {
+     "en": "Because the bubbles open an air channel that cuts off the electric current.",
+     "es": "Porque las burbujas abren un canal de aire que corta la corriente eléctrica."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "When a bubble collapses it slams into the surrounding water, and that jolt spreads as a sound wave; thousands of collapses in a row make the clicking the sonar hears. A hydrophone senses sound pressure rather than light, and the nearby water does not reach boiling point.",
+   "feedbackEs": "Cuando la burbuja colapsa golpea el agua que la rodea y esa sacudida se propaga como onda sonora; miles de colapsos seguidos forman el chasquido que escucha el sonar. Un hidrófono detecta presión sonora, no luz, y el agua del entorno no llega a hervir.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S052297 (liberado); concepto: origen de los agujeros en rocas volcánicas por burbujas de gas; sistema: Sonar Pasivo (1.1.1) y Arreglo de Flanco (1.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-ELN",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S052297",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+   "referenceRelation": "concepto adaptado: burbujas de gas como fuente de sonido → chasquido de las burbujas de vapor que colapsan junto a la hélice"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELN-1",
+   "textEn": "On the workshop's optical calibration bench, two perpendicular plane mirrors are set up. A ray reflects first on the horizontal mirror and then on the vertical one. Which transformation is equivalent to that pair of reflections?",
+   "textEs": "En el banco de calibración óptica del taller se colocan dos espejos planos perpendiculares. Un rayo se refleja primero en el espejo horizontal y después en el vertical. ¿A qué transformación equivale ese par de reflexiones?",
+   "missionId": "MIS-COB-TEC-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "GEOMETRY (Geometría) · Location and Movement",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Figure 1 transformed to 2 and 3 (Secuencia de transformaciones)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A slide that keeps the image in the same orientation.",
+     "es": "A una traslación que conserva la orientación de la imagen."
+    },
+    "B": {
+     "en": "A single reflection across a diagonal line.",
+     "es": "A una única reflexión respecto de una línea diagonal."
+    },
+    "C": {
+     "en": "A 90° clockwise turn about the crossing point.",
+     "es": "A un giro de 90° en sentido horario alrededor del cruce."
+    },
+    "D": {
+     "en": "A 180° turn about the point where the mirrors cross.",
+     "es": "A un giro de 180° alrededor del punto donde se cruzan los espejos."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Two reflections in perpendicular mirrors add up to a half turn: the scene ends up upside down, as if seen from the opposite side. A 90° turn would leave a different orientation, and a single reflection cannot account for both mirrors.",
+   "feedbackEs": "Dos reflexiones en espejos perpendiculares equivalen a media vuelta: la escena queda cabeza abajo, como si se mirara desde el otro lado. Un giro de 90° daría otra orientación y una sola reflexión no alcanza para describir las dos.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032397 (liberado); concepto: secuencia de transformaciones de una figura (reflexión y giro); sistema: Periscopio de observación (2.1.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELN",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M032397",
+   "timssContentDomain": "GEOMETRY (Geometría) · Location and Movement",
+   "referenceRelation": "concepto adaptado: composición de transformaciones (reflexión y giro) → par de espejos perpendiculares en el banco óptico del periscopio de observación"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELN-2",
+   "textEn": "To calibrate the eyepiece of the search periscope, a mark is chosen that coincides with itself when folded along one line. Which of these marks meets that condition?",
+   "textEs": "Para calibrar el ocular del periscopio de búsqueda se elige una marca que coincida consigo misma al plegarla por una sola línea. ¿Cuál de estas marcas cumple esa condición?",
+   "missionId": "MIS-COB-TEC-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "GEOMETRY (Geometría) · Geometric Shapes",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Which shape has a line of symmetry (Línea de simetría)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "An isosceles triangle with equal sides.",
+     "es": "Un triángulo isósceles de lados iguales."
+    },
+    "B": {
+     "en": "A scalene triangle with unequal sides.",
+     "es": "Un triángulo escaleno de lados distintos."
+    },
+    "C": {
+     "en": "A slanted parallelogram with no symmetry line.",
+     "es": "Un paralelogramo inclinado sin eje."
+    },
+    "D": {
+     "en": "A trapezoid with unequal sides.",
+     "es": "Un trapecio de lados desiguales."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "A line of symmetry splits a figure into two halves that match when folded, and an isosceles triangle has exactly one such line. A slanted parallelogram looks the same after a half turn, not after a fold, and a scalene triangle has no line of symmetry at all.",
+   "feedbackEs": "El eje de simetría divide la figura en dos mitades que coinciden al plegar, y el triángulo isósceles tiene exactamente uno. El paralelogramo inclinado se ve igual al girarlo media vuelta, pero no al doblarlo, y el escaleno no tiene ningún eje.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042150 (liberado); concepto: figura con eje de simetría; sistema: Periscopio de búsqueda (2.1.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELN",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M042150",
+   "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+   "referenceRelation": "concepto adaptado: eje de simetría e imagen especular → marca de calibración del ocular del periscopio"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-ELN-3",
+   "textEn": "The optronic mast housing is shaped like a prism with a triangular base. Its flat pattern is needed to cut the sheet metal. Which pattern matches that prism?",
+   "textEs": "El alojamiento del mástil optrónico tiene forma de prisma de base triangular. Para cortar su chapa se necesita el desarrollo plano. ¿Cuál corresponde a ese prisma?",
+   "missionId": "MIS-COB-TEC-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "GEOMETRY (Geometría) · Geometric Shapes",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Shape of cutout figure (Forma de la figura recortada al desdoblar)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Three equal triangles and two rectangles.",
+     "es": "Tres triángulos iguales y dos rectángulos."
+    },
+    "B": {
+     "en": "Two equal triangles and three rectangles.",
+     "es": "Dos triángulos iguales y tres rectángulos."
+    },
+    "C": {
+     "en": "One rectangle and two equal circles.",
+     "es": "Un rectángulo y dos círculos iguales."
+    },
+    "D": {
+     "en": "Four triangles and one central square.",
+     "es": "Cuatro triángulos y un cuadrado central."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "A prism with a triangular base has two triangular bases and three rectangular side faces, and unfolding it lays those five pieces flat. Swapping the counts of triangles and rectangles is the usual mistake, and the circles belong to a cylinder instead.",
+   "feedbackEs": "Un prisma de base triangular tiene dos bases triangulares y tres caras laterales rectangulares; al desplegarlo quedan esas cinco piezas planas. Invertir el número de triángulos y rectángulos es el error más común, y los círculos corresponden a un cilindro.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032679 (liberado); concepto: forma de la figura recortada al desdoblar; sistema: Mástil Optrónico (2.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-ELN",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M032679",
+   "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+   "referenceRelation": "concepto adaptado: desarrollo plano de un cuerpo (el prisma) → chapa del alojamiento del mástil optrónico"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELN-1",
+   "textEn": "The satellite antenna sends data from the surface. Which statement about the orbit of a communications satellite is correct?",
+   "textEs": "La antena de satélite transmite datos desde la superficie. ¿Cuál de estas afirmaciones sobre la órbita de un satélite de comunicaciones es correcta?",
+   "missionId": "MIS-COB-ING-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Difference between planets and moons (Diferencia principal)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "It orbits the Sun and completes one lap every 365 days.",
+     "es": "Orbita el Sol y completa una vuelta cada 365 días."
+    },
+    "B": {
+     "en": "It rests on the atmosphere and never actually orbits.",
+     "es": "Se apoya en la atmósfera y no llega a orbitar."
+    },
+    "C": {
+     "en": "It orbits Earth and can do so at different altitudes.",
+     "es": "Orbita la Tierra y puede hacerlo a distintas alturas."
+    },
+    "D": {
+     "en": "It orbits Earth at a fixed altitude of 500 km.",
+     "es": "Orbita la Tierra a una altura fija de 500 km."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "A communications satellite orbits Earth and can be placed at different altitudes depending on the service it must cover. Option A describes a planet's orbit around the Sun, B confuses the satellite with the atmosphere, and D fixes a particular altitude that is not a general condition.",
+   "feedbackEs": "Un satélite de comunicaciones gira alrededor de la Tierra y puede ubicarse a distintas alturas según el servicio que deba cubrir. La opción A describe la órbita de un planeta alrededor del Sol, B confunde el satélite con la atmósfera y D fija una altura particular que no es una condición general.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032160 (liberado); concepto: diferencia entre planetas y lunas; sistema: Antena de Satélite (2.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELN",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S032160",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+   "referenceRelation": "concepto adaptado: cuerpos que orbitan (satélites alrededor de la Tierra) → órbita de un satélite de comunicaciones"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELN-2",
+   "textEn": "The radio receiver accepts frequencies f that satisfy 8 ≤ f ≤ 12, in kHz. If the local oscillator adds 3 kHz to the received frequency, which interval reaches the filter?",
+   "textEs": "El receptor de radio acepta frecuencias f que cumplen 8 ≤ f ≤ 12, en kHz. Si el oscilador local suma 3 kHz a la frecuencia recibida, ¿qué intervalo llega al filtro?",
+   "missionId": "MIS-COB-ING-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "If t is a number between 6 and 9 (Rango para t + 5)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "From 8 to 12 kHz.",
+     "es": "De 8 a 12 kHz."
+    },
+    "B": {
+     "en": "From 5 to 9 kHz.",
+     "es": "De 5 a 9 kHz."
+    },
+    "C": {
+     "en": "From 24 to 36 kHz.",
+     "es": "De 24 a 36 kHz."
+    },
+    "D": {
+     "en": "From 11 to 15 kHz.",
+     "es": "De 11 a 15 kHz."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Adding 3 kHz to each end shifts the window without changing its width: 8 + 3 = 11 and 12 + 3 = 15. Option A forgets the shift, B subtracts instead of adding, and C doubles the interval instead of shifting it.",
+   "feedbackEs": "Sumar 3 kHz a cada extremo desplaza la ventana sin cambiar su ancho: 8 + 3 = 11 y 12 + 3 = 15. La opción A olvida el desplazamiento, la B resta en lugar de sumar y la C duplica el intervalo en lugar de desplazarlo.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032673 (liberado); concepto: rango de valores para t + 5; sistema: Antena HF/VHF (2.3.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELN",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032673",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: intervalo de valores admisibles → ventana de frecuencias del receptor desplazada por el oscilador local"
+  },
+  {
+   "id": "COB-STEM-CU-ING-ELN-3",
+   "textEn": "The underwater telephone sends a pulse, and the interval between pulses follows the sequence 2/5 s, 3/6 s, 4/7 s, 5/8 s… What is the next interval?",
+   "textEs": "El teléfono submarino emite un pulso y el intervalo entre pulsos sigue la secuencia 2/5 s, 3/6 s, 4/7 s, 5/8 s… ¿Cuál es el intervalo siguiente?",
+   "missionId": "MIS-COB-ING-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Patterns",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Next term in the pattern (1/2, 2/3, 3/4, 4/5, ...)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "6/9 s",
+     "es": "6/9 s"
+    },
+    "B": {
+     "en": "5/9 s",
+     "es": "5/9 s"
+    },
+    "C": {
+     "en": "6/8 s",
+     "es": "6/8 s"
+    },
+    "D": {
+     "en": "9/6 s",
+     "es": "9/6 s"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "At each step both the numerator and the denominator increase by one: 2/5, 3/6, 4/7, 5/8, so the next one is 6/9. Option B leaves the denominator at 9 without raising the numerator, C skips a step and D flips the fraction.",
+   "feedbackEs": "En cada paso el numerador y el denominador suben una unidad: 2/5, 3/6, 4/7, 5/8 y sigue 6/9. La opción B deja el denominador en 9 sin subir el numerador, la C salta un paso y la D invierte la fracción.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042198A (liberado); concepto: término siguiente de un patrón; sistema: Teléfono Submarino (2.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-ELN",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M042198A",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Patterns",
+   "referenceRelation": "concepto adaptado: regularidad y patrón (periodicidad de los pulsos) → secuencia de intervalos del teléfono submarino"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELN-1",
+   "textEn": "The echosounder scale runs from 20 m to 30 m in five equal divisions. Mark K sits on the second division after 20 m. What depth does K show?",
+   "textEs": "La escala de la ecosonda va de 20 m a 30 m con cinco divisiones iguales. La marca K está en la segunda división después de 20 m. ¿Qué profundidad indica K?",
+   "missionId": "MIS-COB-MAT-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "What is K on a number line (Identificar K entre 27 y 28)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "22 m",
+     "es": "22 m"
+    },
+    "B": {
+     "en": "24 m",
+     "es": "24 m"
+    },
+    "C": {
+     "en": "25 m",
+     "es": "25 m"
+    },
+    "D": {
+     "en": "28 m",
+     "es": "28 m"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Each division is (30 − 20) ÷ 5 = 2 m, so the second mark after 20 m is at 20 + 2 × 2 = 24 m. Choosing 22 m assumes ten parts, 25 m splits the scale into four parts, and 28 m skips three divisions.",
+   "feedbackEs": "Cada división vale (30 − 20) ÷ 5 = 2 m, así que la segunda marca después de 20 m está en 20 + 2 × 2 = 24 m. Elegir 22 m supone dividir la escala en diez partes, 25 m la parte en cuatro y 28 m salta tres divisiones.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042024 (liberado); concepto: ubicación de un número en la recta numérica; sistema: Ecosonda (2.2.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELN",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M042024",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: ubicar una medida en una escala graduada → lectura de la escala de la ecosonda"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELN-2",
+   "textEn": "The gyro records three heading intervals: 1/2 h, 1/3 h and 1/6 h. What is the total recorded time?",
+   "textEs": "El registro del giroscopio anota tres tramos de rumbo: 1/2 h, 1/3 h y 1/6 h. ¿Cuál es el tiempo total registrado?",
+   "missionId": "MIS-COB-MAT-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Simplify 3x/8 plus x/4 plus x/2 (Simplificar la expresión)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "3/11 h",
+     "es": "3/11 h"
+    },
+    "B": {
+     "en": "2/3 h",
+     "es": "2/3 h"
+    },
+    "C": {
+     "en": "1 h",
+     "es": "1 h"
+    },
+    "D": {
+     "en": "1 1/2 h",
+     "es": "1 1/2 h"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "With a common denominator of 6, you get 1/2 = 3/6, 1/3 = 2/6 and 1/6 = 1/6; the total is 6/6 = 1 h. Option A adds numerators and denominators, which does not produce an equivalent fraction.",
+   "feedbackEs": "Con denominador común 6 queda 1/2 = 3/6, 1/3 = 2/6 y 1/6 = 1/6; la suma es 6/6 = 1 h. La opción A suma numeradores y denominadores, un error que no da una fracción equivalente.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032683 (liberado); concepto: simplificación de una suma de fracciones; sistema: Giroscopio Láser (2.2.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELN",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032683",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: suma de fracciones con distinto denominador → tiempos de rumbo acumulados en el giroscopio"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-ELN-3",
+   "textEn": "The chart plotter shows a leg measuring 7/8 of a nautical mile. What is that length in decimal form?",
+   "textEs": "El plotter de cartas indica que un tramo mide 7/8 de milla náutica. ¿Cuál es esa medida expresada en decimal?",
+   "missionId": "MIS-COB-MAT-ELN",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Fractions and Decimals",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Select the decimal equal to 3/5 (Decimal equivalente)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "0.780 miles",
+     "es": "0,780 millas"
+    },
+    "B": {
+     "en": "0.870 miles",
+     "es": "0,870 millas"
+    },
+    "C": {
+     "en": "0.750 miles",
+     "es": "0,750 millas"
+    },
+    "D": {
+     "en": "0.875 miles",
+     "es": "0,875 millas"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "7/8 comes from dividing 7 by 8, which gives 0.875. Option C is really 3/4, and A and B shuffle the digits of the correct result.",
+   "feedbackEs": "7/8 se obtiene dividiendo 7 entre 8, que da 0,875. La opción C corresponde a 3/4, y las opciones A y B alteran el orden de los dígitos del resultado.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M052216 (liberado); concepto: decimal equivalente a una fracción; sistema: Plotter de Cartas (2.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-ELN",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M052216",
+   "timssContentDomain": "NUMBER (Número) · Fractions and Decimals",
+   "referenceRelation": "concepto adaptado: equivalencia entre fracción y decimal en unidades de medida → distancia en millas náuticas del plotter de cartas"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-NAV-1",
+   "textEn": "The air in a watertight compartment goes from 20 °C to 35 °C without changing volume. What happens to the pressure, and why?",
+   "textEs": "El aire de un compartimento estanco pasa de 20 °C a 35 °C sin cambiar de volumen. ¿Qué ocurre con la presión y por qué?",
+   "missionId": "MIS-COB-SCI-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-TRANSVERSAL",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Molecules of gas when heated (Qué pasa con las moléculas de gas al calentarse)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "It rises, because molecular collisions are more frequent and stronger.",
+     "es": "Sube, porque los choques moleculares son más frecuentes y fuertes."
+    },
+    "B": {
+     "en": "It falls, because the air expands as it warms and takes more space.",
+     "es": "Baja, porque el aire se expande al calentarse y ocupa más."
+    },
+    "C": {
+     "en": "It stays the same, because the compartment volume is constant.",
+     "es": "No cambia, porque el volumen del compartimento es constante."
+    },
+    "D": {
+     "en": "It rises, because the molecules grow larger as they warm up.",
+     "es": "Sube, porque las moléculas se agrandan al calentarse."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "At a fixed volume, heating the gas increases the molecules' kinetic energy: they hit the walls more often and harder, so the pressure rises. The air cannot expand because the compartment is sealed (B), constant volume does not prevent a pressure change (C), and molecules do not grow (D).",
+   "feedbackEs": "En un volumen fijo, calentar el gas aumenta la energía cinética de las moléculas: chocan más seguido y con más fuerza contra las paredes, y la presión sube. El aire no se expande porque el compartimento es estanco (B), el volumen constante no impide el cambio de presión (C) y las moléculas no crecen (D).",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032158 (liberado); concepto: calor y presión de un gas en recinto cerrado; sistema: Mamparos Estancos (S.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-NAV",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S032158",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: calor y movimiento de moléculas en un gas → aire calentado por los equipos dentro de un compartimento estanco"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-NAV-2",
+   "textEn": "A flooded compartment is held back by a watertight bulkhead, with the water standing at a certain height above the discharge valve. Before the valve is opened, what does the energy stored in that water column depend on?",
+   "textEs": "Un compartimento inundado queda retenido por un mamparo estanco, con agua hasta cierta altura sobre la válvula de descarga. Antes de abrirla, ¿de qué depende la energía almacenada en esa columna de agua?",
+   "missionId": "MIS-COB-SCI-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-TRANSVERSAL",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Water wheel: Energy of tank water (Energía en el agua en el tanque)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "The speed at which the water circulates through the compartment.",
+     "es": "De la velocidad con que el agua circula por el compartimento."
+    },
+    "B": {
+     "en": "The height of the water column above the valve.",
+     "es": "De la altura de la columna de agua sobre la válvula."
+    },
+    "C": {
+     "en": "The amount of salt dissolved in the retained water.",
+     "es": "De la cantidad de sal disuelta en el agua retenida."
+    },
+    "D": {
+     "en": "The temperature of the watertight bulkhead plate.",
+     "es": "De la temperatura de la placa del mamparo estanco."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "With the valve shut the water is still, so its energy is gravitational potential and depends on the water's weight and on its height (E = m·g·h). While nothing moves, speed (A) plays no part, and neither salinity (C) nor the bulkhead temperature (D) sets that energy.",
+   "feedbackEs": "Con la válvula cerrada el agua está quieta: su energía es potencial gravitatoria y depende del peso del agua y de la altura a la que se encuentra (E = m·g·h). Mientras no hay movimiento la velocidad (A) no interviene, y ni la salinidad (C) ni la temperatura del mamparo (D) determinan esa energía.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S052165A (liberado); concepto: energía potencial de una columna de agua; sistema: Mamparos Estancos (S.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-NAV",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S052165A",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: energía potencial del agua almacenada en un tanque → agua retenida por un mamparo estanco antes de abrir la válvula"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-NAV-3",
+   "textEn": "A leak discharges 30 kg of water at 4 m/s as it strikes the inner cover of the hatch. How much kinetic energy does the jet carry?",
+   "textEs": "Una fuga descarga 30 kg de agua a 4 m/s mientras golpea la tapa interior de la escotilla. ¿Cuánta energía cinética lleva el chorro?",
+   "missionId": "MIS-COB-SCI-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-TRANSVERSAL",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Water wheel: Energy before wheel (Energía justo antes de golpear la rueda)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "120 J",
+     "es": "120 J"
+    },
+    "B": {
+     "en": "60 J",
+     "es": "60 J"
+    },
+    "C": {
+     "en": "240 J",
+     "es": "240 J"
+    },
+    "D": {
+     "en": "480 J",
+     "es": "480 J"
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Kinetic energy is ½ · m · v² = ½ · 30 kg · (4 m/s)² = 240 J. Option A drops the ½ factor, B divides by 4, and D uses m · v² without the ½.",
+   "feedbackEs": "La energía cinética es ½ · m · v² = ½ · 30 kg · (4 m/s)² = 240 J. La opción A olvida el factor ½, la B divide por 4 y la D usa m · v² sin el ½.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S052165B (liberado); concepto: energía cinética de un chorro a presión; sistema: Escotillas de Rescate (S.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-NAV",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S052165B",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: energía cinética del agua en movimiento → energía cinética de un chorro que golpea la tapa de una escotilla"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-NAV-1",
+   "textEn": "To level the trim, 14 m³ of ballast are split between the bow tank and the stern tank. The bow tank must end up with 4 m³ more than the stern tank. How much ballast does each tank get?",
+   "textEs": "Para nivelar el trimado se reparten 14 m³ de lastre entre el tanque de proa y el de popa. El tanque de proa debe quedar con 4 m³ más que el de popa. ¿Cuánto lastre recibe cada tanque?",
+   "missionId": "MIS-COB-TEC-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "What is the value of x and y (Sistema de ecuaciones x+y=12, 2x+5y=36)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Bow: 5 m³; stern: 9 m³.",
+     "es": "Proa: 5 m³; popa: 9 m³."
+    },
+    "B": {
+     "en": "Bow: 7 m³; stern: 7 m³.",
+     "es": "Proa: 7 m³; popa: 7 m³."
+    },
+    "C": {
+     "en": "Bow: 9 m³; stern: 3 m³.",
+     "es": "Proa: 9 m³; popa: 3 m³."
+    },
+    "D": {
+     "en": "Bow: 9 m³; stern: 5 m³.",
+     "es": "Proa: 9 m³; popa: 5 m³."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "If the stern tank holds x and the bow tank holds x + 4, then 2x + 4 = 14 gives x = 5: stern 5 m³ and bow 9 m³. Option A swaps the tanks, B does not meet the 4 m³ difference, and C does not add up to 14 m³.",
+   "feedbackEs": "Si el tanque de popa lleva x y el de proa x + 4, la suma 2x + 4 = 14 da x = 5: popa 5 m³ y proa 9 m³. La opción A invierte los tanques, la B no cumple la diferencia de 4 m³ y la C no suma los 14 m³.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042235 (liberado); concepto: sistema 2x2 para repartir lastre entre proa y popa; sistema: Tanques de Trimado (5.3.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-NAV",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M042235",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Equations/Formulas and Functions",
+   "referenceRelation": "concepto adaptado: sistema de dos ecuaciones con suma y diferencia → reparto de lastre entre el tanque de proa y el de popa"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-NAV-2",
+   "textEn": "On the dive panel, the ballast of two trim tanks is drawn as two strips 1 unit wide: one 2 units long and one 3 units long. How many square units do their areas add up to?",
+   "textEs": "En el panel de inmersión, el lastre de dos tanques de trimado se dibuja como dos franjas de 1 unidad de ancho: una de 2 unidades de largo y otra de 3. ¿Cuántas unidades cuadradas suman sus áreas?",
+   "missionId": "MIS-COB-TEC-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Which represents 2x plus 3x (Representación visual)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "5 square units",
+     "es": "5 unidades cuadradas"
+    },
+    "B": {
+     "en": "6 square units",
+     "es": "6 unidades cuadradas"
+    },
+    "C": {
+     "en": "2.5 square units",
+     "es": "2,5 unidades cuadradas"
+    },
+    "D": {
+     "en": "1 square unit",
+     "es": "1 unidad cuadrada"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Each strip is 1 unit wide: the 2-unit strip covers 2 square units and the 3-unit strip covers 3, so together they cover 5. Multiplying (B), averaging (C) or subtracting (D) describes other operations and does not represent the total ballast.",
+   "feedbackEs": "Cada franja tiene 1 unidad de ancho: la de largo 2 suma 2 unidades cuadradas y la de largo 3 suma 3; juntas suman 5. Multiplicar (B), promediar (C) o restar (D) responde a otras operaciones y no representa el lastre total.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032419 (liberado); concepto: suma de volúmenes representada por áreas; sistema: Panel de Inmersión (2.4.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-NAV",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032419",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: suma 2x + 3x representada por áreas → suma de volúmenes de dos tanques de trimado de igual sección"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-NAV-3",
+   "textEn": "Five identical ballast tanks each hold 2 m³ of fixed ballast and x m³ of adjustable ballast. Which expression gives the total ballast of the five tanks?",
+   "textEs": "Cinco tanques de lastre iguales llevan 2 m³ de lastre fijo cada uno y x m³ de lastre ajustable cada uno. ¿Qué expresión da el lastre total de los cinco tanques?",
+   "missionId": "MIS-COB-TEC-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Expression equivalent to 4(3+x) (Expresión equivalente)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "2 + 5x",
+     "es": "2 + 5x"
+    },
+    "B": {
+     "en": "10 + 5x",
+     "es": "10 + 5x"
+    },
+    "C": {
+     "en": "10 + x",
+     "es": "10 + x"
+    },
+    "D": {
+     "en": "7 + x",
+     "es": "7 + x"
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Each tank holds 2 + x and there are five tanks: 5 · (2 + x) = 10 + 5x. Adding 2 only once (A), adding x only once (C) or combining 7 without distributing (D) forgets that there are five identical tanks.",
+   "feedbackEs": "Cada tanque aporta 2 + x y son cinco tanques: 5 · (2 + x) = 10 + 5x. Sumar 2 una sola vez (A), sumar x una sola vez (C) o juntar 7 sin distribuir (D) olvida que son cinco tanques iguales.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042077 (liberado); concepto: propiedad distributiva al repartir en tanques iguales; sistema: Tanques de Inundación como tanque de lastre (1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-NAV",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M042077",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: propiedad distributiva 5(2 + x) → lastre total de cinco tanques de lastre iguales"
+  },
+  {
+   "id": "COB-STEM-CU-ING-NAV-1",
+   "textEn": "A rectangular plate of anechoic covering is creased along one diagonal and then laid flat and open on the bench. Seen from directly above, what do you see?",
+   "textEs": "Una placa rectangular de recubrimiento anecoico se dobla por una de sus diagonales y luego se apoya abierta y plana sobre el banco. Vista desde arriba, ¿qué se observa?",
+   "missionId": "MIS-COB-ING-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-POPA",
+   "equipmentId": "",
+   "area": "GEOMETRY (Geometría) · Geometric Shapes",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "View of shape directly from above (Vista superior de la figura doblada)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A rectangle with no marks inside it.",
+     "es": "Un rectángulo sin ninguna marca interior."
+    },
+    "B": {
+     "en": "An isosceles triangle with its base at the top.",
+     "es": "Un triángulo isósceles con la base hacia arriba."
+    },
+    "C": {
+     "en": "A rectangle with one marked diagonal.",
+     "es": "Un rectángulo con una diagonal marcada."
+    },
+    "D": {
+     "en": "A rhombus with both diagonals marked.",
+     "es": "Un rombo con las dos diagonales marcadas."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "The plan view keeps the rectangular outline and shows the crease as one diagonal. Option A erases the mark, B changes the shape and D adds a second diagonal.",
+   "feedbackEs": "La vista en planta conserva el contorno rectangular y muestra el doblez como una diagonal. La opción A borra la marca, la B cambia la forma y la D agrega una segunda diagonal.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M032734 (liberado); concepto: vista en planta de una forma; sistema: Recubrimiento Anecoico (5.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-NAV",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M032734",
+   "timssContentDomain": "GEOMETRY (Geometría) · Geometric Shapes",
+   "referenceRelation": "concepto adaptado: vista desde arriba de una figura doblada → vista en planta de una placa rectangular doblada por una diagonal"
+  },
+  {
+   "id": "COB-STEM-CU-ING-NAV-2",
+   "textEn": "A vessel is steering course 030° when the helm orders a half-turn, that is, a 180° turn. What course does the compass read once the turn is complete?",
+   "textEs": "Una embarcación navega con rumbo 030° y el timonel ordena una media vuelta, es decir, un giro de 180°. ¿Qué rumbo se lee en el compás al terminar la maniobra?",
+   "missionId": "MIS-COB-ING-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-POPA",
+   "equipmentId": "",
+   "area": "GEOMETRY (Geometría) · Location and Movement",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Half-turn around point O (Rotación de 1/2 vuelta)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "060°",
+     "es": "060°"
+    },
+    "B": {
+     "en": "120°",
+     "es": "120°"
+    },
+    "C": {
+     "en": "150°",
+     "es": "150°"
+    },
+    "D": {
+     "en": "210°",
+     "es": "210°"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "A half-turn is 180°, so the course moves half a circle: 030° + 180° = 210°, which means steering the opposite way. Adding 30° (A), 90° (B) or 120° (C) gives smaller turns that do not reverse the course.",
+   "feedbackEs": "Una media vuelta son 180°, así que el rumbo avanza medio círculo: 030° + 180° = 210°, que equivale a navegar en sentido contrario. Sumar 30° (A), 90° (B) o 120° (C) corresponde a giros menores que no invierten el rumbo.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042152 (liberado); concepto: giro de media vuelta: cambio de rumbo; sistema: Timón de Dirección (5.2.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-NAV",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M042152",
+   "timssContentDomain": "GEOMETRY (Geometría) · Location and Movement",
+   "referenceRelation": "concepto adaptado: rotación de media vuelta alrededor de un punto → cambio de rumbo de 180° accionado por el timón"
+  },
+  {
+   "id": "COB-STEM-CU-ING-NAV-3",
+   "textEn": "The vibration report for the low-noise propeller lists four contributions: 4k², 3k, 2k² and 2k, where k is the test-bench scale factor. Which is the simplified expression for the report?",
+   "textEs": "El informe de vibración de la hélice de bajo ruido anota cuatro aportes: 4k², 3k, 2k² y 2k, donde k es el factor de escala del banco de pruebas. ¿Cuál es la expresión simplificada del informe?",
+   "missionId": "MIS-COB-ING-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-POPA",
+   "equipmentId": "",
+   "area": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Simplify the expression (3p^2 + 2p + 2p^2 + p)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "6k² + 5k",
+     "es": "6k² + 5k"
+    },
+    "B": {
+     "en": "6k⁴ + 5k",
+     "es": "6k⁴ + 5k"
+    },
+    "C": {
+     "en": "11k² + 5k",
+     "es": "11k² + 5k"
+    },
+    "D": {
+     "en": "11k³",
+     "es": "11k³"
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Only like terms combine: 4k² + 2k² = 6k² and 3k + 2k = 5k, which gives 6k² + 5k. k² and k are different powers and do not combine: adding their coefficients (C), multiplying the exponents (B) or merging everything into one term (D) changes the record.",
+   "feedbackEs": "Solo se suman los términos semejantes: 4k² + 2k² = 6k² y 3k + 2k = 5k, así que queda 6k² + 5k. k² y k son potencias distintas y no se combinan: sumar sus coeficientes (C), multiplicar los exponentes (B) o fundir todo en un término (D) altera el registro.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042236 (liberado); concepto: no sumar magnitudes de distinta potencia; sistema: Hélice de Bajo Ruido (5.1.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-NAV",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M042236",
+   "timssContentDomain": "ALGEBRA (Álgebra) · Algebraic Expressions",
+   "referenceRelation": "concepto adaptado: simplificar 3p² + 2p + 2p² + p → ordenar aportes de vibración en potencias distintas del factor de escala"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-NAV-1",
+   "textEn": "Nautical chart soundings refer to a fixed datum level, not to the depth measured at a given moment. Why is that datum used?",
+   "textEs": "Las sondas de la carta náutica se refieren a un nivel de referencia fijo y no a la profundidad medida en un instante. ¿Por qué se usa ese nivel de referencia?",
+   "missionId": "MIS-COB-MAT-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Major cause of tides (Causa principal de las mareas)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Because cold currents slowly change the sea floor.",
+     "es": "Porque las corrientes frías modifican poco a poco el fondo marino."
+    },
+    "B": {
+     "en": "Because the water level changes with the tide, so a reference must be fixed.",
+     "es": "Porque el nivel del agua cambia con la marea y hay que fijar una referencia."
+    },
+    "C": {
+     "en": "Because seasonal ice melt changes the depth of the sea floor.",
+     "es": "Porque el deshielo estacional cambia la profundidad del fondo marino."
+    },
+    "D": {
+     "en": "Because air pressure changes the reading of the on-board sounder.",
+     "es": "Porque la presión del aire modifica la lectura de la sonda de a bordo."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Sea level rises and falls with the tide, so soundings refer to a fixed datum and the actual reading is corrected by the time of day. Currents, ice melt and air pressure do not explain that daily cycle.",
+   "feedbackEs": "El nivel del mar sube y baja con la marea; por eso las sondas se refieren a un datum fijo y la lectura real se corrige según la hora. Las corrientes, el deshielo y la presión del aire no explican ese ciclo diario.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032151 (liberado); concepto: mareas y nivel de referencia de la carta; sistema: Plotter de Cartas (2.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-NAV",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S032151",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth in the Solar System and the Universe",
+   "referenceRelation": "concepto adaptado: causa principal de las mareas → nivel de referencia (datum) de las sondas en la carta náutica"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-NAV-2",
+   "textEn": "The chart plotter shows an elongated chain of undersea mountains. What is the most likely explanation?",
+   "textEs": "El plotter de cartas muestra una cadena alargada de montes submarinos. ¿Qué explicación es más probable?",
+   "missionId": "MIS-COB-MAT-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Where active volcanoes are found (Ubicación más probable de volcanes activos)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A cold current deposited sediment in a straight line.",
+     "es": "Que una corriente fría depositó sedimentos en línea recta."
+    },
+    "B": {
+     "en": "The tide builds mountains every day in the same place.",
+     "es": "Que la marea forma montes cada día en el mismo lugar."
+    },
+    "C": {
+     "en": "They formed at an edge where tectonic plates meet.",
+     "es": "Que se formaron en un borde donde se encuentran placas tectónicas."
+    },
+    "D": {
+     "en": "Polar ice melt raised the sea floor in that area.",
+     "es": "Que el deshielo polar levantó el fondo del mar en esa zona."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Undersea mountain chains are linked to plate boundaries, where material from the interior rises and builds volcanic relief. Currents, tides and ice melt do not create that relief.",
+   "feedbackEs": "Las cadenas de montes submarinos se asocian a bordes de placas, donde asciende material del interior y se forma relieve volcánico. Las corrientes, la marea y el deshielo no generan ese relieve.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042141 (liberado); concepto: relieve volcánico del fondo representado en la carta; sistema: Plotter de Cartas (2.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-NAV",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042141",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Processes, Cycles, and History",
+   "referenceRelation": "concepto adaptado: ubicación de volcanes activos → interpretación de un relieve volcánico en el plotter de cartas"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-NAV-3",
+   "textEn": "The echo sounder records five soundings on a single pass: 14 m, 16 m, 18 m, 20 m and 45 m. What is the median of the five readings?",
+   "textEs": "La ecosonda registra cinco sondajes en una misma pasada: 14 m, 16 m, 18 m, 20 m y 45 m. ¿Cuál es la mediana de los cinco registros?",
+   "missionId": "MIS-COB-MAT-NAV",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-CONTROL",
+   "equipmentId": "",
+   "area": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Median number of staff members (Mediana de 5 restaurantes)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "16 m",
+     "es": "16 m"
+    },
+    "B": {
+     "en": "20 m",
+     "es": "20 m"
+    },
+    "C": {
+     "en": "22.6 m",
+     "es": "22,6 m"
+    },
+    "D": {
+     "en": "18 m",
+     "es": "18 m"
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "With the values in order, the median is the middle reading: 18 m. The mean would be 22.6 m (C), but the 45 m reading, probably a false echo, pulls it upwards; 16 m (A) and 20 m (B) are neighbouring values, not the centre, so the median describes the typical depth better.",
+   "feedbackEs": "Con los valores ordenados, la mediana es el dato central: 18 m. La media sería 22,6 m (C), pero el registro de 45 m, probable eco falso, la arrastra hacia arriba; 16 m (A) y 20 m (B) son valores vecinos, no el centro, y por eso la mediana describe mejor la profundidad típica.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Math, ítem M042169B (liberado); concepto: mediana de sondajes para descartar un valor atípico; sistema: Ecosonda (2.2.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-NAV",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "M042169B",
+   "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Data Interpretation",
+   "referenceRelation": "concepto adaptado: mediana de cinco datos → mediana de cinco sondajes para descartar un eco atípico"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-LOG-1",
+   "textEn": "The oxygen generator in the battery and logistics compartment extracts O₂ from water by electrolysis. What does the crew's body use that oxygen for?",
+   "textEs": "El generador de oxígeno del compartimento de baterías y logística obtiene O₂ del agua por electrólisis. ¿Para qué usa el organismo de la tripulación ese oxígeno?",
+   "missionId": "MIS-COB-SCI-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "BIOLOGY (Biología) · Cells and Their Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Purpose of cellular respiration (Propósito de la respiración celular)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "To release energy from the nutrients in food.",
+     "es": "Para obtener energía a partir de los nutrientes de los alimentos."
+    },
+    "B": {
+     "en": "To carry nutrients from the intestine into the blood.",
+     "es": "Para transportar los nutrientes del intestino hacia la sangre."
+    },
+    "C": {
+     "en": "To keep body temperature steady while submerged.",
+     "es": "Para mantener estable la temperatura del cuerpo en inmersión."
+    },
+    "D": {
+     "en": "To turn the body's water into dissolved oxygen.",
+     "es": "Para transformar el agua del cuerpo en oxígeno disuelto."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Oxygen is used in cellular respiration, which releases the energy stored in food nutrients. Carrying nutrients is the blood's job and holding temperature steady belongs to the air conditioning, not to oxygen; and the body does not turn its own water into oxygen — that is what the electrolysis unit does.",
+   "feedbackEs": "El oxígeno se emplea en la respiración celular, que libera la energía guardada en los nutrientes de los alimentos. Transportar nutrientes es tarea de la sangre y mantener la temperatura corresponde a la climatización, no al oxígeno; además, el cuerpo no convierte su propia agua en oxígeno: eso lo hace el equipo de electrólisis.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032611 (liberado); concepto: propósito de la respiración celular; sistema: Generador de Oxígeno (3.2.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-LOG",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S032611",
+   "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+   "referenceRelation": "concepto adaptado: propósito de la respiración celular → para qué usa la tripulación el O₂ que produce el generador"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-LOG-2",
+   "textEn": "Life support refreshes the air and removes the gases the crew produces. When cells use oxygen, which two substances do they produce?",
+   "textEs": "El soporte vital renueva el aire y retira los gases que produce la tripulación. Al usar el oxígeno, ¿qué dos sustancias producen las células?",
+   "missionId": "MIS-COB-SCI-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "BIOLOGY (Biología) · Cells and Their Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Process of respiration (Ecuación que resume la respiración)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Oxygen and leftover water.",
+     "es": "Oxígeno y agua sobrantes."
+    },
+    "B": {
+     "en": "Carbon dioxide and water.",
+     "es": "Dióxido de carbono y agua."
+    },
+    "C": {
+     "en": "Nitrogen and water vapour.",
+     "es": "Nitrógeno y vapor de agua."
+    },
+    "D": {
+     "en": "Mineral salts and water.",
+     "es": "Sales minerales y agua."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "When cells use oxygen, they produce carbon dioxide and water, which life support must remove or refresh. Oxygen is consumed, not produced (A); nitrogen does not take part in the reaction (C), and mineral salts are not the gaseous product of respiration (D).",
+   "feedbackEs": "Al usar el oxígeno, las células producen dióxido de carbono y agua, que el soporte vital debe retirar o renovar. El oxígeno es lo que se consume, no lo que se produce (A); el nitrógeno no participa de la reacción (C) y las sales minerales no son el producto gaseoso de la respiración (D).",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042024 (liberado); concepto: ecuación de la respiración; sistema: Scrubber de CO2 (3.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-LOG",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042024",
+   "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+   "referenceRelation": "concepto adaptado: ecuación de la respiración → productos gaseosos que retira el soporte vital"
+  },
+  {
+   "id": "COB-STEM-CU-SCI-LOG-3",
+   "textEn": "The life-support set in the compartment refreshes the air and removes carbon dioxide. Which vital functions of the crew does this equipment mainly cover?",
+   "textEs": "El conjunto de soporte vital del compartimento renueva el aire y retira el dióxido de carbono. ¿Qué funciones vitales de la tripulación cubre principalmente ese equipamiento?",
+   "missionId": "MIS-COB-SCI-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "BIOLOGY (Biología) · Cells and Their Functions",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Life function of Paramecium (Otra función vital para la supervivencia)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Reproduction and tissue growth.",
+     "es": "La reproducción y el crecimiento de los tejidos."
+    },
+    "B": {
+     "en": "Response to stimuli and body movement.",
+     "es": "La respuesta a estímulos y el movimiento del cuerpo."
+    },
+    "C": {
+     "en": "Gas exchange and waste removal.",
+     "es": "El intercambio de gases y la eliminación de desechos."
+    },
+    "D": {
+     "en": "Digestion of food and water absorption.",
+     "es": "La digestión de los alimentos y la absorción de agua."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Supplying oxygen and removing CO₂ sustains gas exchange and the removal of a metabolic waste, two vital functions. Digestion and water absorption depend on the galley and the drinking water, reproduction and growth are not covered by life support, and movement and response to stimuli belong to the muscular and nervous systems.",
+   "feedbackEs": "Reponer oxígeno y retirar CO₂ sostiene el intercambio de gases y la eliminación de un desecho del metabolismo, dos funciones vitales. La digestión y la absorción de agua dependen de la cocina y del agua potable, la reproducción y el crecimiento no las cubre el soporte vital, y el movimiento y la respuesta a estímulos son funciones de los sistemas muscular y nervioso.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042261 (liberado); concepto: funciones vitales que cubre el soporte vital; sistema: Generador de Oxígeno y Scrubber de CO2 (3.2.1 y 3.2.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-SCI-LOG",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S042261",
+   "timssContentDomain": "BIOLOGY (Biología) · Cells and Their Functions",
+   "referenceRelation": "concepto adaptado: funciones vitales de un organismo → funciones vitales que cubre el soporte vital del compartimento"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-LOG-1",
+   "textEn": "To monitor the air conditioning, a temperature sensor is fitted in the compartment. Which location gives a reading that represents the air the crew breathes?",
+   "textEs": "Para vigilar la climatización se instala un sensor de temperatura en el compartimento. ¿Qué ubicación da una lectura representativa del aire que respira la tripulación?",
+   "missionId": "MIS-COB-TEC-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Position of thermometer (Posición para medir con precisión el calentamiento de agua)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Right at the cold-air outlet of the unit itself.",
+     "es": "Junto a la salida de aire frío del propio equipo."
+    },
+    "B": {
+     "en": "Fixed to the outer hull wall, next to the bulkhead.",
+     "es": "Pegado a la pared exterior del casco, junto al mamparo."
+    },
+    "C": {
+     "en": "Above the gas extraction grille of the room.",
+     "es": "Sobre la rejilla de extracción de gases del local."
+    },
+    "D": {
+     "en": "In the middle of the living space, clear of walls.",
+     "es": "En el centro del espacio habitable, apartado de paredes."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "A sensor gives a representative reading when it sits in the volume where people live and away from surfaces that impose their own temperature. At the outlet it measures the air the unit delivers, on the hull it measures the outside temperature, and at the extraction grille it measures the outgoing stream, not the room.",
+   "feedbackEs": "Un sensor da una lectura representativa cuando está en el volumen donde vive la gente y separado de superficies que imponen su propia temperatura. Junto a la salida mide el aire que entrega el equipo, sobre el casco mide la temperatura exterior y en la rejilla de extracción mide la corriente de salida, no el ambiente.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042238A (liberado); concepto: ubicación del sensor para una medida representativa; sistema: Climatización (3.2.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-LOG",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S042238A",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: ubicación del termómetro para una medida precisa → ubicación del sensor que vigila la climatización"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-LOG-2",
+   "textEn": "The air-conditioning cools the air and the condensed water collects in a tray. What risk does draining that tray regularly prevent?",
+   "textEs": "La climatización enfría el aire y el agua condensada se recoge en una bandeja. ¿Qué riesgo evita drenar esa bandeja con regularidad?",
+   "missionId": "MIS-COB-TEC-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Molecules of liquid when it cools (Qué pasa con las moléculas al enfriarse)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "High humidity and corrosion of the electronics.",
+     "es": "Humedad alta y corrosión de la electrónica."
+    },
+    "B": {
+     "en": "The cooling coil freezing up completely.",
+     "es": "Que el serpentín se congele por completo."
+    },
+    "C": {
+     "en": "The compartment's carbon dioxide rising.",
+     "es": "Que suba el dióxido de carbono del compartimento."
+    },
+    "D": {
+     "en": "The refrigerant circuit pressure dropping.",
+     "es": "Que caiga la presión del circuito refrigerante."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Accumulated condensate raises the compartment's humidity and promotes corrosion of the electronics, so it is drained. Freezing the coil (B), changing CO₂ (C) or the refrigerant pressure (D) do not depend on draining the tray.",
+   "feedbackEs": "El agua condensada acumulada eleva la humedad del compartimento y favorece la corrosión de la electrónica; por eso se drena. Congelar el serpentín (B), modificar el CO₂ (C) o la presión del refrigerante (D) no dependen del drenaje de la bandeja.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042272 (liberado); concepto: al enfriar, el vapor condensa; sistema: Climatización (3.2.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-LOG",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S042272",
+   "timssContentDomain": "PHYSICS (Física) · Energy Transformations, Heat, and Temperature",
+   "referenceRelation": "concepto adaptado: el vapor condensa al enfriarse → gestión del agua condensada en la climatización"
+  },
+  {
+   "id": "COB-STEM-CU-TEC-LOG-3",
+   "textEn": "The compartment pantry stores dry provisions such as flour and pulses. Which combination of temperature and humidity keeps them in the best condition?",
+   "textEs": "En la despensa del compartimento se guardan víveres secos como harina y legumbres. ¿Qué combinación de temperatura y humedad los conserva mejor?",
+   "missionId": "MIS-COB-TEC-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "BIOLOGY (Biología) · Life Cycles, Reproduction, and Heredity",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Conditions for germination-DERIVED (Mencionar dos condiciones)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "Warm and humid, so the packaging does not dry out.",
+     "es": "Cálida y húmeda, para que el envase no se seque."
+    },
+    "B": {
+     "en": "Cool and dry, to slow mould and moisture.",
+     "es": "Fresca y seca, para frenar hongos y humedad."
+    },
+    "C": {
+     "en": "Warm and dry, so the flavours are kept.",
+     "es": "Cálida y seca, para que los aromas se mantengan."
+    },
+    "D": {
+     "en": "Cool and humid, so the grains do not harden.",
+     "es": "Fresca y húmeda, para que los granos no se endurezcan."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Heat and moisture encourage mould growth and water uptake by the grain, so the pantry is kept cool and dry to extend storage life. A warm pantry speeds up spoilage even when it is dry, and high humidity softens or moulds the food no matter how cold the compartment is.",
+   "feedbackEs": "El calor y la humedad favorecen el desarrollo de hongos y la absorción de agua por el grano, así que la despensa se mantiene fresca y seca para alargar la conservación. Una despensa cálida acelera el deterioro aunque sea seca, y la humedad alta ablanda o enmohece el alimento por frío que esté el compartimento.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032530Z (liberado); concepto: condiciones de humedad y temperatura para conservar víveres; sistema: Climatización (3.2.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-TEC-LOG",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S032530Z",
+   "timssContentDomain": "BIOLOGY (Biología) · Life Cycles, Reproduction, and Heredity",
+   "referenceRelation": "concepto invertido: condiciones que activan la germinación → condiciones que la inhiben y conservan los víveres secos"
+  },
+  {
+   "id": "COB-STEM-CU-ING-LOG-1",
+   "textEn": "Water leaving the desalination unit comes out slightly acidic and is corrected before storage. What is added to bring that pH closer to neutral?",
+   "textEs": "El agua que sale de la desalinizadora queda con un pH algo bajo y se corrige antes de almacenarla. ¿Qué se agrega para acercar ese pH al neutro?",
+   "missionId": "MIS-COB-ING-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "CHEMISTRY (Química) · Properties of Matter",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Ammonia solution mixed in vinegar (Proceso de reacción con indicador)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A more concentrated acid, to balance the mixture.",
+     "es": "Un ácido más concentrado, para equilibrar la mezcla."
+    },
+    "B": {
+     "en": "Table salt, to raise the conductivity.",
+     "es": "Sal de mesa, para aumentar la conductividad."
+    },
+    "C": {
+     "en": "A basic substance, to neutralize the acidity.",
+     "es": "Una sustancia básica, para neutralizar la acidez."
+    },
+    "D": {
+     "en": "A carbon filter, to retain the ions.",
+     "es": "Un filtro de carbón, para retener los iones."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "Acidic water is corrected with a base: as the two mix, acid and base react to form salt and water and the pH moves towards neutral. Adding more acid increases the acidity, table salt does not neutralize because it supplies no ions able to take up the excess H⁺, and carbon removes organic compounds but does not change pH.",
+   "feedbackEs": "Un agua ácida se corrige con una base: al mezclarse, el ácido y la base reaccionan y forman sal y agua, y el pH se acerca al neutro. Agregar más ácido aumenta la acidez, la sal no neutraliza porque no aporta iones capaces de consumir el exceso de H⁺, y el carbón retiene compuestos orgánicos pero no corrige el pH.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S042095 (liberado); concepto: neutralización: ajustar el pH del agua tratada; sistema: Desalinizadora (3.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-LOG",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "S042095",
+   "timssContentDomain": "CHEMISTRY (Química) · Properties of Matter",
+   "referenceRelation": "concepto adaptado: reacción ácido-base con indicador → neutralización del pH del agua tratada"
+  },
+  {
+   "id": "COB-STEM-CU-ING-LOG-2",
+   "textEn": "Kitchen waste is compacted before it leaves through the ejector. Which of these residues breaks down fastest in the marine environment?",
+   "textEs": "Los desechos de la cocina se compactan antes de salir por el eyector. ¿Cuál de estos residuos se degrada más rápido en el medio marino?",
+   "missionId": "MIS-COB-ING-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Material that breaks down quickly (Material de desecho que se descompone más rápido)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "A single-use polyethylene bag.",
+     "es": "Una bolsa de polietileno de un solo uso."
+    },
+    "B": {
+     "en": "The metal body of a food can.",
+     "es": "El envase metálico de una lata de conserva."
+    },
+    "C": {
+     "en": "The glass of a preserve jar.",
+     "es": "El vidrio de un frasco de conservas."
+    },
+    "D": {
+     "en": "Fruit peel and vegetable scraps.",
+     "es": "Las cáscaras de fruta y los restos de verdura."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "Vegetable scraps are organic matter and micro-organisms break them down within weeks. Polyethylene takes centuries to fragment, metal corrodes slowly and glass is inert, so none of those three disappears within a single voyage.",
+   "feedbackEs": "Los restos vegetales son materia orgánica y los microorganismos los descomponen en pocas semanas. El polietileno tarda siglos en fragmentarse, el metal se corroe lentamente y el vidrio es inerte, así que ninguno de los tres desaparece en el plazo de una campaña.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032510 (liberado); concepto: qué residuo se degrada más rápido; sistema: Cocina y Eyector de Basura (3.3.1 y 3.3.3)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-LOG",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "S032510",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+   "referenceRelation": "concepto adaptado: qué material de desecho se descompone antes → qué residuo de la cocina se degrada más rápido en el mar"
+  },
+  {
+   "id": "COB-STEM-CU-ING-LOG-3",
+   "textEn": "Stored drinking water is tested before it is consumed. Which property of water explains why it can carry dissolved salts and other substances?",
+   "textEs": "El agua potable almacenada se analiza antes de consumirla. ¿Qué propiedad del agua explica que pueda arrastrar sales y otras sustancias disueltas?",
+   "missionId": "MIS-COB-ING-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "Soil change due to natural causes (Cambio del suelo solo por causas naturales)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "It dissolves many substances and carries them along.",
+     "es": "Disuelve muchas sustancias y las transporta con ella."
+    },
+    "B": {
+     "en": "It floats above oils and separates the mixtures.",
+     "es": "Flota sobre los aceites y separa las mezclas."
+    },
+    "C": {
+     "en": "It boils at a low temperature inside the tank.",
+     "es": "Hierve a baja temperatura dentro del tanque."
+    },
+    "D": {
+     "en": "It compresses easily whenever it gets cold.",
+     "es": "Se comprime con facilidad cuando se enfría."
+    }
+   },
+   "correctOptionId": "A",
+   "feedbackEn": "Water is a very effective solvent: that is why salts stay dissolved and travel with it, and why the desalination unit has to remove them and the water is tested before use. Floating above oil is a density difference that dissolves nothing, water boils at 100 °C at normal pressure and it does not compress noticeably.",
+   "feedbackEs": "El agua es un disolvente muy eficaz: por eso las sales quedan disueltas y viajan con ella, y por eso la desalinizadora debe retirarlas y el agua se controla antes de consumirla. Que flote sobre el aceite es una diferencia de densidad que no disuelve nada, el agua hierve a 100 °C a presión normal y no se comprime de forma apreciable.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032463 (liberado); concepto: el agua disuelve y transporta sustancias; sistema: Desalinizadora (3.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-ING-LOG",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S032463",
+   "timssContentDomain": "EARTH SCIENCE (Ciencias de la Tierra) · Earth’s Resources, Their Use and Conservation",
+   "referenceRelation": "concepto adaptado: el agua como agente que altera y moviliza materiales → el agua que disuelve y arrastra sales en el circuito de agua potable"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-LOG-1",
+   "textEn": "The pantry holds 10 fruit cans: 4 peach and 6 pear. Two are taken at random without putting the first back. What is the probability that both are peach?",
+   "textEs": "En la despensa hay 10 latas de fruta: 4 de durazno y 6 de pera. Se retiran 2 al azar, sin devolver la primera. ¿Cuál es la probabilidad de que las dos sean de durazno?",
+   "missionId": "MIS-COB-MAT-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "DATA AND CHANCE (Datos y Probabilidad) · Chance",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "How likely to get pink candy (Probabilidad sin reemplazo)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "4/10 × 4/10, because each draw is independent.",
+     "es": "4/10 × 4/10, porque cada extracción es independiente."
+    },
+    "B": {
+     "en": "4/10 × 3/9, because the first can is not replaced.",
+     "es": "4/10 × 3/9, porque la primera lata no se repone."
+    },
+    "C": {
+     "en": "4/10 + 3/9, because the favourable cases are added.",
+     "es": "4/10 + 3/9, porque los casos favorables se suman."
+    },
+    "D": {
+     "en": "3/10 × 3/10, because 3 peach cans remain.",
+     "es": "3/10 × 3/10, porque quedan 3 latas de durazno."
+    }
+   },
+   "correctOptionId": "B",
+   "feedbackEn": "Because the first can is not put back, the total drops to 9 and the peach cans to 3, so the joint probability is 4/10 × 3/9 = 2/15. Multiplying 4/10 twice assumes replacement, adding the fractions would give the probability of one case or the other, and 3/10 × 3/10 matches no possible count in the lot.",
+   "feedbackEs": "Al no reponer la primera lata, el total baja a 9 y las de durazno a 3, así que la probabilidad conjunta es 4/10 × 3/9 = 2/15. Multiplicar 4/10 dos veces supone reposición, sumar las fracciones daría la probabilidad de un caso u otro, y 3/10 × 3/10 no corresponde a ningún conteo posible del lote.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Mathematics, ítem M032132 (liberado); concepto: probabilidad sin reposición al muestrear un lote; sistema: Cocina y Desalinizadora (3.3.1 y 3.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-LOG",
+   "variantIndex": 1,
+   "timssCycle": "2011",
+   "timssItemId": "M032132",
+   "timssContentDomain": "DATA AND CHANCE (Datos y Probabilidad) · Chance",
+   "referenceRelation": "concepto adaptado: probabilidad de extraer sin reposición → control de stock de latas en la despensa"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-LOG-2",
+   "textEn": "The galley must split 48 portions into equal trays with none left over. Which of these numbers of trays does NOT allow an exact split?",
+   "textEs": "La cocina debe repartir 48 raciones en bandejas iguales, sin que sobre ninguna. ¿Cuál de estas cantidades de bandejas NO permite un reparto exacto?",
+   "missionId": "MIS-COB-MAT-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "NUMBER (Número) · Whole Numbers",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "36 as a product of prime factors (Factores primos de 36)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "4 trays with 12 portions each.",
+     "es": "4 bandejas con 12 raciones cada una."
+    },
+    "B": {
+     "en": "6 trays with 8 portions each.",
+     "es": "6 bandejas con 8 raciones cada una."
+    },
+    "C": {
+     "en": "9 trays with 5 portions each.",
+     "es": "9 bandejas con 5 raciones cada una."
+    },
+    "D": {
+     "en": "8 trays with 6 portions each.",
+     "es": "8 bandejas con 6 raciones cada una."
+    }
+   },
+   "correctOptionId": "C",
+   "feedbackEn": "48 = 2⁴ × 3, and its divisors include 4, 6 and 8, but not 9. Nine trays of 5 portions cover only 45, leaving 3 over. The other three options divide 48 exactly with no remainder.",
+   "feedbackEs": "48 = 2⁴ × 3, y sus divisores incluyen 4, 6 y 8, pero no 9. Nueve bandejas de 5 raciones cubren solo 45 y sobran 3. Las otras tres cantidades dividen 48 de forma exacta y no dejan resto.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Mathematics, ítem M032626 (liberado); concepto: factores y divisores para agrupar en partes iguales; sistema: Cocina (3.3.1)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-LOG",
+   "variantIndex": 2,
+   "timssCycle": "2011",
+   "timssItemId": "M032626",
+   "timssContentDomain": "NUMBER (Número) · Whole Numbers",
+   "referenceRelation": "concepto adaptado: descomposición en factores primos → divisores que permiten repartir raciones en partes iguales"
+  },
+  {
+   "id": "COB-STEM-CU-MAT-LOG-3",
+   "textEn": "The galley prepares meals with vegetables grown on land. Where does the energy in that food come from?",
+   "textEs": "La cocina prepara las comidas con vegetales cultivados en tierra firme. ¿De dónde proviene la energía que contienen esos alimentos?",
+   "missionId": "MIS-COB-MAT-LOG",
+   "episodeId": "EPI-COB-01",
+   "museumId": "",
+   "compartmentId": "CMP-BATERIAS-LOGISTICA",
+   "equipmentId": "",
+   "area": "BIOLOGY (Biología) · Ecosystems",
+   "timssDomain": "knowing",
+   "gsaCompetency": "",
+   "topic": "True statement about producers (Declaración correcta sobre productores)",
+   "level": "",
+   "options": {
+    "A": {
+     "en": "From the mineral salts the plant takes from the soil.",
+     "es": "De las sales minerales que la planta toma del suelo."
+    },
+    "B": {
+     "en": "From the water the plant absorbs through its roots.",
+     "es": "Del agua que la planta absorbe por la raíz."
+    },
+    "C": {
+     "en": "From the oxygen the leaves take in during the night.",
+     "es": "Del oxígeno que las hojas toman durante la noche."
+    },
+    "D": {
+     "en": "From the sunlight the plant captured as it grew.",
+     "es": "De la luz solar que la planta captó al crecer."
+    }
+   },
+   "correctOptionId": "D",
+   "feedbackEn": "The plant turns light energy into chemical energy through photosynthesis and stores it in its tissues; that is the energy the food provides. Mineral salts and water are raw materials with no usable energy of their own, and oxygen is a product of photosynthesis, not its energy source.",
+   "feedbackEs": "La planta transforma la energía de la luz en energía química mediante la fotosíntesis y la guarda en sus tejidos; esa es la energía que aporta el alimento. Las sales y el agua son materia prima sin energía aprovechable por sí misma, y el oxígeno es un producto de la fotosíntesis, no su fuente de energía.",
+   "civilEn": "",
+   "civilEs": "",
+   "source": "TIMSS 2011 G8 Science, ítem S032645 (liberado); concepto: la energía de los alimentos proviene del sol; sistema: Cocina y Desalinizadora (3.3.1 y 3.3.2)",
+   "status": "published",
+   "notes": "Banco Cobre v1.0 · revisión pendiente (betatesters)",
+   "cellCode": "CU-MAT-LOG",
+   "variantIndex": 3,
+   "timssCycle": "2011",
+   "timssItemId": "S032645",
+   "timssContentDomain": "BIOLOGY (Biología) · Ecosystems",
+   "referenceRelation": "concepto adaptado: los productores captan energía luminosa → origen solar de la energía de los víveres que se cocinan"
+  }
+ ],
+ "awards": [
+  {
+   "badgeId": "BDG-COB-SCI-MAQ",
+   "nameEn": "Ribbon Science · Machinist",
+   "nameEs": "Cinta Ciencia · Maquinista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-SCI-MAQ",
+   "criteriaEn": "Complete the CU-SCI-MAQ cell.",
+   "criteriaEs": "Completar la celda CU-SCI-MAQ.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#199FC6",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-SCI-MAQ.png"
+  },
+  {
+   "badgeId": "BDG-COB-TEC-MAQ",
+   "nameEn": "Ribbon Technology · Machinist",
+   "nameEs": "Cinta Tecnología · Maquinista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-TEC-MAQ",
+   "criteriaEn": "Complete the CU-TEC-MAQ cell.",
+   "criteriaEs": "Completar la celda CU-TEC-MAQ.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#309833",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-TEC-MAQ.png"
+  },
+  {
+   "badgeId": "BDG-COB-ING-MAQ",
+   "nameEn": "Ribbon Engineering · Machinist",
+   "nameEs": "Cinta Ingeniería · Maquinista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-ING-MAQ",
+   "criteriaEn": "Complete the CU-ING-MAQ cell.",
+   "criteriaEs": "Completar la celda CU-ING-MAQ.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#DA5291",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-ING-MAQ.png"
+  },
+  {
+   "badgeId": "BDG-COB-MAT-MAQ",
+   "nameEn": "Ribbon Mathematics · Machinist",
+   "nameEs": "Cinta Matemática · Maquinista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-MAT-MAQ",
+   "criteriaEn": "Complete the CU-MAT-MAQ cell.",
+   "criteriaEs": "Completar la celda CU-MAT-MAQ.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#D9B717",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-MAT-MAQ.png"
+  },
+  {
+   "badgeId": "BDG-COB-SCI-ELE",
+   "nameEn": "Ribbon Science · Electrician",
+   "nameEs": "Cinta Ciencia · Electricista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-SCI-ELE",
+   "criteriaEn": "Complete the CU-SCI-ELE cell.",
+   "criteriaEs": "Completar la celda CU-SCI-ELE.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#199FC6",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-SCI-ELE.png"
+  },
+  {
+   "badgeId": "BDG-COB-TEC-ELE",
+   "nameEn": "Ribbon Technology · Electrician",
+   "nameEs": "Cinta Tecnología · Electricista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-TEC-ELE",
+   "criteriaEn": "Complete the CU-TEC-ELE cell.",
+   "criteriaEs": "Completar la celda CU-TEC-ELE.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#309833",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-TEC-ELE.png"
+  },
+  {
+   "badgeId": "BDG-COB-ING-ELE",
+   "nameEn": "Ribbon Engineering · Electrician",
+   "nameEs": "Cinta Ingeniería · Electricista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-ING-ELE",
+   "criteriaEn": "Complete the CU-ING-ELE cell.",
+   "criteriaEs": "Completar la celda CU-ING-ELE.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#DA5291",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-ING-ELE.png"
+  },
+  {
+   "badgeId": "BDG-COB-MAT-ELE",
+   "nameEn": "Ribbon Mathematics · Electrician",
+   "nameEs": "Cinta Matemática · Electricista",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-MAT-ELE",
+   "criteriaEn": "Complete the CU-MAT-ELE cell.",
+   "criteriaEs": "Completar la celda CU-MAT-ELE.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#D9B717",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-MAT-ELE.png"
+  },
+  {
+   "badgeId": "BDG-COB-SCI-ELN",
+   "nameEn": "Ribbon Science · Electronics",
+   "nameEs": "Cinta Ciencia · Electrónico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-SCI-ELN",
+   "criteriaEn": "Complete the CU-SCI-ELN cell.",
+   "criteriaEs": "Completar la celda CU-SCI-ELN.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#199FC6",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-SCI-ELN.png"
+  },
+  {
+   "badgeId": "BDG-COB-TEC-ELN",
+   "nameEn": "Ribbon Technology · Electronics",
+   "nameEs": "Cinta Tecnología · Electrónico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-TEC-ELN",
+   "criteriaEn": "Complete the CU-TEC-ELN cell.",
+   "criteriaEs": "Completar la celda CU-TEC-ELN.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#309833",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-TEC-ELN.png"
+  },
+  {
+   "badgeId": "BDG-COB-ING-ELN",
+   "nameEn": "Ribbon Engineering · Electronics",
+   "nameEs": "Cinta Ingeniería · Electrónico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-ING-ELN",
+   "criteriaEn": "Complete the CU-ING-ELN cell.",
+   "criteriaEs": "Completar la celda CU-ING-ELN.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#DA5291",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-ING-ELN.png"
+  },
+  {
+   "badgeId": "BDG-COB-MAT-ELN",
+   "nameEn": "Ribbon Mathematics · Electronics",
+   "nameEs": "Cinta Matemática · Electrónico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-MAT-ELN",
+   "criteriaEn": "Complete the CU-MAT-ELN cell.",
+   "criteriaEs": "Completar la celda CU-MAT-ELN.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#D9B717",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-MAT-ELN.png"
+  },
+  {
+   "badgeId": "BDG-COB-SCI-NAV",
+   "nameEn": "Ribbon Science · Naval Engineer",
+   "nameEs": "Cinta Ciencia · Ingeniero Naval",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-SCI-NAV",
+   "criteriaEn": "Complete the CU-SCI-NAV cell.",
+   "criteriaEs": "Completar la celda CU-SCI-NAV.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#199FC6",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-SCI-NAV.png"
+  },
+  {
+   "badgeId": "BDG-COB-TEC-NAV",
+   "nameEn": "Ribbon Technology · Naval Engineer",
+   "nameEs": "Cinta Tecnología · Ingeniero Naval",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-TEC-NAV",
+   "criteriaEn": "Complete the CU-TEC-NAV cell.",
+   "criteriaEs": "Completar la celda CU-TEC-NAV.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#309833",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-TEC-NAV.png"
+  },
+  {
+   "badgeId": "BDG-COB-ING-NAV",
+   "nameEn": "Ribbon Engineering · Naval Engineer",
+   "nameEs": "Cinta Ingeniería · Ingeniero Naval",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-ING-NAV",
+   "criteriaEn": "Complete the CU-ING-NAV cell.",
+   "criteriaEs": "Completar la celda CU-ING-NAV.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#DA5291",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-ING-NAV.png"
+  },
+  {
+   "badgeId": "BDG-COB-MAT-NAV",
+   "nameEn": "Ribbon Mathematics · Naval Engineer",
+   "nameEs": "Cinta Matemática · Ingeniero Naval",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-MAT-NAV",
+   "criteriaEn": "Complete the CU-MAT-NAV cell.",
+   "criteriaEs": "Completar la celda CU-MAT-NAV.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#D9B717",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-MAT-NAV.png"
+  },
+  {
+   "badgeId": "BDG-COB-SCI-LOG",
+   "nameEn": "Ribbon Science · Logistics",
+   "nameEs": "Cinta Ciencia · Logístico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-SCI-LOG",
+   "criteriaEn": "Complete the CU-SCI-LOG cell.",
+   "criteriaEs": "Completar la celda CU-SCI-LOG.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#199FC6",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-SCI-LOG.png"
+  },
+  {
+   "badgeId": "BDG-COB-TEC-LOG",
+   "nameEn": "Ribbon Technology · Logistics",
+   "nameEs": "Cinta Tecnología · Logístico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-TEC-LOG",
+   "criteriaEn": "Complete the CU-TEC-LOG cell.",
+   "criteriaEs": "Completar la celda CU-TEC-LOG.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#309833",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-TEC-LOG.png"
+  },
+  {
+   "badgeId": "BDG-COB-ING-LOG",
+   "nameEn": "Ribbon Engineering · Logistics",
+   "nameEs": "Cinta Ingeniería · Logístico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-ING-LOG",
+   "criteriaEn": "Complete the CU-ING-LOG cell.",
+   "criteriaEs": "Completar la celda CU-ING-LOG.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#DA5291",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-ING-LOG.png"
+  },
+  {
+   "badgeId": "BDG-COB-MAT-LOG",
+   "nameEn": "Ribbon Mathematics · Logistics",
+   "nameEs": "Cinta Matemática · Logístico",
+   "type": "ribbon",
+   "seasonId": "SEA-COPPER",
+   "missionId": "MIS-COB-MAT-LOG",
+   "criteriaEn": "Complete the CU-MAT-LOG cell.",
+   "criteriaEs": "Completar la celda CU-MAT-LOG.",
+   "ruleType": "mission",
+   "ruleCount": 1,
+   "color": "#D9B717",
+   "status": "published",
+   "icon": "/images/badges/cobre/ribbons/ribbon-MAT-LOG.png"
+  }
+ ],
  "institutions": [],
  "roles": [],
  "disciplines": [],

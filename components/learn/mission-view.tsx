@@ -7,6 +7,7 @@ import { useApp } from '@/components/app/data-provider';
 import { QuestionEngine, type QuestionOutcome } from '@/components/learn/question-engine';
 import { useProgress } from '@/components/learn/progress-provider';
 import { completedMissionIds, evaluateAwards } from '@/lib/badges/rules';
+import { pickVariant } from '@/lib/learning/variant';
 import {
   localize,
   type Badge,
@@ -82,10 +83,12 @@ export function MissionView() {
         return;
       }
 
-      const question =
-        questions.items.find((item) => item.missionId === mission.id && item.status === 'published') ??
-        questions.items.find((item) => item.missionId === mission.id) ??
-        null;
+      const ownedQuestions = questions.items.filter((item) => item.missionId === mission.id);
+      const publishedQuestions = ownedQuestions.filter((item) => item.status === 'published');
+      const variants = [...(publishedQuestions.length ? publishedQuestions : ownedQuestions)].sort(
+        (a, b) => (a.variantIndex ?? 0) - (b.variantIndex ?? 0),
+      );
+      const question = pickVariant(variants, mission.cellIndex ?? 0);
 
       const badge = badges.items.find((item) => item.missionId === mission.id && item.status === 'published') ?? null;
 

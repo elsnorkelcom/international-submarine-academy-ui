@@ -1,11 +1,15 @@
+import Link from 'next/link';
+
 import palette from '@/lib/data/datasets/palette.json';
 import grid from '@/lib/data/datasets/cobre-grid.json';
 import type { AppStrings } from '@/lib/i18n/app';
-import type { LanguageCode } from '@/lib/domain/types';
+import type { LanguageCode, Mission } from '@/lib/domain/types';
 
 interface CopperGridProps {
   language: LanguageCode;
   t: AppStrings['learn']['series'];
+  missions: Mission[];
+  completedMissionIds: Set<string>;
 }
 
 const DISC_ORDER = ['SCI', 'TEC', 'ING', 'MAT'] as const;
@@ -14,7 +18,7 @@ const SPEC_ORDER = ['MAQ', 'ELE', 'ELN', 'NAV', 'LOG'] as const;
 type GridCell = (typeof grid.cells)[number];
 
 /** Grilla de Cobre: 5 especialidades × 4 dimensiones STEM, 3 variantes por celda. */
-export function CopperGrid({ language, t }: CopperGridProps) {
+export function CopperGrid({ language, t, missions, completedMissionIds }: CopperGridProps) {
   const colors = (palette as { seasons: Record<string, { disciplines: Record<string, string> }> })
     .seasons.COPPER.disciplines;
 
@@ -22,6 +26,13 @@ export function CopperGrid({ language, t }: CopperGridProps) {
   const byCell = new Map<string, GridCell>();
   for (const cell of cells) {
     byCell.set(`${cell.specialtyId}-${cell.disciplineId}`, cell);
+  }
+
+  const missionByCell = new Map<string, Mission>();
+  for (const mission of missions) {
+    if (mission.cellCode) {
+      missionByCell.set(mission.cellCode, mission);
+    }
   }
 
   const disciplineName = (code: string) => {
@@ -94,20 +105,14 @@ export function CopperGrid({ language, t }: CopperGridProps) {
 
                 const color = colors[discipline];
                 const codes = cell.variants.map((variant) => variant.contentCode).join(' · ');
+                const mission = missionByCell.get(cell.cellCode);
+                const done = mission ? completedMissionIds.has(mission.id) : false;
 
-                return (
-                  <div
-                    key={cell.cellCode}
-                    className="rounded-md border border-white/10 bg-card/40 p-2.5"
-                    style={{ borderTopColor: color, borderTopWidth: 3 }}
-                    aria-label={`${specialtyName(specialty)} · ${disciplineName(discipline)}: ${t.gridVariants}`}
-                  >
+                const body = (
+                  <>
                     <div className="flex items-center justify-between gap-2">
-                      <span
-                        className="font-mono text-[9px] uppercase tracking-[0.16em]"
-                        style={{ color }}
-                      >
-                        {t.gridVariants}
+                      <span className="font-mono text-[9px] uppercase tracking-[0.16em]" style={{ color }}>
+                        {done ? t.completed : t.gridVariants}
                       </span>
                       <span aria-hidden="true" className="flex items-center gap-1">
                         {cell.variants.map((variant) => (
@@ -123,7 +128,28 @@ export function CopperGrid({ language, t }: CopperGridProps) {
                       {codes}
                     </p>
                     <p className="mt-2 font-mono text-[9px] text-white/25">{cell.cellCode}</p>
-                  </div>
+                  </>
+                );
+
+                const shared = {
+                  key: cell.cellCode,
+                  className: `block rounded-md border border-white/10 bg-card/40 p-2.5 transition ${
+                    mission ? 'hover:border-white/25 hover:bg-white/[0.04]' : ''
+                  } ${done ? 'ring-1 ring-primary/40' : ''}`,
+                  style: { borderTopColor: color, borderTopWidth: 3 },
+                  'aria-label': `${specialtyName(specialty)} · ${disciplineName(discipline)}: ${t.gridVariants}`,
+                };
+
+                return mission ? (
+                  <Link
+                    {...shared}
+                    href={`/episodes?id=${encodeURIComponent(mission.id)}`}
+                    title={mission.title ? mission.title[language] : undefined}
+                  >
+                    {body}
+                  </Link>
+                ) : (
+                  <div {...shared}>{body}</div>
                 );
               })}
             </div>

@@ -159,7 +159,12 @@ export function SeriesView() {
           t={t.learn.series}
         />
 
-        <CopperGrid language={language} t={t.learn.series} />
+        <CopperGrid
+          language={language}
+          t={t.learn.series}
+          missions={data.missions}
+          completedMissionIds={completedMissionIds}
+        />
 
         <div className="mt-8 border border-white/10 bg-white/[0.02] p-6">
           <p className="text-sm text-foreground">{t.learn.series.empty}</p>
@@ -182,10 +187,18 @@ export function SeriesView() {
         t={t.learn.series}
       />
 
-      <CopperGrid language={language} t={t.learn.series} />
+      <CopperGrid
+        language={language}
+        t={t.learn.series}
+        missions={data.missions}
+        completedMissionIds={completedMissionIds}
+      />
 
       <div className="mt-8 space-y-10">
-        {grouped.map(({ season, missions }, seasonIndex) => {
+        {/* Cobre se navega desde la grilla; el listado queda para las demás temporadas. */}
+        {grouped
+          .filter(({ season }) => season.id !== 'SEA-COPPER')
+          .map(({ season, missions }, seasonIndex) => {
           const completed = completedBySeason.get(season.id) ?? 0;
           const unlocked = unlockedSeasonIds.has(season.id);
 
