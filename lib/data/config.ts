@@ -19,6 +19,7 @@ export interface EpisodeConfigEntry {
   compartmentId: string;
   equipmentId: string;
   mediaUrl: string;
+  posterUrl?: string;
   durationSeconds: number | null;
   descriptionEn: string;
   descriptionEs: string;
@@ -417,6 +418,7 @@ async function applyEpisodes(database: LocalDatabase): Promise<SectionResult> {
       compartmentId: entry.compartmentId,
       equipmentId: entry.equipmentId,
       mediaUrl: entry.mediaUrl,
+      ...(entry.posterUrl ? { posterUrl: entry.posterUrl } : {}),
       durationSeconds: entry.durationSeconds,
       description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
       narrative: { en: entry.narrativeEn, es: entry.narrativeEs || entry.narrativeEn },

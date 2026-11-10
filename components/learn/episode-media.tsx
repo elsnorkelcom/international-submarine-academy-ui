@@ -29,7 +29,7 @@ function youtubeEmbed(url: string): string | null {
 /** Card de miniatura del video del episodio. Si no hay media, muestra el estado de producción. */
 export function EpisodeMedia({ episode, mission, language, t }: EpisodeMediaProps) {
   const mediaUrl = episode?.mediaUrl?.trim() ?? '';
-  const poster = posterFor(mission);
+  const poster = episode?.posterUrl?.trim() || posterFor(mission);
   const youtube = mediaUrl ? youtubeEmbed(mediaUrl) : null;
   const title = episode ? localize(episode.title, language) : localize(mission.title, language);
 

@@ -199,6 +199,8 @@ export interface Episode extends EntityBase {
   compartmentId: string;
   equipmentId: string;
   mediaUrl: string;
+  /** Miniatura 16:9 provista por el equipo de arte; si falta se usa el poster por disciplina. */
+  posterUrl?: string;
   durationSeconds: number | null;
   description: LocalizedText;
   narrative: LocalizedText;
