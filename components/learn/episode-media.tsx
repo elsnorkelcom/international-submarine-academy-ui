@@ -7,6 +7,7 @@ interface EpisodeMediaProps {
   mission: Mission;
   language: LanguageCode;
   t: AppStrings['learn']['episode'];
+  children?: React.ReactNode;
 }
 
 const POSTERS: Record<string, string> = {
@@ -22,12 +23,13 @@ function posterFor(mission: Mission): string {
 }
 
 function youtubeEmbed(url: string): string | null {
-  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]{6,})/);
+  // Supports watch?v=, youtu.be/, embed/ and shorts/
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{6,})/);
   return match ? `https://www.youtube-nocookie.com/embed/${match[1]}` : null;
 }
 
 /** Card de miniatura del video del episodio. Si no hay media, muestra el estado de producción. */
-export function EpisodeMedia({ episode, mission, language, t }: EpisodeMediaProps) {
+export function EpisodeMedia({ episode, mission, language, t, children }: EpisodeMediaProps) {
   const mediaUrl = episode?.mediaUrl?.trim() ?? '';
   const poster = episode?.posterUrl?.trim() || posterFor(mission);
   const youtube = mediaUrl ? youtubeEmbed(mediaUrl) : null;
@@ -35,17 +37,17 @@ export function EpisodeMedia({ episode, mission, language, t }: EpisodeMediaProp
 
   return (
     <figure className="mt-6">
-      <div className="relative aspect-video w-full overflow-hidden border border-white/10 bg-black/40">
+      <div className="relative w-full overflow-hidden border border-white/10 bg-black/40" style={{ aspectRatio: '9/16' }}>
         {youtube ? (
           <iframe
             src={youtube}
             title={title}
-            className="absolute inset-0 size-full"
+            className="absolute inset-0 w-full h-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         ) : mediaUrl ? (
-          <video controls playsInline poster={poster} className="absolute inset-0 size-full object-cover">
+          <video controls playsInline poster={poster} className="absolute inset-0 w-full h-full object-cover">
             <source src={mediaUrl} />
           </video>
         ) : (
@@ -54,7 +56,7 @@ export function EpisodeMedia({ episode, mission, language, t }: EpisodeMediaProp
               src={poster}
               alt=""
               loading="lazy"
-              className="absolute inset-0 size-full object-cover opacity-60 grayscale"
+              className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
@@ -75,6 +77,13 @@ export function EpisodeMedia({ episode, mission, language, t }: EpisodeMediaProp
             </span>
           </>
         )}
+
+        {/* Overlay slot for HUD (ribbon, brief question) */}
+        {children ? (
+          <div className="absolute left-0 top-0 z-20 flex w-full justify-between p-3 pointer-events-none">
+            <div className="pointer-events-auto">{children}</div>
+          </div>
+        ) : null}
       </div>
       <figcaption className="mt-2 flex flex-wrap items-baseline justify-between gap-2">
         <span className="text-xs text-muted-foreground">

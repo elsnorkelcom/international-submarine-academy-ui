@@ -104,8 +104,7 @@ export function SeriesView() {
     return set;
   }, [progress.missions]);
 
-  // Una temporada abre cuando la anterior (con misiones publicadas) tiene al menos una misión
-  // completada. Las temporadas sin misiones publicadas heredan el estado del tramo anterior.
+  // Una temporada abre cuando la anterior (con misiones publicadas) está completa (todas las misiones completadas).
   const unlockedSeasonIds = useMemo(() => {
     const set = new Set<string>();
 
@@ -113,22 +112,32 @@ export function SeriesView() {
       return set;
     }
 
-    let previousSeasonId: string | null = null;
-    let previousDone = 0;
+    // Guarantee first published season is open
+    let first = true;
 
-    for (const season of data.seasons) {
+    for (let i = 0; i < data.seasons.length; i++) {
+      const season = data.seasons[i];
       const own = data.missions.filter((mission) => mission.seasonId === season.id);
-      // En la beta, Acero y Cobre quedan abiertas a la vez.
-      const alwaysOpen = season.id === 'SEA-STEEL' || season.id === 'SEA-COPPER';
-      const unlocked = alwaysOpen || previousSeasonId === null || previousDone > 0;
 
-      if (unlocked) {
+      if (first) {
         set.add(season.id);
+        first = false;
+        continue;
       }
 
-      if (own.length > 0) {
-        previousSeasonId = season.id;
-        previousDone = own.filter((mission) => completedMissionIds.has(mission.id)).length;
+      // look at previous season
+      const prev = data.seasons[i - 1];
+      const prevMissions = data.missions.filter((m) => m.seasonId === prev.id);
+
+      if (prevMissions.length === 0) {
+        // if previous has no missions, inherit unlocked
+        set.add(season.id);
+        continue;
+      }
+
+      const prevDone = prevMissions.filter((m) => completedMissionIds.has(m.id)).length;
+      if (prevDone === prevMissions.length) {
+        set.add(season.id);
       }
     }
 
