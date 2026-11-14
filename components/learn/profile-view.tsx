@@ -93,8 +93,7 @@ export function ProfileView() {
         </h1>
       </header>
 
-      <dl className="mt-7 grid gap-3 sm:grid-cols-4">
-        <Metric label={t.learn.profile.points} value={progress.points} />
+      <dl className="mt-7 grid gap-3 sm:grid-cols-3">
         <Metric label={t.learn.profile.streak} value={progress.streak} />
         <Metric label={t.learn.profile.bestStreak} value={progress.bestStreak} />
         <Metric label={t.learn.profile.missions} value={completed} />

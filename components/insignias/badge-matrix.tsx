@@ -8,22 +8,27 @@ import { useProgress } from '@/components/learn/progress-provider'
 import { formatMessage, getMessages } from '@/lib/i18n'
 import type { Locale } from '@/lib/i18n/config'
 import { localize, type Badge, type LanguageCode } from '@/lib/domain/types'
-
+import { BadgePopup } from '@/components/insignias/badge-popup'
 /** Galería real de reconocimientos de Cobre, leída de la base local. */
 export function BadgeMatrix({ locale }: { locale: Locale }) {
   const messages = getMessages(locale).series.badges
   const { database, ready } = useApp()
   const { progress } = useProgress()
   const [badges, setBadges] = useState<Badge[]>([])
+  const [seasons, setSeasons] = useState<{ id: string; title: any; colorTheme?: string }[]>([])
 
   useEffect(() => {
     let cancelled = false
 
     async function load() {
       if (!database) return
-      const result = await database.repository('badges').list({ pageSize: 0 })
+      const [result, seasonsRes] = await Promise.all([
+        database.repository('badges').list({ pageSize: 0 }),
+        database.repository('seasons').list({ pageSize: 0 }),
+      ])
       if (cancelled) return
       setBadges(result.items.filter((item) => item.status === 'published'))
+      setSeasons(seasonsRes.items.filter((s) => s.status === 'published'))
     }
 
     void load()
@@ -34,6 +39,7 @@ export function BadgeMatrix({ locale }: { locale: Locale }) {
 
   const language = locale as LanguageCode
   const earned = useMemo(() => new Set(progress.badges), [progress.badges])
+  const [selected, setSelected] = useState<Badge | null>(null)
 
   const stem = useMemo(
     () =>
@@ -88,51 +94,36 @@ export function BadgeMatrix({ locale }: { locale: Locale }) {
 
       <p className="mb-6 max-w-2xl text-xs leading-relaxed text-muted-foreground">{messages.pendingNotice}</p>
 
-      {[{ title: messages.stemTitle, items: stem }, { title: messages.fhTitle, items: human }].map((group) =>
-        group.items.length > 0 ? (
-          <div key={group.title} className="mb-8">
+      {/* Group badges by season and show only ribbon image + tooltip; click opens popup */}
+      {seasons.length > 0 && (() => {
+        const bySeason = seasons.map((s) => ({ season: s, items: badges.filter((b) => b.seasonId === s.id) }));
+        return bySeason.map(({ season, items }) =>
+          items.length > 0 ? (
+          <div key={season.id} className="mb-8">
             <div className="mb-3 flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
-              <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-foreground">{group.title}</h3>
+              <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-foreground">{localize(season.title, language)}</h3>
               <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                {group.items.filter((badge) => earned.has(badge.id)).length}/{group.items.length}
+                {items.filter((badge) => earned.has(badge.id)).length}/{items.length}
               </span>
             </div>
-            <ul aria-label={group.title} className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-              {group.items.map((badge) => {
-                const isEarned = earned.has(badge.id)
-                return (
-                  <li key={badge.id}>
-                    <article
-                      className={`flex h-full flex-col rounded-md border bg-card/40 p-3 transition-colors ${
-                        isEarned ? 'border-primary/40' : 'border-white/10 opacity-70 hover:opacity-100'
-                      }`}
-                      style={{ borderTopColor: badge.color, borderTopWidth: '2px' }}
-                      aria-label={`${localize(badge.name, language)}: ${isEarned ? messages.earnedLabel : messages.lockedLabel}`}
-                    >
-                      <div className="flex items-start justify-between gap-3">
-                        {badge.icon.startsWith('/') ? (
-                          <img src={badge.icon} alt="" className="size-12 object-contain" loading="lazy" />
-                        ) : null}
-                        <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-muted-foreground">
-                          {isEarned ? messages.earnedLabel : messages.lockedLabel}
-                        </span>
-                      </div>
 
-                      <h4 className="mt-3 font-display text-sm font-bold uppercase leading-tight tracking-wide text-foreground">
-                        {localize(badge.name, language)}
-                      </h4>
-                      <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                        {localize(badge.criteria, language)}
-                      </p>
-                      <code className="mt-auto pt-3 font-mono text-[9px] tracking-widest text-white/25">{badge.id}</code>
-                    </article>
+            <ul aria-label={localize(season.title, language)} className="grid grid-cols-6 gap-3">
+              {items.map((badge) => {
+                const isEarned = earned.has(badge.id);
+                return (
+                  <li key={badge.id} className="flex items-center justify-center">
+                    <button title={localize(badge.name, language)} onClick={() => setSelected(badge)} className={`rounded p-1 ${isEarned ? '' : 'opacity-60'}`}>
+                      <img src={badge.icon} alt={localize(badge.name, language)} className="size-12 object-contain" />
+                    </button>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
         ) : null,
-      )}
+        )
+      })()}
+      {selected ? <BadgePopup badge={selected} language={language} /> : null}
     </section>
   )
 }

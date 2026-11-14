@@ -234,7 +234,31 @@ export function MissionView() {
         </p>
       </header>
 
-      <EpisodeMedia episode={bundle.episode} mission={mission} language={language} t={t.learn.episode} />
+      <EpisodeMedia episode={bundle.episode} mission={mission} language={language} t={t.learn.episode}>
+        {/* HUD overlay: ribbon + brief question preview when in question or reward stage */}
+        {(stage === 'question' || stage === 'reward') && (
+          <div className="flex items-center gap-3 pointer-events-auto">
+            {badge && badge.icon && badge.icon.startsWith('/') ? (
+              <img src={badge.icon} alt="" className="size-12 object-contain rounded-md shadow-md" />
+            ) : null}
+            {activeQuestion ? (
+              <div className="max-w-[60vw] sm:max-w-md bg-black/60 px-3 py-2 rounded text-xs text-white">
+                {localize(activeQuestion.text, language).slice(0, 120)}{localize(activeQuestion.text, language).length > 120 ? '…' : ''}
+                <button
+                  type="button"
+                  onClick={() => {
+                    const el = document.getElementById('question-block');
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}
+                  className="ml-3 inline-block rounded border border-white/20 px-2 py-0.5 text-[10px] uppercase"
+                >
+                  {t.learn.episode.question}
+                </button>
+              </div>
+            ) : null}
+          </div>
+        )}
+      </EpisodeMedia>
 
       <dl className="mt-6 grid gap-3 border-y border-white/10 py-4 sm:grid-cols-3">
         <Meta label={t.learn.episode.museum} value={museum ? localize(museum.name, language) : ''} />
@@ -283,7 +307,7 @@ export function MissionView() {
       ) : null}
 
       {stage === 'question' && activeQuestion ? (
-        <div className="mt-8 border-t border-white/10 pt-6">
+        <div id="question-block" className="mt-8 border-t border-white/10 pt-6">
           <QuestionEngine
             key={engineKey}
             question={activeQuestion}
