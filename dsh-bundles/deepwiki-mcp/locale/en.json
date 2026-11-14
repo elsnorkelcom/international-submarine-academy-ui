@@ -1,0 +1,6 @@
+﻿{
+  "meta": {
+    "title": "DeepWiki MCP connection",
+    "description": "Connects the hosted DeepWiki MCP server so its repository documentation tools are available to the agent."
+  }
+}

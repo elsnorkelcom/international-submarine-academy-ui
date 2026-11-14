@@ -1,0 +1,197 @@
+# Arquitectura Naval y Diseño de Guiones Inmersivos para la Visita Virtual a un Submarino Diésel-Eléctrico
+
+El desarrollo de una experiencia de realidad virtual o recorrido interactivo en tres dimensiones a través de un submarino requiere una integración rigurosa entre la precisión histórica de la ingeniería naval y el diseño de experiencia de usuario. El análisis de embarcaciones representativas de la era diésel-eléctrica del siglo XX —tales como la clase *Balao* (ejemplificada por el USS *Bowfin* y el USS *Tusk*), la clase *Gato* (como el USS *Pampanito*) y los submarinos de posguerra como el *Enrico Toti*— revela una distribución compartimentada altamente funcional [cite: 1, 2, 3, 4].
+
+En estas naves, el volumen habitable se encuentra estrictamente delimitado por la envolvente del casco de presión, lo que obligaba a una coexistencia constante entre los sistemas de propulsión, el armamento táctico y la vida operativa de la tripulación [cite: 3]. El presente informe articula la estructura espacial, los parámetros de interfaz y la narrativa necesaria para ejecutar una visita virtual inmersiva, detallando las características de cada compartimento y proporcionando el guion descriptivo correspondiente a cada estación del recorrido.
+
+## 1\. Fundamentos Estructurales y Espaciales del Submarino Histórico
+
+El casco de presión constituye la columna vertebral del diseño submarino, dividiendo el espacio interno en compartimentos estancos mediante mamparos transversales diseñados para resistir elevadas presiones hidrostáticas en caso de vía de agua [cite: 3]. La evolución de la metalurgia en naves como las de la clase *Balao*, donde se introdujo acero de mayor límite elástico en la envolvente del casco y las cuadernas, permitió incrementar la profundidad de prueba operativa hasta los 120 metros (400 pies), influyendo directamente en el grosor de las estructuras visibles y en la compactación del espacio interior [cite: 3].
+
+La disposición interna de un submarino diésel-eléctrico se articula en una secuencia lineal que conecta los dos polos tácticos de la nave: la sala de torpedos de proa y la sala de torpedos de popa [cite: 3]. Entre ambos extremos se distribuyen los módulos de mando, las zonas de soporte vital y los compartimentos de generación energética [cite: 3, 5]. Para optimizar el centro de gravedad y garantizar la estabilidad hidrodinámica, los pesados bancos de baterías de plomo-ácido se alojaron bajo la cubierta inferior, forzando a que las áreas de descanso y trabajo se superpusieran directamente sobre estos depósitos energéticos y sobre las zonas de almacenamiento de armamento [cite: 3].
+
+En la simulación interactiva, la navegación del usuario debe recrear la transición física a través de las escotillas circulares de los mamparos estancos, permitiendo comprender la ergonomía restrictiva y el aislamiento térmico y acústico en el que operaba la dotación [cite: 2].
+
+## 2\. Matriz de Compartimentación y Especificaciones del Recorrido Virtual
+
+La secuencia de navegación virtual se organiza siguiendo el flujo natural de proa a popa. La siguiente tabla sintetiza las funciones operativas, los elementos interactivos principales y el diseño sonoro sugerido para cada sección de la nave.
+
+| Secuencia       | Compartimento                          | Función Operativa Principal                                                                    | Elementos Clave en 3D / Hotspots                                                                        | Ambiente Sonoro Estimulado                                                           |
+| --------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **01 (Proa)**   | Torpedos de Proa                       | Ataque principal, tubos lanzatorpedos y alojamiento suplementario de marinería [cite: 3].    | 6 tubos lanzatorpedos, bastidores de recarga, literas plegables, escotilla de carga [cite: 3].        | Sonido de agua contra el casco, crepitación de metal, siseo de aire comprimido.      |
+| **02**          | Baterías de Proa y Comunicaciones      | Almacenamiento eléctrico (nivel inferior), camarotes de oficiales, radio y sonar.              | Banco subsuperficial de baterías, puesto de sonar JP/JK, mesa de radio, camarote del Comandante.        | Pitidos en código Morse, zumbido estático de radio, pulsos de ecosonda.              |
+| **03 (Centro)** | Centro de Control y Puesto de Mando    | Control de inmersión, dirección del buque y cálculo de dirección de tiro.                      | Periscopios, colectores de lastre (*manifold*), Computador de Dirección de Tiro (TDC).                  | Válvulas hidráulicas, órdenes por tubo de voz, soplado de tanques de lastre.         |
+| **04**          | Baterías de Popa y Comedor             | Alimentación, descanso de la marinería y fuente energética secundaria.                         | Cocina eléctrica (*galley*), mesas del comedor, literas suspendidas, despensa.                          | Tintineo de enseres de cocina, murmullo de conversaciones, zumbido de refrigeración. |
+| **05**          | Sala de Motores Diésel                 | Propulsión en superficie y recarga de baterías mediante combustión interna [cite: 5].        | Motores diésel de gran cilindrada, generadores, colectores de escape, válvulas de admisión [cite: 5]. | Vibración mecánica intensa, detonación de cilindros diésel, bombas de combustible.   |
+| **06**          | Sala de Motores Eléctricos             | Propulsión sumergida silenciosa y control de potencia a los ejes de las hélices.               | Motores eléctricos principales, cuadro de conmutación de alto voltaje, engranajes reductores.           | Zumbido eléctrico de alta frecuencia, chasquido mecánicode relés de alta tensión.    |
+| **07 (Popa)**   | Torpedos de Popa y Timón de Emergencia | Cobertura táctica trasera y control mecánico de emergencia del timón de dirección [cite: 3]. | 4 tubos lanzatorpedos, servomotor de timón manual, escotilla de escape de popa [cite: 3].             | Chirrido de varillajes mecánicos, flujo de agua de turbulencia de hélice.            |
+
+## 3\. Guiones Narrativos y Directrices de Usabilidad Interactiva por Compartimento
+
+### Compartimento 1: Torpedos de Proa
+
+#### Descripción Técnica y Función Operativa
+
+Ubicado en la sección anterior del casco de presión, este compartimento aloja seis tubos lanzatorpedos dispuestos en dos columnas de tres [cite: 3]. Este espacio funcionaba simultáneamente como pañol de armas pesadas y como espacio de habitabilidad para parte de la dotación, instalando literas plegables directamente sobre los bastidores de reserva del armamento [cite: 3].
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Bienvenido al compartimento de torpedos de proa, la sección ofensiva principal del submarino [cite: 3]. En este espacio, la ingeniería naval aprovechó cada centímetro disponible. Ante usted se encuentran las culatas de los seis tubos lanzatorpedos de proa [cite: 3]. Aquí se almacenaban hasta catorce torpedos de repuesto. Cuando no se realizaban maniobras de recarga, los marineros descansaban en literas suspendidas a pocos centímetros de los proyectiles [cite: 3]. La escotilla superior inclinada permitía el embarque del armamento desde el exterior y servía como vía de escape en emergencias a baja profundidad [cite: 3]."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Culatas de los Tubos Lanzatorpedos**: Muestra una animación del mecanismo de enclavamiento de la puerta interior y la simulación de entrada de agua al inundar el tubo.
+* **Literas de la Tripulación**: Despliega información sobre el sistema de descanso rotativo (*hot-bedding*) y la vida cotidiana a bordo.
+* **Escotilla de Carga Superior**: Ilustra mediante una reconstrucción tridimensional la maniobra de embarque de torpedos desde el exterior [cite: 3].
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 2: Baterías de Proa y Centro de Comunicaciones
+
+#### Descripción Técnica y Función Operativa
+
+Bajo el suelo de madera de este compartimento se ubica el grupo principal de baterías de plomo-ácido. La cubierta superior alberga la zona de habitabilidad de los oficiales, el puesto de radiotelegrafía y la sala de detección acústica (sonar).
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Nos encontramos en el compartimento de baterías de proa. Bajo el suelo yace una de las principales fuentes de energía que permitían la navegación sumergida. Este compartimento alberga el camarote del Comandante —el único espacio privado de la nave—, así como la sala de radio y la estación de sonar. En este puesto de escucha, los operadores interpretaban los impulsos acústicos del mar para detectar naves enemigas e interceptar transmisiones en código Morse que definían el rumbo de la patrulla."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Pozo de Baterías**: Ofrece un corte esquemático de las celdas, detallando el riesgo químico por emanación de gas cloro si el agua marina contactaba el ácido.
+* **Estación de Sonar (JP/JK)**: Permite interactuar con el dial del hidrobalizador para escuchar y clasificar firmas acústicas navales.
+* **Camarote del Comandante**: Muestra la mesa de trabajo con cartas de navegación y el diario de patrulla.
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 3: Centro de Control de Navegación y Puesto de Mando
+
+#### Descripción Técnica y Función Operativa
+
+Es el núcleo táctico del submarino. Concentra las estaciones de gobierno del timón, el control de inundación y soplado de tanques de lastre, la mesa de cartas de navegación y las columnas de los periscopios de observación y ataque. En la parte superior se sitúa la torre de conmutación o *conning tower*.
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Ha ingresado al Centro de Control, el punto neutro desde donde se dirige la nave. Frente a usted se encuentra el colector de aire comprimido y las palancas del sistema 'Manifold', utilizadas para alterar la flotabilidad mediante el soplado o inundado de los tanques de lastre. En el centro se ubican las columnas de los periscopios. Durante un ataque sumergido, el Comandante transmitía los datos visuales tomados desde el periscopio directamente al Computador de Dirección de Tiro, una calculadora electromecánica que determinaba las soluciones de lanzamiento."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Estación de Planos de Inmersión**: Muestra el funcionamiento interactivo de los timones de profundidad de proa y popa.
+* **Periscopio de Ataque**: Permite al usuario mirar a través de la óptica simulando una vista de 360 grados sobre la superficie del agua.
+* **Computador de Dirección de Tiro (TDC)**: Explica el procesamiento mecánico de variables como rumbo, distancia y velocidad del objetivo.
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 4: Baterías de Popa, Cocina y Comedor de Tripulación
+
+#### Descripción Técnica y Función Operativa
+
+Esta área albergaba la infraestructura de soporte vital y alimentación de la marinería, además del grupo secundario de baterías bajo la cubierta. La cocina (*galley*) estaba equipada para abastecer a más de ochenta hombres durante misiones prolongadas.
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Se encuentra en el compartimento de baterías de popa, el centro social de la marinería. La cocina ubicada a su izquierda operaba de manera casi continua para servir raciones calientes a la dotación en turnos rotativos. Fuera del horario de comidas, las mesas de este comedor se utilizaban para el descanso, el estudio, la recreación e incluso como quirófano de emergencia durante operaciones médicas imprevistas en alta mar."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Cocina de a Bordo (** **Galley** **)**: Presenta los equipos de cocción diseñados para evitar el consumo excesivo de oxígeno y la emisión de humos.
+* **Mesas del Comedor**: Exhibe objetos personales de la tripulación y detalla la gestión de los suministros de víveres.
+* **Esclusa de Desechos**: Explica el mecanismo de expulsión de residuos lastrados para evitar dejar rastros detectables en la superficie.
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 5: Sala de Motores Diésel
+
+#### Descripción Técnica y Función Operativa
+
+Contiene los motores diésel de combustión interna encargados del desplazamiento de la nave en superficie o a profundidad de esnórquel, accionando a su vez los generadores eléctricos que cargaban los bancos de baterías [cite: 5].
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Ha entrado en la sala de motores diésel. Durante la navegación en superficie, este compartimento registraba niveles de ruido superiores a los cien decibelios, elevadas temperaturas y una constante presencia de vapores de aceite y combustible [cite: 5]. Los motores requerían grandes volúmenes de aire exterior, introducidos a través de la torre de mando. Una falla en la válvula de admisión con los motores encendidos podía generar una caída drástica de la presión interna del buque en cuestión de segundos."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Motores Diésel**: Modelo tridimensional despiezado que expone el movimiento de los pistones y la transmisión de potencia.
+* **Generador Principal**: Ilustra la conversión de energía mecánica en corriente continua para la recarga del sistema acumulador.
+* **Válvulas de Admisión de Aire**: Explica el funcionamiento del sistema de protección del flujo de aire hacia la cámara de combustión.
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 6: Sala de Motores Eléctricos y Cuadro de Maniobra
+
+#### Descripción Técnica y Función Operativa
+
+Aloja los motores eléctricos principales que impulsaban la nave durante la navegación sumergida, así como el cuadro de distribución de alta tensión desde donde los especialistas controlaban la potencia suministrada a las líneas de ejes de las hélices.
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Esta es la sala de motores eléctricos y la plataforma de maniobra. Al sumergirse, los motores diésel se desacoplaban y el buque pasaba a depender de la energía acumulada en las baterías para alimentar estos motores eléctricos silenciosos. Desde la plataforma superior, mediante la manipulación de los conmutadores de cobre del cuadro de mando, el personal controlaba el voltaje y la polaridad enviada a los ejes, regulando la velocidad de marcha sin generar firmas acústicas delatoras."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Cuadro de Conmutación de Alto Voltaje**: Describe la maniobra manual de selección de circuitos para variar la velocidad de los motores.
+* **Ejes de Propulsión**: Muestra los prensaestopas y sellos hidráulicos que mantenían la estanqueidad del casco en la salida de las líneas de ejes.
+* **Engranajes Reductores**: Explica el ajuste de revoluciones entre los motores y las hélices para prevenir la cavitación del agua.
+
+\-------------------------------------------------------------------------------- 
+
+### Compartimento 7: Torpedos de Popa y Timón de Emergencia
+
+#### Descripción Técnica y Función Operativa
+
+Sección terminal del casco de presión. Alberga cuatro tubos lanzatorpedos de popa y el sistema mecánico de gobierno manual de reserva para controlar la pala del timón en caso de avería en los servos del centro de control [cite: 3].
+
+#### Guion Narrativo Auditivo (Locución VR)
+
+"Nos encontramos en el último compartimento: la sala de torpedos de popa [cite: 3]. Los cuatro tubos ubicados en este extremo proporcionaban capacidad defensiva y ofensiva durante las maniobras de repliegue [cite: 3]. Al fondo observará el mecanismo del timón de emergencia. Si los sistemas hidráulicos principales quedaban inoperativos por daños de combate, los marineros debían accionar manualmente este volante para mantener el control direccional de la nave."
+
+#### Puntos de Interacción Visual (Hotspots)
+
+* **Tubos Lanzatorpedos de Popa**: Animación de la secuencia de inundación, apertura de la compuerta exterior y disparo por aire comprimido [cite: 3].
+* **Volante de Gobierno Manual**: Muestra la vinculación física mediante varillajes mecánicos hacia la pala del timón tras el mamparo final.
+* **Escotilla de Salvamento de Popa**: Detalla los procedimientos y equipos de evacuación de emergencia para inmersión.
+
+## 4\. Arquitectura de Interfaz de Usuario y Dinámicas de Diseño VR
+
+Para articular una simulación coherente, la experiencia virtual debe estructurar la presentación de datos en tres capas dinámicas que complementen la navegación espacial del usuario:
+
+### Capa de Datos Ambientales y Físicos
+
+Consiste en una interfaz gráfica sutil que despliega en tiempo real las condiciones teóricas del buque:
+
+* **Presión Estructural y Profundidad**: Muestra el incremento de la presión hidrostática ejercida sobre el casco en función de la profundidad simulada [cite: 3].
+* **Calidad del Aire Interior**: Refleja la variación en las concentraciones de oxígeno y dióxido de carbono a medida que transcurre el tiempo de inmersión.
+* **Firma Acústica y Ruido Ambiance**: Presenta la variación de decibelios registrada según la sección activa, mostrando el contraste entre zonas de trabajo de propulsión y áreas de guardia silenciosa [cite: 5].
+
+### Navegación y Ergonomía Interactiva
+
+La movilidad en el entorno simulado debe respetar la configuración arquitectónica del submarino:
+
+* **Paso de Escotillas**: La transición entre compartimentos requiere la interacción consciente del usuario con los volantes de sellado de los mamparos estancos, evitando saltos de cámara instantáneos para reforzar la noción de espacio confinado [cite: 2].
+* **Campo de Visión Adaptativo**: Formato panorámico de 360 grados optimizado para visores de realidad virtual y pantallas convencionales, permitiendo la exploración de instrumentos situados en techos y mamparos laterales.
+
+### Narrativa Sonora y Audio Posicional
+
+El diseño de audio debe emplear técnicas de atenuación según el grosor de los mamparos:
+
+* **Aislamiento Acústico Intercompartimental**: Los sonidos de la sala de máquinas deben atenuarse de forma realista al cerrar las escotillas de acceso [cite: 2, 5].
+* **Locución Direccional**: Los relatos guiados se activan automáticamente al ingresar a un nuevo compartimento, modulándose en función de la proximidad del usuario a las estaciones de trabajo principales.
+
+## 5\. Conclusiones y Recomendaciones de Implementación
+
+El diseño de un tour virtual enfocado en la estructura de un submarino diésel-eléctrico requiere equilibrar la exactitud histórica de la ingeniería naval con el flujo de información interactivo. La compartimentación lineal ofrece una secuencia narrativa natural por estaciones, en la que cada espacio expone una dimensión operativa específica: capacidad de ataque en las salas de torpedos de los extremos, gestión táctica en el centro de control y generación de energía en las salas de máquinas de popa [cite: 3, 5].
+
+Para la fase de producción audiovisual, se sugiere adoptar los siguientes lineamientos técnicos:
+
+1. **Fidelidad de Texturizado y Materiales**: Recrear con alta precisión las texturas de baquelita de las carcasas de instrumentos, los pulidos de latón en periscopios y los recubrimientos de pintura anticorrosiva de los tubos lanzatorpedos para maximizar la inmersión visual [cite: 2, 3].
+2. **Audio Binaural de Alta Definición**: Utilizar grabaciones posicionales tridimensionales para reproducir la acústica confinado del acero, destacando el sonido del agua contra la envolvente exterior y la maquinaria en funcionamiento.
+3. **Integración de Testimonios Históricos**: Incorporar como capas secundarias dentro de los puntos de interacción (*hotspots*) fragmentos de audio con testimonios de marineros y documentación original de los manuales de maniobra del buque.
+
+\-------------------------------------------------------------------------------- 
+
+1. La ciencia y la tecnología en museos y colecciones - ACTA, [https://www.acta.es/medios/informes/2026005.pdf](https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Fwww.acta.es%2Fmedios%2Finformes%2F2026005.pdf)
+2. Inside submarine immagini esenti da diritti d'autore - Shutterstock, [https://www.shutterstock.com/it/search/inside-submarine](https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Fwww.shutterstock.com%2Fit%2Fsearch%2Finside-submarine)
+3. How a WW2 Submarine Works (Diesel-Electric Submarine / Balao-Class Submarine) US Navy Training Film - YouTube, [https://www.youtube.com/watch?v=rCBJ\_0vX3AQ](https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrCBJ%5F0vX3AQ)
+4. 65 Best Things to Do in Honolulu, Hawaii - TourScanner, [https://tourscanner.com/best-things-to-do-in-honolulu](https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Ftourscanner.com%2Fbest-things-to-do-in-honolulu)
+5. USS Bowfin (Monumento histórico), Honolulu | Roavina, [https://roavina.com/pt/estados-unidos/honolulu/uss-bowfin-submarine-museum-and-park](https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Froavina.com%2Fpt%2Festados-unidos%2Fhonolulu%2Fuss-bowfin-submarine-museum-and-park)

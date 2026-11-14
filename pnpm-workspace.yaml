@@ -3,3 +3,7 @@ pmOnFail: ignore
 minimumReleaseAgeExclude:
   - '@next/*'
   - next
+
+# Turbopack resuelve las dependencias de next desde node_modules raíz:
+# sin hoisting, falla al encontrar @swc/helpers y scheduler (error 5/11/2026).
+shamefullyHoist: true

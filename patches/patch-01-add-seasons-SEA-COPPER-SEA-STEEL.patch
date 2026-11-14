@@ -1,0 +1,25 @@
+*** Begin Patch
+*** Update File: lib/data/datasets/isa-config.json
+@@
+-  "seasons": [],
++  "seasons": [
++   {
++    "id": "SEA-STEEL",
++    "titleEn": "Steel",
++    "titleEs": "Acero",
++    "colorTheme": "#8FA3B0",
++    "timssDomain": "knowing",
++    "order": 1,
++    "status": "published"
++   },
++   {
++    "id": "SEA-COPPER",
++    "titleEn": "Copper",
++    "titleEs": "Cobre",
++    "colorTheme": "#B87333",
++    "timssDomain": "knowing",
++    "order": 2,
++    "status": "published"
++   }
++  ],
+*** End Patch

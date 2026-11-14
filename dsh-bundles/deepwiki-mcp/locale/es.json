@@ -1,0 +1,6 @@
+﻿{
+  "meta": {
+    "title": "Conexión MCP de DeepWiki",
+    "description": "Conecta el servidor MCP alojado de DeepWiki para que sus herramientas de documentación de repositorios estén disponibles para el agente."
+  }
+}

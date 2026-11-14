@@ -1,0 +1,8 @@
+- insert:
+    - id: deepwiki-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: deepwiki
+        transport: streamable-http
+        url: https://mcp.deepwiki.com/mcp
+        failOnStartupError: true

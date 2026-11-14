@@ -221,6 +221,10 @@ export interface Mission extends EntityBase {
   equipmentId: string;
   description: LocalizedText;
   learningObjective: LocalizedText;
+  /** Explicación breve del mecanismo, independiente de la ficción. */
+  mechanism?: LocalizedText;
+  /** Nota del guía/veterano; solo con material autorizado. */
+  veteranNote?: LocalizedText;
   timssDomain: TimssDomain;
   gsaCompetency: string;
   civilSocietyConnection: LocalizedText;
