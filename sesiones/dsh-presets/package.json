@@ -1,0 +1,12 @@
+{
+  "name": "@local/isa-sesiones-produccion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Presets de DSH para las ocho sesiones de producción de ISA (fábrica de prompts para Google).",
+  "type": "module",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

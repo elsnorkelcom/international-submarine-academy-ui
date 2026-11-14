@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
+import { DailyHonor } from '@/components/learn/daily-honor';
 import { useProgress } from '@/components/learn/progress-provider';
 import { buildUnsignedCredential, type IsaBadgeSource } from '@/lib/badges/openbadge';
 import { listCredentials } from '@/lib/badges/registry';
@@ -243,6 +244,8 @@ export function ProfileView() {
           </button>
         )}
       </section>
+
+      <DailyHonor />
     </div>
   );
 }

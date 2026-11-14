@@ -16,8 +16,12 @@ interface QuestionEngineProps {
   language: LanguageCode;
   t: AppStrings['learn']['episode'];
   timerSeconds: number | null;
-  maxAttempts: number;
+  /** Intentos ya consumidos antes de esta pregunta (variantes anteriores). */
+  attemptOffset: number;
+  hasAlternate: boolean;
   onResolved: (outcome: QuestionOutcome) => void;
+  /** Pide cambiar a otra variante y suma los intentos usados acá. */
+  onAlternate: (attemptsUsed: number) => void;
 }
 
 export function QuestionEngine({
@@ -25,68 +29,75 @@ export function QuestionEngine({
   language,
   t,
   timerSeconds,
-  maxAttempts,
+  attemptOffset,
+  hasAlternate,
   onResolved,
+  onAlternate,
 }: QuestionEngineProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [attempts, setAttempts] = useState(0);
+  const [showFeedback, setShowFeedback] = useState(false);
   const [resolved, setResolved] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number | null>(timerSeconds);
+  const [timerEpoch, setTimerEpoch] = useState(0);
   const resolvedRef = useRef(false);
 
-  function resolve(correct: boolean, usedAttempts: number, remaining: number | null) {
-    if (resolvedRef.current) {
-      return;
-    }
-
-    resolvedRef.current = true;
-    setResolved(true);
-    onResolved({ correct, attempts: usedAttempts, secondsLeft: remaining });
-  }
-
   useEffect(() => {
-    if (timerSeconds === null || resolved) {
+    if (timerSeconds === null || showFeedback || resolved) {
       return;
     }
 
     const interval = window.setInterval(() => {
-      setTimeLeft((current) => {
-        if (current === null) return null;
-        if (current <= 1) {
-          window.clearInterval(interval);
-          resolve(false, attempts + 1, 0);
-          return 0;
-        }
-        return current - 1;
-      });
+      setTimeLeft((current) => (current === null ? null : Math.max(0, current - 1)));
     }, 1000);
 
     return () => window.clearInterval(interval);
-  }, [timerSeconds, resolved, attempts]);
+  }, [timerSeconds, showFeedback, resolved, timerEpoch]);
+
+  useEffect(() => {
+    if (timerSeconds === null || showFeedback || resolved || timeLeft !== 0) {
+      return;
+    }
+
+    setSelected(null);
+    setAttempts((current) => current + 1);
+    setShowFeedback(true);
+  }, [timeLeft, timerSeconds, showFeedback, resolved]);
 
   function handleOption(optionId: string) {
-    if (resolved) {
+    if (showFeedback || resolved) {
       return;
     }
 
     setSelected(optionId);
-    const correct = optionId === question.correctOptionId;
-    const nextAttempts = attempts + 1;
 
-    if (correct) {
-      setAttempts(nextAttempts);
-      resolve(true, nextAttempts, timeLeft);
+    if (optionId === question.correctOptionId) {
+      if (resolvedRef.current) return;
+      resolvedRef.current = true;
+      setResolved(true);
+      onResolved({
+        correct: true,
+        attempts: attemptOffset + attempts + 1,
+        secondsLeft: timeLeft,
+      });
       return;
     }
 
-    setAttempts(nextAttempts);
+    setAttempts((current) => current + 1);
+    setShowFeedback(true);
+  }
 
-    if (nextAttempts >= Math.max(1, maxAttempts)) {
-      resolve(false, nextAttempts, timeLeft);
-      return;
-    }
+  function handleRetry() {
+    setSelected(null);
+    setShowFeedback(false);
+    setTimeLeft(timerSeconds);
+    setTimerEpoch((current) => current + 1);
+  }
 
-    window.setTimeout(() => setSelected(null), 900);
+  function handleAlternate() {
+    setSelected(null);
+    setShowFeedback(false);
+    onAlternate(attempts);
   }
 
   const isCorrectSelection = selected === question.correctOptionId;
@@ -94,10 +105,8 @@ export function QuestionEngine({
   return (
     <div>
       <div className="flex items-center justify-between gap-4">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-metal">
-          {t.question}
-        </p>
-        {timeLeft !== null && !resolved ? (
+        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-metal">{t.question}</p>
+        {timeLeft !== null && !showFeedback && !resolved ? (
           <p
             className={`font-mono text-[10px] uppercase tracking-[0.2em] ${
               timeLeft <= 5 ? 'text-red-300' : 'text-muted-foreground'
@@ -117,20 +126,20 @@ export function QuestionEngine({
         {question.options.map((option) => {
           const isSelected = selected === option.id;
           const isRight = resolved && option.id === question.correctOptionId;
-          const isWrongPick = resolved && isSelected && !isCorrectSelection;
+          const isWrongPick = showFeedback && isSelected && !isCorrectSelection;
 
           return (
             <li key={option.id}>
               <button
                 type="button"
                 onClick={() => handleOption(option.id)}
-                disabled={resolved}
+                disabled={showFeedback || resolved}
                 className={`flex w-full items-center gap-3 border px-3 py-3 text-left text-sm transition ${
                   isRight
                     ? 'border-primary/60 bg-primary/10 text-primary'
                     : isWrongPick
                       ? 'border-red-500/50 bg-red-500/10 text-red-200'
-                      : 'border-white/15 bg-white/[0.03] hover:border-primary/40 hover:bg-white/[0.06]'
+                      : 'border-white/15 bg-white/[0.03] hover:border-primary/40 hover:bg-white/[0.06] disabled:opacity-60'
                 }`}
               >
                 <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">{option.id}</span>
@@ -141,34 +150,49 @@ export function QuestionEngine({
         })}
       </ul>
 
-      {resolved ? (
-        <div
-          role="status"
-          className={`mt-5 border p-4 ${
-            isCorrectSelection ? 'border-primary/40 bg-primary/5' : 'border-amber-300/40 bg-amber-300/5'
-          }`}
-        >
-          <p className={`font-display text-lg font-bold uppercase tracking-wide ${isCorrectSelection ? 'text-primary' : 'text-amber-200'}`}>
-            {isCorrectSelection ? t.correct : t.incorrect}
+      {showFeedback && !resolved ? (
+        <div role="status" className="mt-5 border border-amber-300/40 bg-amber-300/5 p-4">
+          <p className="font-display text-lg font-bold uppercase tracking-wide text-amber-200">
+            {t.incorrect}
           </p>
 
-          {!isCorrectSelection ? (
-            <p className="mt-2 text-xs text-foreground/90">
-              {t.correctAnswer}: <strong>{question.correctOptionId}</strong>
-            </p>
-          ) : null}
+          <p className="mt-2 text-xs text-foreground/90">
+            {t.correctAnswer}: <strong>{question.correctOptionId}</strong>
+          </p>
 
           <p className="mt-2 text-sm leading-relaxed text-foreground/90">
             <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">{t.explanation}: </span>
             {localize(question.feedback, language)}
           </p>
 
-          {localize(question.civilSocietyConnection, language).trim() ? (
-            <p className="mt-3 border-l border-primary/40 pl-3 text-sm text-foreground/85">
-              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">{t.civil}: </span>
-              {localize(question.civilSocietyConnection, language)}
-            </p>
-          ) : null}
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={handleRetry}
+              className="border border-white/20 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-foreground transition hover:border-primary hover:text-primary"
+            >
+              {t.retry}
+            </button>
+            {hasAlternate ? (
+              <button
+                type="button"
+                onClick={handleAlternate}
+                className="border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary transition hover:bg-primary/20"
+              >
+                {t.otherQuestion}
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
+
+      {resolved ? (
+        <div role="status" className="mt-5 border border-primary/40 bg-primary/5 p-4">
+          <p className="font-display text-lg font-bold uppercase tracking-wide text-primary">{t.correct}</p>
+          <p className="mt-2 text-sm leading-relaxed text-foreground/90">
+            <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-metal">{t.explanation}: </span>
+            {localize(question.feedback, language)}
+          </p>
         </div>
       ) : null}
     </div>

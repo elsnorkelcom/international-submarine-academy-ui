@@ -104,6 +104,10 @@ export interface MissionConfigEntry {
   descriptionEs: string;
   objectiveEn: string;
   objectiveEs: string;
+  mechanismEn?: string;
+  mechanismEs?: string;
+  veteranNoteEn?: string;
+  veteranNoteEs?: string;
   timssDomain: TimssDomain;
   gsaCompetency: string;
   civilEn: string;
@@ -379,6 +383,22 @@ async function applyMissions(database: LocalDatabase): Promise<SectionResult> {
       equipmentId: entry.equipmentId,
       description: { en: entry.descriptionEn, es: entry.descriptionEs || entry.descriptionEn },
       learningObjective: { en: entry.objectiveEn, es: entry.objectiveEs || entry.objectiveEn },
+      ...(entry.mechanismEn || entry.mechanismEs
+        ? {
+            mechanism: {
+              en: entry.mechanismEn || entry.mechanismEs || '',
+              es: entry.mechanismEs || entry.mechanismEn || '',
+            },
+          }
+        : {}),
+      ...(entry.veteranNoteEn || entry.veteranNoteEs
+        ? {
+            veteranNote: {
+              en: entry.veteranNoteEn || entry.veteranNoteEs || '',
+              es: entry.veteranNoteEs || entry.veteranNoteEn || '',
+            },
+          }
+        : {}),
       timssDomain: entry.timssDomain,
       gsaCompetency: entry.gsaCompetency,
       civilSocietyConnection: { en: entry.civilEn, es: entry.civilEs || entry.civilEn },

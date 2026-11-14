@@ -1,0 +1,11 @@
+id,season,station_or_system,title_es,title_en,script_status,script_owner,media_kind,media_status,voice_es,voice_en,subtitles,source,rights_status,shorts_count,credits,publish_date,notes
+AC-01,acero,sala de torpedos de proa,Sala de torpedos de proa,Forward torpedo room,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,sin nombres reales
+AC-02,acero,baterías de proa y radio,Baterías de proa radio y sonar,Forward batteries radio and sonar,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-03,acero,puesto central,Puesto central y mando,Central station and command,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-04,acero,baterías de popa y cocina,Baterías de popa cocina y comedor,Aft batteries galley and mess,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-05,acero,sala de motores diésel,Sala de motores diésel,Diesel engine room,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-06,acero,motores eléctricos,Motores eléctricos y cuadro,Electric motors and switchboard,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-07,acero,sala de torpedos de popa,Sala de torpedos de popa y timón,Aft torpedo room and emergency rudder,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,playlist + docs,pendiente,3,,
+AC-ESP,acero,episodio especial nuclear,Episodio especial propulsión nuclear,Special episode nuclear propulsion,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,docs arquitectura,pendiente,3,,sin armamento
+COB-SCI-MAQ,cobre,sistema compresor,Compresor,Compressor,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,TIMSS + visita,pendiente,3,,
+COB-TEC-ELN,cobre,sistema sonar,Sonar,Sonar,pendiente,,sample-ia,pendiente,pendiente,pendiente,pendiente,TIMSS + visita,pendiente,3,,

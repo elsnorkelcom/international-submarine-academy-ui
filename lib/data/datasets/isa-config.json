@@ -934,7 +934,9 @@
    "cellCode": "AC-01",
    "cellIndex": 1,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "Un espacio multiuso: almacenamiento, trabajo y descanso en turnos. La escotilla superior inclinada permite cargar material y sirve de salida de emergencia.",
+   "mechanismEn": "A multi-purpose space: storage, work and rest in shifts. The tilted upper hatch loads material and doubles as an emergency exit."
   },
   {
    "id": "MIS-AC-02",
@@ -958,7 +960,9 @@
    "cellCode": "AC-02",
    "cellIndex": 2,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "El peso de los bancos de baterías va bajo la cubierta para bajar el centro de gravedad. En la cubierta superior están la radio, la escucha y el camarote del comandante.",
+   "mechanismEn": "The battery banks sit below deck to lower the centre of gravity. The upper deck holds the radio, the listening station and the commander cabin."
   },
   {
    "id": "MIS-AC-03",
@@ -982,7 +986,9 @@
    "cellCode": "AC-03",
    "cellIndex": 3,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "Desde el puesto central se gobierna el rumbo y la profundidad: periscopios para observar, timón para el rumbo y válvulas de lastre para subir o bajar.",
+   "mechanismEn": "The central station governs course and depth: periscopes to observe, the helm for course and ballast valves to go up or down."
   },
   {
    "id": "MIS-AC-04",
@@ -1006,7 +1012,9 @@
    "cellCode": "AC-04",
    "cellIndex": 4,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "Bajo el comedor hay un segundo banco de baterías. La cocina funciona sin humos para mantener el aire respirable; el comedor sirve de mesa y de sala de emergencias.",
+   "mechanismEn": "A second battery bank sits under the mess. The galley runs smoke-free to keep the air breathable; the mess doubles as table and emergency room."
   },
   {
    "id": "MIS-AC-05",
@@ -1030,7 +1038,9 @@
    "cellCode": "AC-05",
    "cellIndex": 5,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "Los motores diésel generan energía en superficie: mueven el buque y recargan las baterías. Necesitan grandes caudales de aire y su sala supera los 100 decibeles.",
+   "mechanismEn": "Diesel engines generate power on the surface: they move the boat and recharge the batteries. They need large air flows, and their room exceeds 100 decibels."
   },
   {
    "id": "MIS-AC-06",
@@ -1054,7 +1064,9 @@
    "cellCode": "AC-06",
    "cellIndex": 6,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "En inmersión, los motores eléctricos giran las hélices en silencio; el cuadro de maniobra regula velocidad, polaridad y acoplamiento.",
+   "mechanismEn": "Underwater, electric motors turn the propellers silently; the switchboard regulates speed, polarity and coupling."
   },
   {
    "id": "MIS-AC-07",
@@ -1078,7 +1090,9 @@
    "cellCode": "AC-07",
    "cellIndex": 7,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "El extremo de popa guarda el varillaje del timón manual: si falla el sistema hidráulico, se gobierna a mano. La escotilla cierra el recorrido.",
+   "mechanismEn": "The stern end holds the manual rudder linkage: if hydraulics fail, the boat is steered by hand. The hatch closes the tour."
   },
   {
    "id": "MIS-AC-ESP",
@@ -1102,7 +1116,9 @@
    "cellCode": "AC-ESP",
    "cellIndex": 8,
    "specialtyId": "",
-   "disciplineId": ""
+   "disciplineId": "",
+   "mechanismEs": "La propulsión nuclear genera calor sin quemar combustible con oxígeno del aire: puede navegar sumergido durante semanas, y su arquitectura cambia.",
+   "mechanismEn": "Nuclear propulsion generates heat without burning fuel with air oxygen: it can sail submerged for weeks, and its architecture changes."
   }
  ],
  "questions": [

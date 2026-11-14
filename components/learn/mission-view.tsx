@@ -4,11 +4,14 @@ import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { useApp } from '@/components/app/data-provider';
+import { DiplomaButton } from '@/components/learn/diploma-button';
 import { EpisodeMedia } from '@/components/learn/episode-media';
+import { NextEpisodes } from '@/components/learn/next-episodes';
 import { QuestionEngine, type QuestionOutcome } from '@/components/learn/question-engine';
 import { useProgress } from '@/components/learn/progress-provider';
 import { completedMissionIds, evaluateAwards } from '@/lib/badges/rules';
 import { pickVariant } from '@/lib/learning/variant';
+import { recordDaily } from '@/lib/learning/daily';
 import {
   localize,
   type Badge,
@@ -30,6 +33,7 @@ interface MissionBundle {
   compartment: Compartment | null;
   system: SubmarineSystem | null;
   question: Question | null;
+  variants: Question[];
   badge: Badge | null;
   settings: Settings | null;
 }
@@ -43,6 +47,10 @@ export function MissionView() {
   const [outcome, setOutcome] = useState<QuestionOutcome | null>(null);
   const [reward, setReward] = useState<{ points: number; badge: string | null } | null>(null);
   const [awarded, setAwarded] = useState<Badge[]>([]);
+  const [activeQuestion, setActiveQuestion] = useState<Question | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [attemptOffset, setAttemptOffset] = useState(0);
+  const [engineKey, setEngineKey] = useState(0);
 
   // Kept in a ref so the loader reads the current progress without re-running
   // and overwriting the reward screen after a mission is recorded.
@@ -90,6 +98,7 @@ export function MissionView() {
         (a, b) => (a.variantIndex ?? 0) - (b.variantIndex ?? 0),
       );
       const question = pickVariant(variants, mission.cellIndex ?? 0);
+      const pickedIndex = Math.max(0, question ? variants.findIndex((item) => item.id === question.id) : 0);
 
       const badge = badges.items.find((item) => item.missionId === mission.id && item.status === 'published') ?? null;
 
@@ -98,7 +107,12 @@ export function MissionView() {
         setReward({ points: 0, badge: null });
       }
 
-      setBundle({ mission, episode, season, museum, compartment, system, question, badge, settings });
+      setActiveQuestion(question);
+      setActiveIndex(pickedIndex);
+      setAttemptOffset(0);
+      setEngineKey((current) => current + 1);
+
+      setBundle({ mission, episode, season, museum, compartment, system, question, variants, badge, settings });
     }
 
     void load();
@@ -118,20 +132,9 @@ export function MissionView() {
       return;
     }
 
+    // El error ya no cierra la misión: el motor muestra la explicación y permite
+    // reintentar u otra variante. Solo se registra cuando la respuesta es correcta.
     if (!result.correct) {
-      const earned = record(
-        {
-          missionId: bundle.mission.id,
-          episodeId: bundle.mission.episodeId,
-          seasonId: bundle.mission.seasonId,
-          badgeId: bundle.badge?.id ?? null,
-        },
-        result,
-      );
-
-      setOutcome(result);
-      setReward({ points: earned.pointsEarned, badge: earned.newBadge });
-      setStage('reward');
       return;
     }
 
@@ -147,6 +150,9 @@ export function MissionView() {
 
     setOutcome(result);
     setReward({ points: earned.pointsEarned, badge: earned.newBadge });
+
+    // Cuadro de honor diario: local, sin datos personales.
+    recordDaily(earned.pointsEarned, progress.streak);
 
     // End-of-season rules run after the mission is recorded.
     try {
@@ -170,6 +176,18 @@ export function MissionView() {
     }
 
     setStage('reward');
+  }
+
+  function handleAlternate(attemptsUsed: number) {
+    if (!bundle || bundle.variants.length <= 1) {
+      return;
+    }
+
+    const nextIndex = (activeIndex + 1) % bundle.variants.length;
+    setAttemptOffset((current) => current + attemptsUsed);
+    setActiveIndex(nextIndex);
+    setActiveQuestion(bundle.variants[nextIndex]);
+    setEngineKey((current) => current + 1);
   }
 
   if (!ready) {
@@ -205,11 +223,10 @@ export function MissionView() {
       <header className="mt-5">
         <p className="font-mono text-[10px] uppercase tracking-[0.24em]" style={{ color: season?.colorTheme }}>
           {season ? localize(season.title, language) : ''} · {mission.id}
-          {question?.variantIndex && question.cellCode && !question.cellCode.startsWith('FH-')
-            ? ` · ${t.learn.episode.variant} ${question.variantIndex}`
+          {activeQuestion?.variantIndex && activeQuestion.cellCode && !activeQuestion.cellCode.startsWith('FH-')
+            ? ` · ${t.learn.episode.variant} ${activeQuestion.variantIndex}`
             : ''}
-        </p>
-        <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-tight tracking-tight sm:text-4xl">
+        </p>        <h1 className="mt-2 font-display text-3xl font-extrabold uppercase leading-tight tracking-tight sm:text-4xl">
           {localize(mission.title, language)}
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -232,6 +249,28 @@ export function MissionView() {
         {localize(mission.learningObjective, language)}
       </p>
 
+      {localize(mission.mechanism ?? { en: '', es: '' }, language).trim() ? (
+        <section className="mt-5 border-l-2 border-primary/40 pl-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
+            {t.learn.episode.mechanism}
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-foreground/90">
+            {localize(mission.mechanism!, language)}
+          </p>
+        </section>
+      ) : null}
+
+      {localize(mission.veteranNote ?? { en: '', es: '' }, language).trim() ? (
+        <section className="mt-4 border-l-2 border-white/20 pl-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-metal">
+            {t.learn.episode.veteranNote}
+          </p>
+          <p className="mt-2 text-sm italic leading-relaxed text-foreground/85">
+            {localize(mission.veteranNote!, language)}
+          </p>
+        </section>
+      ) : null}
+
       {stage === 'intro' ? (
         <button
           type="button"
@@ -243,14 +282,17 @@ export function MissionView() {
         </button>
       ) : null}
 
-      {stage === 'question' && question ? (
+      {stage === 'question' && activeQuestion ? (
         <div className="mt-8 border-t border-white/10 pt-6">
           <QuestionEngine
-            question={question}
+            key={engineKey}
+            question={activeQuestion}
             language={language}
             t={t.learn.episode}
             timerSeconds={timerSeconds}
-            maxAttempts={bundle.settings?.maxAttempts ?? 2}
+            attemptOffset={attemptOffset}
+            hasAlternate={bundle.variants.length > 1}
+            onAlternate={handleAlternate}
             onResolved={(result) => void handleResolved(result)}
           />
         </div>
@@ -302,7 +344,7 @@ export function MissionView() {
           {outcome ? (
             <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               {outcome.correct ? t.learn.episode.correct : t.learn.episode.incorrect} · {t.learn.episode.correctAnswer}{' '}
-              {question?.correctOptionId}
+              {activeQuestion?.correctOptionId}
             </p>
           ) : null}
 
@@ -322,7 +364,20 @@ export function MissionView() {
           </div>
 
           <p className="mt-5 text-[10px] leading-relaxed text-muted-foreground">{t.learn.profile.disclaimer}</p>
+
+          {mission.seasonId === 'SEA-STEEL' ? (
+            <DiplomaButton missionTitle={mission.title} language={language} t={t.learn.episode} />
+          ) : null}
         </section>
+      ) : null}
+
+      {stage === 'reward' ? (
+        <NextEpisodes
+          currentMissionId={mission.id}
+          seasonId={mission.seasonId}
+          language={language}
+          t={t.learn.episode}
+        />
       ) : null}
 
       <p className="mt-8 text-[10px] leading-relaxed text-muted-foreground">{t.learn.episode.fiction}</p>

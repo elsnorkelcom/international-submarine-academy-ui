@@ -1,0 +1,59 @@
+La compartimentación de un submarino es el principio fundamental de su arquitectura naval, diseñado para garantizar la supervivencia estructural, la estanqueidad ante vías de agua y la convivencia funcional entre maquinaria pesada, armamento táctico y la tripulación dentro de los límites estrictos del casco de presión.
+
+1. Principios Estructurales y de Seguridad
+
+Casco de presión y mamparos estancos: El casco resistente divide su espacio interior mediante mamparos transversales reforzados, proyectados para soportar elevadas presiones hidrostáticas si un compartimento se inunda.
+
+Tránsito y aislamiento: La comunicación entre secciones se realiza a través de escotillas circulares u ovaladas con mecanismos de enclavamiento y volantes de cierre rápido. Este diseño aísla compartimentos en caso de siniestro y provee atenuación térmica y acústica frente al ruido de la maquinaria.
+
+Centro de gravedad y estabilidad: Los componentes más pesados —principalmente los bancos de baterías de plomo-ácido y tanques de lastre— se ubican en la sección inferior bajo la cubierta transitable, forzando a que las áreas de trabajo y descanso se superpongan sobre estos depósitos de energía.
+
+2. Secuencia Clásica de Proa a Popa (Submarino Diésel-Eléctrico)
+
+En los submarinos de la era convencional y de posguerra (como las clases Balao, Gato, Toti o Abtao), la distribución interna sigue una secuencia lineal bien definida:
+
+[Proa: Torpedos] ➔ [Baterías Proa / Radio / Sonar] ➔ [Puesto Central / Mando] ➔ [Baterías Popa / Cocina / Comedor] ➔ [Motores Diésel] ➔ [Motores Eléctricos] ➔ [Popa: Torpedos / Timón Emergencia]
+
+Compartimento de Torpedos de Proa:
+
+Función táctica: Aloja los tubos lanzatorpedos principales (típicamente 4 a 6 tubos) y los bastidores de torpedos de recarga. Cuenta con una escotilla superior inclinada para el embarque del armamento desde el exterior y eventual salida de escape.
+
+Habitabilidad combinada: Debido al espacio restringido, la marinería dormía en literas plegables suspendidas a escasos centímetros de las armas de reserva, alternándose bajo el sistema rotativo de descanso (hot-bedding).
+
+Baterías de Proa y Centro de Comunicaciones / Sensores:
+
+Almacenamiento y mando táctico: La cubierta inferior aloja el grupo principal de baterías. En la cubierta superior se ubican el camarote del comandante, el puesto de radiotelegrafía y la estación de escucha pasiva y sonar (como los puestos JP/JK).
+
+Puesto Central y Centro de Mando:
+
+Núcleo de gobierno: Localizado bajo la vela o conning tower, centraliza las columnas de los periscopios (de ataque y navegación).
+
+Control de maniobra: Dispone del colector (manifold) y válvulas para la inundación y soplado con aire comprimido de los tanques de lastre, los mandos del timón y los planos de profundidad, así como el calculador analógico de control de tiro (como el Torpedo Data Computer / TDC).
+
+Baterías de Popa, Cocina (Galley) y Comedor:
+
+Soporte vital y vida a bordo: Además del segundo pozo de baterías bajo el suelo, alberga la cocina equipada para operar continuamente sin emisión de humos ni exceso de consumo de oxígeno, y las mesas del comedor de tripulación.
+
+Polivalencia: El comedor no solo servía para rancho y recreación, sino también como sala de reuniones y quirófano de emergencia para intervenciones médicas en alta mar.
+
+Sala de Motores Diésel:
+
+Generación de energía: Aloja los motores diésel de combustión interna encargados de propulsar el buque en superficie o a cota de esnórquel y accionar los generadores eléctricos para recargar las baterías.
+
+Condiciones extremas: Era el espacio más ruidoso (superando los 100 dB) y caluroso (temperaturas de hasta 50 °C), exigiendo enormes caudales de aire exterior a través de las válvulas de admisión para no despresurizar el casco.
+
+Sala de Motores Eléctricos y Cuadro de Maniobra:
+
+Navegación sumergida: Alberga los motores eléctricos principales que mueven silenciosamente los ejes de las hélices durante la inmersión, desacoplados mecánicamente de los diésel. Desde grandes cuadros de conmutación de alto voltaje se regulaba la velocidad, polaridad y acoplamiento reductor.
+
+Compartimento de Torpedos de Popa y Timón de Emergencia:
+
+Defensa trasera y reserva mecánica: Situado en el extremo terminal del casco de presión, suele contar con tubos lanzatorpedos de popa (usualmente 2 a 4) para maniobras evasivas o repliegue, y el varillaje del timón manual de emergencia para gobernar la pala si el sistema hidráulico principal falla.
+
+3. Diferencias con Submarinos Nucleares
+
+Con la llegada de la propulsión nuclear (inaugurada por el USS Nautilus en 1954), la compartimentación experimentó cambios estructurales profundos:
+
+Se suprimieron los enormes pozos de baterías de plomo-ácido y las tomas continuas de aire exterior para motores térmicos.
+
+Apareció un compartimento blindado y aislado para el reactor nuclear, dividiendo claramente la sección de proa (habitabilidad, ataque, mando y plantas de electrólisis/desalinizadores) de la sección de propulsión de popa (turbinas de vapor y generadores eléctricos).
