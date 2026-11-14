@@ -5,7 +5,7 @@ import { useApp } from '@/components/app/data-provider';
 export default function BacklogPage() {
   const { t } = useApp();
   return (
-    <LearnRoot active="backlog">
+    <LearnRoot>
       <BacklogView t={t.learn.series} />
     </LearnRoot>
   );
