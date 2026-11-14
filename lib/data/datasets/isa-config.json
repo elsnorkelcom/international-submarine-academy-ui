@@ -44,14 +44,15 @@
    "museumId": "",
    "compartmentId": "",
    "equipmentId": "",
-   "mediaUrl": "",
+   "mediaUrl": "https://www.youtube.com/shorts/jd-ZQhF0oJY",
    "durationSeconds": null,
    "descriptionEn": "Seven heritage stations of a diesel-electric museum submarine, from bow to stern.",
    "descriptionEs": "Siete estaciones patrimoniales de un submarino museo diésel-eléctrico, de proa a popa.",
    "narrativeEn": "This story is fiction. The museum space and its history are real.",
    "narrativeEs": "Esta historia es ficción. El espacio del museo y su historia son reales.",
    "order": 1,
-   "status": "published"
+   "status": "published",
+   "posterUrl": "https://img.youtube.com/vi/jd-ZQhF0oJY/maxresdefault.jpg"
   },
   {
    "id": "EPI-AC-ESP",
