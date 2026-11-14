@@ -47,6 +47,7 @@ export function MissionView() {
   const [outcome, setOutcome] = useState<QuestionOutcome | null>(null);
   const [reward, setReward] = useState<{ points: number; badge: string | null } | null>(null);
   const [awarded, setAwarded] = useState<Badge[]>([]);
+  const [coinModal, setCoinModal] = useState<Badge | null>(null);
   const [activeQuestion, setActiveQuestion] = useState<Question | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [attemptOffset, setAttemptOffset] = useState(0);
@@ -170,6 +171,11 @@ export function MissionView() {
       if (awards.badges.length > 0) {
         grantBadges(awards.badges.map((item) => item.id));
         setAwarded(awards.badges);
+        // If any awarded badge is a coin, show special coin modal
+        const coin = awards.badges.find((b) => b.type === 'coin' || b.id === 'BDG-COIN-STEEL');
+        if (coin) {
+          setCoinModal(coin);
+        }
       }
     } catch {
       // Awarding is additive: a failure must not block the mission result.
@@ -391,6 +397,33 @@ export function MissionView() {
 
           {mission.seasonId === 'SEA-STEEL' ? (
             <DiplomaButton missionTitle={mission.title} language={language} t={t.learn.episode} />
+          ) : null}
+
+          {coinModal ? (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+              <div className="max-w-sm rounded bg-card/90 p-6 text-center">
+                {coinModal.icon && coinModal.icon.startsWith('/') ? (
+                  <img src={coinModal.icon} alt="" className="mx-auto size-28 object-contain" />
+                ) : null}
+                <h3 className="mt-3 font-display text-lg font-bold uppercase">{localize(coinModal.name, language)}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{localize(coinModal.criteria, language)}</p>
+                <div className="mt-4 flex items-center justify-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => { setCoinModal(null); }}
+                    className="border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary"
+                  >
+                    {language === 'es' ? 'Cerrar' : 'Close'}
+                  </button>
+                  <Link
+                    href="/profile"
+                    className="border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground"
+                  >
+                    {language === 'es' ? 'Ver perfil' : 'View profile'}
+                  </Link>
+                </div>
+              </div>
+            </div>
           ) : null}
         </section>
       ) : null}

@@ -7,21 +7,10 @@ import { getMessages } from '@/lib/i18n';
 export function BadgePopup({ badge, language }: { badge: Badge; language: LanguageCode }) {
   const [open, setOpen] = useState(false);
 
-  async function share() {
-    const text = `${localize(badge.name, language)} · ${localize(badge.criteria, language)}`;
-    try {
-      if (navigator.share) {
-        await navigator.share({ title: localize(badge.name, language), text });
-      } else if (navigator.clipboard) {
-        await navigator.clipboard.writeText(text);
-        // show small feedback (not implemented here)
-      } else {
-        const u = encodeURIComponent(text);
-        window.open(`https://twitter.com/intent/tweet?text=${u}`, '_blank');
-      }
-    } catch {
-      // ignore
-    }
+  // Share reserved: show icon only, no action (placeholder for future share implementation)
+  function share() {
+    // intentionally empty — placeholder to reserve UI space
+    return;
   }
 
   return (
@@ -48,10 +37,17 @@ export function BadgePopup({ badge, language }: { badge: Badge; language: Langua
             <div className="mt-4 flex items-center justify-center gap-3">
               <button
                 type="button"
-                onClick={() => void share()}
-                className="border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary"
+                onClick={() => share()}
+                disabled
+                aria-disabled
+                className="border border-primary/40 bg-primary/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-primary opacity-60"
+                title={language === 'es' ? 'Compartir (próximamente)' : 'Share (coming soon)'}
               >
-                {language === 'es' ? 'Compartir' : 'Share'}
+                <svg className="inline-block size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+                  <polyline points="16 6 12 2 8 6" />
+                  <line x1="12" y1="2" x2="12" y2="15" />
+                </svg>
               </button>
               <button
                 type="button"
